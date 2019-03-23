@@ -1,0 +1,9 @@
+display torig borig;
+group all;
+smash (C>0 0);
+display none tname bname tval bval;
+group all;
+change font vector (C>0 0);
+change size 30mil (C>0 0);
+change ratio 10 (C>0 0);
+display last;
