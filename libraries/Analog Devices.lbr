@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
@@ -157,10 +157,10 @@
 <library>
 <packages>
 <package name="SSOP20">
-<wire x1="-3.25" y1="-2.6" x2="3.25" y2="-2.6" width="0.2032" layer="51"/>
-<wire x1="3.25" y1="-2.6" x2="3.25" y2="2.6" width="0.2032" layer="21"/>
-<wire x1="3.25" y1="2.6" x2="-3.25" y2="2.6" width="0.2032" layer="51"/>
-<wire x1="-3.25" y1="2.6" x2="-3.25" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="-2.6" x2="3.25" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-2.6" x2="3.25" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3.25" y1="2.6" x2="-3.25" y2="2.6" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="2.6" x2="-3.25" y2="-2.6" width="0.127" layer="21"/>
 <circle x="-2.55" y="-1.225" radius="0.4422" width="0" layer="21"/>
 <smd name="1" x="-2.925" y="-3" dx="0.4" dy="1.8" layer="1"/>
 <smd name="2" x="-2.275" y="-3" dx="0.4" dy="1.8" layer="1"/>
@@ -207,12 +207,10 @@
 </package>
 <package name="SOIC8">
 <description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.127" layer="51"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -223,14 +221,14 @@
 <smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <text x="-3.048" y="-1.778" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.318" y="-1.778" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="-2.973" x2="-1.66" y2="-1.873" layer="51"/>
+<rectangle x1="-0.88" y1="-2.973" x2="-0.39" y2="-1.873" layer="51"/>
+<rectangle x1="0.39" y1="-2.973" x2="0.88" y2="-1.873" layer="51"/>
+<rectangle x1="1.66" y1="-2.973" x2="2.15" y2="-1.873" layer="51"/>
+<rectangle x1="1.66" y1="1.873" x2="2.15" y2="2.973" layer="51"/>
+<rectangle x1="0.39" y1="1.873" x2="0.88" y2="2.973" layer="51"/>
+<rectangle x1="-0.88" y1="1.873" x2="-0.39" y2="2.973" layer="51"/>
+<rectangle x1="-2.15" y1="1.873" x2="-1.66" y2="2.973" layer="51"/>
 <circle x="-1.534" y="-0.717" radius="0.4422" width="0" layer="21"/>
 </package>
 <package name="MSOP12_EP">
@@ -251,10 +249,10 @@
 <rectangle x1="0.1" y1="0.2" x2="0.7" y2="1.3" layer="31"/>
 <rectangle x1="0.1" y1="-1.3" x2="0.7" y2="-0.2" layer="31"/>
 <rectangle x1="-0.7" y1="-1.3" x2="-0.1" y2="-0.2" layer="31"/>
-<wire x1="-1.5" y1="2" x2="-1.5" y2="-2" width="0.1524" layer="51"/>
-<wire x1="-1.5" y1="-2" x2="1.5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="1.5" y1="-2" x2="1.5" y2="2" width="0.1524" layer="51"/>
-<wire x1="1.5" y1="2" x2="-1.5" y2="2" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="2" x2="-1.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-2" x2="1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2" x2="1.5" y2="2" width="0.127" layer="51"/>
+<wire x1="1.5" y1="2" x2="-1.5" y2="2" width="0.127" layer="21"/>
 <text x="-1.27" y="3.048" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.27" y="2.413" size="0.4064" layer="27">&gt;VALUE</text>
 <circle x="-1.939" y="2.506" radius="0.2" width="0" layer="21"/>
@@ -270,10 +268,10 @@
 <smd name="3" x="-1.45" y="-0.25" dx="0.8" dy="0.25" layer="1"/>
 <smd name="4" x="-1.45" y="-0.75" dx="0.8" dy="0.25" layer="1"/>
 <circle x="-1.869" y="1.836" radius="0.2" width="0" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1524" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1524" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
 <text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.27" y="1.905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
