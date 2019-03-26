@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -176,6 +176,32 @@
 <text x="-2.8425" y="-1.944" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <circle x="-1.718" y="2.489" radius="0.254" width="0" layer="21"/>
 </package>
+<package name="LGA8">
+<wire x1="-1.18" y1="1.97" x2="1.18" y2="1.97" width="0.127" layer="21"/>
+<wire x1="1.18" y1="1.97" x2="1.18" y2="-1.002" width="0.127" layer="21"/>
+<wire x1="1.18" y1="-1.002" x2="1.18" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="1.18" y1="-1.97" x2="-1.18" y2="-1.97" width="0.127" layer="21"/>
+<wire x1="-1.18" y1="-1.97" x2="-1.18" y2="-1.002" width="0.127" layer="21"/>
+<smd name="1" x="-0.7" y="1.506" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="-0.7" y="0.496" dx="0.6" dy="0.6" layer="1"/>
+<smd name="3" x="-0.7" y="-0.514" dx="0.6" dy="0.6" layer="1"/>
+<smd name="4" x="-0.7" y="-1.524" dx="0.6" dy="0.6" layer="1"/>
+<smd name="5" x="0.7" y="-1.524" dx="0.6" dy="0.6" layer="1"/>
+<smd name="6" x="0.7" y="-0.514" dx="0.6" dy="0.6" layer="1"/>
+<smd name="7" x="0.7" y="0.496" dx="0.6" dy="0.6" layer="1"/>
+<smd name="8" x="0.7" y="1.506" dx="0.6" dy="0.6" layer="1"/>
+<circle x="0" y="1.25" radius="0.55" width="0.127" layer="51"/>
+<circle x="0" y="-1.45" radius="0.45" width="0.127" layer="51"/>
+<wire x1="-1.18" y1="-1.002" x2="-1.18" y2="1.97" width="0.127" layer="21"/>
+<wire x1="-1.18" y1="-1.002" x2="1.18" y2="-1.002" width="0.127" layer="21"/>
+<text x="0" y="-1.397" size="0.25" layer="51" align="center">LED</text>
+<text x="0" y="-2.286" size="0.25" layer="51" align="center">NORTH</text>
+<circle x="0" y="1.524" radius="0.1" width="0.127" layer="51"/>
+<circle x="0.254" y="1.27" radius="0.1" width="0.127" layer="51"/>
+<circle x="-0.254" y="1.27" radius="0.1" width="0.127" layer="51"/>
+<circle x="0" y="1.016" radius="0.1" width="0.127" layer="51"/>
+<text x="2.54" y="-2.54" size="0.8" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CCS811">
@@ -196,6 +222,22 @@
 <pin name="!RESET" x="-30.48" y="-15.24" length="middle" direction="in"/>
 <pin name="!WAKE" x="5.08" y="-15.24" length="middle" direction="in" rot="R180"/>
 </symbol>
+<symbol name="TMG3993">
+<pin name="VDD" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GND" x="-22.86" y="-17.78" length="middle"/>
+<pin name="SCL" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="LEDA" x="-22.86" y="-7.62" length="middle"/>
+<pin name="LEDK" x="-22.86" y="-10.16" length="middle"/>
+<pin name="LDR" x="-22.86" y="-12.7" length="middle"/>
+<pin name="INT" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-20.32" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<text x="-17.78" y="4.699" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CCS811" prefix="U">
@@ -215,6 +257,28 @@
 <connect gate="G$1" pin="SDA" pad="9"/>
 <connect gate="G$1" pin="SENSE" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMG3993" prefix="U">
+<gates>
+<gate name="G$1" symbol="TMG3993" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA8">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="INT" pad="7"/>
+<connect gate="G$1" pin="LDR" pad="6"/>
+<connect gate="G$1" pin="LEDA" pad="4"/>
+<connect gate="G$1" pin="LEDK" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
