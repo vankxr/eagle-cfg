@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -902,42 +902,42 @@
 <wire x1="0" y1="-78.74" x2="-60.96" y2="-78.74" width="0.254" layer="94"/>
 <wire x1="-60.96" y1="-78.74" x2="-60.96" y2="0" width="0.254" layer="94"/>
 <pin name="USBDP_DN3/PRT_DIS_P3" x="5.08" y="-17.78" length="middle" rot="R180"/>
-<pin name="PRTPWR3/BC_EN3" x="5.08" y="-50.8" length="middle" direction="in" rot="R180"/>
+<pin name="PRTPWR3/BC_EN3" x="5.08" y="-55.88" length="middle" direction="in" rot="R180"/>
 <pin name="USBDM_DN3/PRT_DIS_M3" x="5.08" y="-20.32" length="middle" rot="R180"/>
 <pin name="OCS_N3" x="5.08" y="-40.64" length="middle" rot="R180"/>
 <pin name="USBDM_DN4/PRT_DIS_M4" x="5.08" y="-27.94" length="middle" rot="R180"/>
 <pin name="USBDM_DN2/PRT_DIS_M2" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <pin name="USBDP_DN1/PRT_DIS_P1" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="USBDP_DN4/PRT_DIS_P4" x="5.08" y="-25.4" length="middle" rot="R180"/>
-<pin name="VDDA33@1" x="-66.04" y="-58.42" length="middle" direction="pwr"/>
+<pin name="VDDA33@1" x="-66.04" y="-53.34" length="middle" direction="pwr"/>
 <pin name="PRTPWR4/BC_EN4" x="5.08" y="-58.42" length="middle" direction="in" rot="R180"/>
 <pin name="USBDM_DN1/PRT_DIS_M1" x="5.08" y="-5.08" length="middle" rot="R180"/>
 <pin name="OCS_N4" x="5.08" y="-43.18" length="middle" rot="R180"/>
 <pin name="TEST" x="-66.04" y="-27.94" length="middle" direction="in"/>
 <pin name="SDA/SMBDATA/NON_REM1" x="5.08" y="-68.58" length="middle" rot="R180"/>
 <pin name="USBDP_DN2/PRT_DIS_P2" x="5.08" y="-10.16" length="middle" rot="R180"/>
-<pin name="VDDA33@0" x="-66.04" y="-55.88" length="middle" direction="pwr"/>
+<pin name="VDDA33@0" x="-66.04" y="-50.8" length="middle" direction="pwr"/>
 <pin name="OCS_N2" x="5.08" y="-38.1" length="middle" rot="R180"/>
-<pin name="VDD33@1" x="-66.04" y="-50.8" length="middle" direction="pwr"/>
+<pin name="VDD33@1" x="-66.04" y="-45.72" length="middle" direction="pwr"/>
 <pin name="SCL/SMBCLK/CFG_SEL0" x="5.08" y="-71.12" length="middle" direction="out" rot="R180"/>
 <pin name="HS_IND/CFG_SEL1" x="5.08" y="-73.66" length="middle" direction="out" rot="R180"/>
 <pin name="GND" x="-66.04" y="-76.2" length="middle" direction="pwr"/>
-<pin name="!RESET" x="-66.04" y="-40.64" length="middle" direction="in"/>
-<pin name="VBUS_DET" x="-66.04" y="-25.4" length="middle" direction="in"/>
-<pin name="PRTPWR1/BC_EN1" x="5.08" y="-55.88" length="middle" direction="in" rot="R180"/>
+<pin name="!RESET" x="-66.04" y="-35.56" length="middle" direction="in"/>
+<pin name="VBUS_DET" x="-66.04" y="-10.16" length="middle" direction="in"/>
+<pin name="PRTPWR1/BC_EN1" x="5.08" y="-50.8" length="middle" direction="in" rot="R180"/>
 <pin name="OCS_N1" x="5.08" y="-35.56" length="middle" rot="R180"/>
-<pin name="CRFILT" x="-66.04" y="-33.02" length="middle" direction="out"/>
-<pin name="VDD33@0" x="-66.04" y="-48.26" length="middle" direction="pwr"/>
+<pin name="CRFILT" x="-66.04" y="-63.5" length="middle" direction="out"/>
+<pin name="VDD33@0" x="-66.04" y="-43.18" length="middle" direction="pwr"/>
 <pin name="PRTPWR2/BC_EN2" x="5.08" y="-53.34" length="middle" direction="in" rot="R180"/>
 <pin name="SUSP_IND/LOCAL_PWR/NON_REM0" x="5.08" y="-66.04" length="middle" rot="R180"/>
-<pin name="VDDA33@2" x="-66.04" y="-60.96" length="middle" direction="out"/>
+<pin name="VDDA33@2" x="-66.04" y="-55.88" length="middle" direction="out"/>
 <pin name="USBDM_UP" x="-66.04" y="-5.08" length="middle"/>
 <pin name="USBDP_UP" x="-66.04" y="-2.54" length="middle"/>
 <pin name="XTALOUT" x="-66.04" y="-20.32" length="middle" direction="out"/>
-<pin name="XTALIN/CLKIN" x="-66.04" y="-17.78" length="middle" direction="in"/>
-<pin name="PLLFILT" x="-66.04" y="-35.56" length="middle" direction="out"/>
+<pin name="XTALIN" x="-66.04" y="-17.78" length="middle" direction="in"/>
+<pin name="PLLFILT" x="-66.04" y="-66.04" length="middle" direction="out"/>
 <pin name="RBIAS" x="-66.04" y="-68.58" length="middle" direction="out"/>
-<pin name="VDD33@2" x="-66.04" y="-53.34" length="middle" direction="pwr"/>
+<pin name="VDD33@2" x="-66.04" y="-48.26" length="middle" direction="pwr"/>
 <text x="-60.96" y="4.699" size="1.778" layer="95">&gt;NAME</text>
 <text x="-60.96" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -946,7 +946,7 @@
 <wire x1="0" y1="0" x2="0" y2="-66.04" width="0.254" layer="94"/>
 <wire x1="0" y1="-66.04" x2="-35.56" y2="-66.04" width="0.254" layer="94"/>
 <wire x1="-35.56" y1="-66.04" x2="-35.56" y2="0" width="0.254" layer="94"/>
-<pin name="XI" x="-40.64" y="-7.62" length="middle" direction="in"/>
+<pin name="XI" x="-40.64" y="-12.7" length="middle" direction="in"/>
 <pin name="CPEN" x="5.08" y="-15.24" length="middle" direction="out" rot="R180"/>
 <pin name="DATA1" x="5.08" y="-27.94" length="middle" rot="R180"/>
 <pin name="DATA2" x="5.08" y="-30.48" length="middle" rot="R180"/>
@@ -967,15 +967,15 @@
 <pin name="CLKOUT" x="5.08" y="-63.5" length="middle" direction="out" rot="R180"/>
 <pin name="DM" x="5.08" y="-7.62" length="middle" rot="R180"/>
 <pin name="DP" x="5.08" y="-5.08" length="middle" rot="R180"/>
-<pin name="EXTVBUS" x="-40.64" y="-2.54" length="middle" direction="in"/>
+<pin name="EXTVBUS" x="5.08" y="-17.78" length="middle" direction="in" rot="R180"/>
 <pin name="ID" x="5.08" y="-10.16" length="middle" direction="in" rot="R180"/>
 <pin name="NXT" x="5.08" y="-53.34" length="middle" direction="out" rot="R180"/>
 <pin name="RBIAS" x="-40.64" y="-50.8" length="middle"/>
-<pin name="REG_EN" x="-40.64" y="-20.32" length="middle"/>
-<pin name="RESET" x="-40.64" y="-17.78" length="middle" direction="in"/>
+<pin name="REG_EN" x="-40.64" y="-7.62" length="middle"/>
+<pin name="RESET" x="-40.64" y="-2.54" length="middle" direction="in"/>
 <pin name="STP" x="5.08" y="-48.26" length="middle" direction="in" rot="R180"/>
 <pin name="VBUS" x="5.08" y="-2.54" length="middle" rot="R180"/>
-<pin name="XO" x="-40.64" y="-10.16" length="middle" direction="out"/>
+<pin name="XO" x="-40.64" y="-15.24" length="middle" direction="out"/>
 <pin name="GND@0" x="-40.64" y="-58.42" length="middle" direction="pwr"/>
 <pin name="GND@1" x="-40.64" y="-60.96" length="middle" direction="pwr"/>
 <pin name="GND@2" x="-40.64" y="-63.5" length="middle" direction="pwr"/>
@@ -1055,6 +1055,62 @@
 <pin name="MOSI/IO0" x="5.08" y="-2.54" length="middle" direction="in" rot="R180"/>
 <pin name="GND" x="-30.48" y="-15.24" length="middle" direction="pwr"/>
 <pin name="VCC" x="-30.48" y="-2.54" length="middle" direction="pwr"/>
+</symbol>
+<symbol name="MIC20X9">
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="!FAULT" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="EN" x="-25.4" y="-5.08" length="middle"/>
+<pin name="GND" x="-25.4" y="-15.24" length="middle"/>
+<pin name="VIN" x="-25.4" y="-2.54" length="middle"/>
+<pin name="ILIMIT" x="-25.4" y="-10.16" length="middle"/>
+<wire x1="-20.32" y1="-17.78" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="-20.32" y2="-17.78" width="0.254" layer="94"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC20X7/8">
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="CSLEW" x="-25.4" y="-12.7" length="middle"/>
+<pin name="EN" x="-25.4" y="-5.08" length="middle"/>
+<pin name="GND" x="-25.4" y="-17.78" length="middle"/>
+<pin name="VIN" x="-25.4" y="-2.54" length="middle"/>
+<pin name="ILIMIT" x="-25.4" y="-10.16" length="middle"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC20X5">
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="!FAULT" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="EN" x="-25.4" y="-5.08" length="middle"/>
+<pin name="GND" x="-25.4" y="-15.24" length="middle"/>
+<pin name="VIN" x="-25.4" y="-2.54" length="middle"/>
+<pin name="CSLEW" x="-25.4" y="-10.16" length="middle"/>
+<wire x1="-20.32" y1="-17.78" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="-20.32" y2="-17.78" width="0.254" layer="94"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC20X6">
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="VUVLO" x="-25.4" y="-10.16" length="middle"/>
+<pin name="EN" x="-25.4" y="-5.08" length="middle"/>
+<pin name="GND" x="-25.4" y="-17.78" length="middle"/>
+<pin name="VIN" x="-25.4" y="-2.54" length="middle"/>
+<pin name="CSLEW" x="-25.4" y="-12.7" length="middle"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1585,7 +1641,7 @@
 <connect gate="G$1" pin="VDDA33@0" pad="5"/>
 <connect gate="G$1" pin="VDDA33@1" pad="10"/>
 <connect gate="G$1" pin="VDDA33@2" pad="29"/>
-<connect gate="G$1" pin="XTALIN/CLKIN" pad="33"/>
+<connect gate="G$1" pin="XTALIN" pad="33"/>
 <connect gate="G$1" pin="XTALOUT" pad="32"/>
 </connects>
 <technologies>
@@ -1595,7 +1651,6 @@
 </devices>
 </deviceset>
 <deviceset name="USB3300" prefix="U">
-<description>None</description>
 <gates>
 <gate name="G$1" symbol="USB3300" x="0" y="0"/>
 </gates>
@@ -1767,6 +1822,106 @@
 <connect gate="G$1" pin="MOSI/IO0" pad="5"/>
 <connect gate="G$1" pin="SCK" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2019" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC20X9" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="ILIMIT" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2018" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC20X7/8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="CSLEW" pad="5"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="ILIMIT" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2017" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC20X7/8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="CSLEW" pad="5"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="ILIMIT" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2015" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC20X5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="!FAULT" pad="4"/>
+<connect gate="G$1" pin="CSLEW" pad="5"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC2016" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC20X6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="CSLEW" pad="5"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+<connect gate="G$1" pin="VUVLO" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
