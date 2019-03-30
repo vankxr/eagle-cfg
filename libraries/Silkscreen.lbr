@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13898,7 +13898,7 @@ Logo</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ORANGEPI">
+<deviceset name="ORANGEPI" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="ORANGEPI" x="0" y="0"/>
 </gates>
@@ -13910,7 +13910,7 @@ Logo</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JS">
+<deviceset name="JS" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="JS" x="0" y="0"/>
 </gates>
@@ -13927,7 +13927,7 @@ Logo</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CEC">
+<deviceset name="CEC" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="CEC" x="0" y="0"/>
 </gates>
@@ -13944,7 +13944,7 @@ Logo</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GECKO">
+<deviceset name="GECKO" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="GECKO" x="0" y="0"/>
 </gates>
