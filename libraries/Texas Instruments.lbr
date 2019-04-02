@@ -259,7 +259,7 @@
 <wire x1="0" y1="0" x2="0" y2="-53.34" width="0.254" layer="94"/>
 <wire x1="0" y1="-53.34" x2="-25.4" y2="-53.34" width="0.254" layer="94"/>
 <wire x1="-25.4" y1="-53.34" x2="-25.4" y2="0" width="0.254" layer="94"/>
-<pin name="AC2" x="-30.48" y="-17.78" length="middle"/>
+<pin name="AC2" x="-30.48" y="-15.24" length="middle"/>
 <text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="AC1" x="-30.48" y="-12.7" length="middle"/>
@@ -268,9 +268,9 @@
 <pin name="BOOT1" x="-30.48" y="-7.62" length="middle"/>
 <pin name="COMM1" x="-30.48" y="-5.08" length="middle"/>
 <pin name="CLAMP1" x="-30.48" y="-2.54" length="middle"/>
-<pin name="BOOT2" x="-30.48" y="-22.86" length="middle"/>
-<pin name="COMM2" x="-30.48" y="-25.4" length="middle"/>
-<pin name="CLAMP2" x="-30.48" y="-27.94" length="middle"/>
+<pin name="BOOT2" x="-30.48" y="-20.32" length="middle"/>
+<pin name="COMM2" x="-30.48" y="-22.86" length="middle"/>
+<pin name="CLAMP2" x="-30.48" y="-25.4" length="middle"/>
 <pin name="AD" x="-30.48" y="-35.56" length="middle"/>
 <pin name="!AD_EN" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <pin name="!CHG" x="5.08" y="-15.24" length="middle" rot="R180"/>

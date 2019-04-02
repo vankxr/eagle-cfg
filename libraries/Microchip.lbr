@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -851,22 +851,22 @@
 <circle x="-3.406" y="2.297" radius="0.2" width="0" layer="21"/>
 </package>
 <package name="QFN20">
-<wire x1="-2" y1="2" x2="2" y2="2" width="0.2032" layer="51"/>
-<wire x1="2" y1="2" x2="2" y2="-2" width="0.2032" layer="51"/>
-<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.2032" layer="51"/>
-<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.2032" layer="51"/>
-<wire x1="-2" y1="2" x2="-1.5" y2="2" width="0.2032" layer="21"/>
-<wire x1="-2" y1="1.5" x2="-2" y2="2" width="0.2032" layer="21"/>
-<wire x1="-2" y1="-2" x2="-2" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-2" x2="-2" y2="-2" width="0.2032" layer="21"/>
-<wire x1="2" y1="2" x2="2" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="2" x2="2" y2="2" width="0.2032" layer="21"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="51"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.127" layer="51"/>
+<wire x1="-2" y1="2" x2="-1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
 <rectangle x1="-1.15" y1="0.15" x2="-0.15" y2="1.15" layer="31"/>
 <rectangle x1="0.15" y1="0.15" x2="1.15" y2="1.15" layer="31"/>
 <rectangle x1="0.15" y1="-1.15" x2="1.15" y2="-0.15" layer="31"/>
 <rectangle x1="-1.15" y1="-1.15" x2="-0.15" y2="-0.15" layer="31"/>
 <smd name="1" x="-1.965" y="1" dx="0.73" dy="0.3" layer="1"/>
-<smd name="EXP" x="0" y="0" dx="2.5" dy="2.5" layer="1" cream="no"/>
+<smd name="PAD" x="0" y="0" dx="2.5" dy="2.5" layer="1" cream="no"/>
 <text x="-2.75" y="3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.5" y="-4.5" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="-2.906" y="1.797" radius="0.2" width="0" layer="21"/>
@@ -889,8 +889,27 @@
 <smd name="18" x="0" y="1.965" dx="0.73" dy="0.3" layer="1" rot="R270"/>
 <smd name="19" x="-0.5" y="1.965" dx="0.73" dy="0.3" layer="1" rot="R270"/>
 <smd name="20" x="-1" y="1.965" dx="0.73" dy="0.3" layer="1" rot="R270"/>
-<wire x1="2" y1="-2" x2="1.5" y2="-2" width="0.2032" layer="21"/>
-<wire x1="2" y1="-1.5" x2="2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="2" y1="-2" x2="1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-2" width="0.127" layer="21"/>
+</package>
+<package name="DFN8">
+<smd name="1" x="-1.55" y="0.975" dx="0.65" dy="0.35" layer="1"/>
+<text x="-3.048" y="3.048" size="1.27" layer="25">&gt;NAME</text>
+<circle x="-2.114" y="1.783" radius="0.3" width="0" layer="21"/>
+<smd name="2" x="-1.55" y="0.325" dx="0.65" dy="0.35" layer="1"/>
+<smd name="3" x="-1.55" y="-0.325" dx="0.65" dy="0.35" layer="1"/>
+<smd name="4" x="-1.55" y="-0.975" dx="0.65" dy="0.35" layer="1"/>
+<smd name="9" x="0" y="0" dx="2.4" dy="1.55" layer="1" rot="R270"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<smd name="5" x="1.55" y="-0.975" dx="0.65" dy="0.35" layer="1" rot="R180"/>
+<smd name="6" x="1.55" y="-0.325" dx="0.65" dy="0.35" layer="1" rot="R180"/>
+<smd name="7" x="1.55" y="0.325" dx="0.65" dy="0.35" layer="1" rot="R180"/>
+<smd name="8" x="1.55" y="0.975" dx="0.65" dy="0.35" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -1410,13 +1429,13 @@
 <wire x1="0" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-25.4" x2="-20.32" y2="0" width="0.254" layer="94"/>
 <pin name="CANL" x="5.08" y="-22.86" length="middle" rot="R180"/>
-<pin name="STDBY" x="-25.4" y="-15.24" length="middle"/>
+<pin name="STDBY" x="-25.4" y="-17.78" length="middle"/>
 <pin name="CANH" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VSS" x="-25.4" y="-22.86" length="middle"/>
-<pin name="VDD" x="-25.4" y="-2.54" length="middle"/>
-<pin name="RXD" x="-25.4" y="-10.16" length="middle"/>
-<pin name="TXD" x="-25.4" y="-7.62" length="middle"/>
-<pin name="SPLIT" x="5.08" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="-25.4" y="-2.54" length="middle" direction="pwr"/>
+<pin name="RXD" x="-25.4" y="-12.7" length="middle"/>
+<pin name="TXD" x="-25.4" y="-10.16" length="middle"/>
+<pin name="SPLIT" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
@@ -1461,6 +1480,22 @@
 <wire x1="0" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
 <text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MCP2562">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-25.4" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="CANL" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="STDBY" x="-25.4" y="-17.78" length="middle"/>
+<pin name="CANH" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="VSS" x="-25.4" y="-22.86" length="middle" direction="pwr"/>
+<pin name="VDD" x="-25.4" y="-2.54" length="middle" direction="pwr"/>
+<pin name="RXD" x="-25.4" y="-12.7" length="middle"/>
+<pin name="TXD" x="-25.4" y="-10.16" length="middle"/>
+<pin name="VIO" x="-25.4" y="-5.08" length="middle" direction="pwr"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2365,7 +2400,7 @@
 <connect gate="G$1" pin="SCK" pad="12"/>
 <connect gate="G$1" pin="TXCAN" pad="19"/>
 <connect gate="G$1" pin="VDD" pad="18"/>
-<connect gate="G$1" pin="VSS" pad="8 EXP"/>
+<connect gate="G$1" pin="VSS" pad="8 PAD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2378,7 +2413,7 @@
 <gate name="G$1" symbol="MCP2561" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC8">
+<device name="-SN" package="SOIC8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -2388,6 +2423,21 @@
 <connect gate="G$1" pin="TXD" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
 <connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MF" package="DFN8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="SPLIT" pad="5"/>
+<connect gate="G$1" pin="STDBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2 9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2442,6 +2492,43 @@
 <connect gate="G$1" pin="VBAT" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="4"/>
 <connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP2562" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP2562" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SN" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="STDBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MF" package="DFN8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="STDBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2 9"/>
 </connects>
 <technologies>
 <technology name=""/>
