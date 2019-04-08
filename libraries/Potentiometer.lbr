@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -51,7 +51,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -114,6 +114,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="160" name="O_Dim" color="12" fill="11" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -201,6 +202,28 @@
 <text x="-4.572" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-4.572" y="-4.064" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="TRIMER_SIDE">
+<pad name="3" x="0" y="-2.54" drill="0.7" diameter="1.4224"/>
+<pad name="2" x="-2.54" y="0" drill="0.7" diameter="1.4224"/>
+<pad name="1" x="0" y="2.54" drill="0.7" diameter="1.4224"/>
+<wire x1="-5.254" y1="5.254" x2="5.231" y2="5.254" width="0.127" layer="21"/>
+<wire x1="5.231" y1="5.254" x2="5.231" y2="-5.254" width="0.127" layer="21"/>
+<wire x1="5.231" y1="-5.254" x2="-5.254" y2="-5.254" width="0.127" layer="21"/>
+<wire x1="-5.254" y1="-5.254" x2="-5.254" y2="5.254" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="4.699" x2="-6.731" y2="4.699" width="0.127" layer="21"/>
+<wire x1="-6.731" y1="2.413" x2="-6.731" y2="2.286" width="0.127" layer="21"/>
+<wire x1="-6.731" y1="2.286" x2="-5.334" y2="2.286" width="0.127" layer="21"/>
+<wire x1="-6.731" y1="4.699" x2="-6.731" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-6.731" y1="3.81" x2="-6.35" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.81" x2="-6.35" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="3.175" x2="-6.731" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-6.731" y1="3.175" x2="-6.731" y2="2.413" width="0.127" layer="21"/>
+<text x="-4.953" y="5.588" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<wire x1="-6.477" y1="-2.54" x2="-6.477" y2="0" width="0.127" layer="21"/>
+<wire x1="-6.477" y1="-2.54" x2="-6.223" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="-6.477" y1="-2.54" x2="-6.731" y2="-2.032" width="0.127" layer="21"/>
+<text x="-5.969" y="1.27" size="0.8" layer="21" font="vector" ratio="15" rot="R180">CW</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POT">
@@ -246,6 +269,16 @@
 <connect gate="G$1" pin="CCW" pad="A"/>
 <connect gate="G$1" pin="CW" pad="E"/>
 <connect gate="G$1" pin="WIPER" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TH-SIDE" package="TRIMER_SIDE">
+<connects>
+<connect gate="G$1" pin="CCW" pad="1"/>
+<connect gate="G$1" pin="CW" pad="3"/>
+<connect gate="G$1" pin="WIPER" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

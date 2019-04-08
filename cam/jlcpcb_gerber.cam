@@ -68,7 +68,7 @@
                         "description": "Component side",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.cmp",
+                    "filename_format": "%N.gtl",
                     "layers": [
                         1,
                         17,
@@ -92,7 +92,7 @@
                         "description": "Silk screen CMP",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.plc",
+                    "filename_format": "%N.gto",
                     "layers": [
                         21,
                         25,
@@ -116,7 +116,7 @@
                         "description": "Solder stop mask CMP",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.stc",
+                    "filename_format": "%N.gts",
                     "layers": [
                         29
                     ],
@@ -138,7 +138,7 @@
                         "description": "Solder side",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.sol",
+                    "filename_format": "%N.gbl",
                     "layers": [
                         16,
                         17,
@@ -155,7 +155,7 @@
                         "description": "Other",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.pls",
+                    "filename_format": "%N.gbo",
                     "layers": [
                         22,
                         26,
@@ -179,7 +179,7 @@
                         "description": "Solder stop mask SOL",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.sts",
+                    "filename_format": "%N.gbs",
                     "layers": [
                         30
                     ],
@@ -187,12 +187,62 @@
                     "name": "BOTTOM Solder mask",
                     "polarity": "positive",
                     "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Solder stop mask CMP",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.gtp",
+                    "layers": [
+                        31
+                    ],
+                    "milling": false,
+                    "name": "TOP Solder paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Solder stop mask CMP",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.gbp",
+                    "layers": [
+                        32
+                    ],
+                    "milling": false,
+                    "name": "BOTTOM Solder paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
                 }
             ],
             "version": "RS274X"
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrawingFiles",
+            "output_type": "drawing",
+            "outputs": [
+            ]
         }
     ],
-    "timestamp": "2018-10-01T14:21:39",
+    "timestamp": "2019-04-08T15:18:57",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "8.6.1"
