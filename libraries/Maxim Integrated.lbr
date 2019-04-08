@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -220,13 +220,13 @@
 <pin name="IO" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="GND" x="-22.86" y="-20.32" length="middle"/>
 <pin name="VCC" x="-22.86" y="-2.54" length="middle"/>
-<pin name="SCL" x="-22.86" y="-7.62" length="middle"/>
+<pin name="SCL" x="-22.86" y="-12.7" length="middle"/>
 <wire x1="-17.78" y1="-22.86" x2="-17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
-<pin name="SLPZ" x="-22.86" y="-15.24" length="middle"/>
-<pin name="SDA" x="-22.86" y="-10.16" length="middle"/>
+<pin name="SLPZ" x="-22.86" y="-7.62" length="middle"/>
+<pin name="SDA" x="-22.86" y="-15.24" length="middle"/>
 <text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
