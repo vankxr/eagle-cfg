@@ -135,6 +135,28 @@
                     },
                     "board_outline": false,
                     "config": {
+                        "description": "Solder stop mask CMP",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.gtp",
+                    "layers": [
+                        31
+                    ],
+                    "milling": false,
+                    "name": "TOP Solder paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
                         "description": "Solder side",
                         "file_function": "Other"
                     },
@@ -201,28 +223,6 @@
                         "description": "Solder stop mask CMP",
                         "file_function": "Other"
                     },
-                    "filename_format": "%N.gtp",
-                    "layers": [
-                        31
-                    ],
-                    "milling": false,
-                    "name": "TOP Solder paste",
-                    "polarity": "positive",
-                    "type": "gerber_layer"
-                },
-                {
-                    "advanced_options": {
-                        "mirror": false,
-                        "offset_x": 0,
-                        "offset_y": 0,
-                        "rotate": false,
-                        "upside_down": false
-                    },
-                    "board_outline": false,
-                    "config": {
-                        "description": "Solder stop mask CMP",
-                        "file_function": "Other"
-                    },
                     "filename_format": "%N.gbp",
                     "layers": [
                         32
@@ -242,7 +242,7 @@
             ]
         }
     ],
-    "timestamp": "2019-04-08T15:18:57",
+    "timestamp": "2019-04-09T20:55:30",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "8.6.1"
