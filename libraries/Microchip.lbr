@@ -1567,7 +1567,7 @@
 <gate name=".PWR" symbol="OP_AMP_PWR" x="12.7" y="0"/>
 </gates>
 <devices>
-<device name="SOIC8" package="SOIC8">
+<device name="" package="SOIC8">
 <connects>
 <connect gate=".1" pin="+IN" pad="3"/>
 <connect gate=".1" pin="-IN" pad="2"/>
