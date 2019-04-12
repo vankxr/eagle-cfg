@@ -41,14 +41,15 @@
             "output_type": "gerber",
             "outputs": [
                 {
-                    "board_outline": true,
+                    "board_outline": false,
                     "config": {
                         "description": "Board Outline",
                         "file_function": "Other"
                     },
                     "filename_format": "%N.gko",
                     "layers": [
-                        46
+                        46,
+                        20
                     ],
                     "milling": false,
                     "name": "Board Outline",
@@ -242,7 +243,7 @@
             ]
         }
     ],
-    "timestamp": "2019-04-09T20:55:30",
+    "timestamp": "2019-04-12T12:47:21",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "8.6.1"
