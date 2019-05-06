@@ -465,8 +465,8 @@
 <pin name="VSS" x="5.08" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="DI" x="-20.32" y="-7.62" visible="pin" length="middle"/>
 <pin name="DO" x="5.08" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<text x="-15.24" y="2.794" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="0.635" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-15.24" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
+<text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
