@@ -32,9 +32,9 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -974,6 +974,47 @@
 <wire x1="-3.6" y1="-4" x2="-4" y2="-4" width="0.127" layer="21"/>
 <wire x1="-4" y1="-4" x2="-4" y2="-3.6" width="0.127" layer="21"/>
 </package>
+<package name="VQFN20">
+<wire x1="-1.5" y1="2" x2="1.5" y2="2" width="0.127" layer="51"/>
+<wire x1="1.5" y1="2" x2="1.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-2" x2="-1.5" y2="-2" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-2" x2="-1.5" y2="2" width="0.127" layer="51"/>
+<smd name="21" x="0" y="0" dx="1.6" dy="2.6" layer="1" cream="no"/>
+<circle x="-1.996" y="2.322" radius="0.2" width="0" layer="21"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-1.5" y="1.25" dx="0.6" dy="0.25" layer="1"/>
+<rectangle x1="-0.7" y1="0.2" x2="-0.2" y2="1.2" layer="31"/>
+<rectangle x1="0.2" y1="0.2" x2="0.7" y2="1.2" layer="31"/>
+<rectangle x1="-0.7" y1="-1.2" x2="-0.2" y2="-0.2" layer="31"/>
+<rectangle x1="0.2" y1="-1.2" x2="0.7" y2="-0.2" layer="31"/>
+<smd name="2" x="-1.5" y="0.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="3" x="-1.5" y="0.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="4" x="-1.5" y="-0.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="5" x="-1.5" y="-0.75" dx="0.6" dy="0.25" layer="1"/>
+<smd name="6" x="-1.5" y="-1.25" dx="0.6" dy="0.25" layer="1"/>
+<smd name="7" x="-0.75" y="-2" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="-0.25" y="-2" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="9" x="0.25" y="-2" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="0.75" y="-2" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="11" x="1.5" y="-1.25" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="12" x="1.5" y="-0.75" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="13" x="1.5" y="-0.25" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="14" x="1.5" y="0.25" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="15" x="1.5" y="0.75" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="16" x="1.5" y="1.25" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="17" x="0.75" y="2" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="18" x="0.25" y="2" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="19" x="-0.25" y="2" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="20" x="-0.75" y="2" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<wire x1="-1.1" y1="-2" x2="-1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2" x2="-1.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.6" x2="1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2" x2="1.1" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.1" y1="2" x2="1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2" x2="1.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.6" x2="-1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2" x2="-1.1" y2="2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC4682">
@@ -1623,6 +1664,35 @@
 <pin name="VDD@1" x="-27.94" y="-68.58" length="middle"/>
 <pin name="VDD@2" x="-27.94" y="-71.12" length="middle"/>
 <pin name="GND@4" x="5.08" y="-71.12" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MIC23159">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="0" y1="-50.8" x2="-30.48" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-50.8" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<pin name="VIN@0" x="-35.56" y="-5.08" length="middle"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="AVIN@0" x="-35.56" y="-2.54" length="middle"/>
+<pin name="AGND@0" x="-35.56" y="-48.26" length="middle"/>
+<pin name="PGND@0" x="-35.56" y="-45.72" length="middle"/>
+<pin name="SS@0" x="-35.56" y="-38.1" length="middle"/>
+<pin name="PG@0" x="-35.56" y="-12.7" length="middle"/>
+<pin name="EN@0" x="-35.56" y="-10.16" length="middle"/>
+<pin name="FB@0" x="-35.56" y="-33.02" length="middle"/>
+<pin name="SNS@0" x="-35.56" y="-30.48" length="middle"/>
+<pin name="SW@0" x="-35.56" y="-20.32" length="middle"/>
+<pin name="AVIN@1" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="VIN@1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="EN@1" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="PG@1" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="SW@1" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="SNS@1" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="FB@1" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="SS@1" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="PGND@1" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="AGND@1" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="PGND@2" x="-15.24" y="-55.88" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2732,6 +2802,41 @@
 <connect gate="G$1" pin="VDD@0" pad="17"/>
 <connect gate="G$1" pin="VDD@1" pad="28"/>
 <connect gate="G$1" pin="VDD@2" pad="40"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC23159" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC23159" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN20">
+<connects>
+<connect gate="G$1" pin="AGND@0" pad="19"/>
+<connect gate="G$1" pin="AGND@1" pad="8"/>
+<connect gate="G$1" pin="AVIN@0" pad="20"/>
+<connect gate="G$1" pin="AVIN@1" pad="7"/>
+<connect gate="G$1" pin="EN@0" pad="18"/>
+<connect gate="G$1" pin="EN@1" pad="9"/>
+<connect gate="G$1" pin="FB@0" pad="16"/>
+<connect gate="G$1" pin="FB@1" pad="11"/>
+<connect gate="G$1" pin="PG@0" pad="15"/>
+<connect gate="G$1" pin="PG@1" pad="12"/>
+<connect gate="G$1" pin="PGND@0" pad="2"/>
+<connect gate="G$1" pin="PGND@1" pad="5"/>
+<connect gate="G$1" pin="PGND@2" pad="21"/>
+<connect gate="G$1" pin="SNS@0" pad="17"/>
+<connect gate="G$1" pin="SNS@1" pad="10"/>
+<connect gate="G$1" pin="SS@0" pad="14"/>
+<connect gate="G$1" pin="SS@1" pad="13"/>
+<connect gate="G$1" pin="SW@0" pad="3"/>
+<connect gate="G$1" pin="SW@1" pad="4"/>
+<connect gate="G$1" pin="VIN@0" pad="1"/>
+<connect gate="G$1" pin="VIN@1" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
