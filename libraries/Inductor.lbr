@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -243,6 +243,28 @@
 <wire x1="5.7" y1="-6.3" x2="6.7" y2="-5.3" width="0.127" layer="21" curve="90"/>
 <wire x1="6.7" y1="-5.3" x2="6.7" y2="-3.4" width="0.127" layer="21"/>
 </package>
+<package name="IND0805">
+<smd name="1" x="-0.9652" y="0" dx="1.2446" dy="1.4732" layer="1"/>
+<smd name="2" x="0.9652" y="0" dx="1.2446" dy="1.4732" layer="1"/>
+<wire x1="-0.3556" y1="-0.7366" x2="-0.3556" y2="0.7366" width="0" layer="51"/>
+<wire x1="-0.3556" y1="0.7366" x2="-1.0922" y2="0.7366" width="0" layer="51"/>
+<wire x1="-1.0922" y1="-0.7366" x2="-0.3556" y2="-0.7366" width="0" layer="51"/>
+<wire x1="0.3556" y1="0.7366" x2="0.3556" y2="-0.7366" width="0" layer="51"/>
+<wire x1="0.3556" y1="-0.7366" x2="1.0922" y2="-0.7366" width="0" layer="51"/>
+<wire x1="1.0922" y1="0.7366" x2="0.3556" y2="0.7366" width="0" layer="51"/>
+<wire x1="-0.3556" y1="-0.7366" x2="0.3556" y2="-0.7366" width="0" layer="51"/>
+<wire x1="1.0922" y1="-0.7366" x2="1.0922" y2="0.7366" width="0" layer="51"/>
+<wire x1="0.3556" y1="0.7366" x2="-0.3556" y2="0.7366" width="0" layer="51"/>
+<wire x1="-1.0922" y1="0.7366" x2="-1.0922" y2="-0.7366" width="0" layer="51"/>
+<text x="-3.6068" y="1.8288" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.5306" y="-3.9624" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="0.381" y1="1.0398" x2="1.9407" y2="1.0398" width="0.1905" layer="21"/>
+<wire x1="1.9407" y1="1.0398" x2="1.9407" y2="-1.0398" width="0.1905" layer="21"/>
+<wire x1="1.9407" y1="-1.0398" x2="0.381" y2="-1.0398" width="0.1905" layer="21"/>
+<wire x1="-0.381" y1="-1.0398" x2="-1.9407" y2="-1.0398" width="0.1905" layer="21"/>
+<wire x1="-1.9407" y1="-1.0398" x2="-1.9407" y2="1.0398" width="0.1905" layer="21"/>
+<wire x1="-1.9407" y1="1.0398" x2="-0.381" y2="1.0398" width="0.1905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IND">
@@ -287,6 +309,15 @@
 </technologies>
 </device>
 <device name="-13X13X5MM" package="IND1305">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805" package="IND0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
