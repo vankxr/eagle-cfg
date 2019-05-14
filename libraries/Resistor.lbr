@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -246,6 +246,28 @@
 <wire x1="-4.2799" y1="-2.0066" x2="-4.2799" y2="2.0066" width="0.1905" layer="21"/>
 <wire x1="-4.2799" y1="2.0066" x2="-2.2606" y2="2.0066" width="0.1905" layer="21"/>
 </package>
+<package name="RES0402">
+<smd name="1" x="-0.55" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.55" y="0" dx="0.6" dy="0.6" layer="1"/>
+<wire x1="-0.25" y1="-0.25" x2="-0.25" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="-0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.25" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.25" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.25" y1="-0.25" x2="0.5" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.25" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="0.25" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="-0.25" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="-0.5" y2="-0.25" width="0" layer="51"/>
+<text x="-2.9464" y="1.016" size="1.016" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-2.9464" y="-1.832" size="1.016" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="0.2" y1="0.55" x2="1.1" y2="0.55" width="0.1905" layer="21"/>
+<wire x1="1.1" y1="0.55" x2="1.1" y2="-0.55" width="0.1905" layer="21"/>
+<wire x1="1.1" y1="-0.55" x2="0.2" y2="-0.55" width="0.1905" layer="21"/>
+<wire x1="-0.2" y1="-0.55" x2="-1.1" y2="-0.55" width="0.1905" layer="21"/>
+<wire x1="-1.1" y1="-0.55" x2="-1.1" y2="0.55" width="0.1905" layer="21"/>
+<wire x1="-1.1" y1="0.55" x2="-0.2" y2="0.55" width="0.1905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RES">
@@ -296,6 +318,15 @@
 </technologies>
 </device>
 <device name="-2512" package="RES2512">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0402" package="RES0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
