@@ -185,7 +185,7 @@
 </layers>
 <library>
 <packages>
-<package name="QFN20">
+<package name="QFN24">
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
@@ -255,7 +255,7 @@
 <gate name="G$1" symbol="ICM20948" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN20">
+<device name="" package="QFN24">
 <connects>
 <connect gate="G$1" pin="!CS" pad="22"/>
 <connect gate="G$1" pin="AUX_CL" pad="7"/>
