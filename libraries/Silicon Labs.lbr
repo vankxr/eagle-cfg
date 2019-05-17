@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -302,7 +302,7 @@
 <wire x1="-2" y1="2" x2="-1.7" y2="2" width="0.127" layer="21"/>
 </package>
 <package name="QFN64">
-<smd name="PAD" x="0" y="0" dx="4.25" dy="4.25" layer="1"/>
+<smd name="65" x="0" y="0" dx="4.25" dy="4.25" layer="1"/>
 <smd name="1" x="-4.45" y="3.75" dx="0.85" dy="0.3" layer="1"/>
 <smd name="2" x="-4.45" y="3.25" dx="0.85" dy="0.3" layer="1"/>
 <smd name="3" x="-4.45" y="2.75" dx="0.85" dy="0.3" layer="1"/>
@@ -371,8 +371,8 @@
 <wire x1="4.5" y1="4.5" x2="4.5" y2="-4.5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.127" layer="51"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="4.5" width="0.127" layer="51"/>
-<circle x="-5" y="4.5" radius="0.075" width="0.25" layer="21"/>
-<text x="-4.5" y="-6" size="0.8" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<circle x="-5.254" y="4.627" radius="0.1143" width="0.2286" layer="21"/>
+<text x="-4.5" y="-6" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <wire x1="-4.1" y1="-4.5" x2="-4.5" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="-4.1" width="0.127" layer="21"/>
 <wire x1="4.5" y1="-4.1" x2="4.5" y2="-4.5" width="0.127" layer="21"/>
@@ -757,7 +757,7 @@
 <connect gate=".CTL" pin="VREGIN" pad="60"/>
 <connect gate=".CTL" pin="VSS@0" pad="25"/>
 <connect gate=".CTL" pin="VSS@1" pad="59"/>
-<connect gate=".CTL" pin="VSS@2" pad="PAD"/>
+<connect gate=".CTL" pin="VSS@2" pad="65"/>
 <connect gate=".CTL" pin="VSSHD" pad="2"/>
 <connect gate=".P0" pin="CTS" pad="54"/>
 <connect gate=".P0" pin="DCD" pad="51"/>
