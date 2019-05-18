@@ -532,7 +532,7 @@
 <pin name="PWM1" x="5.08" y="-43.18" length="middle" rot="R180"/>
 <pin name="PWM2" x="5.08" y="-40.64" length="middle" rot="R180"/>
 <pin name="ADC2" x="5.08" y="-121.92" length="middle" rot="R180"/>
-<pin name="RESET" x="-38.1" y="-50.8" length="middle"/>
+<pin name="!RESET" x="-38.1" y="-50.8" length="middle"/>
 <pin name="GPIO6" x="5.08" y="-35.56" length="middle" rot="R180"/>
 <pin name="GPIO5" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
@@ -603,6 +603,7 @@
 <devices>
 <device name="" package="SIM808">
 <connects>
+<connect gate="G$1" pin="!RESET" pad="16"/>
 <connect gate="G$1" pin="ADC1" pad="23"/>
 <connect gate="G$1" pin="ADC2" pad="24"/>
 <connect gate="G$1" pin="BT_ANT" pad="53"/>
@@ -643,7 +644,6 @@
 <connect gate="G$1" pin="PWM1" pad="42"/>
 <connect gate="G$1" pin="PWM2" pad="41"/>
 <connect gate="G$1" pin="PWRKEY" pad="8"/>
-<connect gate="G$1" pin="RESET" pad="16"/>
 <connect gate="G$1" pin="RF_SYNC" pad="63"/>
 <connect gate="G$1" pin="RI" pad="10"/>
 <connect gate="G$1" pin="ROW0" pad="58"/>
