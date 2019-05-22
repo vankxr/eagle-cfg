@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -629,7 +629,7 @@
 <text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VDD@1" x="-30.48" y="-5.08" length="middle"/>
 <pin name="GND@1" x="-30.48" y="-58.42" length="middle"/>
-<pin name="RXP" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="RXP" x="5.08" y="-17.78" length="middle" rot="R180"/>
 <pin name="RXN" x="5.08" y="-38.1" length="middle" rot="R180"/>
 <pin name="TX" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="SDI" x="-30.48" y="-38.1" length="middle"/>
@@ -642,8 +642,8 @@
 <pin name="GPIO1" x="5.08" y="-53.34" length="middle" rot="R180"/>
 <pin name="GPIO2" x="5.08" y="-55.88" length="middle" rot="R180"/>
 <pin name="GPIO3" x="5.08" y="-58.42" length="middle" rot="R180"/>
-<pin name="XIN" x="-30.48" y="-15.24" length="middle"/>
-<pin name="XOUT" x="-30.48" y="-17.78" length="middle"/>
+<pin name="XIN" x="-30.48" y="-12.7" length="middle"/>
+<pin name="XOUT" x="-30.48" y="-15.24" length="middle"/>
 <pin name="TXRAMP" x="5.08" y="-45.72" length="middle" rot="R180"/>
 </symbol>
 </symbols>
