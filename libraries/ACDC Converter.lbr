@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -224,20 +224,20 @@
 </packages>
 <symbols>
 <symbol name="HLK-PM">
-<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<pin name="+VO" x="15.24" y="5.08" visible="off" length="short" rot="R180"/>
-<pin name="-VO" x="15.24" y="-5.08" visible="off" length="short" rot="R180"/>
-<pin name="AC1" x="-15.24" y="2.54" visible="off" length="short"/>
-<pin name="AC2" x="-15.24" y="-2.54" visible="off" length="short"/>
-<text x="10.16" y="5.08" size="1.6" layer="94" ratio="15" align="center">+</text>
-<text x="10.16" y="-5.08" size="1.6" layer="94" ratio="15" align="center">-</text>
-<wire x1="-10.16" y1="0" x2="-8.89" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="-7.62" y1="0" x2="-8.89" y2="0" width="0.254" layer="94" curve="-180"/>
-<text x="-12.7" y="12.319" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="9.144" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="-25.4" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-15.24" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<pin name="+VO" x="2.54" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="-VO" x="2.54" y="-12.7" visible="off" length="short" rot="R180"/>
+<pin name="AC1" x="-27.94" y="-5.08" visible="off" length="short"/>
+<pin name="AC2" x="-27.94" y="-10.16" visible="off" length="short"/>
+<text x="-2.54" y="-2.54" size="1.6" layer="94" ratio="15" align="center">+</text>
+<text x="-2.54" y="-12.7" size="1.6" layer="94" ratio="15" align="center">-</text>
+<wire x1="-22.86" y1="-7.62" x2="-21.59" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<wire x1="-20.32" y1="-7.62" x2="-21.59" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-25.4" y="4.699" size="1.778" layer="95">&gt;NAME</text>
+<text x="-25.4" y="1.524" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -268,7 +268,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="\1" package="HLK-PM12">
+<device name="12" package="HLK-PM12">
 <connects>
 <connect gate="G$1" pin="+VO" pad="+VO"/>
 <connect gate="G$1" pin="-VO" pad="-VO"/>

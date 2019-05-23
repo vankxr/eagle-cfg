@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1811,6 +1811,22 @@
 <pin name="SS" x="-25.4" y="-17.78" length="middle"/>
 <pin name="SNS" x="5.08" y="-7.62" length="middle" rot="R180"/>
 </symbol>
+<symbol name="MCP1631X">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-30.48" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="AGND" x="-25.4" y="-25.4" length="middle"/>
+<pin name="PGND" x="-25.4" y="-27.94" length="middle"/>
+<pin name="FB" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="SW" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="VIN" x="-25.4" y="-2.54" length="middle"/>
+<pin name="EN" x="-25.4" y="-7.62" length="middle"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-25.4" y="-17.78" length="middle"/>
+<pin name="BOOST" x="5.08" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -3077,6 +3093,28 @@
 <connect gate="G$1" pin="SW" pad="1"/>
 <connect gate="G$1" pin="VIN@0" pad="8"/>
 <connect gate="G$1" pin="VIN@1" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP1631X" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP1631X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP8">
+<connects>
+<connect gate="G$1" pin="AGND" pad="8"/>
+<connect gate="G$1" pin="BOOST" pad="7"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="PGND" pad="5"/>
+<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
