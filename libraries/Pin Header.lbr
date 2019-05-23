@@ -17907,30 +17907,45 @@ Source: http://www.commcon.com/main</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-2X8" urn="urn:adsk.eagle:component:22549/3" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-2X8" urn="urn:adsk.eagle:component:22549/3" locally_modified="yes" prefix="JP">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="PINH2X8" x="0" y="0"/>
+<gate name="-1" symbol="KV" x="0" y="0"/>
+<gate name="-2" symbol="K" x="0" y="-2.54"/>
+<gate name="-3" symbol="K" x="0" y="-5.08"/>
+<gate name="-4" symbol="K" x="0" y="-7.62"/>
+<gate name="-5" symbol="K" x="0" y="-10.16"/>
+<gate name="-6" symbol="K" x="0" y="-12.7"/>
+<gate name="-7" symbol="K" x="0" y="-15.24"/>
+<gate name="-8" symbol="K" x="0" y="-17.78"/>
+<gate name="-9" symbol="K" x="0" y="-20.32"/>
+<gate name="-10" symbol="K" x="0" y="-22.86"/>
+<gate name="-11" symbol="K" x="0" y="-25.4"/>
+<gate name="-12" symbol="K" x="0" y="-27.94"/>
+<gate name="-13" symbol="K" x="0" y="-30.48"/>
+<gate name="-14" symbol="K" x="0" y="-33.02"/>
+<gate name="-15" symbol="K" x="0" y="-35.56"/>
+<gate name="-16" symbol="K" x="0" y="-38.1"/>
 </gates>
 <devices>
 <device name="" package="2X08">
 <connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="10" pad="10"/>
-<connect gate="A" pin="11" pad="11"/>
-<connect gate="A" pin="12" pad="12"/>
-<connect gate="A" pin="13" pad="13"/>
-<connect gate="A" pin="14" pad="14"/>
-<connect gate="A" pin="15" pad="15"/>
-<connect gate="A" pin="16" pad="16"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-<connect gate="A" pin="7" pad="7"/>
-<connect gate="A" pin="8" pad="8"/>
-<connect gate="A" pin="9" pad="9"/>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-13" pin="S" pad="13"/>
+<connect gate="-14" pin="S" pad="14"/>
+<connect gate="-15" pin="S" pad="15"/>
+<connect gate="-16" pin="S" pad="16"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22481/2"/>
@@ -17941,22 +17956,22 @@ Source: http://www.commcon.com/main</description>
 </device>
 <device name="/90" package="2X08/90">
 <connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="10" pad="10"/>
-<connect gate="A" pin="11" pad="11"/>
-<connect gate="A" pin="12" pad="12"/>
-<connect gate="A" pin="13" pad="13"/>
-<connect gate="A" pin="14" pad="14"/>
-<connect gate="A" pin="15" pad="15"/>
-<connect gate="A" pin="16" pad="16"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-<connect gate="A" pin="7" pad="7"/>
-<connect gate="A" pin="8" pad="8"/>
-<connect gate="A" pin="9" pad="9"/>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-11" pin="S" pad="11"/>
+<connect gate="-12" pin="S" pad="12"/>
+<connect gate="-13" pin="S" pad="13"/>
+<connect gate="-14" pin="S" pad="14"/>
+<connect gate="-15" pin="S" pad="15"/>
+<connect gate="-16" pin="S" pad="16"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22488/2"/>
