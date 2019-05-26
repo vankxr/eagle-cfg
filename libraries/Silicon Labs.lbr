@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -885,7 +885,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SI446X" prefix="U">
+<deviceset name="SI446*" prefix="U">
 <gates>
 <gate name="G$1" symbol="SI446X" x="0" y="0"/>
 </gates>
@@ -914,7 +914,7 @@
 <connect gate="G$1" pin="XOUT" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="3"/>
 </technologies>
 </device>
 </devices>

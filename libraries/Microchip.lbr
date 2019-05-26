@@ -1074,7 +1074,7 @@
 <package name="DFN10">
 <smd name="1" x="-1.25" y="1" dx="0.6" dy="0.25" layer="1"/>
 <text x="-3.048" y="3.048" size="1.27" layer="25">&gt;NAME</text>
-<circle x="-2.114" y="1.783" radius="0.3" width="0" layer="21"/>
+<circle x="-1.606" y="1.656" radius="0.2032" width="0" layer="21"/>
 <smd name="11" x="0" y="0" dx="1.9" dy="1.2" layer="1" rot="R270"/>
 <wire x1="1.25" y1="1.25" x2="1.25" y2="-1.25" width="0.127" layer="51"/>
 <wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.127" layer="51"/>
@@ -1962,7 +1962,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP3421" prefix="U">
+<deviceset name="MCP3421-A*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP3421" x="0" y="0"/>
 </gates>
@@ -1977,7 +1977,10 @@
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
+<technology name="2"/>
+<technology name="3"/>
 </technologies>
 </device>
 </devices>
@@ -2022,7 +2025,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP9802" prefix="U">
+<deviceset name="MCP9802-A*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP9802" x="0" y="0"/>
 </gates>
@@ -2036,7 +2039,10 @@
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
+<technology name="2"/>
+<technology name="3"/>
 </technologies>
 </device>
 </devices>
@@ -2107,7 +2113,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC39101" prefix="U">
+<deviceset name="MIC39101-*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MIC39101" x="0" y="0"/>
 </gates>
@@ -2124,7 +2130,10 @@
 <connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="1.8"/>
+<technology name="2.5"/>
+<technology name="3.3"/>
+<technology name="5.0"/>
 </technologies>
 </device>
 </devices>
@@ -2146,7 +2155,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP1700-330" prefix="U">
+<deviceset name="MCP1700-*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP170X" x="0" y="0"/>
 </gates>
@@ -2158,12 +2167,14 @@
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="250"/>
+<technology name="280"/>
+<technology name="330"/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP1700-280" prefix="U">
+<deviceset name="MCP1702-*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP170X" x="0" y="0"/>
 </gates>
@@ -2175,12 +2186,12 @@
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="330"/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP1700-250" prefix="U">
+<deviceset name="MCP1703-*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP170X" x="0" y="0"/>
 </gates>
@@ -2192,41 +2203,7 @@
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP1702-330" prefix="U">
-<gates>
-<gate name="G$1" symbol="MCP170X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCP1703-330" prefix="U">
-<gates>
-<gate name="G$1" symbol="MCP170X" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="330"/>
 </technologies>
 </device>
 </devices>
@@ -2537,7 +2514,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC2019" prefix="U">
+<deviceset name="MIC20*9" prefix="U">
 <gates>
 <gate name="G$1" symbol="MIC20X9" x="0" y="0"/>
 </gates>
@@ -2552,12 +2529,13 @@
 <connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC2018" prefix="U">
+<deviceset name="MIC20*8" prefix="U">
 <gates>
 <gate name="G$1" symbol="MIC20X7/8" x="0" y="0"/>
 </gates>
@@ -2572,12 +2550,13 @@
 <connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC2017" prefix="U">
+<deviceset name="MIC20*7" prefix="U">
 <gates>
 <gate name="G$1" symbol="MIC20X7/8" x="0" y="0"/>
 </gates>
@@ -2592,12 +2571,13 @@
 <connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC2015" prefix="U">
+<deviceset name="MIC20*5" prefix="U">
 <gates>
 <gate name="G$1" symbol="MIC20X5" x="0" y="0"/>
 </gates>
@@ -2612,12 +2592,13 @@
 <connect gate="G$1" pin="VOUT" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC2016" prefix="U">
+<deviceset name="MIC20*6" prefix="U">
 <gates>
 <gate name="G$1" symbol="MIC20X6" x="0" y="0"/>
 </gates>
@@ -2632,7 +2613,8 @@
 <connect gate="G$1" pin="VUVLO" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
 </technologies>
 </device>
 </devices>
@@ -2803,7 +2785,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP73832" prefix="U">
+<deviceset name="MCP7383*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP7383X" x="0" y="0"/>
 </gates>
@@ -2817,7 +2799,8 @@
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="1"/>
+<technology name="2"/>
 </technologies>
 </device>
 </devices>
@@ -3100,7 +3083,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP1631X" prefix="U">
+<deviceset name="MCP1631*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP1631X" x="0" y="0"/>
 </gates>
@@ -3117,7 +3100,8 @@
 <connect gate="G$1" pin="VIN" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="1"/>
+<technology name="2"/>
 </technologies>
 </device>
 </devices>
