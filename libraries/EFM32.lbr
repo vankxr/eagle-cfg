@@ -71,7 +71,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -4363,7 +4363,7 @@
 <vertex x="-3.5" y="3.5"/>
 </polygon>
 </package>
-<package name="QFN32">
+<package name="QFN32_0.5P">
 <smd name="33" x="0" y="0" dx="3.5" dy="3.5" layer="1" cream="no"/>
 <smd name="9" x="-1.75" y="-2.43" dx="0.26" dy="0.86" layer="1" rot="R180"/>
 <wire x1="-2.5" y1="-2.1" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
@@ -4478,6 +4478,56 @@
 <wire x1="3.5" y1="-3.5" x2="3.1" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="-3.1" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
 <wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-3.1" width="0.127" layer="21"/>
+</package>
+<package name="QFN32_0.4P">
+<smd name="33" x="0" y="0" dx="2.8" dy="2.8" layer="1" cream="no"/>
+<text x="-2" y="3.3" size="0.6096" layer="25">&gt;NAME</text>
+<wire x1="-2" y1="-2" x2="2" y2="-2" width="0.127" layer="51"/>
+<wire x1="2" y1="-2" x2="2" y2="2" width="0.127" layer="51"/>
+<wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="51"/>
+<wire x1="-2" y1="2" x2="-2" y2="-2" width="0.127" layer="51"/>
+<circle x="-2.712" y="2.266" radius="0.3" width="0" layer="21"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="31"/>
+<smd name="1" x="-1.985" y="1.4" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="2" x="-1.985" y="1" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="3" x="-1.985" y="0.6" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="4" x="-1.985" y="0.2" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="5" x="-1.985" y="-0.2" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="6" x="-1.985" y="-0.6" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="7" x="-1.985" y="-1" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="8" x="-1.985" y="-1.4" dx="0.22" dy="0.76" layer="1" rot="R90"/>
+<smd name="9" x="-1.4" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="10" x="-1" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="11" x="-0.6" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="12" x="-0.2" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="13" x="0.2" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="14" x="0.6" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="15" x="1" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="16" x="1.4" y="-1.985" dx="0.22" dy="0.76" layer="1" rot="R180"/>
+<smd name="17" x="1.985" y="-1.4" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="18" x="1.985" y="-1" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="19" x="1.985" y="-0.6" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="20" x="1.985" y="-0.2" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="21" x="1.985" y="0.2" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="22" x="1.985" y="0.6" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="23" x="1.985" y="1" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="24" x="1.985" y="1.4" dx="0.22" dy="0.76" layer="1" rot="R270"/>
+<smd name="25" x="1.4" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="26" x="1" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="27" x="0.6" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="28" x="0.2" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="29" x="-0.2" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="30" x="-0.6" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="31" x="-1" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<smd name="32" x="-1.4" y="1.985" dx="0.22" dy="0.76" layer="1"/>
+<wire x1="1.7" y1="-2" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="2" y1="1.7" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="1.7" y2="2" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="2" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-2" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.7" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-1.7" y2="-2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5547,6 +5597,91 @@
 <pin name="PC8" x="-38.1" y="-66.04" length="middle"/>
 <pin name="PC9" x="-38.1" y="-68.58" length="middle"/>
 </symbol>
+<symbol name="EFR32MG21_QFN32">
+<pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
+<pin name="PA1" x="-38.1" y="-5.08" length="middle"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="0" x2="-33.02" y2="-129.54" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-129.54" x2="0" y2="-129.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-129.54" width="0.254" layer="94"/>
+<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-30.734" y="-61.722" size="1.5" layer="100">PC6</text>
+<text x="-30.734" y="-76.962" size="1.5" layer="100">PC12</text>
+<text x="-30.734" y="-79.502" size="1.5" layer="100">PC13</text>
+<text x="-30.734" y="-82.042" size="1.5" layer="100">PC14</text>
+<text x="-30.734" y="-84.582" size="1.5" layer="100">PC15</text>
+<pin name="!RESET" x="-38.1" y="-106.68" length="middle"/>
+<pin name="IOVDD0@0" x="-38.1" y="-127" length="middle"/>
+<pin name="AVDD" x="-38.1" y="-116.84" length="middle"/>
+<pin name="DVDD" x="-38.1" y="-121.92" length="middle"/>
+<pin name="DECOUPLE" x="5.08" y="-114.3" length="middle" rot="R180"/>
+<pin name="VSS@0" x="5.08" y="-127" length="middle" rot="R180"/>
+<text x="-30.734" y="-21.082" size="1.5" layer="100">PA7</text>
+<text x="-30.734" y="-26.162" size="1.5" layer="100">PA9</text>
+<text x="-30.734" y="-28.702" size="1.5" layer="100">PA10</text>
+<text x="-30.734" y="-31.242" size="1.5" layer="100">PA11</text>
+<text x="-30.734" y="-36.322" size="1.5" layer="100">PA13</text>
+<text x="-30.734" y="-41.402" size="1.5" layer="100">PA15</text>
+<text x="-30.734" y="-71.882" size="1.5" layer="100">PC10</text>
+<text x="-30.734" y="-74.422" size="1.5" layer="100">PC11</text>
+<text x="-30.734" y="-69.342" size="1.5" layer="100">PC9</text>
+<text x="-30.734" y="-66.802" size="1.5" layer="100">PC8</text>
+<text x="-30.734" y="-64.262" size="1.5" layer="100">PC7</text>
+<text x="-2.54" y="-28.702" size="1.5" layer="100" align="bottom-right">PB10</text>
+<text x="-2.54" y="-26.162" size="1.5" layer="100" align="bottom-right">PB9</text>
+<text x="-2.54" y="-8.382" size="1.5" layer="100" align="bottom-right">PB2</text>
+<text x="-2.54" y="-64.262" size="1.5" layer="100" align="bottom-right">PD7</text>
+<text x="-2.54" y="-66.802" size="1.5" layer="100" align="bottom-right">PD8</text>
+<text x="-2.54" y="-61.722" size="1.5" layer="100" align="bottom-right">PD6</text>
+<text x="-2.54" y="-59.182" size="1.5" layer="100" align="bottom-right">PD5</text>
+<text x="-2.54" y="-79.502" size="1.5" layer="100" align="bottom-right">PD13</text>
+<text x="-2.54" y="-76.962" size="1.5" layer="100" align="bottom-right">PD12</text>
+<text x="-2.54" y="-74.422" size="1.5" layer="100" align="bottom-right">PD11</text>
+<text x="-2.54" y="-71.882" size="1.5" layer="100" align="bottom-right">PD10</text>
+<text x="-2.54" y="-69.342" size="1.5" layer="100" align="bottom-right">PD9</text>
+<text x="-2.54" y="-10.922" size="1.5" layer="100" align="bottom-right">PB3</text>
+<text x="-2.54" y="-13.462" size="1.5" layer="100" align="bottom-right">PB4</text>
+<text x="-2.54" y="-16.002" size="1.5" layer="100" align="bottom-right">PB5</text>
+<text x="-2.54" y="-18.542" size="1.5" layer="100" align="bottom-right">PB6</text>
+<text x="-2.54" y="-21.082" size="1.5" layer="100" align="bottom-right">PB7</text>
+<text x="-2.54" y="-23.622" size="1.5" layer="100" align="bottom-right">PB8</text>
+<text x="-30.734" y="-38.862" size="1.5" layer="100">PA14</text>
+<text x="-30.734" y="-33.782" size="1.5" layer="100">PA12</text>
+<text x="-30.734" y="-23.622" size="1.5" layer="100">PA8</text>
+<pin name="HFXTAL_O" x="5.08" y="-96.52" length="middle" rot="R180"/>
+<pin name="HFXTAL_I" x="5.08" y="-93.98" length="middle" rot="R180"/>
+<pin name="RFVDD" x="-38.1" y="-114.3" length="middle"/>
+<pin name="PC0" x="-38.1" y="-45.72" length="middle"/>
+<pin name="PC1" x="-38.1" y="-48.26" length="middle"/>
+<pin name="PC2" x="-38.1" y="-50.8" length="middle"/>
+<pin name="PC3" x="-38.1" y="-53.34" length="middle"/>
+<pin name="PC4" x="-38.1" y="-55.88" length="middle"/>
+<pin name="PC5" x="-38.1" y="-58.42" length="middle"/>
+<pin name="PB1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<text x="-2.54" y="-41.402" size="1.5" layer="100" align="bottom-right">PB15</text>
+<text x="-2.54" y="-38.862" size="1.5" layer="100" align="bottom-right">PB14</text>
+<text x="-2.54" y="-31.242" size="1.5" layer="100" align="bottom-right">PB11</text>
+<text x="-2.54" y="-33.782" size="1.5" layer="100" align="bottom-right">PB12</text>
+<text x="-2.54" y="-36.322" size="1.5" layer="100" align="bottom-right">PB13</text>
+<pin name="PA2" x="-38.1" y="-7.62" length="middle"/>
+<pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
+<pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
+<pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
+<pin name="PA6" x="-38.1" y="-17.78" length="middle"/>
+<pin name="PD1" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="PD2" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="PD3" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="PD4" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="PD0" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<text x="-2.54" y="-84.582" size="1.5" layer="100" align="bottom-right">PD15</text>
+<text x="-2.54" y="-82.042" size="1.5" layer="100" align="bottom-right">PD14</text>
+<pin name="PAVDD" x="-38.1" y="-111.76" length="middle"/>
+<pin name="RFVSS" x="5.08" y="-124.46" length="middle" rot="R180"/>
+<pin name="RF2G4_IO1" x="-38.1" y="-93.98" length="middle"/>
+<pin name="RF2G4_IO2" x="-38.1" y="-96.52" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="EFM32GG11B8*Q100" prefix="U">
@@ -6143,7 +6278,7 @@
 <gate name="G$1" symbol="EFM32XG1B100_QFN32" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN32">
+<device name="" package="QFN32_0.5P">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="9"/>
 <connect gate="G$1" pin="AVDD@0" pad="22"/>
@@ -6192,7 +6327,7 @@
 <gate name="G$1" symbol="EFM32XG1B200_QFN32" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN32">
+<device name="" package="QFN32_0.5P">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="8"/>
 <connect gate="G$1" pin="AVDD@0" pad="22"/>
@@ -6300,7 +6435,7 @@
 <gate name="G$1" symbol="EFM32XG1B100_QFN32" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN32">
+<device name="" package="QFN32_0.5P">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="9"/>
 <connect gate="G$1" pin="AVDD@0" pad="22"/>
@@ -6409,7 +6544,7 @@
 <gate name="G$1" symbol="EFM32XG1B200_QFN32" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN32">
+<device name="" package="QFN32_0.5P">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="8"/>
 <connect gate="G$1" pin="AVDD@0" pad="22"/>
@@ -6448,6 +6583,58 @@
 <technology name="128G"/>
 <technology name="256G"/>
 <technology name="256I"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EFR32MG21A0*IM32" prefix="U">
+<gates>
+<gate name="G$1" symbol="EFR32MG21_QFN32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN32_0.4P">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="9"/>
+<connect gate="G$1" pin="AVDD" pad="26"/>
+<connect gate="G$1" pin="DECOUPLE" pad="24"/>
+<connect gate="G$1" pin="DVDD" pad="25"/>
+<connect gate="G$1" pin="HFXTAL_I" pad="7"/>
+<connect gate="G$1" pin="HFXTAL_O" pad="8"/>
+<connect gate="G$1" pin="IOVDD0@0" pad="27"/>
+<connect gate="G$1" pin="PA0" pad="17"/>
+<connect gate="G$1" pin="PA1" pad="18"/>
+<connect gate="G$1" pin="PA2" pad="19"/>
+<connect gate="G$1" pin="PA3" pad="20"/>
+<connect gate="G$1" pin="PA4" pad="21"/>
+<connect gate="G$1" pin="PA5" pad="22"/>
+<connect gate="G$1" pin="PA6" pad="23"/>
+<connect gate="G$1" pin="PAVDD" pad="14"/>
+<connect gate="G$1" pin="PB0" pad="16"/>
+<connect gate="G$1" pin="PB1" pad="15"/>
+<connect gate="G$1" pin="PC0" pad="1"/>
+<connect gate="G$1" pin="PC1" pad="2"/>
+<connect gate="G$1" pin="PC2" pad="3"/>
+<connect gate="G$1" pin="PC3" pad="4"/>
+<connect gate="G$1" pin="PC4" pad="5"/>
+<connect gate="G$1" pin="PC5" pad="6"/>
+<connect gate="G$1" pin="PD0" pad="32"/>
+<connect gate="G$1" pin="PD1" pad="31"/>
+<connect gate="G$1" pin="PD2" pad="30"/>
+<connect gate="G$1" pin="PD3" pad="29"/>
+<connect gate="G$1" pin="PD4" pad="28"/>
+<connect gate="G$1" pin="RF2G4_IO1" pad="13"/>
+<connect gate="G$1" pin="RF2G4_IO2" pad="12"/>
+<connect gate="G$1" pin="RFVDD" pad="10"/>
+<connect gate="G$1" pin="RFVSS" pad="11"/>
+<connect gate="G$1" pin="VSS@0" pad="33"/>
+</connects>
+<technologies>
+<technology name="10F1024"/>
+<technology name="10F512"/>
+<technology name="10F768"/>
+<technology name="20F1024"/>
+<technology name="20F512"/>
+<technology name="20F768"/>
 </technologies>
 </device>
 </devices>
