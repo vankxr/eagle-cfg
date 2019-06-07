@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -920,14 +920,6 @@
 <smd name="2" x="0" y="-2" dx="1" dy="5.5" layer="1"/>
 </package>
 <package name="PH-03-SIDE">
-<description>&lt;h3&gt;JST 3 Pin Right Angle SMT&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:3&lt;/li&gt;
-&lt;li&gt;Pin pitch:2mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-4.99" y1="-2.07" x2="-4.99" y2="-5.57" width="0.2032" layer="21"/>
 <wire x1="-4.99" y1="-5.57" x2="-4.19" y2="-5.57" width="0.2032" layer="21"/>
 <wire x1="-4.19" y1="-5.57" x2="-4.19" y2="-3.07" width="0.2032" layer="21"/>
@@ -944,6 +936,42 @@
 <smd name="2" x="0.01" y="-4.77" dx="1" dy="4.6" layer="1"/>
 <text x="-1.397" y="0.635" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="XH-04-TOP-TH">
+<pad name="2" x="1.25" y="0" drill="1" diameter="2"/>
+<pad name="1" x="3.75" y="0" drill="1" diameter="2"/>
+<pad name="3" x="-1.25" y="0" drill="1" diameter="2"/>
+<pad name="4" x="-3.75" y="0" drill="1" diameter="2"/>
+<wire x1="6.2" y1="-2.35" x2="6.2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-2.35" x2="-4.55" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-2.35" x2="2.95" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="4.55" y1="-2.35" x2="6.2" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="-2.35" x2="-6.2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="3.4" x2="6.2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-4.55" y1="-2.35" x2="-4.55" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-4.55" y1="-1.6" x2="-2.95" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.95" y1="-1.6" x2="-2.95" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-2.35" x2="2.95" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.95" y1="-1.6" x2="4.55" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="4.55" y1="-1.6" x2="4.55" y2="-2.35" width="0.127" layer="21"/>
+<text x="-6.2" y="3.7" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="XH-02-TOP-TH">
+<pad name="2" x="-1.25" y="0" drill="1" diameter="2"/>
+<pad name="1" x="1.25" y="0" drill="1" diameter="2"/>
+<wire x1="3.7" y1="-2.35" x2="3.7" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-2.35" x2="-2.05" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-2.35" x2="0.45" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-2.35" x2="3.7" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-2.35" x2="-3.7" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="3.4" x2="3.7" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-2.35" x2="-2.05" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-1.6" x2="-0.45" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-1.6" x2="-0.45" y2="-2.35" width="0.127" layer="21"/>
+<wire x1="0.45" y1="-2.35" x2="0.45" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.45" y1="-1.6" x2="2.05" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-1.6" x2="2.05" y2="-2.35" width="0.127" layer="21"/>
+<text x="-3.7" y="3.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -986,6 +1014,15 @@
 </technologies>
 </device>
 <device name="-PH-TOP" package="PH-02-TOP">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-XH-TOP-TH" package="XH-02-TOP-TH">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
@@ -1069,6 +1106,17 @@
 </technologies>
 </device>
 <device name="-SH-TOP" package="SH-04-TOP">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-XH-TOP-TH" package="XH-04-TOP-TH">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>

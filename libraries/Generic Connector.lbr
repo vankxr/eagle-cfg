@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -359,7 +359,7 @@
 <wire x1="5" y1="-2" x2="5" y2="-3.2" width="0.127" layer="21"/>
 <wire x1="5" y1="-2" x2="-5" y2="-2" width="0.127" layer="21"/>
 <text x="0" y="-3" size="0.8128" layer="51" align="bottom-center">FRONT</text>
-<text x="-5" y="5" size="0.8128" layer="21">&gt;NAME</text>
+<text x="-5" y="5" size="0.8128" layer="25">&gt;NAME</text>
 </package>
 <package name="KF301-3P">
 <pad name="2" x="0" y="0" drill="1.2" diameter="2.5" rot="R180"/>
