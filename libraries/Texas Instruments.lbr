@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -377,6 +377,53 @@
 <smd name="9" x="2.2" y="0.5" dx="1.45" dy="0.3" layer="1"/>
 <smd name="10" x="2.2" y="1" dx="1.45" dy="0.3" layer="1"/>
 </package>
+<package name="WQFN30">
+<smd name="1" x="-1.25" y="1.8" dx="0.4" dy="0.2" layer="1"/>
+<circle x="-1.896" y="2.522" radius="0.2" width="0" layer="21"/>
+<wire x1="-1.3" y1="2.1" x2="-1.3" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="2.3" x2="-1.1" y2="2.3" width="0.127" layer="21"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<smd name="2" x="-1.2" y="1.4" dx="0.5" dy="0.2" layer="1"/>
+<smd name="3" x="-1.2" y="1" dx="0.5" dy="0.2" layer="1"/>
+<smd name="4" x="-1.2" y="0.6" dx="0.5" dy="0.2" layer="1"/>
+<smd name="5" x="-1.2" y="0.2" dx="0.5" dy="0.2" layer="1"/>
+<smd name="6" x="-1.2" y="-0.2" dx="0.5" dy="0.2" layer="1"/>
+<smd name="7" x="-1.2" y="-0.6" dx="0.5" dy="0.2" layer="1"/>
+<smd name="8" x="-1.2" y="-1" dx="0.5" dy="0.2" layer="1"/>
+<smd name="9" x="-1.2" y="-1.4" dx="0.5" dy="0.2" layer="1"/>
+<smd name="10" x="-1.25" y="-1.8" dx="0.4" dy="0.2" layer="1"/>
+<smd name="11" x="-0.8" y="-2.25" dx="0.4" dy="0.2" layer="1" rot="R90"/>
+<smd name="12" x="-0.4" y="-2.2" dx="0.5" dy="0.2" layer="1" rot="R90"/>
+<smd name="13" x="0" y="-2.2" dx="0.5" dy="0.2" layer="1" rot="R90"/>
+<smd name="14" x="0.4" y="-2.2" dx="0.5" dy="0.2" layer="1" rot="R90"/>
+<smd name="15" x="0.8" y="-2.25" dx="0.4" dy="0.2" layer="1" rot="R90"/>
+<smd name="16" x="1.25" y="-1.8" dx="0.4" dy="0.2" layer="1" rot="R180"/>
+<smd name="17" x="1.2" y="-1.4" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="18" x="1.2" y="-1" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="19" x="1.2" y="-0.6" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="20" x="1.2" y="-0.2" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="21" x="1.2" y="0.2" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="22" x="1.2" y="0.6" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="23" x="1.2" y="1" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="24" x="1.2" y="1.4" dx="0.5" dy="0.2" layer="1" rot="R180"/>
+<smd name="25" x="1.25" y="1.8" dx="0.4" dy="0.2" layer="1" rot="R180"/>
+<smd name="26" x="0.8" y="2.25" dx="0.4" dy="0.2" layer="1" rot="R270"/>
+<smd name="27" x="0.4" y="2.2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="28" x="0" y="2.2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="29" x="-0.4" y="2.2" dx="0.5" dy="0.2" layer="1" rot="R270"/>
+<smd name="30" x="-0.8" y="2.25" dx="0.4" dy="0.2" layer="1" rot="R270"/>
+<smd name="31" x="0" y="0" dx="3.2" dy="1.2" layer="1" rot="R270"/>
+<wire x1="-1.3" y1="2.3" x2="1.3" y2="2.3" width="0.127" layer="51"/>
+<wire x1="1.3" y1="2.3" x2="1.3" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="1.3" y1="-2.3" x2="-1.3" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="-1.3" y1="-2.3" x2="-1.3" y2="2.3" width="0.127" layer="51"/>
+<wire x1="1.1" y1="2.3" x2="1.3" y2="2.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="2.3" x2="1.3" y2="2.1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-2.1" x2="1.3" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-2.3" x2="1.1" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-2.3" x2="-1.3" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-2.3" x2="-1.3" y2="-2.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TLV733XX">
@@ -510,6 +557,43 @@
 <pin name="VDD@1" x="-25.4" y="-5.08" length="middle"/>
 <pin name="EN" x="-25.4" y="-10.16" length="middle"/>
 <pin name="IN/TRIG" x="-25.4" y="-12.7" length="middle"/>
+</symbol>
+<symbol name="HD3SS3220">
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="0" y1="-78.74" x2="-33.02" y2="-78.74" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-78.74" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<pin name="CC2" x="-38.1" y="-17.78" length="middle"/>
+<pin name="CC1" x="-38.1" y="-15.24" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VCC33" x="-38.1" y="-2.54" length="middle"/>
+<pin name="GND" x="-38.1" y="-76.2" length="middle"/>
+<pin name="TX+" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="TX-" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="TX1+" x="-38.1" y="-33.02" length="middle"/>
+<pin name="TX1-" x="-38.1" y="-30.48" length="middle"/>
+<pin name="TX2+" x="-38.1" y="-45.72" length="middle"/>
+<pin name="TX2-" x="-38.1" y="-43.18" length="middle"/>
+<pin name="RX+" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="RX-" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="RX1+" x="-38.1" y="-27.94" length="middle"/>
+<pin name="RX1-" x="-38.1" y="-25.4" length="middle"/>
+<pin name="RX2+" x="-38.1" y="-40.64" length="middle"/>
+<pin name="RX2-" x="-38.1" y="-38.1" length="middle"/>
+<pin name="VDD5" x="-38.1" y="-5.08" length="middle"/>
+<pin name="PORT" x="-38.1" y="-55.88" length="middle"/>
+<pin name="ADDR" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="!EN_CC" x="-38.1" y="-66.04" length="middle"/>
+<pin name="SDA/OUT1" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="SCL/OUT2" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="!INT!/OUT3" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="!EN_MUX" x="-38.1" y="-68.58" length="middle"/>
+<pin name="DIR" x="5.08" y="-66.04" length="middle" rot="R180"/>
+<pin name="!VCONN_FAULT" x="5.08" y="-76.2" length="middle" rot="R180"/>
+<pin name="ID" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="CURRENT_MODE" x="-38.1" y="-58.42" length="middle"/>
+<pin name="VBUS_DET" x="-38.1" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -716,6 +800,49 @@
 <connect gate="G$1" pin="SDA" pad="3"/>
 <connect gate="G$1" pin="VDD@0" pad="10"/>
 <connect gate="G$1" pin="VDD@1" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HD3SS3220" prefix="U">
+<gates>
+<gate name="G$1" symbol="HD3SS3220" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WQFN30">
+<connects>
+<connect gate="G$1" pin="!EN_CC" pad="29"/>
+<connect gate="G$1" pin="!EN_MUX" pad="12"/>
+<connect gate="G$1" pin="!INT!/OUT3" pad="23"/>
+<connect gate="G$1" pin="!VCONN_FAULT" pad="24"/>
+<connect gate="G$1" pin="ADDR" pad="22"/>
+<connect gate="G$1" pin="CC1" pad="2"/>
+<connect gate="G$1" pin="CC2" pad="1"/>
+<connect gate="G$1" pin="CURRENT_MODE" pad="3"/>
+<connect gate="G$1" pin="DIR" pad="11"/>
+<connect gate="G$1" pin="GND" pad="13 28 31"/>
+<connect gate="G$1" pin="ID" pad="27"/>
+<connect gate="G$1" pin="PORT" pad="4"/>
+<connect gate="G$1" pin="RX+" pad="9"/>
+<connect gate="G$1" pin="RX-" pad="10"/>
+<connect gate="G$1" pin="RX1+" pad="15"/>
+<connect gate="G$1" pin="RX1-" pad="14"/>
+<connect gate="G$1" pin="RX2+" pad="19"/>
+<connect gate="G$1" pin="RX2-" pad="18"/>
+<connect gate="G$1" pin="SCL/OUT2" pad="26"/>
+<connect gate="G$1" pin="SDA/OUT1" pad="25"/>
+<connect gate="G$1" pin="TX+" pad="6"/>
+<connect gate="G$1" pin="TX-" pad="7"/>
+<connect gate="G$1" pin="TX1+" pad="17"/>
+<connect gate="G$1" pin="TX1-" pad="16"/>
+<connect gate="G$1" pin="TX2+" pad="21"/>
+<connect gate="G$1" pin="TX2-" pad="20"/>
+<connect gate="G$1" pin="VBUS_DET" pad="5"/>
+<connect gate="G$1" pin="VCC33" pad="8"/>
+<connect gate="G$1" pin="VDD5" pad="30"/>
 </connects>
 <technologies>
 <technology name=""/>
