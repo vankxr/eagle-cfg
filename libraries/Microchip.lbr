@@ -3589,7 +3589,7 @@
 <gate name="G$1" symbol="LAN7800" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SQFN48">
+<device name="-Y9X" package="SQFN48">
 <connects>
 <connect gate="G$1" pin="!PME!/GPIO4" pad="22"/>
 <connect gate="G$1" pin="!RESET!/PME_CLEAR" pad="35"/>
