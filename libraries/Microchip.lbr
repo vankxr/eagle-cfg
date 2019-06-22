@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2247,6 +2247,28 @@
 <pin name="GPIO3" x="5.08" y="-152.4" length="middle" rot="R180"/>
 <pin name="GPIO69" x="5.08" y="-215.9" length="middle" rot="R180"/>
 </symbol>
+<symbol name="MCP3424">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="0" y1="-48.26" x2="-20.32" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-48.26" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="-25.4" y="-2.54" length="middle"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VSS" x="-25.4" y="-45.72" length="middle"/>
+<pin name="SCL" x="-25.4" y="-15.24" length="middle"/>
+<pin name="SDA" x="-25.4" y="-17.78" length="middle"/>
+<pin name="A0" x="-25.4" y="-30.48" length="middle"/>
+<pin name="CH1+" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="CH1-" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="A1" x="-25.4" y="-33.02" length="middle"/>
+<pin name="CH2+" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="CH2-" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="CH3+" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="CH3-" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="CH4+" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="CH4-" x="5.08" y="-45.72" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -3749,6 +3771,34 @@
 <connect gate="G$1" pin="VSS" pad="101"/>
 <connect gate="G$1" pin="XTALI/CLKIN" pad="3"/>
 <connect gate="G$1" pin="XTALO" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP3424" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP3424" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP14">
+<connects>
+<connect gate="G$1" pin="A0" pad="9"/>
+<connect gate="G$1" pin="A1" pad="10"/>
+<connect gate="G$1" pin="CH1+" pad="1"/>
+<connect gate="G$1" pin="CH1-" pad="2"/>
+<connect gate="G$1" pin="CH2+" pad="3"/>
+<connect gate="G$1" pin="CH2-" pad="4"/>
+<connect gate="G$1" pin="CH3+" pad="11"/>
+<connect gate="G$1" pin="CH3-" pad="12"/>
+<connect gate="G$1" pin="CH4+" pad="13"/>
+<connect gate="G$1" pin="CH4-" pad="14"/>
+<connect gate="G$1" pin="SCL" pad="8"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="G$1" pin="VSS" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
