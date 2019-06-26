@@ -78,7 +78,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="NonViaHole" color="7" fill="1" visible="no" active="yes"/>
+<layer number="100" name="NotConnected" color="52" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="PlacementGuide" color="7" fill="1" visible="no" active="yes"/>
 <layer number="102" name="TopSilkscreen" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="not_populated" color="7" fill="1" visible="no" active="yes"/>
@@ -255,70 +255,88 @@
 </packages>
 <symbols>
 <symbol name="MTXDOT-EU1/NA1-A00-1">
-<pin name="GND@0" x="-55.88" y="-106.68" length="middle"/>
-<pin name="RFU1" x="5.08" y="-88.9" length="middle" rot="R180"/>
-<pin name="VDD(@0" x="-55.88" y="-2.54" length="middle"/>
-<pin name="VDD@1" x="-55.88" y="-5.08" length="middle"/>
-<pin name="GND@1" x="-55.88" y="-104.14" length="middle"/>
-<pin name="RFU2" x="5.08" y="-91.44" length="middle" rot="R180"/>
-<pin name="RFU3" x="5.08" y="-93.98" length="middle" rot="R180"/>
-<pin name="RFU4" x="5.08" y="-96.52" length="middle" rot="R180"/>
-<pin name="!SPI_SS" x="5.08" y="-53.34" length="middle" rot="R180"/>
-<pin name="SPI_SCK" x="5.08" y="-50.8" length="middle" rot="R180"/>
-<pin name="SPI_MOSI" x="5.08" y="-48.26" length="middle" rot="R180"/>
-<pin name="SPI_MISO" x="5.08" y="-45.72" length="middle" rot="R180"/>
-<pin name="UART1_TX" x="5.08" y="-35.56" length="middle" rot="R180"/>
-<pin name="UART1_RX" x="5.08" y="-33.02" length="middle" rot="R180"/>
-<pin name="UART0_TX" x="5.08" y="-27.94" length="middle" rot="R180"/>
-<pin name="UART0_RX" x="5.08" y="-25.4" length="middle" rot="R180"/>
-<pin name="GND@2" x="-55.88" y="-101.6" length="middle"/>
-<pin name="RFU5" x="5.08" y="-99.06" length="middle" rot="R180"/>
-<pin name="RFU6" x="5.08" y="-101.6" length="middle" rot="R180"/>
-<pin name="GND@3" x="-55.88" y="-99.06" length="middle"/>
-<pin name="RFU7" x="5.08" y="-104.14" length="middle" rot="R180"/>
-<pin name="RFU8" x="5.08" y="-106.68" length="middle" rot="R180"/>
-<pin name="GPIO3" x="5.08" y="-78.74" length="middle" rot="R180"/>
-<pin name="GPIO2" x="5.08" y="-76.2" length="middle" rot="R180"/>
-<pin name="GPIO1" x="5.08" y="-73.66" length="middle" rot="R180"/>
-<pin name="GPIO0" x="5.08" y="-71.12" length="middle" rot="R180"/>
-<pin name="I2C0_SCL" x="5.08" y="-60.96" length="middle" rot="R180"/>
-<pin name="I2C0_SDA" x="5.08" y="-58.42" length="middle" rot="R180"/>
-<pin name="SWCLK" x="-55.88" y="-27.94" length="middle"/>
-<pin name="SWDIO" x="-55.88" y="-30.48" length="middle"/>
-<pin name="UART1_RTS" x="5.08" y="-38.1" length="middle" rot="R180"/>
-<pin name="UART1_CTS" x="5.08" y="-40.64" length="middle" rot="R180"/>
-<pin name="!RESET" x="-55.88" y="-20.32" length="middle"/>
-<pin name="WAKE" x="-55.88" y="-15.24" length="middle"/>
-<pin name="GND@4" x="-55.88" y="-96.52" length="middle"/>
-<pin name="GND@5" x="-55.88" y="-93.98" length="middle"/>
-<pin name="ANT1" x="5.08" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND@6" x="-55.88" y="-91.44" length="middle"/>
-<pin name="GND@7" x="-55.88" y="-88.9" length="middle"/>
-<pin name="GND@8" x="-55.88" y="-86.36" length="middle"/>
-<pin name="GND@9" x="-55.88" y="-83.82" length="middle"/>
-<pin name="GND@10" x="-55.88" y="-81.28" length="middle"/>
-<pin name="GND@11" x="-55.88" y="-78.74" length="middle"/>
-<pin name="GND@12" x="-55.88" y="-76.2" length="middle"/>
-<pin name="GND@13" x="-55.88" y="-73.66" length="middle"/>
-<pin name="GND@14" x="-55.88" y="-71.12" length="middle"/>
-<pin name="ANT2" x="5.08" y="-12.7" length="middle" rot="R180"/>
-<pin name="GND@15" x="-55.88" y="-68.58" length="middle"/>
-<pin name="GND@16" x="-55.88" y="-66.04" length="middle"/>
-<pin name="GND@17" x="-55.88" y="-63.5" length="middle"/>
-<pin name="GND@18" x="-55.88" y="-60.96" length="middle"/>
-<pin name="GND@19" x="-55.88" y="-58.42" length="middle"/>
-<pin name="GND@20" x="-55.88" y="-55.88" length="middle"/>
-<pin name="GND@21" x="-55.88" y="-53.34" length="middle"/>
-<pin name="GND@22" x="-55.88" y="-50.8" length="middle"/>
-<pin name="GND@23" x="-55.88" y="-48.26" length="middle"/>
-<pin name="GND@24" x="-55.88" y="-45.72" length="middle"/>
-<pin name="GND@25" x="-55.88" y="-43.18" length="middle"/>
+<pin name="GND@0" x="-55.88" y="-129.54" length="middle"/>
+<pin name="RFU1" x="5.08" y="-111.76" length="middle" rot="R180"/>
+<pin name="VDD@0" x="-55.88" y="-48.26" length="middle"/>
+<pin name="VDD@1" x="-55.88" y="-50.8" length="middle"/>
+<pin name="GND@1" x="-55.88" y="-127" length="middle"/>
+<pin name="RFU2" x="5.08" y="-114.3" length="middle" rot="R180"/>
+<pin name="RFU3" x="5.08" y="-116.84" length="middle" rot="R180"/>
+<pin name="RFU4" x="5.08" y="-119.38" length="middle" rot="R180"/>
+<pin name="!SPI2_NSS!/PB13" x="5.08" y="-78.74" length="middle" rot="R180"/>
+<pin name="SPI2_SCK/PB12" x="5.08" y="-76.2" length="middle" rot="R180"/>
+<pin name="SPI2_MOSI/PB15" x="5.08" y="-83.82" length="middle" rot="R180"/>
+<pin name="SPI2_MISO/PB14" x="5.08" y="-81.28" length="middle" rot="R180"/>
+<pin name="USART1_TX/PA9" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="USART1_RX/PA10" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="USART2_TX/PA2" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="USART2_RX/PA3" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND@2" x="-55.88" y="-124.46" length="middle"/>
+<pin name="RFU5" x="5.08" y="-121.92" length="middle" rot="R180"/>
+<pin name="RFU6" x="5.08" y="-124.46" length="middle" rot="R180"/>
+<pin name="GND@3" x="-55.88" y="-121.92" length="middle"/>
+<pin name="RFU7" x="5.08" y="-127" length="middle" rot="R180"/>
+<pin name="RFU8" x="5.08" y="-129.54" length="middle" rot="R180"/>
+<pin name="GPIO3/PB2" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="GPIO2/PB0" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="GPIO1/PA5" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPIO0/PA4" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="I2C1_SCL/PB8" x="5.08" y="-66.04" length="middle" rot="R180"/>
+<pin name="I2C1_SDA/PB9" x="5.08" y="-68.58" length="middle" rot="R180"/>
+<pin name="SWCLK/PA14" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="SWDIO/PA13" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="USART1_RTS/PA12" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="USART1_CTS/PA11" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="!RESET" x="-55.88" y="-35.56" length="middle"/>
+<pin name="WAKE/PA0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND@4" x="-55.88" y="-119.38" length="middle"/>
+<pin name="GND@5" x="-55.88" y="-116.84" length="middle"/>
+<pin name="ANT1" x="-55.88" y="-2.54" length="middle"/>
+<pin name="GND@6" x="-55.88" y="-114.3" length="middle"/>
+<pin name="GND@7" x="-55.88" y="-111.76" length="middle"/>
+<pin name="GND@8" x="-55.88" y="-109.22" length="middle"/>
+<pin name="GND@9" x="-55.88" y="-106.68" length="middle"/>
+<pin name="GND@10" x="-55.88" y="-104.14" length="middle"/>
+<pin name="GND@11" x="-55.88" y="-101.6" length="middle"/>
+<pin name="GND@12" x="-55.88" y="-99.06" length="middle"/>
+<pin name="GND@13" x="-55.88" y="-96.52" length="middle"/>
+<pin name="GND@14" x="-55.88" y="-93.98" length="middle"/>
+<pin name="ANT2" x="-55.88" y="-15.24" length="middle"/>
+<pin name="GND@15" x="-55.88" y="-91.44" length="middle"/>
+<pin name="GND@16" x="-55.88" y="-88.9" length="middle"/>
+<pin name="GND@17" x="-55.88" y="-86.36" length="middle"/>
+<pin name="GND@18" x="-55.88" y="-83.82" length="middle"/>
+<pin name="GND@19" x="-55.88" y="-81.28" length="middle"/>
+<pin name="GND@20" x="-55.88" y="-78.74" length="middle"/>
+<pin name="GND@21" x="-55.88" y="-76.2" length="middle"/>
+<pin name="GND@22" x="-55.88" y="-73.66" length="middle"/>
+<pin name="GND@23" x="-55.88" y="-71.12" length="middle"/>
+<pin name="GND@24" x="-55.88" y="-68.58" length="middle"/>
+<pin name="GND@25" x="-55.88" y="-66.04" length="middle"/>
 <wire x1="-50.8" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-109.22" width="0.254" layer="94"/>
-<wire x1="0" y1="-109.22" x2="-50.8" y2="-109.22" width="0.254" layer="94"/>
-<wire x1="-50.8" y1="-109.22" x2="-50.8" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-132.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-132.08" x2="-50.8" y2="-132.08" width="0.254" layer="94"/>
+<wire x1="-50.8" y1="-132.08" x2="-50.8" y2="0" width="0.254" layer="94"/>
 <text x="-50.8" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-50.8" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="-18.542" size="1.5" layer="100" align="bottom-right">LORA_DIO0/PA6</text>
+<text x="-2.54" y="-21.082" size="1.5" layer="100" align="bottom-right">LORA_DIO1/PA7</text>
+<text x="-2.54" y="-23.622" size="1.5" layer="100" align="bottom-right">LORA_DIO2/PA8</text>
+<text x="-2.54" y="-5.842" size="1.5" layer="100" align="bottom-right">LORA_RESET/PA1</text>
+<text x="-2.54" y="-41.402" size="1.5" layer="100" align="bottom-right">!LORA_CS!/PA15</text>
+<text x="-2.54" y="-49.022" size="1.5" layer="100" align="bottom-right">LORA_DIO3/PB1</text>
+<text x="-2.54" y="-54.102" size="1.5" layer="100" align="bottom-right">LORA_SCK/PB3</text>
+<text x="-2.54" y="-56.642" size="1.5" layer="100" align="bottom-right">LORA_MISO/PB4</text>
+<text x="-2.54" y="-59.182" size="1.5" layer="100" align="bottom-right">LORA_MOSI/PB5</text>
+<text x="-2.54" y="-89.662" size="1.5" layer="100" align="bottom-right">LORA_DIO4/PC13</text>
+<text x="-2.54" y="-92.202" size="1.5" layer="100" align="bottom-right">OSC32_IN/PC14</text>
+<text x="-2.54" y="-94.742" size="1.5" layer="100" align="bottom-right">OSC32_OUT/PC15</text>
+<text x="-2.54" y="-99.822" size="1.5" layer="100" align="bottom-right">OSC_IN/PH0</text>
+<text x="-2.54" y="-102.362" size="1.5" layer="100" align="bottom-right">OSC_OUT/PH1</text>
+<text x="-2.54" y="-61.722" size="1.5" layer="100" align="bottom-right">PB6</text>
+<text x="-2.54" y="-64.262" size="1.5" layer="100" align="bottom-right">PB7</text>
+<text x="-2.54" y="-71.882" size="1.5" layer="100" align="bottom-right">PB10</text>
+<text x="-2.54" y="-74.422" size="1.5" layer="100" align="bottom-right">PB11</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -331,7 +349,7 @@
 <device name="" package="MTXDOT-XX1-A00-1">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="33"/>
-<connect gate="G$1" pin="!SPI_SS" pad="9"/>
+<connect gate="G$1" pin="!SPI2_NSS!/PB13" pad="9"/>
 <connect gate="G$1" pin="ANT1" pad="37"/>
 <connect gate="G$1" pin="ANT2" pad="47"/>
 <connect gate="G$1" pin="GND@0" pad="1"/>
@@ -360,12 +378,12 @@
 <connect gate="G$1" pin="GND@7" pad="39"/>
 <connect gate="G$1" pin="GND@8" pad="40"/>
 <connect gate="G$1" pin="GND@9" pad="41"/>
-<connect gate="G$1" pin="GPIO0" pad="26"/>
-<connect gate="G$1" pin="GPIO1" pad="25"/>
-<connect gate="G$1" pin="GPIO2" pad="24"/>
-<connect gate="G$1" pin="GPIO3" pad="23"/>
-<connect gate="G$1" pin="I2C0_SCL" pad="27"/>
-<connect gate="G$1" pin="I2C0_SDA" pad="28"/>
+<connect gate="G$1" pin="GPIO0/PA4" pad="26"/>
+<connect gate="G$1" pin="GPIO1/PA5" pad="25"/>
+<connect gate="G$1" pin="GPIO2/PB0" pad="24"/>
+<connect gate="G$1" pin="GPIO3/PB2" pad="23"/>
+<connect gate="G$1" pin="I2C1_SCL/PB8" pad="27"/>
+<connect gate="G$1" pin="I2C1_SDA/PB9" pad="28"/>
 <connect gate="G$1" pin="RFU1" pad="2"/>
 <connect gate="G$1" pin="RFU2" pad="6"/>
 <connect gate="G$1" pin="RFU3" pad="7"/>
@@ -374,20 +392,20 @@
 <connect gate="G$1" pin="RFU6" pad="19"/>
 <connect gate="G$1" pin="RFU7" pad="21"/>
 <connect gate="G$1" pin="RFU8" pad="22"/>
-<connect gate="G$1" pin="SPI_MISO" pad="12"/>
-<connect gate="G$1" pin="SPI_MOSI" pad="11"/>
-<connect gate="G$1" pin="SPI_SCK" pad="10"/>
-<connect gate="G$1" pin="SWCLK" pad="29"/>
-<connect gate="G$1" pin="SWDIO" pad="30"/>
-<connect gate="G$1" pin="UART0_RX" pad="16"/>
-<connect gate="G$1" pin="UART0_TX" pad="15"/>
-<connect gate="G$1" pin="UART1_CTS" pad="32"/>
-<connect gate="G$1" pin="UART1_RTS" pad="31"/>
-<connect gate="G$1" pin="UART1_RX" pad="14"/>
-<connect gate="G$1" pin="UART1_TX" pad="13"/>
-<connect gate="G$1" pin="VDD(@0" pad="3"/>
+<connect gate="G$1" pin="SPI2_MISO/PB14" pad="12"/>
+<connect gate="G$1" pin="SPI2_MOSI/PB15" pad="11"/>
+<connect gate="G$1" pin="SPI2_SCK/PB12" pad="10"/>
+<connect gate="G$1" pin="SWCLK/PA14" pad="29"/>
+<connect gate="G$1" pin="SWDIO/PA13" pad="30"/>
+<connect gate="G$1" pin="USART1_CTS/PA11" pad="32"/>
+<connect gate="G$1" pin="USART1_RTS/PA12" pad="31"/>
+<connect gate="G$1" pin="USART1_RX/PA10" pad="14"/>
+<connect gate="G$1" pin="USART1_TX/PA9" pad="13"/>
+<connect gate="G$1" pin="USART2_RX/PA3" pad="16"/>
+<connect gate="G$1" pin="USART2_TX/PA2" pad="15"/>
+<connect gate="G$1" pin="VDD@0" pad="3"/>
 <connect gate="G$1" pin="VDD@1" pad="4"/>
-<connect gate="G$1" pin="WAKE" pad="34"/>
+<connect gate="G$1" pin="WAKE/PA0" pad="34"/>
 </connects>
 <technologies>
 <technology name="EU"/>
