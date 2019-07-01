@@ -844,6 +844,22 @@
 <pin name="C+" x="-30.48" y="-12.7" length="middle"/>
 <pin name="C-" x="-30.48" y="-30.48" length="middle"/>
 </symbol>
+<symbol name="LTC4313-X">
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="-25.4" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-30.48" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<pin name="SDAIN" x="-30.48" y="-17.78" length="middle"/>
+<pin name="SCLIN" x="-30.48" y="-20.32" length="middle"/>
+<text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-30.48" y="-2.54" length="middle"/>
+<pin name="GND" x="-30.48" y="-27.94" length="middle"/>
+<pin name="SDAOUT" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="SCLOUT" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="ENABLE" x="-30.48" y="-10.16" length="middle"/>
+<pin name="READY" x="5.08" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC4314" prefix="U">
@@ -1186,6 +1202,30 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4313-*" prefix="U">
+<gates>
+<gate name="G$1" symbol="LTC4313-X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN8">
+<connects>
+<connect gate="G$1" pin="ENABLE" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4 9"/>
+<connect gate="G$1" pin="READY" pad="5"/>
+<connect gate="G$1" pin="SCLIN" pad="3"/>
+<connect gate="G$1" pin="SCLOUT" pad="2"/>
+<connect gate="G$1" pin="SDAIN" pad="6"/>
+<connect gate="G$1" pin="SDAOUT" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="1"/>
+<technology name="2"/>
+<technology name="3"/>
 </technologies>
 </device>
 </devices>

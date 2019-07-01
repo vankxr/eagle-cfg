@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1167,7 +1167,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="6P" prefix="X">
+<deviceset name="6P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;6 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="7.62" addlevel="always" swaplevel="1"/>
@@ -1206,7 +1206,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="7P" prefix="X">
+<deviceset name="7P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;7 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="7.62" addlevel="always" swaplevel="1"/>
@@ -1248,7 +1248,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="8P" prefix="X">
+<deviceset name="8P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;8 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="10.16" addlevel="always" swaplevel="1"/>
@@ -1293,7 +1293,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="9P" prefix="X">
+<deviceset name="9P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;9 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="10.16" addlevel="always" swaplevel="1"/>
@@ -1341,7 +1341,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="10P" prefix="X">
+<deviceset name="10P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;10 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="12.7" addlevel="always" swaplevel="1"/>
@@ -1392,7 +1392,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="11P" prefix="X">
+<deviceset name="11P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;11 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="12.7" addlevel="always" swaplevel="1"/>
@@ -1446,7 +1446,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="12P" prefix="X">
+<deviceset name="12P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;12 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="15.24" addlevel="always" swaplevel="1"/>
@@ -1503,7 +1503,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="13P" prefix="X">
+<deviceset name="13P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;13 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="15.24" addlevel="always" swaplevel="1"/>
@@ -1563,7 +1563,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="14P" prefix="X">
+<deviceset name="14P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;14 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="17.78" addlevel="always" swaplevel="1"/>
@@ -1626,7 +1626,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="15P" prefix="X">
+<deviceset name="15P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;15 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="17.78" addlevel="always" swaplevel="1"/>
@@ -1692,7 +1692,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="20P" prefix="X">
+<deviceset name="20P" prefix="CON">
 <description>&lt;b&gt;Disconnectable Crimp style connector, 1.0mm pitch&lt;/b&gt;&lt;br&gt;20 contacts</description>
 <gates>
 <gate name="-1" symbol="KV" x="0" y="25.4" addlevel="always" swaplevel="1"/>

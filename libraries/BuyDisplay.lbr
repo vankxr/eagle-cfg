@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -559,6 +559,7 @@ Viewing Area</text>
 <hole x="0.475" y="56.065" drill="1"/>
 <hole x="0.475" y="0.475" drill="1"/>
 <hole x="84.485" y="56.065" drill="1"/>
+<rectangle x1="60.419" y1="16.53" x2="68.7" y2="42.03" layer="40"/>
 </package>
 <package name="ZIF50-TFT_TOP">
 <description>&lt;b&gt;Flexible Printed Circuit &amp; Flexible Flat Cable ZIF Connectors&lt;/b&gt; 0.5 mm Pitch, 2.55 mm above the board&lt;p&gt;
@@ -769,6 +770,7 @@ Viewing Area</text>
 <hole x="0.475" y="56.065" drill="1"/>
 <hole x="0.475" y="0.475" drill="1"/>
 <hole x="84.485" y="56.065" drill="1"/>
+<rectangle x1="103.299" y1="16.53" x2="111.58" y2="42.03" layer="39"/>
 </package>
 </packages>
 <symbols>
