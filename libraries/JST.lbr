@@ -1058,9 +1058,7 @@
 <connect gate="-3" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="OC_FARNELL" value="1679128" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="-PH-SIDE" package="PH-03-SIDE">
@@ -1160,9 +1158,7 @@
 <connect gate="-5" pin="S" pad="5"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="OC_FARNELL" value="1679130" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

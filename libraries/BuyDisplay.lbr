@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -363,12 +363,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e58618038.pdf</description>
 <wire x1="62.419" y1="13.615" x2="61.319" y2="13.615" width="0.1016" layer="22"/>
 <wire x1="57.969" y1="41.14" x2="57.969" y2="40.79" width="0.1016" layer="22"/>
 <wire x1="57.969" y1="15.79" x2="57.969" y2="15.44" width="0.1016" layer="22"/>
-<wire x1="0" y1="0" x2="84.96" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="84.96" y2="0" width="0.127" layer="21"/>
 <wire x1="1.69" y1="1.81" x2="79.83" y2="1.81" width="0.127" layer="51"/>
 <wire x1="2.96" y1="2.99" x2="72.08" y2="2.99" width="0.127" layer="51"/>
 <wire x1="3.76" y1="3.79" x2="69.68" y2="3.79" width="0.127" layer="51"/>
-<wire x1="0" y1="56.54" x2="84.96" y2="56.54" width="0.127" layer="51"/>
-<wire x1="0" y1="0" x2="0" y2="56.515" width="0.127" layer="51"/>
+<wire x1="0" y1="56.54" x2="84.96" y2="56.54" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="56.515" width="0.127" layer="21"/>
 <wire x1="1.69" y1="55.57" x2="79.83" y2="55.57" width="0.127" layer="51"/>
 <wire x1="2.96" y1="54.37" x2="72.08" y2="54.37" width="0.127" layer="51"/>
 <wire x1="3.76" y1="53.58" x2="69.68" y2="53.58" width="0.127" layer="51"/>
@@ -379,7 +379,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e58618038.pdf</description>
 <wire x1="69.68" y1="53.58" x2="69.68" y2="3.79" width="0.127" layer="51"/>
 <wire x1="72.08" y1="2.99" x2="72.08" y2="54.37" width="0.127" layer="51"/>
 <wire x1="79.83" y1="55.57" x2="79.83" y2="1.81" width="0.127" layer="51"/>
-<wire x1="84.96" y1="0" x2="84.96" y2="56.54" width="0.127" layer="51"/>
+<wire x1="84.96" y1="0" x2="84.96" y2="56.54" width="0.127" layer="21"/>
 <wire x1="59" y1="41.03" x2="59" y2="15.53" width="0.127" layer="52"/>
 <wire x1="70.7" y1="55.73" x2="81.11" y2="55.73" width="0.127" layer="52"/>
 <wire x1="59" y1="41.03" x2="70.7" y2="41.03" width="0.127" layer="52"/>
@@ -586,12 +586,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e58618038.pdf</description>
 <wire x1="90.89" y1="7.83" x2="90.89" y2="16.53" width="0.127" layer="51"/>
 <wire x1="90.89" y1="55.73" x2="90.89" y2="42.03" width="0.127" layer="51"/>
 <wire x1="109.5" y1="41" x2="109.5" y2="15.53" width="0.127" layer="51"/>
-<wire x1="0" y1="0" x2="84.96" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="84.96" y2="0" width="0.127" layer="21"/>
 <wire x1="1.69" y1="1.81" x2="79.83" y2="1.81" width="0.127" layer="51"/>
 <wire x1="2.96" y1="2.99" x2="72.08" y2="2.99" width="0.127" layer="51"/>
 <wire x1="3.76" y1="3.79" x2="69.68" y2="3.79" width="0.127" layer="51"/>
-<wire x1="0" y1="56.54" x2="84.96" y2="56.54" width="0.127" layer="51"/>
-<wire x1="0" y1="0" x2="0" y2="56.515" width="0.127" layer="51"/>
+<wire x1="0" y1="56.54" x2="84.96" y2="56.54" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="56.515" width="0.127" layer="21"/>
 <wire x1="1.69" y1="55.57" x2="79.83" y2="55.57" width="0.127" layer="51"/>
 <wire x1="2.96" y1="54.37" x2="72.08" y2="54.37" width="0.127" layer="51"/>
 <wire x1="3.76" y1="53.58" x2="36.75" y2="53.58" width="0.127" layer="51"/>
@@ -604,7 +604,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e58618038.pdf</description>
 <wire x1="69.68" y1="28.6575" x2="69.68" y2="3.79" width="0.127" layer="51"/>
 <wire x1="72.08" y1="2.99" x2="72.08" y2="54.37" width="0.127" layer="51"/>
 <wire x1="79.83" y1="55.57" x2="79.83" y2="1.81" width="0.127" layer="51"/>
-<wire x1="84.96" y1="0" x2="84.96" y2="56.54" width="0.127" layer="51"/>
+<wire x1="84.96" y1="0" x2="84.96" y2="56.54" width="0.127" layer="21"/>
 <wire x1="3.78" y1="28.6575" x2="69.68" y2="28.6575" width="0.127" layer="51"/>
 <wire x1="36.75" y1="53.58" x2="36.75" y2="3.89" width="0.127" layer="51"/>
 <wire x1="3.8" y1="3.8" x2="69.65" y2="53.55" width="0.127" layer="51"/>
