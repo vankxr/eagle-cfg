@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -333,6 +333,54 @@
 <text x="80.21" y="10.414" size="2.54" layer="94" font="vector">&gt;DESIGNER</text>
 <text x="88.87" y="5.234" size="2.54" layer="94" font="vector">&gt;CREVISION</text>
 </symbol>
+<symbol name="A2-LANDSCAPE">
+<wire x1="463.55" y1="3.81" x2="558.8" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="558.8" y1="3.81" x2="558.8" y2="24.13" width="0.1016" layer="94"/>
+<frame x1="0" y1="0" x2="562.61" y2="387.35" columns="8" rows="5" layer="94"/>
+<rectangle x1="464.5152" y1="3.81" x2="465.1248" y2="24.13" layer="94"/>
+<rectangle x1="511.5052" y1="-22.606" x2="512.1148" y2="71.374" layer="94" rot="R90"/>
+<wire x1="511.04" y1="3.964" x2="511.04" y2="9.144" width="0.1016" layer="94"/>
+<wire x1="511.04" y1="9.144" x2="558.8" y2="9.144" width="0.1016" layer="94"/>
+<wire x1="511.04" y1="9.144" x2="464.82" y2="9.144" width="0.1016" layer="94"/>
+<wire x1="464.82" y1="14.224" x2="511.04" y2="14.224" width="0.1016" layer="94"/>
+<wire x1="511.04" y1="14.224" x2="558.8" y2="14.224" width="0.1016" layer="94"/>
+<wire x1="464.82" y1="19.304" x2="558.8" y2="19.304" width="0.1016" layer="94"/>
+<wire x1="511.04" y1="9.144" x2="511.04" y2="14.224" width="0.1016" layer="94"/>
+<wire x1="464.82" y1="23.114" x2="464.82" y2="24.384" width="0.6096" layer="94"/>
+<wire x1="464.82" y1="24.384" x2="466.09" y2="24.384" width="0.6096" layer="94"/>
+<text x="467.36" y="15.494" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="467.36" y="10.414" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="481.33" y="5.334" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="467.36" y="5.334" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="467.36" y="20.574" size="2.54" layer="94" font="vector">&gt;CNAME</text>
+<text x="511.91" y="5.334" size="2.54" layer="94" font="vector">Rev:</text>
+<text x="512.01" y="10.414" size="2.54" layer="94" font="vector">&gt;DESIGNER</text>
+<text x="520.67" y="5.234" size="2.54" layer="94" font="vector">&gt;CREVISION</text>
+</symbol>
+<symbol name="A2-PORTRAIT">
+<wire x1="288.29" y1="3.81" x2="383.54" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="383.54" y1="3.81" x2="383.54" y2="24.13" width="0.1016" layer="94"/>
+<frame x1="0" y1="0" x2="387.35" y2="562.61" columns="8" rows="5" layer="94"/>
+<rectangle x1="289.2552" y1="3.81" x2="289.8648" y2="24.13" layer="94"/>
+<rectangle x1="336.2452" y1="-22.606" x2="336.8548" y2="71.374" layer="94" rot="R90"/>
+<wire x1="335.78" y1="3.964" x2="335.78" y2="9.144" width="0.1016" layer="94"/>
+<wire x1="335.78" y1="9.144" x2="383.54" y2="9.144" width="0.1016" layer="94"/>
+<wire x1="335.78" y1="9.144" x2="289.56" y2="9.144" width="0.1016" layer="94"/>
+<wire x1="289.56" y1="14.224" x2="335.78" y2="14.224" width="0.1016" layer="94"/>
+<wire x1="335.78" y1="14.224" x2="383.54" y2="14.224" width="0.1016" layer="94"/>
+<wire x1="289.56" y1="19.304" x2="383.54" y2="19.304" width="0.1016" layer="94"/>
+<wire x1="335.78" y1="9.144" x2="335.78" y2="14.224" width="0.1016" layer="94"/>
+<wire x1="289.56" y1="23.114" x2="289.56" y2="24.384" width="0.6096" layer="94"/>
+<wire x1="289.56" y1="24.384" x2="290.83" y2="24.384" width="0.6096" layer="94"/>
+<text x="292.1" y="15.494" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="292.1" y="10.414" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="306.07" y="5.334" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="292.1" y="5.334" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="292.1" y="20.574" size="2.54" layer="94" font="vector">&gt;CNAME</text>
+<text x="336.65" y="5.334" size="2.54" layer="94" font="vector">Rev:</text>
+<text x="336.75" y="10.414" size="2.54" layer="94" font="vector">&gt;DESIGNER</text>
+<text x="345.41" y="5.234" size="2.54" layer="94" font="vector">&gt;CREVISION</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="D-LANDSCAPE" prefix="FRAME" uservalue="yes">
@@ -410,6 +458,30 @@
 <deviceset name="A5-PORTRAIT" prefix="FRAME" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="A5-PORTRAIT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="A2-LANDSCAPE" prefix="FRAME" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="A2-LANDSCAPE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="A2-PORTRAIT" prefix="FRAME" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="A2-PORTRAIT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

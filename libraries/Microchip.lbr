@@ -1319,6 +1319,22 @@
 <wire x1="-3" y1="3" x2="-2.4" y2="3" width="0.127" layer="21"/>
 <circle x="-4.041" y="3.059" radius="0.3" width="0" layer="21"/>
 </package>
+<package name="VDFN6">
+<smd name="1" x="-0.83" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<text x="-1.148" y="1.448" size="0.8128" layer="25">&gt;NAME</text>
+<circle x="-1.614" y="1.383" radius="0.2" width="0" layer="21"/>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<smd name="2" x="0" y="0.725" dx="0.25" dy="0.85" layer="1"/>
+<smd name="3" x="0.83" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="4" x="0.83" y="-0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
+<smd name="5" x="0" y="-0.725" dx="0.25" dy="0.85" layer="1" rot="R180"/>
+<smd name="6" x="-0.83" y="-0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
+<wire x1="-1.25" y1="0.1" x2="-1.25" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="0.1" x2="1.25" y2="-0.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC4682">
@@ -1970,32 +1986,32 @@
 </symbol>
 <symbol name="MIC23159">
 <wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-50.8" width="0.254" layer="94"/>
-<wire x1="0" y1="-50.8" x2="-30.48" y2="-50.8" width="0.254" layer="94"/>
-<wire x1="-30.48" y1="-50.8" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="0" y1="-58.42" x2="-30.48" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-58.42" x2="-30.48" y2="0" width="0.254" layer="94"/>
 <pin name="VIN@0" x="-35.56" y="-5.08" length="middle"/>
 <text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="AVIN@0" x="-35.56" y="-2.54" length="middle"/>
-<pin name="AGND@0" x="-35.56" y="-48.26" length="middle"/>
-<pin name="PGND@0" x="-35.56" y="-45.72" length="middle"/>
-<pin name="SS@0" x="-35.56" y="-38.1" length="middle"/>
+<pin name="AGND@0" x="-35.56" y="-55.88" length="middle"/>
+<pin name="PGND@0" x="-35.56" y="-53.34" length="middle"/>
+<pin name="SS@0" x="-35.56" y="-48.26" length="middle"/>
 <pin name="PG@0" x="-35.56" y="-12.7" length="middle"/>
 <pin name="EN@0" x="-35.56" y="-10.16" length="middle"/>
-<pin name="FB@0" x="-35.56" y="-33.02" length="middle"/>
-<pin name="SNS@0" x="-35.56" y="-30.48" length="middle"/>
+<pin name="FB@0" x="-35.56" y="-43.18" length="middle"/>
+<pin name="SNS@0" x="-35.56" y="-25.4" length="middle"/>
 <pin name="SW@0" x="-35.56" y="-20.32" length="middle"/>
 <pin name="AVIN@1" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VIN@1" x="5.08" y="-5.08" length="middle" rot="R180"/>
 <pin name="EN@1" x="5.08" y="-10.16" length="middle" rot="R180"/>
 <pin name="PG@1" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <pin name="SW@1" x="5.08" y="-20.32" length="middle" rot="R180"/>
-<pin name="SNS@1" x="5.08" y="-30.48" length="middle" rot="R180"/>
-<pin name="FB@1" x="5.08" y="-33.02" length="middle" rot="R180"/>
-<pin name="SS@1" x="5.08" y="-38.1" length="middle" rot="R180"/>
-<pin name="PGND@1" x="5.08" y="-45.72" length="middle" rot="R180"/>
-<pin name="AGND@1" x="5.08" y="-48.26" length="middle" rot="R180"/>
-<pin name="PGND@2" x="-15.24" y="-55.88" length="middle" rot="R90"/>
+<pin name="SNS@1" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="FB@1" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="SS@1" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="PGND@1" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="AGND@1" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="PGND@2" x="-15.24" y="-63.5" length="middle" rot="R90"/>
 </symbol>
 <symbol name="UTC2000">
 <wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -2309,6 +2325,55 @@
 <pin name="INTA" x="-25.4" y="-15.24" length="middle"/>
 <pin name="INTB" x="-25.4" y="-17.78" length="middle"/>
 <pin name="!RESET" x="-25.4" y="-10.16" length="middle"/>
+</symbol>
+<symbol name="DSC12X1-OE">
+<wire x1="-15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<pin name="CLK" x="5.08" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="OE" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="GND" x="-20.32" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VDD" x="-20.32" y="-2.54" length="middle" direction="pwr"/>
+<text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DSC12X1-STDBY">
+<wire x1="-15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<pin name="CLK" x="5.08" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!STDBY" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="GND" x="-20.32" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VDD" x="-20.32" y="-2.54" length="middle" direction="pwr"/>
+<text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="DSC12X1-FS">
+<wire x1="-15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<pin name="CLK" x="5.08" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="FS" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="GND" x="-20.32" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VDD" x="-20.32" y="-2.54" length="middle" direction="pwr"/>
+<text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC5301">
+<pin name="OUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-22.86" y="-12.7" length="middle"/>
+<pin name="VIN" x="-22.86" y="-2.54" length="middle"/>
+<wire x1="-17.78" y1="-15.24" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="-17.78" y2="-15.24" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="BYP" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="EN" x="-22.86" y="-7.62" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3890,6 +3955,72 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DSC120*" prefix="U">
+<gates>
+<gate name="G$1" symbol="DSC12X1-STDBY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VDFN6">
+<connects>
+<connect gate="G$1" pin="!STDBY" pad="1"/>
+<connect gate="G$1" pin="CLK" pad="4"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name="1DE3-50M00000"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DSC121*" prefix="U">
+<gates>
+<gate name="G$1" symbol="DSC12X1-FS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VDFN6">
+<connects>
+<connect gate="G$1" pin="CLK" pad="4"/>
+<connect gate="G$1" pin="FS" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name="1DE3-C0017"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5301-*" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC5301" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="BYP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name="1.3YD5"/>
+<technology name="1.5YD5"/>
+<technology name="1.8YD5"/>
+<technology name="2.1YD5"/>
+<technology name="2.5YD5"/>
+<technology name="2.6YD5"/>
+<technology name="2.85YD5"/>
+<technology name="2.8YD5"/>
+<technology name="2.9YD5"/>
+<technology name="3.0YD5"/>
+<technology name="3.3YD5"/>
+<technology name="4.6YD5"/>
 </technologies>
 </device>
 </devices>

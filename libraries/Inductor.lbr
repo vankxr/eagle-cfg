@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -276,14 +276,90 @@
 <wire x1="-1" y1="0.3" x2="-1" y2="-0.3" width="0.127" layer="21"/>
 <wire x1="1" y1="0.3" x2="1" y2="-0.3" width="0.127" layer="21"/>
 </package>
+<package name="IND0606">
+<smd name="1" x="-2.75" y="0" dx="5.7" dy="2.7" layer="1" rot="R90"/>
+<smd name="2" x="2.75" y="0" dx="5.7" dy="2.7" layer="1" rot="R90"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="51"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<text x="-5.08" y="5.08" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-1" y1="3" x2="1" y2="3" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3" x2="1" y2="-3" width="0.127" layer="21"/>
+</package>
+<package name="IND0505">
+<smd name="1" x="-1.95" y="0" dx="4.9" dy="2.6" layer="1" rot="R90"/>
+<smd name="2" x="1.95" y="0" dx="4.9" dy="2.6" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<text x="-5.08" y="3.58" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-0.5" y1="2.5" x2="0.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2.5" x2="0.5" y2="-2.5" width="0.127" layer="21"/>
+</package>
+<package name="IND3225">
+<smd name="1" x="0" y="-1.275" dx="2" dy="1.25" layer="1"/>
+<text x="-1.55" y="-1.58" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-1.25" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1.6" x2="-1.25" y2="1.6" width="0.127" layer="51"/>
+<smd name="2" x="0" y="1.275" dx="2" dy="1.25" layer="1"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.25" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.6" x2="-1.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="1.6" x2="-1.1" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="1.25" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1.6" x2="1.25" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1.6" x2="1.1" y2="-1.6" width="0.127" layer="21"/>
+</package>
+<package name="TRF-SM-22">
+<smd name="1" x="-1.27" y="1.715" dx="1.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="2" x="0" y="1.715" dx="1.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="3" x="1.27" y="1.715" dx="1.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="4" x="1.27" y="-1.715" dx="1.4" dy="0.76" layer="1" rot="R270"/>
+<smd name="5" x="-1.27" y="-1.715" dx="1.4" dy="0.76" layer="1" rot="R270"/>
+<wire x1="-1.59" y1="1.395" x2="1.59" y2="1.395" width="0.127" layer="51"/>
+<wire x1="1.59" y1="1.395" x2="1.59" y2="-1.395" width="0.127" layer="51"/>
+<wire x1="1.59" y1="-1.395" x2="-1.59" y2="-1.395" width="0.127" layer="51"/>
+<wire x1="-1.59" y1="-1.395" x2="-1.59" y2="1.395" width="0.127" layer="51"/>
+<wire x1="0.7" y1="-1.395" x2="-0.7" y2="-1.395" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="1.395" x2="-0.5" y2="1.395" width="0.127" layer="21"/>
+<wire x1="0.5" y1="1.395" x2="0.8" y2="1.395" width="0.127" layer="21"/>
+<wire x1="-1.59" y1="-0.8" x2="-1.59" y2="0.9" width="0.127" layer="21"/>
+<wire x1="1.59" y1="-0.8" x2="1.59" y2="0.9" width="0.127" layer="21"/>
+<text x="-2" y="-1.4" size="0.6096" layer="25" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IND">
 <text x="-3.81" y="1.8796" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="-1.8796" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="-0.889" x2="3.81" y2="0.889" layer="94"/>
 <pin name="2" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1"/>
+<text x="-3.81" y="-4.4196" size="1.778" layer="97" align="top-left">&gt;CURRENT</text>
+</symbol>
+<symbol name="TRF-SEC-CT">
+<text x="-6.35" y="12.0396" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="10.8204" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<pin name="PRI2" x="-7.62" y="-7.62" visible="off" length="middle" direction="pas" swaplevel="1"/>
+<pin name="PRI1" x="-7.62" y="7.62" visible="off" length="middle" direction="pas" swaplevel="1"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-7.62" width="0.1524" layer="94" curve="-180"/>
+<pin name="SEC1" x="7.62" y="7.62" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SEC2" x="7.62" y="-7.62" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="7.62" width="0.1524" layer="94" curve="-180"/>
+<pin name="CT" x="7.62" y="0" visible="off" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -298,7 +374,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-7X7X3MM" package="IND0703">
@@ -307,7 +385,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-12X12X7MM" package="IND1207">
@@ -316,7 +396,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-13X13X5MM" package="IND1305">
@@ -325,7 +407,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="IND0805">
@@ -334,13 +418,69 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-2.5X2X1.2MM" package="IND2520">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-6X6MM" package="IND0606">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-5X5MM" package="IND0505">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-3.2XX2.5MM" package="IND3225">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ETC1-1T-2TR" prefix="TRF">
+<gates>
+<gate name="G$1" symbol="TRF-SEC-CT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TRF-SM-22">
+<connects>
+<connect gate="G$1" pin="CT" pad="2"/>
+<connect gate="G$1" pin="PRI1" pad="4"/>
+<connect gate="G$1" pin="PRI2" pad="5"/>
+<connect gate="G$1" pin="SEC1" pad="3"/>
+<connect gate="G$1" pin="SEC2" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

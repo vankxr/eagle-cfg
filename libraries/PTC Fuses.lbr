@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -276,8 +276,8 @@
 <wire x1="-0.0508" y1="1.5494" x2="-0.127" y2="2.921" width="0.1524" layer="94" curve="65.705733"/>
 <wire x1="-0.127" y1="2.921" x2="-0.381" y2="2.794" width="0.1524" layer="94" curve="139.383116"/>
 <wire x1="-0.381" y1="2.794" x2="0.381" y2="2.286" width="0.1524" layer="94" curve="100.176187"/>
-<text x="-3.81" y="3.81" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="97" align="top-left">&gt;HOLD</text>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <polygon width="0.1524" layer="94">
@@ -290,6 +290,7 @@
 <vertex x="3.556" y="1.778"/>
 <vertex x="3.048" y="1.778"/>
 </polygon>
+<text x="-3.81" y="-6.35" size="1.778" layer="97" align="top-left">&gt;TRIP</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -304,7 +305,10 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206" package="1206">
@@ -313,7 +317,10 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1812" package="1812">
@@ -322,7 +329,10 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805" package="0805">
@@ -331,7 +341,10 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="2920" package="2920">
@@ -340,7 +353,10 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="HOLD" value="" constant="no"/>
+<attribute name="TRIP" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

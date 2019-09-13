@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -329,8 +329,9 @@
 <wire x1="8.255" y1="1.27" x2="9.525" y2="-1.27" width="0.2032" layer="94"/>
 <wire x1="2.54" y1="0" x2="3.175" y2="1.27" width="0.2032" layer="94"/>
 <wire x1="9.525" y1="-1.27" x2="10.16" y2="0" width="0.2032" layer="94"/>
-<text x="0.6858" y="-3.6576" size="1.778" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<text x="0.9906" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0" y="-2.7686" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left">&gt;VALUE</text>
+<text x="0" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="0" y="-5.3086" size="1.778" layer="97" ratio="10" rot="SR0" align="top-left">&gt;TOLERANCE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -345,7 +346,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0805" package="RES0805">
@@ -354,7 +357,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-1206" package="RES1206">
@@ -363,7 +368,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-2512" package="RES2512">
@@ -372,7 +379,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-0402" package="RES0402">
@@ -381,7 +390,9 @@
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -406,7 +417,9 @@
 <connect gate=".4" pin="2" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="TOLERANCE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

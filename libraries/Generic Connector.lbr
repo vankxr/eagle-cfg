@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -375,6 +375,54 @@
 <text x="-7.5" y="5" size="0.8128" layer="25">&gt;NAME</text>
 <pad name="3" x="5" y="0" drill="1.2" diameter="2.5" rot="R180"/>
 </package>
+<package name="OKW-2EDG-2P">
+<pad name="P$2" x="2.54" y="0" drill="1.6" diameter="2.6"/>
+<pad name="P$1" x="-2.54" y="0" drill="1.6" diameter="2.6"/>
+<wire x1="-5.08" y1="2" x2="5.08" y2="2" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2" x2="5.08" y2="-7.8" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-7.8" x2="5.08" y2="-10" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-10" x2="4" y2="-10" width="0.127" layer="21"/>
+<wire x1="4" y1="-10" x2="1" y2="-10" width="0.127" layer="21"/>
+<wire x1="1" y1="-10" x2="-1" y2="-10" width="0.127" layer="21"/>
+<wire x1="-1" y1="-10" x2="-4" y2="-10" width="0.127" layer="21"/>
+<wire x1="-4" y1="-10" x2="-5.08" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-10" x2="-5.08" y2="-7.8" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-7.8" x2="-5.08" y2="2" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-7.8" x2="5.08" y2="-7.8" width="0.127" layer="21"/>
+<wire x1="-4" y1="-10" x2="-3" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="-3" y1="-8.8" x2="-2" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="-2" y1="-8.8" x2="-1" y2="-10" width="0.127" layer="21"/>
+<wire x1="1" y1="-10" x2="2" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="2" y1="-8.8" x2="3" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="3" y1="-8.8" x2="4" y2="-10" width="0.127" layer="21"/>
+<text x="-5" y="2.2" size="0.8" layer="21" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="OKW-2EDG-3P">
+<pad name="P$2" x="0" y="0" drill="1.6" diameter="2.6"/>
+<pad name="P$1" x="-5.08" y="0" drill="1.6" diameter="2.6"/>
+<wire x1="-7.62" y1="2" x2="7.62" y2="2" width="0.127" layer="21"/>
+<wire x1="7.62" y1="2" x2="7.62" y2="-7.8" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.8" x2="7.62" y2="-10" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-10" x2="1.46" y2="-10" width="0.127" layer="21"/>
+<wire x1="1.46" y1="-10" x2="-1.54" y2="-10" width="0.127" layer="21"/>
+<wire x1="-1.54" y1="-10" x2="-3.54" y2="-10" width="0.127" layer="21"/>
+<wire x1="-3.54" y1="-10" x2="-6.54" y2="-10" width="0.127" layer="21"/>
+<wire x1="-6.54" y1="-10" x2="-7.62" y2="-10" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-10" x2="-7.62" y2="-7.8" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-7.8" x2="-7.62" y2="2" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-7.8" x2="7.62" y2="-7.8" width="0.127" layer="21"/>
+<wire x1="-6.54" y1="-10" x2="-5.54" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="-5.54" y1="-8.8" x2="-4.54" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="-4.54" y1="-8.8" x2="-3.54" y2="-10" width="0.127" layer="21"/>
+<wire x1="-1.54" y1="-10" x2="-0.54" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="-0.54" y1="-8.8" x2="0.46" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="0.46" y1="-8.8" x2="1.46" y2="-10" width="0.127" layer="21"/>
+<text x="-7.54" y="2.2" size="0.8" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<pad name="P$3" x="5.08" y="0" drill="1.6" diameter="2.6"/>
+<wire x1="3.54" y1="-10" x2="4.54" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="4.54" y1="-8.8" x2="5.54" y2="-8.8" width="0.127" layer="21"/>
+<wire x1="5.54" y1="-8.8" x2="6.54" y2="-10" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="K">
@@ -397,6 +445,15 @@
 </gates>
 <devices>
 <device name="" package="2EDG-2P">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-OKW" package="OKW-2EDG-2P">
 <connects>
 <connect gate="-1" pin="S" pad="P$1"/>
 <connect gate="-2" pin="S" pad="P$2"/>
@@ -581,6 +638,25 @@
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
 <connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2EDG-3P" prefix="CON">
+<gates>
+<gate name="-1" symbol="KV" x="0" y="0"/>
+<gate name="-2" symbol="K" x="0" y="-2.54"/>
+<gate name="-3" symbol="K" x="0" y="-5.08"/>
+</gates>
+<devices>
+<device name="-OKW" package="OKW-2EDG-3P">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
