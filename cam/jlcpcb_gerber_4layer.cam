@@ -18,6 +18,13 @@
             "output_type": "gerber",
             "outputs": [
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "description": "Board Outline",
@@ -198,6 +205,13 @@
                     "type": "gerber_layer"
                 },
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "board_outline": false,
                     "config": {
                         "description": "Other",
@@ -269,6 +283,13 @@
             "output_type": "drill",
             "outputs": [
                 {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
                     "drills": {
                         "NPTH": true,
                         "PTH": true,
@@ -299,6 +320,6 @@
     ],
     "timestamp": "2019-09-11T23:09:02",
     "type": "EAGLE CAM job",
-    "units": "imperial",
+    "units": "metric",
     "version": "8.6.1"
 }

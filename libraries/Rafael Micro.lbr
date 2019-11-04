@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -262,7 +262,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RT820T" prefix="U">
+<deviceset name="R820T" prefix="U">
 <gates>
 <gate name="G$1" symbol="R820T/2" x="0" y="0"/>
 </gates>

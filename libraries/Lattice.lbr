@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -767,12 +767,12 @@
 <pin name="VCC@0" x="-35.56" y="-2.54" length="middle" direction="pwr"/>
 <pin name="VCCIO0@0" x="-35.56" y="-40.64" length="middle" direction="pwr"/>
 <pin name="VCC_SPI" x="-35.56" y="-35.56" length="middle" direction="pwr"/>
-<pin name="VPP_2V5" x="-35.56" y="-20.32" length="middle" direction="pwr"/>
-<pin name="GNDPLL0" x="5.08" y="-27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCCPLL0" x="-35.56" y="-27.94" length="middle" direction="pwr"/>
-<pin name="VPP_FAST" x="-35.56" y="-22.86" length="middle" direction="pwr"/>
-<pin name="GNDPLL1" x="5.08" y="-30.48" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCCPLL1" x="-35.56" y="-30.48" length="middle" direction="pwr"/>
+<pin name="VPP_2V5" x="-35.56" y="-27.94" length="middle" direction="pwr"/>
+<pin name="GNDPLL0" x="5.08" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCCPLL0" x="-35.56" y="-20.32" length="middle" direction="pwr"/>
+<pin name="VPP_FAST" x="-35.56" y="-30.48" length="middle" direction="pwr"/>
+<pin name="GNDPLL1" x="5.08" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCCPLL1" x="-35.56" y="-22.86" length="middle" direction="pwr"/>
 <pin name="VCC@1" x="-35.56" y="-5.08" length="middle" direction="pwr"/>
 <pin name="VCC@2" x="-35.56" y="-7.62" length="middle" direction="pwr"/>
 <pin name="VCC@3" x="-35.56" y="-10.16" length="middle" direction="pwr"/>

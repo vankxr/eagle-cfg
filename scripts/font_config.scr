@@ -6,4 +6,5 @@ group all;
 change font vector (C>0 0);
 change size 0.8mm (C>0 0);
 change ratio 10 (C>0 0);
+change align center-left (C>0 0);
 display last;
