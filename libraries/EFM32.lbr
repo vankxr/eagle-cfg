@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.8" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -78,7 +78,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="NotConnected" color="52" fill="1" visible="no" active="yes"/>
+<layer number="100" name="NotConnected" color="52" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
@@ -180,6 +180,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
@@ -5052,8 +5054,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-180.34" x2="0" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-180.34" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -5166,6 +5166,8 @@
 <text x="-2.54" y="-122.682" size="1.5" layer="100" align="bottom-right">PF13</text>
 <text x="-2.54" y="-125.222" size="1.5" layer="100" align="bottom-right">PF14</text>
 <text x="-2.54" y="-127.762" size="1.5" layer="100" align="bottom-right">PF15</text>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B5XX_QFP100">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5175,8 +5177,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-180.34" x2="0" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-180.34" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -5288,6 +5288,8 @@
 <text x="-2.54" y="-122.682" size="1.5" layer="100" align="bottom-right">PF13</text>
 <text x="-2.54" y="-125.222" size="1.5" layer="100" align="bottom-right">PF14</text>
 <text x="-2.54" y="-127.762" size="1.5" layer="100" align="bottom-right">PF15</text>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B8XX_QFP64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5297,8 +5299,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-175.26" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-175.26" x2="0" y2="-175.26" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-175.26" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -5408,6 +5408,8 @@
 <text x="-2.54" y="-109.982" size="1.5" layer="100" align="bottom-right">PF8</text>
 <text x="-2.54" y="-112.522" size="1.5" layer="100" align="bottom-right">PF9</text>
 <text x="-2.54" y="-64.262" size="1.5" layer="100" align="bottom-right">PD7</text>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B5XX_QFP64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5417,8 +5419,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-167.64" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-167.64" x2="0" y2="-167.64" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-167.64" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -5525,6 +5525,8 @@
 <text x="-2.54" y="-115.062" size="1.5" layer="100" align="bottom-right">PF10</text>
 <text x="-2.54" y="-117.602" size="1.5" layer="100" align="bottom-right">PF11</text>
 <text x="-2.54" y="-120.142" size="1.5" layer="100" align="bottom-right">PF12</text>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B4XX_QFP100">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5534,8 +5536,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-175.26" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-175.26" x2="0" y2="-175.26" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-175.26" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -5646,6 +5646,8 @@
 <text x="-2.54" y="-122.682" size="1.5" layer="100" align="bottom-right">PF13</text>
 <text x="-2.54" y="-125.222" size="1.5" layer="100" align="bottom-right">PF14</text>
 <text x="-2.54" y="-127.762" size="1.5" layer="100" align="bottom-right">PF15</text>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B4XX_QFP64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5655,8 +5657,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-170.18" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-170.18" x2="0" y2="-170.18" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-170.18" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -5764,6 +5764,8 @@
 <pin name="PA13" x="-38.1" y="-35.56" length="middle"/>
 <text x="-2.54" y="-33.782" size="1.5" layer="100" align="bottom-right">PB12</text>
 <pin name="PD7" x="5.08" y="-63.5" length="middle" rot="R180"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32XG1B200_QFN32">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5772,8 +5774,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-162.56" x2="0" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-162.56" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PB11" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB12" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="PB13" x="5.08" y="-35.56" length="middle" rot="R180"/>
@@ -5880,6 +5880,8 @@
 <pin name="HFXTAL_N" x="5.08" y="-137.16" length="middle" rot="R180"/>
 <pin name="HFXTAL_P" x="5.08" y="-134.62" length="middle" rot="R180"/>
 <pin name="AVDD@1" x="-38.1" y="-142.24" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32XG1B100_QFN32">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -5888,8 +5890,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-154.94" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-154.94" x2="0" y2="-154.94" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-154.94" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PB11" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB12" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="PB13" x="5.08" y="-35.56" length="middle" rot="R180"/>
@@ -5993,6 +5993,8 @@
 <pin name="PC8" x="-38.1" y="-66.04" length="middle"/>
 <pin name="PC9" x="-38.1" y="-68.58" length="middle"/>
 <pin name="PF4" x="5.08" y="-99.06" length="middle" rot="R180"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32XG1B200_QFN48">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6001,8 +6003,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-162.56" x2="0" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-162.56" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PB11" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB12" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="PB13" x="5.08" y="-35.56" length="middle" rot="R180"/>
@@ -6109,6 +6109,8 @@
 <pin name="PC7" x="-38.1" y="-63.5" length="middle"/>
 <pin name="PC8" x="-38.1" y="-66.04" length="middle"/>
 <pin name="PC9" x="-38.1" y="-68.58" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFR32MG21_QFN32">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6117,8 +6119,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-129.54" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-129.54" x2="0" y2="-129.54" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-129.54" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-30.734" y="-61.722" size="1.5" layer="100">PC6</text>
 <text x="-30.734" y="-76.962" size="1.5" layer="100">PC12</text>
 <text x="-30.734" y="-79.502" size="1.5" layer="100">PC13</text>
@@ -6194,6 +6194,8 @@
 <pin name="RFVSS" x="5.08" y="-124.46" length="middle" rot="R180"/>
 <pin name="RF2G4_IO1" x="-38.1" y="-93.98" length="middle"/>
 <pin name="RF2G4_IO2" x="-38.1" y="-96.52" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFR32XG12P433_QFN68">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6202,8 +6204,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-195.58" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-195.58" x2="0" y2="-195.58" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-195.58" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PB11" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB12" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="PB13" x="5.08" y="-35.56" length="middle" rot="R180"/>
@@ -6321,6 +6321,8 @@
 <pin name="SUBGRF_IN" x="5.08" y="-147.32" length="middle" rot="R180"/>
 <pin name="2G4RF_ION" x="-38.1" y="-139.7" length="middle"/>
 <pin name="2G4RF_IOP" x="-38.1" y="-137.16" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFR32XG12P433_QFN48">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6329,8 +6331,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-190.5" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-190.5" x2="0" y2="-190.5" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-190.5" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PB11" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="PB12" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="PB13" x="5.08" y="-35.56" length="middle" rot="R180"/>
@@ -6446,6 +6446,8 @@
 <text x="-30.734" y="-51.562" size="1.5" layer="100">PC2</text>
 <text x="-30.734" y="-49.022" size="1.5" layer="100">PC1</text>
 <text x="-30.734" y="-46.482" size="1.5" layer="100">PC0</text>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG12B8XX_QFN64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6455,8 +6457,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-175.26" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-175.26" x2="0" y2="-175.26" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-175.26" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -6564,6 +6564,8 @@
 <pin name="PA13" x="-38.1" y="-35.56" length="middle"/>
 <pin name="PA15" x="-38.1" y="-40.64" length="middle"/>
 <pin name="PA6" x="-38.1" y="-17.78" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG12B1XX_QFN64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6573,8 +6575,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-162.56" x2="0" y2="-162.56" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-162.56" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -6677,6 +6677,8 @@
 <pin name="PB8" x="5.08" y="-22.86" length="middle" rot="R180"/>
 <pin name="PB7" x="5.08" y="-20.32" length="middle" rot="R180"/>
 <pin name="PA15" x="-38.1" y="-40.64" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B8XX_BGA120">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6686,8 +6688,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-185.42" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-185.42" x2="0" y2="-185.42" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-185.42" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -6806,6 +6806,8 @@
 <pin name="PC15" x="-38.1" y="-83.82" length="middle"/>
 <pin name="PD14" x="5.08" y="-81.28" length="middle" rot="R180"/>
 <pin name="PD15" x="5.08" y="-83.82" length="middle" rot="R180"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="EFM32GG11B4XX_BGA112">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
@@ -6815,8 +6817,6 @@
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="-33.02" y1="-180.34" x2="0" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-180.34" width="0.254" layer="94"/>
-<text x="-33.02" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="PA3" x="-38.1" y="-10.16" length="middle"/>
 <pin name="PA4" x="-38.1" y="-12.7" length="middle"/>
 <pin name="PA5" x="-38.1" y="-15.24" length="middle"/>
@@ -6935,6 +6935,8 @@
 <pin name="VSS@8" x="5.08" y="-175.26" length="middle" rot="R180"/>
 <pin name="VSS@9" x="5.08" y="-177.8" length="middle" rot="R180"/>
 <pin name="AVDD@2" x="-38.1" y="-154.94" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
