@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -366,7 +366,7 @@
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 <text x="-0.127" y="3.683" size="1.27" layer="95" align="center">VCC</text>
 <text x="0" y="-3.683" size="1.27" layer="95" align="center">GND</text>
-<text x="-3.937" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="0" size="1.778" layer="95" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="NOT">
 <text x="-5.08" y="5.08" size="1.778" layer="95" align="top-left">&gt;NAME</text>
@@ -576,6 +576,111 @@
 <text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="K" x="-20.32" y="-7.62" visible="pin" length="middle" direction="in"/>
+</symbol>
+<symbol name="ODBUF">
+<text x="-5.08" y="5.08" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="5.08" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-0.762" x2="-4.318" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-3.556" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="0.762" x2="-2.794" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="0" x2="-3.556" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-0.762" x2="-2.794" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-0.762" x2="-4.318" y2="-0.762" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="AND-3">
+<text x="-5.08" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="B" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="A" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
+</symbol>
+<symbol name="OR-3">
+<text x="-5.08" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="B" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="A" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="-67.380135"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="67.380135"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94" curve="-60"/>
+<wire x1="-5.08" y1="2.54" x2="-4.064" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-4.064" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
+<wire x1="-5.08" y1="0" x2="-3.7211" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="XOR-3">
+<text x="-5.08" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="A" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="-67.380135"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="67.380135"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94" curve="-60"/>
+<wire x1="-5.08" y1="2.54" x2="-4.826" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.842" y1="-2.54" x2="-4.826" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.842" y1="5.08" x2="-5.842" y2="-5.08" width="0.1524" layer="94" curve="-60"/>
+<pin name="B" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<wire x1="-5.08" y1="0" x2="-4.4831" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="XNOR-3">
+<text x="-5.08" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="A" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="middle" function="dot" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="-67.380135"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="67.380135"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94" curve="-60"/>
+<wire x1="-5.08" y1="2.54" x2="-4.826" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.842" y1="-2.54" x2="-4.826" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.842" y1="5.08" x2="-5.842" y2="-5.08" width="0.1524" layer="94" curve="-60"/>
+<pin name="B" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<wire x1="-5.08" y1="0" x2="-4.4831" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="NOR-3">
+<text x="-5.08" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="A" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="-67.380135"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="0" width="0.1524" layer="94" curve="67.380135"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94" curve="-60"/>
+<wire x1="-5.08" y1="2.54" x2="-4.064" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-4.064" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="B" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<wire x1="-5.08" y1="0" x2="-3.7211" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="NAND-3">
+<text x="-5.08" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="B" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="A" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="10.16" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<pin name="C" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -943,6 +1048,130 @@
 <connect gate=".1" pin="D" pad="1"/>
 <connect gate=".1" pin="Q" pad="4"/>
 <connect gate=".PWR" pin="GND" pad="3"/>
+<connect gate=".PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G07" prefix="U">
+<gates>
+<gate name=".PWR" symbol="PWR" x="22.86" y="0"/>
+<gate name=".1" symbol="ODBUF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-5">
+<connects>
+<connect gate=".1" pin="A" pad="2"/>
+<connect gate=".1" pin="Y" pad="4"/>
+<connect gate=".PWR" pin="GND" pad="3"/>
+<connect gate=".PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G11" prefix="U">
+<gates>
+<gate name=".PWR" symbol="PWR" x="20.32" y="0"/>
+<gate name=".1" symbol="AND-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate=".1" pin="A" pad="1"/>
+<connect gate=".1" pin="B" pad="3"/>
+<connect gate=".1" pin="C" pad="6"/>
+<connect gate=".1" pin="Y" pad="4"/>
+<connect gate=".PWR" pin="GND" pad="2"/>
+<connect gate=".PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G332" prefix="U">
+<gates>
+<gate name=".PWR" symbol="PWR" x="22.86" y="0"/>
+<gate name=".1" symbol="OR-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate=".1" pin="A" pad="1"/>
+<connect gate=".1" pin="B" pad="3"/>
+<connect gate=".1" pin="C" pad="6"/>
+<connect gate=".1" pin="Y" pad="4"/>
+<connect gate=".PWR" pin="GND" pad="2"/>
+<connect gate=".PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G10" prefix="U">
+<gates>
+<gate name=".PWR" symbol="PWR" x="20.32" y="0"/>
+<gate name=".1" symbol="NAND-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate=".1" pin="A" pad="1"/>
+<connect gate=".1" pin="B" pad="3"/>
+<connect gate=".1" pin="C" pad="6"/>
+<connect gate=".1" pin="Y" pad="4"/>
+<connect gate=".PWR" pin="GND" pad="2"/>
+<connect gate=".PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G27" prefix="U">
+<gates>
+<gate name=".PWR" symbol="PWR" x="22.86" y="0"/>
+<gate name=".1" symbol="NOR-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate=".1" pin="A" pad="1"/>
+<connect gate=".1" pin="B" pad="3"/>
+<connect gate=".1" pin="C" pad="6"/>
+<connect gate=".1" pin="Y" pad="4"/>
+<connect gate=".PWR" pin="GND" pad="2"/>
+<connect gate=".PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC1G386" prefix="U">
+<gates>
+<gate name=".PWR" symbol="PWR" x="22.86" y="0"/>
+<gate name=".1" symbol="XOR-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate=".1" pin="A" pad="1"/>
+<connect gate=".1" pin="B" pad="3"/>
+<connect gate=".1" pin="C" pad="6"/>
+<connect gate=".1" pin="Y" pad="4"/>
+<connect gate=".PWR" pin="GND" pad="2"/>
 <connect gate=".PWR" pin="VCC" pad="5"/>
 </connects>
 <technologies>

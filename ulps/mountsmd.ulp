@@ -1,0 +1,81 @@
+#usage  "<b>Data generation for mounting machines</b>\n"
+        "<p>"
+        "Generates a file for smds on the top and bottom layers "
+        "which can be used with mounting machines. "
+        "The x and y coordinates (units: mm) of the SMD elements are calculated "
+        "as mean of maximum and mimimum value of the smds origin points. "
+        "The calculated value does not necessarily fit with the origin "
+        "point of the part in the layout."
+        "All SMD elements populated in currently set assembly variant are considered."
+        "<p>"
+        "The syntax of the output data is compliant with JLCPCB PnP file guidelines and looks like this:"
+        "<p>"
+        "<tt>name x y layer rotation</tt>"
+        "<p>"
+        "<author>Author: support@cadsoft.de</author>"
+        "<p>"
+        "<author>Editted by: jgc3silva@gmail.com</author>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+if(board)
+board(B)
+{
+    string fileName = dlgFileSave("Save File", filesetext(B.name, ".csv"), "*.csv");
+
+    if(fileName == "")
+        exit(0);
+
+    output(fileName)
+    {
+        printf("name,x,y,layer,rotation\n");
+
+        B.elements(E)
+        {
+            if(E.populate)
+            {
+                string layerName = "";
+                int isSMD = 0;
+                int xmax = -2147483648;
+                int xmin = 2147483647;
+                int ymax = -2147483648;
+                int ymin = 2147483647;
+
+                isSMD = 0;
+
+                E.package.contacts(C)
+                {
+                    if(C.smd && (C.smd.layer == 1 || C.smd.layer == 16))
+                    {
+                        if(C.smd.layer == 1)
+                            layerName = "T";
+                        else if(C.smd.layer == 16)
+                            layerName = "B";
+
+                        isSMD = 1;
+
+                        if(C.x > xmax)
+                            xmax = C.x;
+                        if(C.y > ymax)
+                            ymax = C.y;
+                        if(C.x < xmin)
+                            xmin = C.x;
+                        if(C.y < ymin)
+                            ymin = C.y;
+                    }
+                }
+
+                if(isSMD)
+                    printf("%s,%5.2f,%5.2f,%s,%3.0f\n", E.name, u2mm((xmin + xmax)/2), u2mm((ymin + ymax)/2), layerName, E.angle);
+            }
+        }
+    }
+
+    dlgMessageBox("\n    Done    \n");
+}
+else
+{
+    dlgMessageBox("\n    Start this ULP in a Board    \n");
+
+    exit(0);
+}

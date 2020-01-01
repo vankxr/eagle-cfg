@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -648,7 +648,7 @@
 <pin name="!AD_EN" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="!CHG" x="5.08" y="-25.4" length="middle" rot="R180"/>
 <pin name="ILIM" x="5.08" y="-48.26" length="middle" rot="R180"/>
-<pin name="FOD" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="FOD" x="5.08" y="-66.04" length="middle" rot="R180"/>
 <pin name="EN2" x="-30.48" y="-50.8" length="middle"/>
 <pin name="TS/CTRL" x="5.08" y="-22.86" length="middle" rot="R180"/>
 <pin name="RECT" x="5.08" y="-35.56" length="middle" rot="R180"/>

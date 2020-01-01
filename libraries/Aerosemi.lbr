@@ -206,11 +206,11 @@
 </packages>
 <symbols>
 <symbol name="MT3608">
-<pin name="VIN" x="-17.78" y="-2.54" length="short"/>
-<pin name="EN" x="-17.78" y="-10.16" length="short"/>
-<pin name="GND" x="-17.78" y="-17.78" length="short"/>
-<pin name="FB" x="2.54" y="-17.78" length="short" rot="R180"/>
-<pin name="SW" x="2.54" y="-2.54" length="short" rot="R180"/>
+<pin name="VIN" x="-20.32" y="-2.54" length="middle"/>
+<pin name="EN" x="-20.32" y="-10.16" length="middle"/>
+<pin name="GND" x="-20.32" y="-17.78" length="middle"/>
+<pin name="FB" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="SW" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <wire x1="-15.24" y1="0" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="-20.32" x2="0" y2="0" width="0.254" layer="94"/>

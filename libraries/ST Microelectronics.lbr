@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -180,6 +180,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
@@ -964,8 +966,6 @@
 <wire x1="-43.18" y1="0" x2="-43.18" y2="-121.92" width="0.254" layer="94"/>
 <wire x1="-43.18" y1="-121.92" x2="0" y2="-121.92" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-121.92" width="0.254" layer="94"/>
-<text x="-43.18" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VDD@1" x="-48.26" y="-116.84" length="middle" direction="pwr"/>
 <pin name="VDD@2" x="-48.26" y="-114.3" length="middle" direction="pwr"/>
 <pin name="VDD@3" x="-48.26" y="-111.76" length="middle" direction="pwr"/>
@@ -985,6 +985,8 @@
 <text x="-2.54" y="-79.502" size="1.5" layer="100" align="bottom-right">PD13</text>
 <text x="-2.54" y="-82.042" size="1.5" layer="100" align="bottom-right">PD14</text>
 <text x="-2.54" y="-84.582" size="1.5" layer="100" align="bottom-right">PD15</text>
+<text x="-43.18" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F446VE">
 <pin name="VDDA" x="-48.26" y="-160.02" length="middle" direction="pwr"/>
@@ -1048,8 +1050,6 @@
 <wire x1="-43.18" y1="0" x2="-43.18" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="-43.18" y1="-180.34" x2="0" y2="-180.34" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-180.34" width="0.254" layer="94"/>
-<text x="-43.18" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VDD@1" x="-48.26" y="-175.26" length="middle" direction="pwr"/>
 <pin name="VDD@2" x="-48.26" y="-172.72" length="middle" direction="pwr"/>
 <pin name="VDD@3" x="-48.26" y="-170.18" length="middle" direction="pwr"/>
@@ -1108,6 +1108,8 @@
 <text x="-2.54" y="-122.682" size="1.5" layer="100" align="bottom-right">PH13</text>
 <text x="-2.54" y="-125.222" size="1.5" layer="100" align="bottom-right">PH14</text>
 <text x="-2.54" y="-127.762" size="1.5" layer="100" align="bottom-right">PH15</text>
+<text x="-43.18" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F103T8">
 <pin name="VDDA" x="-48.26" y="-93.98" length="middle" direction="pwr"/>
@@ -1146,8 +1148,6 @@
 <wire x1="-43.18" y1="0" x2="-43.18" y2="-106.68" width="0.254" layer="94"/>
 <wire x1="-43.18" y1="-106.68" x2="0" y2="-106.68" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-106.68" width="0.254" layer="94"/>
-<text x="-43.18" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VDD@1" x="-48.26" y="-101.6" length="middle" direction="pwr"/>
 <pin name="VDD@2" x="-48.26" y="-99.06" length="middle" direction="pwr"/>
 <pin name="VSS@1" x="5.08" y="-101.6" length="middle" direction="pas" rot="R180"/>
@@ -1175,6 +1175,8 @@
 <text x="-2.54" y="-38.862" size="1.5" layer="100" align="bottom-right">P\B14</text>
 <text x="-2.54" y="-41.402" size="1.5" layer="100" align="bottom-right">PB15</text>
 <pin name="VSS@3" x="5.08" y="-96.52" length="middle" direction="pas" rot="R180"/>
+<text x="-43.18" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="VL53L0X">
 <pin name="GND@0" x="-33.02" y="-22.86" length="middle" direction="pwr"/>
@@ -1183,8 +1185,6 @@
 <wire x1="-27.94" y1="0" x2="-27.94" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="-27.94" y1="-33.02" x2="0" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-33.02" width="0.254" layer="94"/>
-<text x="-27.94" y="4.826" size="1.27" layer="95" align="top-left">&gt;NAME</text>
-<text x="-27.94" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="AVDD" x="-33.02" y="-2.54" length="middle" direction="pwr"/>
 <pin name="AVDDVCSEL" x="-33.02" y="-5.08" length="middle" direction="pwr"/>
 <pin name="AVSSVCSEL" x="-33.02" y="-20.32" length="middle" direction="pwr"/>
@@ -1194,6 +1194,8 @@
 <pin name="GND@1" x="-33.02" y="-25.4" length="middle" direction="pwr"/>
 <pin name="GND@2" x="-33.02" y="-27.94" length="middle" direction="pwr"/>
 <pin name="GND@3" x="-33.02" y="-30.48" length="middle" direction="pwr"/>
+<text x="-27.94" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-27.94" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>

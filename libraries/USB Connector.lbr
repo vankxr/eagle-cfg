@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -695,7 +695,6 @@ Package for LCSC connector C319148</description>
 <text x="-8.01" y="15.81" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="USB-C-24P-SMD-FLAT-SIDE">
-<description>Package for LCSC connector C167321</description>
 <text x="-5.06" y="5.325" size="0.3048" layer="51">PCB Edge</text>
 <wire x1="-3.4" y1="4.965" x2="-2.7" y2="4.665" width="0.08" layer="51"/>
 <wire x1="-2.7" y1="4.665" x2="-2.8" y2="4.865" width="0.08" layer="51"/>
