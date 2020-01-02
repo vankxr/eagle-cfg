@@ -208,7 +208,7 @@
 <smd name="2" x="8.8" y="-3.5" dx="2.6" dy="1.8" layer="1" rot="R90"/>
 <smd name="3" x="4.8" y="3.5" dx="2.6" dy="1.8" layer="1" rot="R90"/>
 <smd name="4" x="10.6" y="3.3" dx="3" dy="1.8" layer="1" rot="R90"/>
-<text x="3.48" y="-4.08" size="0.8" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<text x="3.48" y="-4.08" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <wire x1="0" y1="-3" x2="11.5" y2="-3" width="0.127" layer="51"/>
 <wire x1="0" y1="3" x2="11.5" y2="3" width="0.127" layer="51"/>
 <wire x1="-2" y1="2.5" x2="0" y2="2.5" width="0.127" layer="51"/>

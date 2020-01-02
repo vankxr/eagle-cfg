@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -206,38 +206,35 @@
 </packages>
 <symbols>
 <symbol name="FS312F-G">
-<pin name="OD" x="2.54" y="-2.54" length="short" rot="R180"/>
-<pin name="CS" x="-17.78" y="-7.62" length="short"/>
-<pin name="OC" x="2.54" y="-12.7" length="short" rot="R180"/>
-<pin name="TD" x="2.54" y="-7.62" length="short" rot="R180"/>
-<pin name="VCC" x="-17.78" y="-2.54" length="short"/>
-<pin name="GND" x="-17.78" y="-12.7" length="short"/>
-<wire x1="-15.24" y1="0" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="OD" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="CS" x="-20.32" y="-7.62" length="middle"/>
+<pin name="OC" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="TD" x="-20.32" y="-10.16" length="middle"/>
+<pin name="VCC" x="-20.32" y="-2.54" length="middle"/>
+<pin name="GND" x="-20.32" y="-15.24" length="middle"/>
+<wire x1="-15.24" y1="0" x2="-15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-17.78" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-15.24" y2="0" width="0.254" layer="94"/>
 <text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="FS8205">
 <pin name="S1" x="-25.4" y="-7.62" visible="pad" length="middle"/>
-<pin name="D12_1" x="-10.16" y="5.08" visible="pad" length="middle" rot="R270"/>
 <pin name="S2" x="5.08" y="-7.62" visible="pad" length="middle" rot="R180"/>
 <pin name="G2" x="-5.08" y="5.08" visible="pad" length="middle" rot="R270"/>
-<pin name="D12_2" x="-10.16" y="-20.32" visible="pad" length="middle" rot="R90"/>
+<pin name="D12" x="-10.16" y="-20.32" visible="pad" length="middle" rot="R90"/>
 <pin name="G1" x="-15.24" y="5.08" visible="pad" length="middle" rot="R270"/>
 <wire x1="-20.32" y1="0" x2="-20.32" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="0" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-20.32" y2="0" width="0.254" layer="94"/>
 <text x="-19.558" y="-7.112" size="0.8128" layer="97">S1</text>
 <text x="-2.032" y="-7.112" size="0.8128" layer="97">S2</text>
 <text x="-4.572" y="-1.27" size="0.8128" layer="97">G2</text>
 <text x="-11.684" y="-14.732" size="0.8128" layer="97">D</text>
 <text x="-14.732" y="-1.27" size="0.8128" layer="97">G1</text>
-<text x="-9.652" y="-1.27" size="0.8128" layer="97">D</text>
 <text x="2.032" y="-1.524" size="1.27" layer="95">&gt;NAME</text>
 <text x="2.032" y="-3.81" size="1.27" layer="96">&gt;VALUE</text>
 <wire x1="-12.192" y1="-7.62" x2="-12.954" y2="-7.62" width="0.1524" layer="94"/>
@@ -269,7 +266,8 @@
 <vertex x="-15.748" y="-8.89"/>
 <vertex x="-14.732" y="-9.398"/>
 </polygon>
-<wire x1="-12.192" y1="-7.62" x2="-8.128" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-12.192" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-8.128" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-8.128" y1="-7.62" x2="-7.366" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="0" y1="-7.62" x2="-2.032" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-5.08" y2="-4.318" width="0.1524" layer="94"/>
@@ -299,8 +297,8 @@
 <vertex x="-4.572" y="-8.89"/>
 <vertex x="-5.588" y="-9.398"/>
 </polygon>
-<wire x1="-10.16" y1="0" x2="-10.16" y2="-15.24" width="0.1524" layer="94"/>
 <circle x="-10.16" y="-7.62" radius="0.2032" width="0.2032" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -324,15 +322,14 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="FS8205" prefix="U">
+<deviceset name="FS8205" prefix="Q">
 <gates>
 <gate name="G$1" symbol="FS8205" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23-6">
 <connects>
-<connect gate="G$1" pin="D12_1" pad="2"/>
-<connect gate="G$1" pin="D12_2" pad="5"/>
+<connect gate="G$1" pin="D12" pad="2 5"/>
 <connect gate="G$1" pin="G1" pad="6"/>
 <connect gate="G$1" pin="G2" pad="4"/>
 <connect gate="G$1" pin="S1" pad="1"/>
