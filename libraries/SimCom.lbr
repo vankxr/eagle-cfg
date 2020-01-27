@@ -373,6 +373,7 @@
 <wire x1="7.85" y1="8.8" x2="4.95" y2="8.8" width="0.127" layer="21"/>
 <wire x1="-7.85" y1="-6.6" x2="-7.85" y2="-8.8" width="0.127" layer="21"/>
 <wire x1="-7.85" y1="-8.8" x2="-4.95" y2="-8.8" width="0.127" layer="21"/>
+<circle x="-9.271" y="7.62" radius="0.381" width="0" layer="21"/>
 </package>
 <package name="SIM800C">
 <wire x1="-7.85" y1="8.8" x2="7.85" y2="8.8" width="0.127" layer="51"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -1322,18 +1322,18 @@
 <circle x="-4.041" y="3.059" radius="0.3" width="0" layer="21"/>
 </package>
 <package name="VDFN6">
-<smd name="1" x="-0.83" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="6" x="-0.83" y="0.725" dx="0.65" dy="0.85" layer="1"/>
 <text x="-1.148" y="1.448" size="0.8128" layer="25">&gt;NAME</text>
-<circle x="-1.614" y="1.383" radius="0.2" width="0" layer="21"/>
+<circle x="-1.614" y="-1.383" radius="0.2" width="0" layer="21"/>
 <wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
 <wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
 <wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
 <wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
-<smd name="2" x="0" y="0.725" dx="0.25" dy="0.85" layer="1"/>
-<smd name="3" x="0.83" y="0.725" dx="0.65" dy="0.85" layer="1"/>
-<smd name="4" x="0.83" y="-0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
-<smd name="5" x="0" y="-0.725" dx="0.25" dy="0.85" layer="1" rot="R180"/>
-<smd name="6" x="-0.83" y="-0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
+<smd name="5" x="0" y="0.725" dx="0.25" dy="0.85" layer="1"/>
+<smd name="4" x="0.83" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="3" x="0.83" y="-0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
+<smd name="2" x="0" y="-0.725" dx="0.25" dy="0.85" layer="1" rot="R180"/>
+<smd name="1" x="-0.83" y="-0.725" dx="0.65" dy="0.85" layer="1" rot="R180"/>
 <wire x1="-1.25" y1="0.1" x2="-1.25" y2="-0.1" width="0.127" layer="21"/>
 <wire x1="1.25" y1="0.1" x2="1.25" y2="-0.1" width="0.127" layer="21"/>
 </package>
@@ -3027,6 +3027,29 @@
 <pin name="TDO/GPIO7" x="5.08" y="-27.94" length="middle" direction="in" rot="R180"/>
 <pin name="TMS/GPIO8" x="5.08" y="-30.48" length="middle" direction="in" rot="R180"/>
 <pin name="HPD/TCK/GPIO9" x="5.08" y="-33.02" length="middle" direction="in" rot="R180"/>
+</symbol>
+<symbol name="MCP23009">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="-33.02" x2="-20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-33.02" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="-25.4" y="-2.54" length="middle"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VSS" x="-25.4" y="-30.48" length="middle"/>
+<pin name="SCL" x="-25.4" y="-17.78" length="middle"/>
+<pin name="SDA" x="-25.4" y="-20.32" length="middle"/>
+<pin name="GP0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="ADDR" x="-25.4" y="-25.4" length="middle"/>
+<pin name="INT" x="-25.4" y="-12.7" length="middle"/>
+<pin name="!RESET" x="-25.4" y="-10.16" length="middle"/>
+<pin name="GP1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="GP2" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GP3" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="GP4" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="GP5" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="GP6" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="GP7" x="5.08" y="-20.32" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4925,6 +4948,35 @@
 <technologies>
 <technology name="A"/>
 <technology name="C"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP23009" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP23009" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN16">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="7"/>
+<connect gate="G$1" pin="ADDR" pad="6"/>
+<connect gate="G$1" pin="GP0" pad="9"/>
+<connect gate="G$1" pin="GP1" pad="10"/>
+<connect gate="G$1" pin="GP2" pad="11"/>
+<connect gate="G$1" pin="GP3" pad="12"/>
+<connect gate="G$1" pin="GP4" pad="13"/>
+<connect gate="G$1" pin="GP5" pad="14"/>
+<connect gate="G$1" pin="GP6" pad="15"/>
+<connect gate="G$1" pin="GP7" pad="16"/>
+<connect gate="G$1" pin="INT" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="1 17"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
