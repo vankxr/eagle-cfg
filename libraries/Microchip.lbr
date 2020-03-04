@@ -3051,6 +3051,31 @@
 <pin name="GP6" x="5.08" y="-17.78" length="middle" rot="R180"/>
 <pin name="GP7" x="5.08" y="-20.32" length="middle" rot="R180"/>
 </symbol>
+<symbol name="MCP23008">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="-20.32" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-38.1" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="-25.4" y="-2.54" length="middle"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VSS" x="-25.4" y="-35.56" length="middle"/>
+<pin name="SCL" x="-25.4" y="-17.78" length="middle"/>
+<pin name="SDA" x="-25.4" y="-20.32" length="middle"/>
+<pin name="GP0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="A2" x="-25.4" y="-30.48" length="middle"/>
+<pin name="INT" x="-25.4" y="-12.7" length="middle"/>
+<pin name="!RESET" x="-25.4" y="-10.16" length="middle"/>
+<pin name="GP1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="GP2" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GP3" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="GP4" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="GP5" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="GP6" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="GP7" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="A1" x="-25.4" y="-27.94" length="middle"/>
+<pin name="A0" x="-25.4" y="-25.4" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -4974,6 +4999,37 @@
 <connect gate="G$1" pin="SDA" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
 <connect gate="G$1" pin="VSS" pad="1 17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP23008" prefix="U">
+<gates>
+<gate name="G$1" symbol="MCP23008" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN20">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="4"/>
+<connect gate="G$1" pin="A0" pad="3"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="1"/>
+<connect gate="G$1" pin="GP0" pad="9"/>
+<connect gate="G$1" pin="GP1" pad="10"/>
+<connect gate="G$1" pin="GP2" pad="11"/>
+<connect gate="G$1" pin="GP3" pad="12"/>
+<connect gate="G$1" pin="GP4" pad="13"/>
+<connect gate="G$1" pin="GP5" pad="14"/>
+<connect gate="G$1" pin="GP6" pad="15"/>
+<connect gate="G$1" pin="GP7" pad="16"/>
+<connect gate="G$1" pin="INT" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="19"/>
+<connect gate="G$1" pin="SDA" pad="20"/>
+<connect gate="G$1" pin="VDD" pad="18"/>
+<connect gate="G$1" pin="VSS" pad="17 PAD"/>
 </connects>
 <technologies>
 <technology name=""/>
