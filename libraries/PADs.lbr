@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -150,6 +150,11 @@
 <smd name="TP" x="0" y="0" dx="0.7" dy="0.7" layer="1" roundness="100" cream="no"/>
 <text x="-0.635" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
+<package name="PAD2.54MM">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="2.54" dy="2.54" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TESTPOINT">
@@ -176,6 +181,14 @@
 </technologies>
 </device>
 <device name="-0.7MM" package="PAD0.7MM">
+<connects>
+<connect gate="G$1" pin="TP" pad="TP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.54MM" package="PAD2.54MM">
 <connects>
 <connect gate="G$1" pin="TP" pad="TP"/>
 </connects>

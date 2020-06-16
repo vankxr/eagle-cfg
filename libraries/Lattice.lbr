@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -760,7 +760,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="ICE40HX8K-CT256-PWRCFG">
+<symbol name="ICE40HX8K-CT256-PWRCTRL">
 <pin name="CDONE" x="5.08" y="-5.08" length="middle" direction="pas" rot="R180"/>
 <pin name="!CRESET" x="5.08" y="-2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="GND@0" x="5.08" y="-43.18" length="middle" direction="pwr" rot="R180"/>
@@ -1078,11 +1078,119 @@
 <text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="ICE40LP384-SG32-PWRCTRL">
+<pin name="CDONE" x="5.08" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="!CRESET" x="5.08" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="GND@0" x="5.08" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC@0" x="-35.56" y="-2.54" length="middle" direction="pwr"/>
+<pin name="VCCIO0@0" x="-35.56" y="-17.78" length="middle" direction="pwr"/>
+<pin name="VCC_SPI" x="-35.56" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VPP_2V5" x="-35.56" y="-7.62" length="middle" direction="pwr"/>
+<pin name="GND@1" x="5.08" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCCIO1@0" x="-35.56" y="-20.32" length="middle" direction="pwr"/>
+<pin name="VCCIO2@0" x="-35.56" y="-22.86" length="middle" direction="pwr"/>
+<pin name="VCCIO3@0" x="-35.56" y="-25.4" length="middle" direction="pwr"/>
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="-30.48" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-27.94" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND@2" x="5.08" y="-25.4" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="ICE40LP384-SG32-BANK3">
+<pin name="IOL_4B_GBIN7" x="-38.1" y="-20.32" length="middle"/>
+<pin name="IOL_5A_GBIN6" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="IOL_5B" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="-33.02" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-22.86" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-30.6705" y="-2.54" size="1.524" layer="100" align="center-left">IOL_1A</text>
+<text x="-2.3495" y="-7.62" size="1.524" layer="100" rot="R180" align="center-left">IOL_6A</text>
+<text x="-30.6705" y="-5.08" size="1.524" layer="100" align="center-left">IOL_1B</text>
+<text x="-30.6705" y="-12.7" size="1.524" layer="100" align="center-left">IOL_3A</text>
+<text x="-30.6705" y="-15.24" size="1.524" layer="100" align="center-left">IOL_3B</text>
+<pin name="IOL_4A" x="-38.1" y="-17.78" length="middle"/>
+<text x="-2.3495" y="-10.16" size="1.524" layer="100" rot="R180" align="center-left">IOL_6B</text>
+<text x="-2.3495" y="-12.7" size="1.524" layer="100" rot="R180" align="center-left">IOL_7A</text>
+<text x="-2.3495" y="-15.24" size="1.524" layer="100" rot="R180" align="center-left">IOL_7B</text>
+<text x="-2.3495" y="-17.78" size="1.524" layer="100" rot="R180" align="center-left">IOL_8A</text>
+<text x="-2.3495" y="-20.32" size="1.524" layer="100" rot="R180" align="center-left">IOL_8B</text>
+<pin name="IOL_2A" x="-38.1" y="-7.62" length="middle"/>
+<pin name="IOL_2B" x="-38.1" y="-10.16" length="middle"/>
+</symbol>
+<symbol name="ICE40LP384-SG32-BANK2SPI">
+<pin name="SDO/IOB_24" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="SDI/IOB_25" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-38.1" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="-38.1" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-38.1" y1="-17.78" x2="-38.1" y2="0" width="0.254" layer="94"/>
+<text x="-38.1" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-38.1" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="SCK/IOB_26" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="!SS!/IOB_27" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<text x="-35.7505" y="-2.54" size="1.524" layer="100" align="center-left">IOB_16</text>
+<text x="-2.3495" y="-2.54" size="1.524" layer="100" rot="R180" align="center-left">CBSEL0/IOB_22_GBIN4</text>
+<text x="-35.7505" y="-5.08" size="1.524" layer="100" align="center-left">IOB_17</text>
+<text x="-35.7505" y="-7.62" size="1.524" layer="100" align="center-left">IOB_18</text>
+<text x="-35.7505" y="-10.16" size="1.524" layer="100" align="center-left">IOB_19</text>
+<text x="-35.7505" y="-12.7" size="1.524" layer="100" align="center-left">IOB_20</text>
+<text x="-35.7505" y="-15.24" size="1.524" layer="100" align="center-left">IOB_21_GBIN5</text>
+<text x="-2.3495" y="-5.08" size="1.524" layer="100" rot="R180" align="center-left">CBSEL1/IOB_23</text>
+</symbol>
+<symbol name="ICE40LP384-SG32-BANK1">
+<pin name="IOR_34" x="-38.1" y="-17.78" length="middle"/>
+<pin name="IOR_35_GBIN3" x="-38.1" y="-20.32" length="middle"/>
+<pin name="IOR_36_GBIN2" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="IOR_38" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="IOR_39" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="-33.02" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-22.86" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-30.6705" y="-2.54" size="1.524" layer="100" align="center-left">IOR_28</text>
+<text x="-30.6705" y="-5.08" size="1.524" layer="100" align="center-left">IOR_29</text>
+<text x="-2.3495" y="-5.08" size="1.524" layer="100" rot="R180" align="center-left">IOR_37</text>
+<text x="-2.3495" y="-12.7" size="1.524" layer="100" rot="R180" align="center-left">IOR_40</text>
+<text x="-2.3495" y="-15.24" size="1.524" layer="100" rot="R180" align="center-left">IOR_41</text>
+<text x="-2.3495" y="-17.78" size="1.524" layer="100" rot="R180" align="center-left">IOR_42</text>
+<text x="-2.3495" y="-20.32" size="1.524" layer="100" rot="R180" align="center-left">IOR_43</text>
+<text x="-30.6705" y="-7.62" size="1.524" layer="100" align="center-left">IOR_30</text>
+<text x="-30.6705" y="-10.16" size="1.524" layer="100" align="center-left">IOR_31</text>
+<text x="-30.6705" y="-12.7" size="1.524" layer="100" align="center-left">IOR_32</text>
+<text x="-30.6705" y="-15.24" size="1.524" layer="100" align="center-left">IOR_33</text>
+</symbol>
+<symbol name="ICE40LP384-SG32-BANK0">
+<pin name="IOT_49_GBIN0" x="-38.1" y="-15.24" length="middle"/>
+<pin name="IOT_50_GBIN1" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="0" y1="-17.78" x2="-33.02" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-17.78" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-30.6705" y="-2.54" size="1.524" layer="100" align="center-left">IOT_44</text>
+<text x="-2.3495" y="-15.24" size="1.524" layer="100" rot="R180" align="center-left">IOT_55</text>
+<text x="-2.3495" y="-12.7" size="1.524" layer="100" rot="R180" align="center-left">IOT_54</text>
+<pin name="IOT_47" x="-38.1" y="-10.16" length="middle"/>
+<pin name="IOT_45" x="-38.1" y="-5.08" length="middle"/>
+<text x="-30.6705" y="-12.7" size="1.524" layer="100" align="center-left">IOT_48</text>
+<text x="-30.6705" y="-7.62" size="1.524" layer="100" align="center-left">IOT_46</text>
+<pin name="IOT_52" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="IOT_53" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<text x="-2.3495" y="-5.08" size="1.524" layer="100" rot="R180" align="center-left">IOT_51</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ICE40HX8K-CT256" prefix="U">
 <gates>
-<gate name=".PWRCTRL" symbol="ICE40HX8K-CT256-PWRCFG" x="0" y="0"/>
+<gate name=".PWRCTRL" symbol="ICE40HX8K-CT256-PWRCTRL" x="0" y="0"/>
 <gate name=".BANK0" symbol="ICE40HX8K-CT256-BANK0" x="-68.58" y="-114.3"/>
 <gate name=".BANK1" symbol="ICE40HX8K-CT256-BANK1" x="-17.78" y="-114.3"/>
 <gate name=".BANK2SPI" symbol="ICE40HX8K-CT256-BANK2SPI" x="33.02" y="-114.3"/>
@@ -1346,6 +1454,57 @@
 <connect gate=".PWRCTRL" pin="VCC_SPI" pad="N13"/>
 <connect gate=".PWRCTRL" pin="VPP_2V5" pad="E12"/>
 <connect gate=".PWRCTRL" pin="VPP_FAST" pad="D12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ICE40HX8K-SG32" prefix="U">
+<gates>
+<gate name=".PWRCTRL" symbol="ICE40LP384-SG32-PWRCTRL" x="0" y="0"/>
+<gate name=".BANK0" symbol="ICE40LP384-SG32-BANK0" x="-68.58" y="-40.64"/>
+<gate name=".BANK1" symbol="ICE40LP384-SG32-BANK1" x="-17.78" y="-40.64"/>
+<gate name=".BANK2SPI" symbol="ICE40LP384-SG32-BANK2SPI" x="33.02" y="-40.64"/>
+<gate name=".BANK3" symbol="ICE40LP384-SG32-BANK3" x="83.82" y="-40.64"/>
+</gates>
+<devices>
+<device name="" package="QFN32">
+<connects>
+<connect gate=".BANK0" pin="IOT_45" pad="26"/>
+<connect gate=".BANK0" pin="IOT_47" pad="27"/>
+<connect gate=".BANK0" pin="IOT_49_GBIN0" pad="29"/>
+<connect gate=".BANK0" pin="IOT_50_GBIN1" pad="30"/>
+<connect gate=".BANK0" pin="IOT_52" pad="32"/>
+<connect gate=".BANK0" pin="IOT_53" pad="31"/>
+<connect gate=".BANK1" pin="IOR_34" pad="18"/>
+<connect gate=".BANK1" pin="IOR_35_GBIN3" pad="19"/>
+<connect gate=".BANK1" pin="IOR_36_GBIN2" pad="20"/>
+<connect gate=".BANK1" pin="IOR_38" pad="22"/>
+<connect gate=".BANK1" pin="IOR_39" pad="23"/>
+<connect gate=".BANK2SPI" pin="!SS!/IOB_27" pad="14"/>
+<connect gate=".BANK2SPI" pin="SCK/IOB_26" pad="15"/>
+<connect gate=".BANK2SPI" pin="SDI/IOB_25" pad="13"/>
+<connect gate=".BANK2SPI" pin="SDO/IOB_24" pad="12"/>
+<connect gate=".BANK3" pin="IOL_2A" pad="2"/>
+<connect gate=".BANK3" pin="IOL_2B" pad="1"/>
+<connect gate=".BANK3" pin="IOL_4A" pad="5"/>
+<connect gate=".BANK3" pin="IOL_4B_GBIN7" pad="6"/>
+<connect gate=".BANK3" pin="IOL_5A_GBIN6" pad="8"/>
+<connect gate=".BANK3" pin="IOL_5B" pad="7"/>
+<connect gate=".PWRCTRL" pin="!CRESET" pad="10"/>
+<connect gate=".PWRCTRL" pin="CDONE" pad="11"/>
+<connect gate=".PWRCTRL" pin="GND@0" pad="3"/>
+<connect gate=".PWRCTRL" pin="GND@1" pad="21"/>
+<connect gate=".PWRCTRL" pin="GND@2" pad="33"/>
+<connect gate=".PWRCTRL" pin="VCC@0" pad="25"/>
+<connect gate=".PWRCTRL" pin="VCCIO0@0" pad="28"/>
+<connect gate=".PWRCTRL" pin="VCCIO1@0" pad="17"/>
+<connect gate=".PWRCTRL" pin="VCCIO2@0" pad="9"/>
+<connect gate=".PWRCTRL" pin="VCCIO3@0" pad="4"/>
+<connect gate=".PWRCTRL" pin="VCC_SPI" pad="16"/>
+<connect gate=".PWRCTRL" pin="VPP_2V5" pad="24"/>
 </connects>
 <technologies>
 <technology name=""/>

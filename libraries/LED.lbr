@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -449,7 +449,7 @@
 <pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
 <text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<text x="-4.064" y="0.381" size="1.778" layer="21" font="vector">+</text>
+<text x="-2.794" y="1.651" size="1.27" layer="21" font="vector" align="center">+</text>
 </package>
 <package name="LED_5MM" urn="urn:adsk.eagle:footprint:39305/1" locally_modified="yes">
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="22"/>
