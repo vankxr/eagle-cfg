@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -229,30 +229,32 @@
 <symbols>
 <symbol name="NEO-7">
 <wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-60.96" width="0.254" layer="94"/>
-<wire x1="0" y1="-60.96" x2="-25.4" y2="-60.96" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-60.96" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="0" y1="-68.58" x2="-25.4" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-68.58" x2="-25.4" y2="0" width="0.254" layer="94"/>
 <text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="RF_IN" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VCC" x="-30.48" y="-2.54" length="middle"/>
-<pin name="VCC_RF" x="-30.48" y="-45.72" length="middle"/>
-<pin name="GND@0" x="-30.48" y="-50.8" length="middle"/>
+<pin name="VCC_RF" x="-30.48" y="-53.34" length="middle"/>
+<pin name="GND@0" x="-30.48" y="-58.42" length="middle"/>
 <pin name="!RESET" x="-30.48" y="-15.24" length="middle"/>
 <pin name="SDA" x="-30.48" y="-27.94" length="middle"/>
 <pin name="SCL" x="-30.48" y="-30.48" length="middle"/>
-<pin name="GND@1" x="-30.48" y="-53.34" length="middle"/>
-<pin name="GND@2" x="-30.48" y="-55.88" length="middle"/>
-<pin name="GND@3" x="-30.48" y="-58.42" length="middle"/>
+<pin name="GND@1" x="-30.48" y="-60.96" length="middle"/>
+<pin name="GND@2" x="-30.48" y="-63.5" length="middle"/>
+<pin name="GND@3" x="-30.48" y="-66.04" length="middle"/>
 <pin name="V_BKP" x="-30.48" y="-7.62" length="middle"/>
 <pin name="VDD_USB" x="-30.48" y="-5.08" length="middle"/>
 <pin name="USB_DP" x="-30.48" y="-20.32" length="middle"/>
 <pin name="USB_DM" x="-30.48" y="-22.86" length="middle"/>
-<pin name="TXD" x="-30.48" y="-35.56" length="middle"/>
-<pin name="RXD" x="-30.48" y="-38.1" length="middle"/>
-<pin name="EXTINT" x="5.08" y="-38.1" length="middle" rot="R180"/>
-<pin name="TIMEPULSE" x="5.08" y="-40.64" length="middle" rot="R180"/>
-<pin name="D_SEL" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="TXD1" x="-30.48" y="-35.56" length="middle"/>
+<pin name="RXD1" x="-30.48" y="-38.1" length="middle"/>
+<pin name="EXTINT" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="TIMEPULSE" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="D_SEL" x="5.08" y="-66.04" length="middle" rot="R180"/>
+<pin name="TXD2" x="-30.48" y="-43.18" length="middle"/>
+<pin name="RXD2" x="-30.48" y="-45.72" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -271,11 +273,13 @@
 <connect gate="G$1" pin="GND@2" pad="13"/>
 <connect gate="G$1" pin="GND@3" pad="24"/>
 <connect gate="G$1" pin="RF_IN" pad="11"/>
-<connect gate="G$1" pin="RXD" pad="21"/>
+<connect gate="G$1" pin="RXD1" pad="21"/>
+<connect gate="G$1" pin="RXD2" pad="17"/>
 <connect gate="G$1" pin="SCL" pad="19"/>
 <connect gate="G$1" pin="SDA" pad="18"/>
 <connect gate="G$1" pin="TIMEPULSE" pad="3"/>
-<connect gate="G$1" pin="TXD" pad="20"/>
+<connect gate="G$1" pin="TXD1" pad="20"/>
+<connect gate="G$1" pin="TXD2" pad="16"/>
 <connect gate="G$1" pin="USB_DM" pad="5"/>
 <connect gate="G$1" pin="USB_DP" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="23"/>

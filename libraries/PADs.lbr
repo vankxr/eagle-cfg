@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -155,6 +155,33 @@
 <smd name="TP" x="0" y="0" dx="2.54" dy="2.54" layer="1" roundness="100" cream="no"/>
 <text x="-0.635" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
+<package name="RCU">
+<smd name="P$1" x="0" y="0" dx="2" dy="1.2" layer="1"/>
+<wire x1="-1.3" y1="0.9" x2="-1.3" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-0.9" x2="1.3" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-0.9" x2="1.3" y2="0.9" width="0.127" layer="21"/>
+<wire x1="1.3" y1="0.9" x2="-1.3" y2="0.9" width="0.127" layer="21"/>
+<text x="-1.3" y="1.1" size="0.3048" layer="25">&gt;NAME</text>
+<rectangle x1="-0.8" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
+</package>
+<package name="RCT">
+<smd name="P$1" x="0" y="0" dx="2.4" dy="1.6" layer="1"/>
+<wire x1="-1.5" y1="1.1" x2="-1.5" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.1" x2="1.5" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.1" x2="1.5" y2="1.1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.1" x2="-1.5" y2="1.1" width="0.127" layer="21"/>
+<text x="-1.5" y="1.3" size="0.3048" layer="25">&gt;NAME</text>
+<rectangle x1="-1" y1="-0.625" x2="1" y2="0.625" layer="51"/>
+</package>
+<package name="RCS/W">
+<smd name="P$1" x="0" y="0" dx="3.6" dy="2" layer="1"/>
+<wire x1="-2.1" y1="1.3" x2="-2.1" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-1.3" x2="2.1" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-1.3" x2="2.1" y2="1.3" width="0.127" layer="21"/>
+<wire x1="2.1" y1="1.3" x2="-2.1" y2="1.3" width="0.127" layer="21"/>
+<text x="-2.1" y="1.5" size="0.3048" layer="25">&gt;NAME</text>
+<rectangle x1="-1.6" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TESTPOINT">
@@ -194,6 +221,38 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC*" prefix="TP">
+<gates>
+<gate name="G$1" symbol="TESTPOINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="T" package="RCT">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="U" package="RCU">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="RCS/W">
+<connects>
+<connect gate="G$1" pin="TP" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="S"/>
+<technology name="W"/>
 </technologies>
 </device>
 </devices>
