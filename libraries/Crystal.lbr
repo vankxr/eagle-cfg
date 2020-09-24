@@ -405,6 +405,22 @@
 <circle x="-5.75" y="5.75" radius="1.5" width="0" layer="39"/>
 <text x="-13.97" y="-12.7" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 </package>
+<package name="IQXT-210-23">
+<smd name="1" x="-2" y="-1.185" dx="1.2" dy="0.9" layer="1"/>
+<smd name="2" x="2" y="-1.185" dx="1.2" dy="0.9" layer="1"/>
+<smd name="3" x="2" y="1.185" dx="1.2" dy="0.9" layer="1" rot="R180"/>
+<smd name="4" x="-2" y="1.185" dx="1.2" dy="0.9" layer="1" rot="R180"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-1.1" y1="1.6" x2="1.1" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-0.5" x2="2.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-1.6" x2="-1.1" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.5" x2="-2.5" y2="-0.5" width="0.127" layer="21"/>
+<circle x="-2.5" y="-2.1" radius="0.2" width="0" layer="21"/>
+<text x="-2.3" y="1.9" size="0.8128" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -451,7 +467,7 @@
 <text x="-15.24" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="OCXO">
+<symbol name="OCXO/VCTCXO">
 <wire x1="-15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
@@ -545,7 +561,7 @@
 </deviceset>
 <deviceset name="OSC5A2B02" prefix="U">
 <gates>
-<gate name="G$1" symbol="OCXO" x="0" y="0"/>
+<gate name="G$1" symbol="OCXO/VCTCXO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="OSC5A2B02">
@@ -554,6 +570,41 @@
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCONT" pad="3"/>
 <connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IQXT-210-23" prefix="U">
+<gates>
+<gate name="G$1" symbol="TCXO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IQXT-210-23">
+<connects>
+<connect gate="G$1" pin="CLK" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IQXT-210-3" prefix="U">
+<gates>
+<gate name="G$1" symbol="OCXO/VCTCXO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IQXT-210-23">
+<connects>
+<connect gate="G$1" pin="CLK" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VCONT" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

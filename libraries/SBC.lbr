@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -51,14 +51,14 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -189,19 +189,19 @@
 <packages>
 <package name="ORANGEPIZERO">
 <description>It’s an open-source single-board computer. It can run Android 4.4, Ubuntu, Debian. It uses the AllWinner H2 SoC, and has 256MB/512MB DDR3 SDRAM(256MB version is Standard version</description>
-<wire x1="-21" y1="-24" x2="-23" y2="-22" width="0.127" layer="21" curve="-90"/>
-<wire x1="23" y1="-22" x2="21" y2="-24" width="0.127" layer="21" curve="-90"/>
-<wire x1="21" y1="24" x2="23" y2="22" width="0.127" layer="21" curve="-90"/>
-<wire x1="-23" y1="22" x2="-21" y2="24" width="0.127" layer="21" curve="-90"/>
-<wire x1="23" y1="22" x2="23" y2="16.51" width="0.127" layer="21"/>
+<wire x1="-21" y1="-24" x2="-23" y2="-22" width="0.127" layer="51" curve="-90"/>
+<wire x1="23" y1="-22" x2="21" y2="-24" width="0.127" layer="51" curve="-90"/>
+<wire x1="21" y1="24" x2="23" y2="22" width="0.127" layer="51" curve="-90"/>
+<wire x1="-23" y1="22" x2="-21" y2="24" width="0.127" layer="51" curve="-90"/>
+<wire x1="23" y1="22" x2="23" y2="16.51" width="0.127" layer="51"/>
 <wire x1="23" y1="16.51" x2="23" y2="-16.51" width="0.127" layer="21"/>
-<wire x1="23" y1="-16.51" x2="23" y2="-22" width="0.127" layer="21"/>
-<wire x1="21" y1="-24" x2="-21" y2="-24" width="0.127" layer="21"/>
-<wire x1="-23" y1="-22" x2="-23" y2="22" width="0.127" layer="21"/>
-<hole x="-20.055" y="-21.055" drill="3.2"/>
-<hole x="20.055" y="-21.055" drill="3.2"/>
-<hole x="-20.055" y="21.055" drill="3.2"/>
-<hole x="20.055" y="21.055" drill="3.2"/>
+<wire x1="23" y1="-16.51" x2="23" y2="-22" width="0.127" layer="51"/>
+<wire x1="21" y1="-24" x2="-21" y2="-24" width="0.127" layer="51"/>
+<wire x1="-23" y1="-22" x2="-23" y2="22" width="0.127" layer="51"/>
+<hole x="-20.055" y="-21.055" drill="3"/>
+<hole x="20.055" y="-21.055" drill="3"/>
+<hole x="-20.055" y="21.055" drill="3"/>
+<hole x="20.055" y="21.055" drill="3"/>
 <wire x1="-14" y1="-3" x2="-14" y2="-4" width="0.127" layer="51"/>
 <wire x1="-14" y1="-4" x2="-14" y2="-17" width="0.127" layer="51"/>
 <wire x1="-14" y1="-3" x2="-13" y2="-3" width="0.127" layer="51"/>
@@ -236,10 +236,10 @@
 <pad name="MH$26" x="19.24" y="15.24" drill="1.016" diameter="1.778"/>
 <pad name="MH$25" x="21.75" y="15.24" drill="1.016" diameter="1.778"/>
 <wire x1="-7.985" y1="11.459" x2="-7.985" y2="24" width="0.127" layer="51"/>
-<wire x1="-7.985" y1="24" x2="-7.985" y2="27.207" width="0.127" layer="21"/>
+<wire x1="-7.985" y1="24" x2="-7.985" y2="27.207" width="0.127" layer="51"/>
 <wire x1="-7.985" y1="11.459" x2="8.525" y2="11.459" width="0.127" layer="51"/>
-<wire x1="-7.985" y1="27.207" x2="8.525" y2="27.207" width="0.127" layer="21"/>
-<wire x1="8.525" y1="27.207" x2="8.525" y2="24" width="0.127" layer="21"/>
+<wire x1="-7.985" y1="27.207" x2="8.525" y2="27.207" width="0.127" layer="51"/>
+<wire x1="8.525" y1="27.207" x2="8.525" y2="24" width="0.127" layer="51"/>
 <text x="-8.89" y="-6.35" size="3.5" layer="51" rot="SR270">H2</text>
 <text x="-6.01865625" y="-11.96100625" size="2.5" layer="51" rot="SR270">+</text>
 <wire x1="8.525" y1="24" x2="8.525" y2="11.459" width="0.127" layer="51"/>
@@ -251,7 +251,7 @@
 <vertex x="20.955" y="-18.415"/>
 <vertex x="22.225" y="-18.415"/>
 </polygon>
-<wire x1="21" y1="24" x2="8.525" y2="24" width="0.127" layer="21"/>
+<wire x1="21" y1="24" x2="8.525" y2="24" width="0.127" layer="51"/>
 <pad name="SH$12" x="-21.469" y="-12.7" drill="1.016" diameter="1.778"/>
 <pad name="SH$11" x="-21.469" y="-10.16" drill="1.016" diameter="1.778"/>
 <pad name="SH$10" x="-21.469" y="-7.62" drill="1.016" diameter="1.778"/>
@@ -267,12 +267,12 @@
 <pad name="SH$13" x="-21.469" y="-15.24" drill="1.016" diameter="1.778"/>
 <wire x1="-16.452" y1="13.207" x2="-10.582" y2="13.207" width="0.127" layer="51"/>
 <wire x1="-10.582" y1="13.207" x2="-10.582" y2="24" width="0.127" layer="51"/>
-<wire x1="-10.582" y1="24" x2="-10.582" y2="27.207" width="0.127" layer="21"/>
+<wire x1="-10.582" y1="24" x2="-10.582" y2="27.207" width="0.127" layer="51"/>
 <wire x1="-16.452" y1="13.207" x2="-16.452" y2="24" width="0.127" layer="51"/>
-<wire x1="-16.452" y1="24" x2="-16.452" y2="27.207" width="0.127" layer="21"/>
-<wire x1="-16.452" y1="27.207" x2="-10.582" y2="27.207" width="0.127" layer="21"/>
-<wire x1="-10.582" y1="24" x2="-7.985" y2="24" width="0.127" layer="21"/>
-<wire x1="-21" y1="24" x2="-16.452" y2="24" width="0.127" layer="21"/>
+<wire x1="-16.452" y1="24" x2="-16.452" y2="27.207" width="0.127" layer="51"/>
+<wire x1="-16.452" y1="27.207" x2="-10.582" y2="27.207" width="0.127" layer="51"/>
+<wire x1="-10.582" y1="24" x2="-7.985" y2="24" width="0.127" layer="51"/>
+<wire x1="-21" y1="24" x2="-16.452" y2="24" width="0.127" layer="51"/>
 <text x="-15.84" y="3.215" size="2" layer="51">Orange Pi Zero 
 H2+ 512MB</text>
 <rectangle x1="22.85" y1="20.93" x2="22.89" y2="20.95" layer="21"/>
@@ -4673,9 +4673,10 @@ H2+ 512MB</text>
 <vertex x="10.615" y="23.338"/>
 <vertex x="10.615" y="22.068"/>
 </polygon>
-<wire x1="12.331" y1="16.354" x2="14.75" y2="16.354" width="0.127" layer="21"/>
-<wire x1="12.331" y1="16.354" x2="12.331" y2="24" width="0.127" layer="21"/>
-<wire x1="14.75" y1="16.354" x2="14.75" y2="24" width="0.127" layer="21"/>
+<wire x1="12.301" y1="16.354" x2="14.901" y2="16.354" width="0.127" layer="21"/>
+<wire x1="12.301" y1="16.354" x2="12.301" y2="24" width="0.127" layer="21"/>
+<wire x1="14.901" y1="16.354" x2="14.901" y2="24" width="0.127" layer="21"/>
+<wire x1="12.301" y1="24" x2="14.901" y2="24" width="0.127" layer="21"/>
 </package>
 <package name="ORANGEPIZERO-MHO-NOSILK">
 <description>It’s an open-source single-board computer. It can run Android 4.4, Ubuntu, Debian. It uses the AllWinner H2 SoC, and has 256MB/512MB DDR3 SDRAM(256MB version is Standard version</description>
@@ -4688,10 +4689,10 @@ H2+ 512MB</text>
 <wire x1="23" y1="-16.51" x2="23" y2="-22" width="0.127" layer="21"/>
 <wire x1="21" y1="-24" x2="-21" y2="-24" width="0.127" layer="21"/>
 <wire x1="-23" y1="-22" x2="-23" y2="22" width="0.127" layer="21"/>
-<hole x="-20.055" y="-21.055" drill="3.2"/>
-<hole x="20.055" y="-21.055" drill="3.2"/>
-<hole x="-20.055" y="21.055" drill="3.2"/>
-<hole x="20.055" y="21.055" drill="3.2"/>
+<hole x="-20.055" y="-21.055" drill="3"/>
+<hole x="20.055" y="-21.055" drill="3"/>
+<hole x="-20.055" y="21.055" drill="3"/>
+<hole x="20.055" y="21.055" drill="3"/>
 <pad name="MH$1" x="21.75" y="-15.24" drill="1.016" diameter="1.778"/>
 <pad name="MH$2" x="19.24" y="-15.24" drill="1.016" diameter="1.778"/>
 <pad name="MH$4" x="19.24" y="-12.7" drill="1.016" diameter="1.778"/>
@@ -9192,10 +9193,10 @@ H2+ 512MB</text>
 <pad name="38" x="54.09" y="27.77" drill="1" diameter="1.778"/>
 <pad name="39" x="56.63" y="25.23" drill="1" diameter="1.778"/>
 <pad name="40" x="56.63" y="27.77" drill="1" diameter="1.778"/>
-<hole x="3.5" y="3.5" drill="3.2"/>
-<hole x="3.5" y="26.5" drill="3.2"/>
-<hole x="61.5" y="3.5" drill="3.2"/>
-<hole x="61.5" y="26.5" drill="3.2"/>
+<hole x="3.5" y="3.5" drill="3"/>
+<hole x="3.5" y="26.5" drill="3"/>
+<hole x="61.5" y="3.5" drill="3"/>
+<hole x="61.5" y="26.5" drill="3"/>
 <wire x1="36.9" y1="0" x2="37.75" y2="0" width="0.254" layer="51"/>
 <wire x1="37.75" y1="0" x2="45.25" y2="0" width="0.254" layer="51"/>
 <wire x1="37.75" y1="0" x2="37.75" y2="5.75" width="0.127" layer="51"/>
@@ -9322,7 +9323,7 @@ H2+ 512MB</text>
 <pin name="5V0@2" x="-38.1" y="-5.08" visible="pin" length="middle" direction="sup"/>
 <pin name="(I2C0_SCL)PA11" x="5.08" y="-20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="GND@5" x="-38.1" y="-43.18" visible="pin" length="middle" direction="sup"/>
-<pin name="(PWM)PA6" x="5.08" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="PA6" x="5.08" y="-12.7" visible="pin" length="middle" rot="R180"/>
 <pin name="(UART1_TX)PG6" x="5.08" y="-40.64" visible="pin" length="middle" rot="R180"/>
 <pin name="GND@1" x="-38.1" y="-33.02" visible="pin" length="middle" direction="sup"/>
 <pin name="(UART1_RX)PG7" x="5.08" y="-43.18" visible="pin" length="middle" rot="R180"/>
@@ -9516,7 +9517,6 @@ H2+ 512MB</text>
 <connect gate=".MAIN" pin="(I2C0_SDA)PA12" pad="MH$3"/>
 <connect gate=".MAIN" pin="(I2C1_SCL)PA18" pad="MH$18"/>
 <connect gate=".MAIN" pin="(I2C1_SDA)PA19" pad="MH$16"/>
-<connect gate=".MAIN" pin="(PWM)PA6" pad="MH$7"/>
 <connect gate=".MAIN" pin="(SPI1_CS)PA13" pad="MH$24"/>
 <connect gate=".MAIN" pin="(SPI1_MISO)PA16" pad="MH$21"/>
 <connect gate=".MAIN" pin="(SPI1_MOSI)PA15" pad="MH$19"/>
@@ -9537,6 +9537,7 @@ H2+ 512MB</text>
 <connect gate=".MAIN" pin="GND@4" pad="MH$20"/>
 <connect gate=".MAIN" pin="GND@5" pad="MH$25"/>
 <connect gate=".MAIN" pin="PA10" pad="MH$26"/>
+<connect gate=".MAIN" pin="PA6" pad="MH$7"/>
 <connect gate=".MAIN" pin="PA7" pad="MH$12"/>
 </connects>
 <technologies>
