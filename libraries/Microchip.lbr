@@ -6206,7 +6206,16 @@
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
+<technology name="120"/>
+<technology name="150"/>
+<technology name="180"/>
+<technology name="250"/>
+<technology name="280"/>
+<technology name="300"/>
 <technology name="330"/>
+<technology name="360"/>
+<technology name="400"/>
+<technology name="500"/>
 </technologies>
 </device>
 </devices>
@@ -7841,7 +7850,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP6C02">
+<deviceset name="MCP6C02" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP6C02" x="0" y="0"/>
 </gates>

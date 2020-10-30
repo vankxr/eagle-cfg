@@ -198,10 +198,6 @@
 <wire x1="23" y1="-16.51" x2="23" y2="-22" width="0.127" layer="51"/>
 <wire x1="21" y1="-24" x2="-21" y2="-24" width="0.127" layer="51"/>
 <wire x1="-23" y1="-22" x2="-23" y2="22" width="0.127" layer="51"/>
-<hole x="-20.055" y="-21.055" drill="3"/>
-<hole x="20.055" y="-21.055" drill="3"/>
-<hole x="-20.055" y="21.055" drill="3"/>
-<hole x="20.055" y="21.055" drill="3"/>
 <wire x1="-14" y1="-3" x2="-14" y2="-4" width="0.127" layer="51"/>
 <wire x1="-14" y1="-4" x2="-14" y2="-17" width="0.127" layer="51"/>
 <wire x1="-14" y1="-3" x2="-13" y2="-3" width="0.127" layer="51"/>
@@ -4677,6 +4673,10 @@ H2+ 512MB</text>
 <wire x1="12.301" y1="16.354" x2="12.301" y2="24" width="0.127" layer="21"/>
 <wire x1="14.901" y1="16.354" x2="14.901" y2="24" width="0.127" layer="21"/>
 <wire x1="12.301" y1="24" x2="14.901" y2="24" width="0.127" layer="21"/>
+<pad name="GND@0" x="-20.055" y="21.055" drill="3" diameter="5" thermals="no"/>
+<pad name="GND@1" x="20.055" y="21.055" drill="3" diameter="5" thermals="no"/>
+<pad name="GND@2" x="20.055" y="-21.055" drill="3" diameter="5" thermals="no"/>
+<pad name="GND@3" x="-20.055" y="-21.055" drill="3" diameter="5" thermals="no"/>
 </package>
 <package name="ORANGEPIZERO-MHO-NOSILK">
 <description>It’s an open-source single-board computer. It can run Android 4.4, Ubuntu, Debian. It uses the AllWinner H2 SoC, and has 256MB/512MB DDR3 SDRAM(256MB version is Standard version</description>
@@ -9322,29 +9322,33 @@ H2+ 512MB</text>
 <pin name="(I2C0_SDA)PA12" x="5.08" y="-22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="5V0@2" x="-38.1" y="-5.08" visible="pin" length="middle" direction="sup"/>
 <pin name="(I2C0_SCL)PA11" x="5.08" y="-20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@5" x="-38.1" y="-43.18" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@5" x="-38.1" y="-33.02" visible="pin" length="middle" direction="sup"/>
 <pin name="PA6" x="5.08" y="-12.7" visible="pin" length="middle" rot="R180"/>
 <pin name="(UART1_TX)PG6" x="5.08" y="-40.64" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@1" x="-38.1" y="-33.02" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@1" x="-38.1" y="-22.86" visible="pin" length="middle" direction="sup"/>
 <pin name="(UART1_RX)PG7" x="5.08" y="-43.18" visible="pin" length="middle" rot="R180"/>
 <pin name="(UART2_RX)PA1" x="5.08" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="PA7" x="5.08" y="-15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="(UART2_TX)PA0" x="5.08" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@3" x="-38.1" y="-38.1" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@3" x="-38.1" y="-27.94" visible="pin" length="middle" direction="sup"/>
 <pin name="(UART2_CTS)PA3" x="5.08" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="(I2C1_SDA)PA19" x="5.08" y="-38.1" visible="pin" length="middle" rot="R180"/>
 <pin name="3V3@2" x="-38.1" y="-12.7" visible="pin" length="middle" direction="sup"/>
 <pin name="(I2C1_SCL)PA18" x="5.08" y="-35.56" visible="pin" length="middle" rot="R180"/>
 <pin name="(SPI1_MOSI)PA15" x="5.08" y="-30.48" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@4" x="-38.1" y="-40.64" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@4" x="-38.1" y="-30.48" visible="pin" length="middle" direction="sup"/>
 <pin name="(SPI1_MISO)PA16" x="5.08" y="-33.02" visible="pin" length="middle" rot="R180"/>
 <pin name="(UART2_RTS)PA2" x="5.08" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="(SPI1_SCK)PA14" x="5.08" y="-27.94" visible="pin" length="middle" rot="R180"/>
 <pin name="(SPI1_CS)PA13" x="5.08" y="-25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@2" x="-38.1" y="-35.56" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@2" x="-38.1" y="-25.4" visible="pin" length="middle" direction="sup"/>
 <pin name="PA10" x="5.08" y="-17.78" visible="pin" length="middle" rot="R180"/>
 <text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND@6" x="-38.1" y="-35.56" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@7" x="-38.1" y="-38.1" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@8" x="-38.1" y="-40.64" visible="pin" length="middle" direction="sup"/>
+<pin name="GND@9" x="-38.1" y="-43.18" visible="pin" length="middle" direction="sup"/>
 </symbol>
 <symbol name="ORANGEPIZERO-DBG">
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -9358,15 +9362,15 @@ H2+ 512MB</text>
 <text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="ORANGEPIZERO-AUX">
-<wire x1="-22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="-30.48" x2="-22.86" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-30.48" x2="-22.86" y2="0" width="0.254" layer="94"/>
-<pin name="5V0" x="-27.94" y="-2.54" visible="pin" length="middle" direction="sup"/>
+<wire x1="0" y1="-30.48" x2="-25.4" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-30.48" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<pin name="5V0" x="-30.48" y="-2.54" visible="pin" length="middle" direction="sup"/>
 <pin name="USB_DM2" x="5.08" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="-27.94" y="-27.94" visible="pin" length="middle" direction="sup"/>
-<text x="-22.86" y="3.556" size="1.27" layer="95">&gt;NAME</text>
-<text x="-22.86" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-30.48" y="-27.94" visible="pin" length="middle" direction="sup"/>
+<text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="USB_DP2" x="5.08" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="USB_DM3" x="5.08" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="USB_DP3" x="5.08" y="-10.16" visible="pin" length="middle" rot="R180"/>
@@ -9376,7 +9380,7 @@ H2+ 512MB</text>
 <pin name="MICBIAS" x="5.08" y="-20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="MIC1P" x="5.08" y="-22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="MIC1N" x="5.08" y="-25.4" visible="pin" length="middle" rot="R180"/>
-<pin name="IR_RX" x="5.08" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="(IR_RX)PL11" x="5.08" y="-27.94" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9497,9 +9501,9 @@ H2+ 512MB</text>
 <devices>
 <device name="" package="ORANGEPIZERO">
 <connects>
+<connect gate=".AUX" pin="(IR_RX)PL11" pad="SH$13"/>
 <connect gate=".AUX" pin="5V0" pad="SH$1"/>
 <connect gate=".AUX" pin="GND" pad="SH$2"/>
-<connect gate=".AUX" pin="IR_RX" pad="SH$13"/>
 <connect gate=".AUX" pin="LINEOUTL" pad="SH$8"/>
 <connect gate=".AUX" pin="LINEOUTR" pad="SH$7"/>
 <connect gate=".AUX" pin="MIC1N" pad="SH$12"/>
@@ -9536,6 +9540,10 @@ H2+ 512MB</text>
 <connect gate=".MAIN" pin="GND@3" pad="MH$14"/>
 <connect gate=".MAIN" pin="GND@4" pad="MH$20"/>
 <connect gate=".MAIN" pin="GND@5" pad="MH$25"/>
+<connect gate=".MAIN" pin="GND@6" pad="GND@0"/>
+<connect gate=".MAIN" pin="GND@7" pad="GND@1"/>
+<connect gate=".MAIN" pin="GND@8" pad="GND@2"/>
+<connect gate=".MAIN" pin="GND@9" pad="GND@3"/>
 <connect gate=".MAIN" pin="PA10" pad="MH$26"/>
 <connect gate=".MAIN" pin="PA6" pad="MH$7"/>
 <connect gate=".MAIN" pin="PA7" pad="MH$12"/>
