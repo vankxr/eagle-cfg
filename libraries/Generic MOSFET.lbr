@@ -320,6 +320,22 @@
 <circle x="-2.5" y="-3.25" radius="0.353553125" width="0" layer="21"/>
 <text x="-2.5" y="2.75" size="0.6096" layer="25">&gt;NAME</text>
 </package>
+<package name="TDSON-8">
+<smd name="S@0" x="2.925" y="-1.905" dx="0.85" dy="0.5" layer="1"/>
+<smd name="S@1" x="2.925" y="-0.635" dx="0.85" dy="0.5" layer="1"/>
+<smd name="S@2" x="2.925" y="0.635" dx="0.85" dy="0.5" layer="1"/>
+<smd name="G" x="2.925" y="1.905" dx="0.85" dy="0.5" layer="1"/>
+<smd name="D@4" x="-2.925" y="-1.905" dx="0.85" dy="0.6" layer="1" rot="R180"/>
+<smd name="D@3" x="-2.925" y="-0.635" dx="0.85" dy="0.6" layer="1" rot="R180"/>
+<smd name="D@2" x="-2.925" y="0.635" dx="0.85" dy="0.6" layer="1" rot="R180"/>
+<smd name="D@1" x="-2.925" y="1.905" dx="0.85" dy="0.6" layer="1" rot="R180"/>
+<smd name="D@0" x="-0.625" y="0" dx="3.75" dy="4.41" layer="1"/>
+<wire x1="-3.075" y1="2.66" x2="3.075" y2="2.66" width="0.127" layer="21"/>
+<wire x1="-3.075" y1="-2.66" x2="3.075" y2="-2.66" width="0.127" layer="21"/>
+<wire x1="3.075" y1="-2.66" x2="3.075" y2="2.66" width="0.127" layer="51"/>
+<wire x1="-3.075" y1="-2.66" x2="-3.075" y2="2.66" width="0.127" layer="51"/>
+<text x="-2.85" y="2.85" size="0.8128" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="NMOS">
@@ -514,6 +530,23 @@
 <connect gate="G$1" pin="D" pad="D@0 D@1 D@2\ D@3"/>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S@0 S@1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSC0702LS" prefix="Q">
+<gates>
+<gate name="G$1" symbol="NMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TDSON-8">
+<connects>
+<connect gate="G$1" pin="D" pad="D@0 D@1 D@2 D@3 D@4"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S@0 S@1 S@2"/>
 </connects>
 <technologies>
 <technology name=""/>

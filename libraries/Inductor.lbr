@@ -360,6 +360,19 @@
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
 </package>
+<package name="IND1040">
+<smd name="1" x="-4.75" y="0" dx="4.1" dy="4.1" layer="1" rot="R90"/>
+<smd name="2" x="4.75" y="0" dx="4.1" dy="4.1" layer="1" rot="R90"/>
+<wire x1="5.1" y1="-5.1" x2="5.1" y2="5.1" width="0.127" layer="51"/>
+<wire x1="-5.1" y1="5.1" x2="-5.1" y2="-5.1" width="0.127" layer="51"/>
+<text x="-5.08" y="5.35" size="1.778" layer="25">&gt;NAME</text>
+<wire x1="-5.1" y1="5.1" x2="5.1" y2="5.1" width="0.127" layer="21"/>
+<wire x1="-5.1" y1="-5.1" x2="5.1" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="-5.1" y1="5.1" x2="-5.1" y2="2.4" width="0.127" layer="21"/>
+<wire x1="5.1" y1="5.1" x2="5.1" y2="2.4" width="0.127" layer="21"/>
+<wire x1="5.1" y1="-2.4" x2="5.1" y2="-5.1" width="0.127" layer="21"/>
+<wire x1="-5.1" y1="-2.4" x2="-5.1" y2="-5.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IND">
@@ -509,6 +522,17 @@
 </technologies>
 </device>
 <device name="-4X4MM" package="IND0404">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-10.2X10.2X4MM" package="IND1040">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

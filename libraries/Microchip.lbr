@@ -4233,21 +4233,21 @@
 </symbol>
 <symbol name="MCP4728">
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="-22.86" x2="-20.32" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-25.4" x2="-20.32" y2="0" width="0.254" layer="94"/>
 <pin name="VDD" x="-25.4" y="-2.54" length="middle"/>
 <text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="VSS" x="-25.4" y="-20.32" length="middle"/>
-<pin name="SCL" x="-25.4" y="-7.62" length="middle"/>
-<pin name="SDA" x="-25.4" y="-10.16" length="middle"/>
-<pin name="!LDAC" x="-25.4" y="-15.24" length="middle"/>
+<pin name="VSS" x="-25.4" y="-22.86" length="middle"/>
+<pin name="SCL" x="-25.4" y="-15.24" length="middle"/>
+<pin name="SDA" x="-25.4" y="-17.78" length="middle"/>
+<pin name="!LDAC" x="-25.4" y="-7.62" length="middle"/>
 <pin name="VOUTA" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VOUTB" x="5.08" y="-5.08" length="middle" rot="R180"/>
 <pin name="VOUTC" x="5.08" y="-7.62" length="middle" rot="R180"/>
 <pin name="VOUTD" x="5.08" y="-10.16" length="middle" rot="R180"/>
-<pin name="!BSY" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="!BSY" x="-25.4" y="-10.16" length="middle"/>
 </symbol>
 <symbol name="MCP3423">
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -5930,7 +5930,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP4728" prefix="U">
+<deviceset name="MCP4728-A*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP4728" x="0" y="0"/>
 </gates>
@@ -5949,7 +5949,14 @@
 <connect gate="G$1" pin="VSS" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
+<technology name="2"/>
+<technology name="3"/>
+<technology name="4"/>
+<technology name="5"/>
+<technology name="6"/>
+<technology name="7"/>
 </technologies>
 </device>
 </devices>
