@@ -142,7 +142,7 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Component side",
+                        "description": "Ground",
                         "file_function": "Other"
                     },
                     "filename_format": "%N.g2l",
@@ -166,7 +166,7 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Component side",
+                        "description": "Power",
                         "file_function": "Other"
                     },
                     "filename_format": "%N.g3l",
@@ -318,7 +318,7 @@
             ]
         }
     ],
-    "timestamp": "2019-09-11T23:09:02",
+    "timestamp": "2021-03-09T21:35:43",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"

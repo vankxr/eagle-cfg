@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.8" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -997,8 +997,638 @@
 </package>
 </packages>
 <symbols>
+<symbol name="XC7Z010CLG400-BANK0-CFG">
+<wire x1="-27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="-27.94" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-25.4" x2="-27.94" y2="0" width="0.254" layer="94"/>
+<text x="-27.94" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-27.94" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="DONE" x="-33.02" y="-22.86" length="middle"/>
+<pin name="DXP" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="TCK" x="-33.02" y="-10.16" length="middle"/>
+<pin name="DXN" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="!INIT" x="-33.02" y="-17.78" length="middle"/>
+<pin name="TDO" x="-33.02" y="-5.08" length="middle"/>
+<pin name="TDI" x="-33.02" y="-2.54" length="middle"/>
+<pin name="CFGBVS" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="!PROGRAM" x="-33.02" y="-20.32" length="middle"/>
+<pin name="TMS" x="-33.02" y="-7.62" length="middle"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK0-XADC">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VREFP" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="VN" x="-25.4" y="-17.78" length="middle"/>
+<pin name="VREFN" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="VP" x="-25.4" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="XC7Z010CLG400-PWR">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="0" y1="-58.42" x2="-30.48" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-58.42" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GNDADC" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="VCCADC" x="-35.56" y="-45.72" length="middle"/>
+<pin name="VCCBATT" x="-35.56" y="-40.64" length="middle"/>
+<pin name="RSVDGND" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="RSVDVCC@3" x="-35.56" y="-55.88" length="middle"/>
+<pin name="RSVDVCC@2" x="-35.56" y="-53.34" length="middle"/>
+<pin name="RSVDVCC@1" x="-35.56" y="-50.8" length="middle"/>
+<pin name="GND" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="VCCINT" x="-35.56" y="-2.54" length="middle"/>
+<pin name="VCCAUX" x="-35.56" y="-7.62" length="middle"/>
+<pin name="VCCO_0" x="-35.56" y="-20.32" length="middle"/>
+<pin name="VCCO_13" x="-35.56" y="-22.86" length="middle"/>
+<pin name="VCCO_34" x="-35.56" y="-25.4" length="middle"/>
+<pin name="VCCO_35" x="-35.56" y="-27.94" length="middle"/>
+<pin name="VCCBRAM" x="-35.56" y="-15.24" length="middle"/>
+<pin name="VCCO_DDR_502" x="-35.56" y="-35.56" length="middle"/>
+<pin name="VCCO_MIO0_500" x="-35.56" y="-30.48" length="middle"/>
+<pin name="VCCO_MIO1_501" x="-35.56" y="-33.02" length="middle"/>
+<pin name="VCCPLL" x="-35.56" y="-12.7" length="middle"/>
+<pin name="VCCPAUX" x="-35.56" y="-10.16" length="middle"/>
+<pin name="VCCPINT" x="-35.56" y="-5.08" length="middle"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK34">
+<wire x1="-58.42" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="0" y1="-66.04" x2="-58.42" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="-58.42" y1="-66.04" x2="-58.42" y2="0" width="0.254" layer="94"/>
+<text x="-58.42" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-58.42" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="IO_0" x="-63.5" y="-2.54" length="middle"/>
+<pin name="IO_L1P/T0" x="-63.5" y="-5.08" length="middle"/>
+<pin name="IO_L1N/T0" x="-63.5" y="-7.62" length="middle"/>
+<pin name="IO_L2P/T0" x="-63.5" y="-10.16" length="middle"/>
+<pin name="IO_L2N/T0" x="-63.5" y="-12.7" length="middle"/>
+<pin name="IO_L3P/T0_DQS/!PUDC!" x="-63.5" y="-15.24" length="middle"/>
+<pin name="IO_L3N/T0_DQS" x="-63.5" y="-17.78" length="middle"/>
+<pin name="IO_L4P/T0" x="-63.5" y="-20.32" length="middle"/>
+<pin name="IO_L4N/T0" x="-63.5" y="-22.86" length="middle"/>
+<pin name="IO_L5P/T0" x="-63.5" y="-25.4" length="middle"/>
+<pin name="IO_L5N/T0" x="-63.5" y="-27.94" length="middle"/>
+<pin name="IO_L6P/T0" x="-63.5" y="-30.48" length="middle"/>
+<pin name="IO_L6N/T0/VREF" x="-63.5" y="-33.02" length="middle"/>
+<pin name="IO_L7P/T1" x="-63.5" y="-35.56" length="middle"/>
+<pin name="IO_L7N/T1" x="-63.5" y="-38.1" length="middle"/>
+<pin name="IO_L8P/T1" x="-63.5" y="-40.64" length="middle"/>
+<pin name="IO_L8N/T1" x="-63.5" y="-43.18" length="middle"/>
+<pin name="IO_L9P/T1_DQS" x="-63.5" y="-45.72" length="middle"/>
+<pin name="IO_L9N/T1_DQS" x="-63.5" y="-48.26" length="middle"/>
+<pin name="IO_L10P/T1" x="-63.5" y="-50.8" length="middle"/>
+<pin name="IO_L10N/T1" x="-63.5" y="-53.34" length="middle"/>
+<pin name="IO_L11P/T1/SRCC" x="-63.5" y="-55.88" length="middle"/>
+<pin name="IO_L11N/T1/SRCC" x="-63.5" y="-58.42" length="middle"/>
+<pin name="IO_L12P/T1/MRCC" x="-63.5" y="-60.96" length="middle"/>
+<pin name="IO_L12N/T1/MRCC" x="-63.5" y="-63.5" length="middle"/>
+<pin name="IO_L13P/T2/MRCC" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO_L13N/T2/MRCC" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="IO_L14P/T2/SRCC" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="IO_L14N/T2/SRCC" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="IO_L15P/T2_DQS" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="IO_L15N/T2_DQS" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="IO_L16P/T2" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="IO_L16N/T2" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="IO_L17P/T2" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="IO_L17N/T2" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="IO_L18P/T2" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="IO_L18N/T2" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="IO_L19P/T3" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="IO_L19N/T3/VREF" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="IO_L20P/T3" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="IO_L20N/T3" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="IO_L21P/T3_DQS" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="IO_L21N/T3_DQS" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="IO_L22P/T3" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="IO_L22N/T3" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="IO_L23P/T3" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="IO_L23N/T3" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="IO_L24P/T3" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="IO_L24N/T3" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="IO_25" x="5.08" y="-63.5" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK35">
+<wire x1="-58.42" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="0" y1="-66.04" x2="-58.42" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="-58.42" y1="-66.04" x2="-58.42" y2="0" width="0.254" layer="94"/>
+<text x="-58.42" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-58.42" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="IO_0" x="-63.5" y="-2.54" length="middle"/>
+<pin name="IO_L1P/T0/AD0P" x="-63.5" y="-5.08" length="middle"/>
+<pin name="IO_L1N/T0/AD0N" x="-63.5" y="-7.62" length="middle"/>
+<pin name="IO_L2P/T0/AD8P" x="-63.5" y="-10.16" length="middle"/>
+<pin name="IO_L2N/T0/AD8N" x="-63.5" y="-12.7" length="middle"/>
+<pin name="IO_L3P/T0_DQS/AD1P" x="-63.5" y="-15.24" length="middle"/>
+<pin name="IO_L3N/T0_DQS/AD1N" x="-63.5" y="-17.78" length="middle"/>
+<pin name="IO_L4P/T0" x="-63.5" y="-20.32" length="middle"/>
+<pin name="IO_L4N/T0" x="-63.5" y="-22.86" length="middle"/>
+<pin name="IO_L5P/T0/AD9P" x="-63.5" y="-25.4" length="middle"/>
+<pin name="IO_L5N/T0/AD9N" x="-63.5" y="-27.94" length="middle"/>
+<pin name="IO_L6P/T0" x="-63.5" y="-30.48" length="middle"/>
+<pin name="IO_L6N/T0/VREF" x="-63.5" y="-33.02" length="middle"/>
+<pin name="IO_L7P/T1/AD2P" x="-63.5" y="-35.56" length="middle"/>
+<pin name="IO_L7N/T1/AD2N" x="-63.5" y="-38.1" length="middle"/>
+<pin name="IO_L8P/T1/AD10P" x="-63.5" y="-40.64" length="middle"/>
+<pin name="IO_L8N/T1/AD10N" x="-63.5" y="-43.18" length="middle"/>
+<pin name="IO_L9P/T1_DQS/AD3P" x="-63.5" y="-45.72" length="middle"/>
+<pin name="IO_L9N/T1_DQS/AD3N" x="-63.5" y="-48.26" length="middle"/>
+<pin name="IO_L10P/T1/AD11P" x="-63.5" y="-50.8" length="middle"/>
+<pin name="IO_L10N/T1/AD11N" x="-63.5" y="-53.34" length="middle"/>
+<pin name="IO_L11P/T1/SRCC" x="-63.5" y="-55.88" length="middle"/>
+<pin name="IO_L11N/T1/SRCC" x="-63.5" y="-58.42" length="middle"/>
+<pin name="IO_L12P/T1/MRCC" x="-63.5" y="-60.96" length="middle"/>
+<pin name="IO_L12N/T1/MRCC" x="-63.5" y="-63.5" length="middle"/>
+<pin name="IO_L13P/T2/MRCC" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO_L13N/T2/MRCC" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="IO_L14P/T2/AD4P/SRCC" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="IO_L14N/T2/AD4N/SRCC" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="IO_L15P/T2_DQS/AD12P" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="IO_L15N/T2_DQS/AD12N" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="IO_L16P/T2" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="IO_L16N/T2" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="IO_L17P/T2/AD5P" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="IO_L17N/T2/AD5N" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="IO_L18P/T2/AD13P" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="IO_L18N/T2/AD13N" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="IO_L19P/T3" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="IO_L19N/T3/VREF" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="IO_L20P/T3/AD6P" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="IO_L20N/T3/AD6N" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="IO_L21P/T3_DQS/AD14P" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="IO_L21N/T3_DQS/AD14N" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="IO_L22P/T3/AD7P" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="IO_L22N/T3/AD7N" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="IO_L23P/T3" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="IO_L23N/T3" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="IO_L24P/T3/AD15P" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="IO_L24N/T3/AD15N" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="IO_25" x="5.08" y="-63.5" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK50X-PS-CFG">
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="-33.02" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-12.7" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PS_CLK" x="-38.1" y="-2.54" length="middle"/>
+<pin name="PS_MIO_VREF" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="!PS_POR" x="-38.1" y="-7.62" length="middle"/>
+<pin name="!PS_SRST" x="-38.1" y="-10.16" length="middle"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK500">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="-30.48" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-22.86" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PS_MIO0" x="-35.56" y="-2.54" length="middle"/>
+<pin name="PS_MIO1" x="-35.56" y="-5.08" length="middle"/>
+<pin name="PS_MIO2" x="-35.56" y="-7.62" length="middle"/>
+<pin name="PS_MIO3" x="-35.56" y="-10.16" length="middle"/>
+<pin name="PS_MIO4" x="-35.56" y="-12.7" length="middle"/>
+<pin name="PS_MIO5" x="-35.56" y="-15.24" length="middle"/>
+<pin name="PS_MIO6" x="-35.56" y="-17.78" length="middle"/>
+<pin name="PS_MIO7" x="-35.56" y="-20.32" length="middle"/>
+<pin name="PS_MIO8" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="PS_MIO9" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="PS_MIO10" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="PS_MIO11" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="PS_MIO12" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="PS_MIO13" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="PS_MIO14" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="PS_MIO15" x="5.08" y="-20.32" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK501">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="0" y1="-50.8" x2="-30.48" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-50.8" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PS_MIO16" x="-35.56" y="-2.54" length="middle"/>
+<pin name="PS_MIO17" x="-35.56" y="-5.08" length="middle"/>
+<pin name="PS_MIO18" x="-35.56" y="-7.62" length="middle"/>
+<pin name="PS_MIO19" x="-35.56" y="-10.16" length="middle"/>
+<pin name="PS_MIO20" x="-35.56" y="-12.7" length="middle"/>
+<pin name="PS_MIO21" x="-35.56" y="-15.24" length="middle"/>
+<pin name="PS_MIO22" x="-35.56" y="-17.78" length="middle"/>
+<pin name="PS_MIO23" x="-35.56" y="-20.32" length="middle"/>
+<pin name="PS_MIO24" x="-35.56" y="-22.86" length="middle"/>
+<pin name="PS_MIO25" x="-35.56" y="-25.4" length="middle"/>
+<pin name="PS_MIO26" x="-35.56" y="-27.94" length="middle"/>
+<pin name="PS_MIO27" x="-35.56" y="-30.48" length="middle"/>
+<pin name="PS_MIO28" x="-35.56" y="-33.02" length="middle"/>
+<pin name="PS_MIO29" x="-35.56" y="-35.56" length="middle"/>
+<pin name="PS_MIO30" x="-35.56" y="-38.1" length="middle"/>
+<pin name="PS_MIO31" x="-35.56" y="-40.64" length="middle"/>
+<pin name="PS_MIO35" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="PS_MIO36" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="PS_MIO37" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="PS_MIO38" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="PS_MIO39" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="PS_MIO40" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="PS_MIO41" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="PS_MIO42" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="PS_MIO43" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="PS_MIO44" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="PS_MIO45" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="PS_MIO46" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="PS_MIO47" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="PS_MIO32" x="-35.56" y="-43.18" length="middle"/>
+<pin name="PS_MIO33" x="-35.56" y="-45.72" length="middle"/>
+<pin name="PS_MIO34" x="-35.56" y="-48.26" length="middle"/>
+<pin name="PS_MIO48" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="PS_MIO49" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="PS_MIO50" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="PS_MIO51" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="PS_MIO52" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="PS_MIO53" x="5.08" y="-48.26" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XC7Z010CLG400-BANK502-DDR">
+<wire x1="-43.18" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-106.68" width="0.254" layer="94"/>
+<wire x1="0" y1="-106.68" x2="-43.18" y2="-106.68" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="-106.68" x2="-43.18" y2="0" width="0.254" layer="94"/>
+<text x="-43.18" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PS_DDR_A0" x="-48.26" y="-2.54" length="middle"/>
+<pin name="PS_DDR_A1" x="-48.26" y="-5.08" length="middle"/>
+<pin name="PS_DDR_A2" x="-48.26" y="-7.62" length="middle"/>
+<pin name="PS_DDR_A3" x="-48.26" y="-10.16" length="middle"/>
+<pin name="PS_DDR_A4" x="-48.26" y="-12.7" length="middle"/>
+<pin name="PS_DDR_A5" x="-48.26" y="-15.24" length="middle"/>
+<pin name="PS_DDR_A6" x="-48.26" y="-17.78" length="middle"/>
+<pin name="PS_DDR_A7" x="-48.26" y="-20.32" length="middle"/>
+<pin name="PS_DDR_A8" x="-48.26" y="-22.86" length="middle"/>
+<pin name="PS_DDR_A9" x="-48.26" y="-25.4" length="middle"/>
+<pin name="PS_DDR_A10" x="-48.26" y="-27.94" length="middle"/>
+<pin name="PS_DDR_A11" x="-48.26" y="-30.48" length="middle"/>
+<pin name="PS_DDR_A12" x="-48.26" y="-33.02" length="middle"/>
+<pin name="PS_DDR_A13" x="-48.26" y="-35.56" length="middle"/>
+<pin name="PS_DDR_A14" x="-48.26" y="-38.1" length="middle"/>
+<pin name="PS_DDR_DQ0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ2" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ3" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ4" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ5" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ6" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ7" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ8" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ9" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ10" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ11" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ12" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ13" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ14" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ15" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ16" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ17" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ18" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ19" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ20" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ21" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ22" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ23" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ24" x="5.08" y="-63.5" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ25" x="5.08" y="-66.04" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ26" x="5.08" y="-68.58" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ27" x="5.08" y="-71.12" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ28" x="5.08" y="-73.66" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ29" x="5.08" y="-76.2" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ30" x="5.08" y="-78.74" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQ31" x="5.08" y="-81.28" length="middle" rot="R180"/>
+<pin name="PS_DDR_CKP" x="-48.26" y="-66.04" length="middle"/>
+<pin name="PS_DDR_CKN" x="-48.26" y="-68.58" length="middle"/>
+<pin name="PS_DDR_CKE" x="-48.26" y="-71.12" length="middle"/>
+<pin name="!PS_DDR_CS" x="-48.26" y="-76.2" length="middle"/>
+<pin name="!PS_DDR_RAS" x="-48.26" y="-78.74" length="middle"/>
+<pin name="!PS_DDR_CAS" x="-48.26" y="-81.28" length="middle"/>
+<pin name="!PS_DDR_WE" x="-48.26" y="-83.82" length="middle"/>
+<pin name="PS_DDR_BA0" x="-48.26" y="-43.18" length="middle"/>
+<pin name="PS_DDR_BA1" x="-48.26" y="-45.72" length="middle"/>
+<pin name="PS_DDR_BA2" x="-48.26" y="-48.26" length="middle"/>
+<pin name="PS_DDR_DQS_P0" x="5.08" y="-86.36" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_N0" x="5.08" y="-88.9" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_P1" x="5.08" y="-91.44" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_N1" x="5.08" y="-93.98" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_P2" x="5.08" y="-96.52" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_N2" x="5.08" y="-99.06" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_P3" x="5.08" y="-101.6" length="middle" rot="R180"/>
+<pin name="PS_DDR_DQS_N3" x="5.08" y="-104.14" length="middle" rot="R180"/>
+<pin name="PS_DDR_ODT" x="-48.26" y="-88.9" length="middle"/>
+<pin name="!PS_DDR_DRST" x="-48.26" y="-86.36" length="middle"/>
+<pin name="PS_DDR_VRP" x="-48.26" y="-93.98" length="middle"/>
+<pin name="PS_DDR_VRN" x="-48.26" y="-96.52" length="middle"/>
+<pin name="PS_DDR_VREF0" x="-48.26" y="-101.6" length="middle"/>
+<pin name="PS_DDR_VREF1" x="-48.26" y="-104.14" length="middle"/>
+<pin name="PS_DDR_DM0" x="-48.26" y="-53.34" length="middle"/>
+<pin name="PS_DDR_DM1" x="-48.26" y="-55.88" length="middle"/>
+<pin name="PS_DDR_DM2" x="-48.26" y="-58.42" length="middle"/>
+<pin name="PS_DDR_DM3" x="-48.26" y="-60.96" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="XC7Z010CLG400" prefix="U">
+<gates>
+<gate name=".BANK0-CFG" symbol="XC7Z010CLG400-BANK0-CFG" x="0" y="0"/>
+<gate name=".BANK0-XADC" symbol="XC7Z010CLG400-BANK0-XADC" x="40.64" y="0"/>
+<gate name=".BANK34" symbol="XC7Z010CLG400-BANK34" x="121.92" y="0"/>
+<gate name=".BANK35" symbol="XC7Z010CLG400-BANK35" x="200.66" y="0"/>
+<gate name=".BANK500" symbol="XC7Z010CLG400-BANK500" x="251.46" y="0"/>
+<gate name=".BANK501" symbol="XC7Z010CLG400-BANK501" x="302.26" y="0"/>
+<gate name=".BANK502-DDR" symbol="XC7Z010CLG400-BANK502-DDR" x="368.3" y="0"/>
+<gate name=".BANK50X-PS-CFG" symbol="XC7Z010CLG400-BANK50X-PS-CFG" x="424.18" y="0"/>
+<gate name=".PWR" symbol="XC7Z010CLG400-PWR" x="482.6" y="0"/>
+</gates>
+<devices>
+<device name="" package="BGA400">
+<connects>
+<connect gate=".BANK0-CFG" pin="!INIT" pad="R10"/>
+<connect gate=".BANK0-CFG" pin="!PROGRAM" pad="L6"/>
+<connect gate=".BANK0-CFG" pin="CFGBVS" pad="M6"/>
+<connect gate=".BANK0-CFG" pin="DONE" pad="R11"/>
+<connect gate=".BANK0-CFG" pin="DXN" pad="M10"/>
+<connect gate=".BANK0-CFG" pin="DXP" pad="M9"/>
+<connect gate=".BANK0-CFG" pin="TCK" pad="F9"/>
+<connect gate=".BANK0-CFG" pin="TDI" pad="G6"/>
+<connect gate=".BANK0-CFG" pin="TDO" pad="F6"/>
+<connect gate=".BANK0-CFG" pin="TMS" pad="J6"/>
+<connect gate=".BANK0-XADC" pin="VN" pad="L10"/>
+<connect gate=".BANK0-XADC" pin="VP" pad="K9"/>
+<connect gate=".BANK0-XADC" pin="VREFN" pad="K10"/>
+<connect gate=".BANK0-XADC" pin="VREFP" pad="L9"/>
+<connect gate=".BANK34" pin="IO_0" pad="R19"/>
+<connect gate=".BANK34" pin="IO_25" pad="T19"/>
+<connect gate=".BANK34" pin="IO_L10N/T1" pad="W15"/>
+<connect gate=".BANK34" pin="IO_L10P/T1" pad="V15"/>
+<connect gate=".BANK34" pin="IO_L11N/T1/SRCC" pad="U15"/>
+<connect gate=".BANK34" pin="IO_L11P/T1/SRCC" pad="U14"/>
+<connect gate=".BANK34" pin="IO_L12N/T1/MRCC" pad="U19"/>
+<connect gate=".BANK34" pin="IO_L12P/T1/MRCC" pad="U18"/>
+<connect gate=".BANK34" pin="IO_L13N/T2/MRCC" pad="P19"/>
+<connect gate=".BANK34" pin="IO_L13P/T2/MRCC" pad="N18"/>
+<connect gate=".BANK34" pin="IO_L14N/T2/SRCC" pad="P20"/>
+<connect gate=".BANK34" pin="IO_L14P/T2/SRCC" pad="N20"/>
+<connect gate=".BANK34" pin="IO_L15N/T2_DQS" pad="U20"/>
+<connect gate=".BANK34" pin="IO_L15P/T2_DQS" pad="T20"/>
+<connect gate=".BANK34" pin="IO_L16N/T2" pad="W20"/>
+<connect gate=".BANK34" pin="IO_L16P/T2" pad="V20"/>
+<connect gate=".BANK34" pin="IO_L17N/T2" pad="Y19"/>
+<connect gate=".BANK34" pin="IO_L17P/T2" pad="Y18"/>
+<connect gate=".BANK34" pin="IO_L18N/T2" pad="W16"/>
+<connect gate=".BANK34" pin="IO_L18P/T2" pad="V16"/>
+<connect gate=".BANK34" pin="IO_L19N/T3/VREF" pad="R17"/>
+<connect gate=".BANK34" pin="IO_L19P/T3" pad="R16"/>
+<connect gate=".BANK34" pin="IO_L1N/T0" pad="T10"/>
+<connect gate=".BANK34" pin="IO_L1P/T0" pad="T11"/>
+<connect gate=".BANK34" pin="IO_L20N/T3" pad="R18"/>
+<connect gate=".BANK34" pin="IO_L20P/T3" pad="T17"/>
+<connect gate=".BANK34" pin="IO_L21N/T3_DQS" pad="V18"/>
+<connect gate=".BANK34" pin="IO_L21P/T3_DQS" pad="V17"/>
+<connect gate=".BANK34" pin="IO_L22N/T3" pad="W19"/>
+<connect gate=".BANK34" pin="IO_L22P/T3" pad="W18"/>
+<connect gate=".BANK34" pin="IO_L23N/T3" pad="P18"/>
+<connect gate=".BANK34" pin="IO_L23P/T3" pad="N17"/>
+<connect gate=".BANK34" pin="IO_L24N/T3" pad="P16"/>
+<connect gate=".BANK34" pin="IO_L24P/T3" pad="P15"/>
+<connect gate=".BANK34" pin="IO_L2N/T0" pad="U12"/>
+<connect gate=".BANK34" pin="IO_L2P/T0" pad="T12"/>
+<connect gate=".BANK34" pin="IO_L3N/T0_DQS" pad="V13"/>
+<connect gate=".BANK34" pin="IO_L3P/T0_DQS/!PUDC!" pad="U13"/>
+<connect gate=".BANK34" pin="IO_L4N/T0" pad="W13"/>
+<connect gate=".BANK34" pin="IO_L4P/T0" pad="V12"/>
+<connect gate=".BANK34" pin="IO_L5N/T0" pad="T15"/>
+<connect gate=".BANK34" pin="IO_L5P/T0" pad="T14"/>
+<connect gate=".BANK34" pin="IO_L6N/T0/VREF" pad="R14"/>
+<connect gate=".BANK34" pin="IO_L6P/T0" pad="P14"/>
+<connect gate=".BANK34" pin="IO_L7N/T1" pad="Y17"/>
+<connect gate=".BANK34" pin="IO_L7P/T1" pad="Y16"/>
+<connect gate=".BANK34" pin="IO_L8N/T1" pad="Y14"/>
+<connect gate=".BANK34" pin="IO_L8P/T1" pad="W14"/>
+<connect gate=".BANK34" pin="IO_L9N/T1_DQS" pad="U17"/>
+<connect gate=".BANK34" pin="IO_L9P/T1_DQS" pad="T16"/>
+<connect gate=".BANK35" pin="IO_0" pad="G14"/>
+<connect gate=".BANK35" pin="IO_25" pad="J15"/>
+<connect gate=".BANK35" pin="IO_L10N/T1/AD11N" pad="J19"/>
+<connect gate=".BANK35" pin="IO_L10P/T1/AD11P" pad="K19"/>
+<connect gate=".BANK35" pin="IO_L11N/T1/SRCC" pad="L17"/>
+<connect gate=".BANK35" pin="IO_L11P/T1/SRCC" pad="L16"/>
+<connect gate=".BANK35" pin="IO_L12N/T1/MRCC" pad="K18"/>
+<connect gate=".BANK35" pin="IO_L12P/T1/MRCC" pad="K17"/>
+<connect gate=".BANK35" pin="IO_L13N/T2/MRCC" pad="H17"/>
+<connect gate=".BANK35" pin="IO_L13P/T2/MRCC" pad="H16"/>
+<connect gate=".BANK35" pin="IO_L14N/T2/AD4N/SRCC" pad="H18"/>
+<connect gate=".BANK35" pin="IO_L14P/T2/AD4P/SRCC" pad="J18"/>
+<connect gate=".BANK35" pin="IO_L15N/T2_DQS/AD12N" pad="F20"/>
+<connect gate=".BANK35" pin="IO_L15P/T2_DQS/AD12P" pad="F19"/>
+<connect gate=".BANK35" pin="IO_L16N/T2" pad="G18"/>
+<connect gate=".BANK35" pin="IO_L16P/T2" pad="G17"/>
+<connect gate=".BANK35" pin="IO_L17N/T2/AD5N" pad="H20"/>
+<connect gate=".BANK35" pin="IO_L17P/T2/AD5P" pad="J20"/>
+<connect gate=".BANK35" pin="IO_L18N/T2/AD13N" pad="G20"/>
+<connect gate=".BANK35" pin="IO_L18P/T2/AD13P" pad="G19"/>
+<connect gate=".BANK35" pin="IO_L19N/T3/VREF" pad="G15"/>
+<connect gate=".BANK35" pin="IO_L19P/T3" pad="H15"/>
+<connect gate=".BANK35" pin="IO_L1N/T0/AD0N" pad="B20"/>
+<connect gate=".BANK35" pin="IO_L1P/T0/AD0P" pad="C20"/>
+<connect gate=".BANK35" pin="IO_L20N/T3/AD6N" pad="J14"/>
+<connect gate=".BANK35" pin="IO_L20P/T3/AD6P" pad="K14"/>
+<connect gate=".BANK35" pin="IO_L21N/T3_DQS/AD14N" pad="N16"/>
+<connect gate=".BANK35" pin="IO_L21P/T3_DQS/AD14P" pad="N15"/>
+<connect gate=".BANK35" pin="IO_L22N/T3/AD7N" pad="L15"/>
+<connect gate=".BANK35" pin="IO_L22P/T3/AD7P" pad="L14"/>
+<connect gate=".BANK35" pin="IO_L23N/T3" pad="M15"/>
+<connect gate=".BANK35" pin="IO_L23P/T3" pad="M14"/>
+<connect gate=".BANK35" pin="IO_L24N/T3/AD15N" pad="J16"/>
+<connect gate=".BANK35" pin="IO_L24P/T3/AD15P" pad="K16"/>
+<connect gate=".BANK35" pin="IO_L2N/T0/AD8N" pad="A20"/>
+<connect gate=".BANK35" pin="IO_L2P/T0/AD8P" pad="B19"/>
+<connect gate=".BANK35" pin="IO_L3N/T0_DQS/AD1N" pad="D18"/>
+<connect gate=".BANK35" pin="IO_L3P/T0_DQS/AD1P" pad="E17"/>
+<connect gate=".BANK35" pin="IO_L4N/T0" pad="D20"/>
+<connect gate=".BANK35" pin="IO_L4P/T0" pad="D19"/>
+<connect gate=".BANK35" pin="IO_L5N/T0/AD9N" pad="E19"/>
+<connect gate=".BANK35" pin="IO_L5P/T0/AD9P" pad="E18"/>
+<connect gate=".BANK35" pin="IO_L6N/T0/VREF" pad="F17"/>
+<connect gate=".BANK35" pin="IO_L6P/T0" pad="F16"/>
+<connect gate=".BANK35" pin="IO_L7N/T1/AD2N" pad="M20"/>
+<connect gate=".BANK35" pin="IO_L7P/T1/AD2P" pad="M19"/>
+<connect gate=".BANK35" pin="IO_L8N/T1/AD10N" pad="M18"/>
+<connect gate=".BANK35" pin="IO_L8P/T1/AD10P" pad="M17"/>
+<connect gate=".BANK35" pin="IO_L9N/T1_DQS/AD3N" pad="L20"/>
+<connect gate=".BANK35" pin="IO_L9P/T1_DQS/AD3P" pad="L19"/>
+<connect gate=".BANK500" pin="PS_MIO0" pad="E6"/>
+<connect gate=".BANK500" pin="PS_MIO1" pad="A7"/>
+<connect gate=".BANK500" pin="PS_MIO10" pad="E9"/>
+<connect gate=".BANK500" pin="PS_MIO11" pad="C6"/>
+<connect gate=".BANK500" pin="PS_MIO12" pad="D9"/>
+<connect gate=".BANK500" pin="PS_MIO13" pad="E8"/>
+<connect gate=".BANK500" pin="PS_MIO14" pad="C5"/>
+<connect gate=".BANK500" pin="PS_MIO15" pad="C8"/>
+<connect gate=".BANK500" pin="PS_MIO2" pad="B8"/>
+<connect gate=".BANK500" pin="PS_MIO3" pad="D6"/>
+<connect gate=".BANK500" pin="PS_MIO4" pad="B7"/>
+<connect gate=".BANK500" pin="PS_MIO5" pad="A6"/>
+<connect gate=".BANK500" pin="PS_MIO6" pad="A5"/>
+<connect gate=".BANK500" pin="PS_MIO7" pad="D8"/>
+<connect gate=".BANK500" pin="PS_MIO8" pad="D5"/>
+<connect gate=".BANK500" pin="PS_MIO9" pad="B5"/>
+<connect gate=".BANK501" pin="PS_MIO16" pad="A19"/>
+<connect gate=".BANK501" pin="PS_MIO17" pad="E14"/>
+<connect gate=".BANK501" pin="PS_MIO18" pad="B18"/>
+<connect gate=".BANK501" pin="PS_MIO19" pad="D10"/>
+<connect gate=".BANK501" pin="PS_MIO20" pad="A17"/>
+<connect gate=".BANK501" pin="PS_MIO21" pad="F14"/>
+<connect gate=".BANK501" pin="PS_MIO22" pad="B17"/>
+<connect gate=".BANK501" pin="PS_MIO23" pad="D11"/>
+<connect gate=".BANK501" pin="PS_MIO24" pad="A16"/>
+<connect gate=".BANK501" pin="PS_MIO25" pad="F15"/>
+<connect gate=".BANK501" pin="PS_MIO26" pad="A15"/>
+<connect gate=".BANK501" pin="PS_MIO27" pad="D13"/>
+<connect gate=".BANK501" pin="PS_MIO28" pad="C16"/>
+<connect gate=".BANK501" pin="PS_MIO29" pad="C13"/>
+<connect gate=".BANK501" pin="PS_MIO30" pad="C15"/>
+<connect gate=".BANK501" pin="PS_MIO31" pad="E16"/>
+<connect gate=".BANK501" pin="PS_MIO32" pad="A14"/>
+<connect gate=".BANK501" pin="PS_MIO33" pad="D15"/>
+<connect gate=".BANK501" pin="PS_MIO34" pad="A12"/>
+<connect gate=".BANK501" pin="PS_MIO35" pad="F12"/>
+<connect gate=".BANK501" pin="PS_MIO36" pad="A11"/>
+<connect gate=".BANK501" pin="PS_MIO37" pad="A10"/>
+<connect gate=".BANK501" pin="PS_MIO38" pad="E13"/>
+<connect gate=".BANK501" pin="PS_MIO39" pad="C18"/>
+<connect gate=".BANK501" pin="PS_MIO40" pad="D14"/>
+<connect gate=".BANK501" pin="PS_MIO41" pad="C17"/>
+<connect gate=".BANK501" pin="PS_MIO42" pad="E12"/>
+<connect gate=".BANK501" pin="PS_MIO43" pad="A9"/>
+<connect gate=".BANK501" pin="PS_MIO44" pad="F13"/>
+<connect gate=".BANK501" pin="PS_MIO45" pad="B15"/>
+<connect gate=".BANK501" pin="PS_MIO46" pad="D16"/>
+<connect gate=".BANK501" pin="PS_MIO47" pad="B14"/>
+<connect gate=".BANK501" pin="PS_MIO48" pad="B12"/>
+<connect gate=".BANK501" pin="PS_MIO49" pad="C12"/>
+<connect gate=".BANK501" pin="PS_MIO50" pad="B13"/>
+<connect gate=".BANK501" pin="PS_MIO51" pad="B9"/>
+<connect gate=".BANK501" pin="PS_MIO52" pad="C10"/>
+<connect gate=".BANK501" pin="PS_MIO53" pad="C11"/>
+<connect gate=".BANK502-DDR" pin="!PS_DDR_CAS" pad="P5"/>
+<connect gate=".BANK502-DDR" pin="!PS_DDR_CS" pad="N1"/>
+<connect gate=".BANK502-DDR" pin="!PS_DDR_DRST" pad="B4"/>
+<connect gate=".BANK502-DDR" pin="!PS_DDR_RAS" pad="P4"/>
+<connect gate=".BANK502-DDR" pin="!PS_DDR_WE" pad="M5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A0" pad="N2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A1" pad="K2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A10" pad="F5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A11" pad="G4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A12" pad="E4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A13" pad="D4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A14" pad="F4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A2" pad="M3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A3" pad="K3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A4" pad="M4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A5" pad="L1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A6" pad="L4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A7" pad="K4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A8" pad="K1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_A9" pad="J4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_BA0" pad="L5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_BA1" pad="R4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_BA2" pad="J5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_CKE" pad="N3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_CKN" pad="M2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_CKP" pad="L2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DM0" pad="A1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DM1" pad="F1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DM2" pad="T1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DM3" pad="Y1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ0" pad="C3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ1" pad="B3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ10" pad="G3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ11" pad="H3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ12" pad="J3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ13" pad="H2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ14" pad="H1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ15" pad="J1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ16" pad="P1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ17" pad="P3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ18" pad="R3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ19" pad="R1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ2" pad="A2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ20" pad="T4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ21" pad="U4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ22" pad="U2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ23" pad="U3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ24" pad="V1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ25" pad="Y3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ26" pad="W1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ27" pad="Y4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ28" pad="Y2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ29" pad="W3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ3" pad="A4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ30" pad="V2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ31" pad="V3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ4" pad="D3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ5" pad="D1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ6" pad="C1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ7" pad="E1"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ8" pad="E2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQ9" pad="E3"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_N0" pad="B2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_N1" pad="F2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_N2" pad="T2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_N3" pad="W4"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_P0" pad="C2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_P1" pad="G2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_P2" pad="R2"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_DQS_P3" pad="W5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_ODT" pad="N5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_VREF0" pad="H6"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_VREF1" pad="P6"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_VRN" pad="G5"/>
+<connect gate=".BANK502-DDR" pin="PS_DDR_VRP" pad="H5"/>
+<connect gate=".BANK50X-PS-CFG" pin="!PS_POR" pad="C7"/>
+<connect gate=".BANK50X-PS-CFG" pin="!PS_SRST" pad="B10"/>
+<connect gate=".BANK50X-PS-CFG" pin="PS_CLK" pad="E7"/>
+<connect gate=".BANK50X-PS-CFG" pin="PS_MIO_VREF" pad="E11"/>
+<connect gate=".PWR" pin="GND" pad="A8 A18 B1 B11 C4 C9 C14 D17 E10 E20 F3 F7 G10 G12 G16 H7 H9 H11 H13 H19 J2 J8 J12 K5 K7 K11 K13 K15 L8 L12 L18 M1 M7 M11 M13 N4 N8 N10 N12 N14 P7 P9 P11 P13 P17 R8 R12 R20 T3 T7 T13 U6 U16 V9 V19 W2 W12 Y5 Y15"/>
+<connect gate=".PWR" pin="GNDADC" pad="J10"/>
+<connect gate=".PWR" pin="RSVDGND" pad="F10"/>
+<connect gate=".PWR" pin="RSVDVCC@1" pad="T6"/>
+<connect gate=".PWR" pin="RSVDVCC@2" pad="R6"/>
+<connect gate=".PWR" pin="RSVDVCC@3" pad="N6"/>
+<connect gate=".PWR" pin="VCCADC" pad="J9"/>
+<connect gate=".PWR" pin="VCCAUX" pad="J11 L11 N9 N11 P10 R9"/>
+<connect gate=".PWR" pin="VCCBATT" pad="F11"/>
+<connect gate=".PWR" pin="VCCBRAM" pad="G11 H10"/>
+<connect gate=".PWR" pin="VCCINT" pad="G13 H12 J13 K12 L13 M12 N13 P12 R13"/>
+<connect gate=".PWR" pin="VCCO_0" pad="K6"/>
+<connect gate=".PWR" pin="VCCO_13" pad="T8 U11 W7 Y10"/>
+<connect gate=".PWR" pin="VCCO_34" pad="N19 R15 T18 V14 W17 Y20"/>
+<connect gate=".PWR" pin="VCCO_35" pad="C19 F18 H14 J17 K20 M16"/>
+<connect gate=".PWR" pin="VCCO_DDR_502" pad="A3 D2 E5 G1 H4 L3 P2 R5 U1 V4"/>
+<connect gate=".PWR" pin="VCCO_MIO0_500" pad="B6 D7"/>
+<connect gate=".PWR" pin="VCCO_MIO1_501" pad="A13 B16 D12 E15"/>
+<connect gate=".PWR" pin="VCCPAUX" pad="F8 G9 H8 K8 M8"/>
+<connect gate=".PWR" pin="VCCPINT" pad="G7 J7 L7 N7 P8 R7"/>
+<connect gate=".PWR" pin="VCCPLL" pad="G8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
