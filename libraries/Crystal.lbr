@@ -421,6 +421,20 @@
 <circle x="-2.5" y="-2.1" radius="0.2" width="0" layer="21"/>
 <text x="-2.3" y="1.9" size="0.8128" layer="25">&gt;NAME</text>
 </package>
+<package name="TCXO-2520">
+<smd name="1" x="-1.05" y="-0.7" dx="0.8" dy="1" layer="1"/>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<smd name="4" x="-1.05" y="0.7" dx="0.8" dy="1" layer="1"/>
+<smd name="3" x="1.05" y="0.7" dx="0.8" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="1.05" y="-0.7" dx="0.8" dy="1" layer="1" rot="R180"/>
+<circle x="-1.2" y="-1.6" radius="0.2" width="0" layer="21"/>
+<wire x1="-0.4" y1="1" x2="0.4" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-1" x2="0.4" y2="-1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -444,8 +458,8 @@
 <wire x1="0.508" y1="1.143" x2="-0.508" y2="1.143" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="1.143" x2="-0.508" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="-1.27" x2="0.508" y2="-1.27" width="0.254" layer="94"/>
-<text x="5.08" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="6.096" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-1.651" x2="-1.016" y2="1.524" layer="94"/>
 <rectangle x1="1.016" y1="-1.651" x2="1.524" y2="1.524" layer="94"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -608,6 +622,23 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TG2520SMN-" prefix="U">
+<gates>
+<gate name="G$1" symbol="TCXO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TCXO-2520">
+<connects>
+<connect gate="G$1" pin="CLK" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name="40.0000M"/>
 </technologies>
 </device>
 </devices>

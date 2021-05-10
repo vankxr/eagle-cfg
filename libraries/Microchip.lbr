@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -4193,6 +4193,130 @@
 <smd name="7" x="1.5" y="0.25" dx="0.75" dy="0.3" layer="1" rot="R180"/>
 <smd name="8" x="1.5" y="0.75" dx="0.75" dy="0.3" layer="1" rot="R180"/>
 </package>
+<package name="WQFN32">
+<wire x1="-2.5" y1="2.15" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.15" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.15" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="2.15" width="0.127" layer="21"/>
+<wire x1="2.15" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<rectangle x1="-1.15625625" y1="-1.15625625" x2="1.15" y2="1.15" layer="31"/>
+<smd name="1" x="-2.35" y="1.75" dx="0.5" dy="0.23" layer="1"/>
+<smd name="33" x="0" y="0" dx="3.4" dy="3.4" layer="1" cream="no"/>
+<text x="-2" y="3.3" size="0.6096" layer="25">&gt;NAME</text>
+<circle x="-3.212" y="2.766" radius="0.3" width="0" layer="21"/>
+<smd name="2" x="-2.35" y="1.25" dx="0.5" dy="0.23" layer="1"/>
+<smd name="3" x="-2.35" y="0.75" dx="0.5" dy="0.23" layer="1"/>
+<smd name="4" x="-2.35" y="0.25" dx="0.5" dy="0.23" layer="1"/>
+<smd name="5" x="-2.35" y="-0.25" dx="0.5" dy="0.23" layer="1"/>
+<smd name="6" x="-2.35" y="-0.75" dx="0.5" dy="0.23" layer="1"/>
+<smd name="7" x="-2.35" y="-1.25" dx="0.5" dy="0.23" layer="1"/>
+<smd name="8" x="-2.35" y="-1.75" dx="0.5" dy="0.23" layer="1"/>
+<smd name="9" x="-1.75" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="10" x="-1.25" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="11" x="-0.75" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="12" x="-0.25" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="13" x="0.25" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="14" x="0.75" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="15" x="1.25" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="16" x="1.75" y="-2.35" dx="0.5" dy="0.23" layer="1" rot="R90"/>
+<smd name="17" x="2.35" y="-1.75" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="18" x="2.35" y="-1.25" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="19" x="2.35" y="-0.75" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="20" x="2.35" y="-0.25" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="21" x="2.35" y="0.25" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="22" x="2.35" y="0.75" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="23" x="2.35" y="1.25" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="24" x="2.35" y="1.75" dx="0.5" dy="0.23" layer="1" rot="R180"/>
+<smd name="25" x="1.75" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="26" x="1.25" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="27" x="0.75" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="28" x="0.25" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="29" x="-0.25" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="30" x="-0.75" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="31" x="-1.25" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+<smd name="32" x="-1.75" y="2.35" dx="0.5" dy="0.23" layer="1" rot="R270"/>
+</package>
+<package name="VQFN56">
+<smd name="57" x="0" y="0" dx="4.6" dy="4.6" layer="1" cream="no"/>
+<text x="-3.6" y="4.5" size="0.6096" layer="25">&gt;NAME</text>
+<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="51"/>
+<circle x="-4.212" y="3.766" radius="0.3" width="0" layer="21"/>
+<rectangle x1="-1.8" y1="-1.8" x2="1.8" y2="1.8" layer="31"/>
+<wire x1="-3.5" y1="3.1" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="3.5" x2="-3.1" y2="3.5" width="0.127" layer="21"/>
+<smd name="1" x="-3.4" y="2.6" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<wire x1="3.1" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="3.1" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.1" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.1" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="-3.1" width="0.127" layer="21"/>
+<smd name="2" x="-3.4" y="2.2" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="3" x="-3.4" y="1.8" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="4" x="-3.4" y="1.4" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="5" x="-3.4" y="1" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="6" x="-3.4" y="0.6" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="7" x="-3.4" y="0.2" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="8" x="-3.4" y="-0.2" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="9" x="-3.4" y="-0.6" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="10" x="-3.4" y="-1" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="11" x="-3.4" y="-1.4" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="12" x="-3.4" y="-1.8" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="13" x="-3.4" y="-2.2" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="14" x="-3.4" y="-2.6" dx="0.225" dy="0.75" layer="1" rot="R90"/>
+<smd name="15" x="-2.6" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="16" x="-2.2" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="17" x="-1.8" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="18" x="-1.4" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="19" x="-1" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="20" x="-0.6" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="21" x="-0.2" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="22" x="0.2" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="23" x="0.6" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="24" x="1" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="25" x="1.4" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="26" x="1.8" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="27" x="2.2" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="28" x="2.6" y="-3.4" dx="0.225" dy="0.75" layer="1" rot="R180"/>
+<smd name="29" x="3.4" y="-2.6" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="30" x="3.4" y="-2.2" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="31" x="3.4" y="-1.8" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="32" x="3.4" y="-1.4" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="33" x="3.4" y="-1" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="34" x="3.4" y="-0.6" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="35" x="3.4" y="-0.2" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="36" x="3.4" y="0.2" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="37" x="3.4" y="0.6" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="38" x="3.4" y="1" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="39" x="3.4" y="1.4" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="40" x="3.4" y="1.8" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="41" x="3.4" y="2.2" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="42" x="3.4" y="2.6" dx="0.225" dy="0.75" layer="1" rot="R270"/>
+<smd name="43" x="2.6" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="44" x="2.2" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="45" x="1.8" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="46" x="1.4" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="47" x="1" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="48" x="0.6" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="49" x="0.2" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="50" x="-0.2" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="51" x="-0.6" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="52" x="-1" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="53" x="-1.4" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="54" x="-1.8" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="55" x="-2.2" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+<smd name="56" x="-2.6" y="3.4" dx="0.225" dy="0.75" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC4682">
@@ -4432,49 +4556,49 @@
 <text x="-53.34" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="USB2514B">
-<wire x1="-60.96" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-78.74" width="0.254" layer="94"/>
-<wire x1="0" y1="-78.74" x2="-60.96" y2="-78.74" width="0.254" layer="94"/>
-<wire x1="-60.96" y1="-78.74" x2="-60.96" y2="0" width="0.254" layer="94"/>
+<wire x1="-50.8" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="0" y1="-68.58" x2="-50.8" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="-50.8" y1="-68.58" x2="-50.8" y2="0" width="0.254" layer="94"/>
 <pin name="USBDP_DN3/PRT_DIS_P3" x="5.08" y="-17.78" length="middle" rot="R180"/>
-<pin name="PRTPWR3/BC_EN3" x="5.08" y="-55.88" length="middle" direction="in" rot="R180"/>
+<pin name="PRTPWR3/BC_EN3" x="5.08" y="-50.8" length="middle" direction="in" rot="R180"/>
 <pin name="USBDM_DN3/PRT_DIS_M3" x="5.08" y="-20.32" length="middle" rot="R180"/>
-<pin name="OCS_N3" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="!OCS3" x="5.08" y="-38.1" length="middle" rot="R180"/>
 <pin name="USBDM_DN4/PRT_DIS_M4" x="5.08" y="-27.94" length="middle" rot="R180"/>
 <pin name="USBDM_DN2/PRT_DIS_M2" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <pin name="USBDP_DN1/PRT_DIS_P1" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="USBDP_DN4/PRT_DIS_P4" x="5.08" y="-25.4" length="middle" rot="R180"/>
-<pin name="VDDA33@1" x="-66.04" y="-53.34" length="middle" direction="pwr"/>
-<pin name="PRTPWR4/BC_EN4" x="5.08" y="-58.42" length="middle" direction="in" rot="R180"/>
+<pin name="VDDA33@1" x="-55.88" y="-12.7" length="middle" direction="pwr"/>
+<pin name="PRTPWR4/BC_EN4" x="5.08" y="-53.34" length="middle" direction="in" rot="R180"/>
 <pin name="USBDM_DN1/PRT_DIS_M1" x="5.08" y="-5.08" length="middle" rot="R180"/>
-<pin name="OCS_N4" x="5.08" y="-43.18" length="middle" rot="R180"/>
-<pin name="TEST" x="-66.04" y="-27.94" length="middle" direction="in"/>
-<pin name="SDA/SMBDATA/NON_REM1" x="5.08" y="-68.58" length="middle" rot="R180"/>
+<pin name="!OCS4" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="TEST" x="-55.88" y="-60.96" length="middle" direction="in"/>
+<pin name="SDA/SMBDATA/NON_REM1" x="5.08" y="-60.96" length="middle" rot="R180"/>
 <pin name="USBDP_DN2/PRT_DIS_P2" x="5.08" y="-10.16" length="middle" rot="R180"/>
-<pin name="VDDA33@0" x="-66.04" y="-50.8" length="middle" direction="pwr"/>
-<pin name="OCS_N2" x="5.08" y="-38.1" length="middle" rot="R180"/>
-<pin name="VDD33@1" x="-66.04" y="-45.72" length="middle" direction="pwr"/>
-<pin name="SCL/SMBCLK/CFG_SEL0" x="5.08" y="-71.12" length="middle" direction="out" rot="R180"/>
-<pin name="HS_IND/CFG_SEL1" x="5.08" y="-73.66" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="-66.04" y="-76.2" length="middle" direction="pwr"/>
-<pin name="!RESET" x="-66.04" y="-35.56" length="middle" direction="in"/>
-<pin name="VBUS_DET" x="-66.04" y="-10.16" length="middle" direction="in"/>
-<pin name="PRTPWR1/BC_EN1" x="5.08" y="-50.8" length="middle" direction="in" rot="R180"/>
-<pin name="OCS_N1" x="5.08" y="-35.56" length="middle" rot="R180"/>
-<pin name="CRFILT" x="-66.04" y="-63.5" length="middle" direction="out"/>
-<pin name="VDD33@0" x="-66.04" y="-43.18" length="middle" direction="pwr"/>
-<pin name="PRTPWR2/BC_EN2" x="5.08" y="-53.34" length="middle" direction="in" rot="R180"/>
-<pin name="SUSP_IND/LOCAL_PWR/NON_REM0" x="5.08" y="-66.04" length="middle" rot="R180"/>
-<pin name="VDDA33@2" x="-66.04" y="-55.88" length="middle" direction="out"/>
-<pin name="USBDM_UP" x="-66.04" y="-5.08" length="middle"/>
-<pin name="USBDP_UP" x="-66.04" y="-2.54" length="middle"/>
-<pin name="XTALOUT" x="-66.04" y="-20.32" length="middle" direction="out"/>
-<pin name="XTALIN" x="-66.04" y="-17.78" length="middle" direction="in"/>
-<pin name="PLLFILT" x="-66.04" y="-66.04" length="middle" direction="out"/>
-<pin name="RBIAS" x="-66.04" y="-68.58" length="middle" direction="out"/>
-<pin name="VDD33@2" x="-66.04" y="-48.26" length="middle" direction="pwr"/>
-<text x="-60.96" y="3.556" size="1.27" layer="95">&gt;NAME</text>
-<text x="-60.96" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VDDA33@0" x="-55.88" y="-10.16" length="middle" direction="pwr"/>
+<pin name="!OCS2" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="VDD33@1" x="-55.88" y="-5.08" length="middle" direction="pwr"/>
+<pin name="SCL/SMBCLK/CFG_SEL0" x="5.08" y="-63.5" length="middle" direction="out" rot="R180"/>
+<pin name="HS_IND/CFG_SEL1" x="5.08" y="-66.04" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="-55.88" y="-66.04" length="middle" direction="pwr"/>
+<pin name="!RESET" x="-55.88" y="-20.32" length="middle" direction="in"/>
+<pin name="VBUS_DET" x="-55.88" y="-27.94" length="middle" direction="in"/>
+<pin name="PRTPWR1/BC_EN1" x="5.08" y="-45.72" length="middle" direction="in" rot="R180"/>
+<pin name="!OCS1" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="CRFILT" x="-55.88" y="-50.8" length="middle" direction="out"/>
+<pin name="VDD33@0" x="-55.88" y="-2.54" length="middle" direction="pwr"/>
+<pin name="PRTPWR2/BC_EN2" x="5.08" y="-48.26" length="middle" direction="in" rot="R180"/>
+<pin name="SUSP_IND/LOCAL_PWR/NON_REM0" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="VDDA33@2" x="-55.88" y="-15.24" length="middle" direction="out"/>
+<pin name="USBDM_UP" x="-55.88" y="-38.1" length="middle"/>
+<pin name="USBDP_UP" x="-55.88" y="-35.56" length="middle"/>
+<pin name="XTALOUT" x="-55.88" y="-45.72" length="middle" direction="out"/>
+<pin name="XTALIN" x="-55.88" y="-43.18" length="middle" direction="in"/>
+<pin name="PLLFILT" x="-55.88" y="-53.34" length="middle" direction="out"/>
+<pin name="RBIAS" x="-55.88" y="-55.88" length="middle" direction="out"/>
+<pin name="VDD33@2" x="-55.88" y="-7.62" length="middle" direction="pwr"/>
+<text x="-50.8" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-50.8" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="USB3300">
 <wire x1="-35.56" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -4525,10 +4649,10 @@
 <pin name="GND" x="-68.58" y="-15.24" length="middle" direction="pwr"/>
 <pin name="VCC" x="-68.58" y="-2.54" length="middle" direction="pwr"/>
 <pin name="(PCINT5/!RESET!/ADC0/DW)PB5" x="5.08" y="-15.24" length="middle" rot="R180"/>
-<pin name="(PCINT0/MOSI/DI/SDA/OC0A/OC1A/AREF/AIN0)PB0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="(PCINT0/MOSI/DI/SDA/OC0A/!OC1A!/AREF/AIN0)PB0" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="(PCINT1/MISO/DO/OC0B/OC1A/AIN1)PB1" x="5.08" y="-5.08" length="middle" rot="R180"/>
 <pin name="(PCINT2/SCK/USCK/SCL/INT0/T0/ADC1)PB2" x="5.08" y="-7.62" length="middle" rot="R180"/>
-<pin name="(PCINT3/XTAL1/CLKI/OC1B/ADC3)PB3" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="(PCINT3/XTAL1/CLKI/!OC1B!/ADC3)PB3" x="5.08" y="-10.16" length="middle" rot="R180"/>
 <pin name="(PCINT4/XTAL2/CLKO/OC1B/ADC2)PB4" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <text x="-63.5" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-63.5" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
@@ -4857,14 +4981,14 @@
 <pin name="PG@0" x="-35.56" y="-12.7" length="middle"/>
 <pin name="EN@0" x="-35.56" y="-10.16" length="middle"/>
 <pin name="FB@0" x="-35.56" y="-43.18" length="middle"/>
-<pin name="SNS@0" x="-35.56" y="-25.4" length="middle"/>
+<pin name="SNS@0" x="-35.56" y="-30.48" length="middle"/>
 <pin name="SW@0" x="-35.56" y="-20.32" length="middle"/>
 <pin name="AVIN@1" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VIN@1" x="5.08" y="-5.08" length="middle" rot="R180"/>
 <pin name="EN@1" x="5.08" y="-10.16" length="middle" rot="R180"/>
 <pin name="PG@1" x="5.08" y="-12.7" length="middle" rot="R180"/>
 <pin name="SW@1" x="5.08" y="-20.32" length="middle" rot="R180"/>
-<pin name="SNS@1" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="SNS@1" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="FB@1" x="5.08" y="-43.18" length="middle" rot="R180"/>
 <pin name="SS@1" x="5.08" y="-48.26" length="middle" rot="R180"/>
 <pin name="PGND@1" x="5.08" y="-53.34" length="middle" rot="R180"/>
@@ -4901,8 +5025,8 @@
 <wire x1="-20.32" y1="-30.48" x2="-20.32" y2="0" width="0.254" layer="94"/>
 <pin name="AGND" x="-25.4" y="-22.86" length="middle"/>
 <pin name="PGND@0" x="-25.4" y="-25.4" length="middle"/>
-<pin name="PG" x="5.08" y="-27.94" length="middle" rot="R180"/>
-<pin name="FB" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="PG" x="-25.4" y="-12.7" length="middle"/>
+<pin name="FB" x="5.08" y="-27.94" length="middle" rot="R180"/>
 <pin name="SW" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VIN@0" x="-25.4" y="-2.54" length="middle"/>
 <pin name="EN" x="-25.4" y="-10.16" length="middle"/>
@@ -4911,7 +5035,7 @@
 <pin name="VIN@1" x="-25.4" y="-5.08" length="middle"/>
 <pin name="PGND@1" x="-25.4" y="-27.94" length="middle"/>
 <pin name="SS" x="-25.4" y="-17.78" length="middle"/>
-<pin name="SNS" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="SNS" x="5.08" y="-12.7" length="middle" rot="R180"/>
 </symbol>
 <symbol name="MCP1631X">
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -5819,6 +5943,101 @@
 <text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="KSZ8061RNX">
+<pin name="TXP" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-35.56" y="-88.9" length="middle"/>
+<pin name="LED1" x="5.08" y="-88.9" length="middle" rot="R180"/>
+<pin name="LED0" x="5.08" y="-86.36" length="middle" rot="R180"/>
+<pin name="AVDDH" x="-35.56" y="-5.08" length="middle"/>
+<wire x1="-30.48" y1="-91.44" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-91.44" width="0.254" layer="94"/>
+<wire x1="0" y1="-91.44" x2="-30.48" y2="-91.44" width="0.254" layer="94"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="DNU@0" x="-35.56" y="-83.82" length="middle"/>
+<pin name="DNU@1" x="-35.56" y="-86.36" length="middle"/>
+<pin name="VDDIO" x="-35.56" y="-2.54" length="middle"/>
+<pin name="AVDDL" x="-35.56" y="-7.62" length="middle"/>
+<pin name="VDDL" x="-35.56" y="-10.16" length="middle"/>
+<pin name="XI" x="-35.56" y="-71.12" length="middle"/>
+<pin name="XO" x="-35.56" y="-73.66" length="middle"/>
+<pin name="TXD0" x="-35.56" y="-40.64" length="middle"/>
+<pin name="TXD1" x="-35.56" y="-38.1" length="middle"/>
+<pin name="TXEN" x="-35.56" y="-35.56" length="middle"/>
+<pin name="PHYAD1" x="-35.56" y="-48.26" length="middle"/>
+<pin name="PHYAD0" x="-35.56" y="-45.72" length="middle"/>
+<pin name="RXD1/PHYAD2" x="-35.56" y="-50.8" length="middle"/>
+<pin name="RXD0/AUTONEG" x="-35.56" y="-53.34" length="middle"/>
+<pin name="RXER/QWF" x="-35.56" y="-55.88" length="middle"/>
+<pin name="MDIO" x="-35.56" y="-27.94" length="middle"/>
+<pin name="MDC" x="-35.56" y="-30.48" length="middle"/>
+<pin name="REF_CLK/CONFIG0" x="-35.56" y="-60.96" length="middle"/>
+<pin name="CONFIG1" x="-35.56" y="-63.5" length="middle"/>
+<pin name="CRS_DV/CONFIG2" x="-35.56" y="-66.04" length="middle"/>
+<pin name="REXT" x="-35.56" y="-78.74" length="middle"/>
+<pin name="TXM" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="RXP" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="RXM" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="!RESET" x="-35.56" y="-15.24" length="middle"/>
+<pin name="INTRP/!NAND_TREE" x="-35.56" y="-20.32" length="middle"/>
+<pin name="SIGDET" x="-35.56" y="-22.86" length="middle"/>
+</symbol>
+<symbol name="USB5744">
+<wire x1="-55.88" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-93.98" width="0.254" layer="94"/>
+<wire x1="0" y1="-93.98" x2="-55.88" y2="-93.98" width="0.254" layer="94"/>
+<wire x1="-55.88" y1="-93.98" x2="-55.88" y2="0" width="0.254" layer="94"/>
+<pin name="VSS" x="-60.96" y="-91.44" length="middle" direction="pwr"/>
+<text x="-55.88" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-55.88" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="USB3DN_TXDP1" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="USB2DN_DP1/!PRT_DIS_P1" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="USB2DN_DM1/!PRT_DIS_M1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="RBIAS" x="-60.96" y="-81.28" length="middle"/>
+<pin name="VDD33" x="-60.96" y="-2.54" length="middle" direction="pwr"/>
+<pin name="VDD12" x="-60.96" y="-5.08" length="middle" direction="pwr"/>
+<pin name="XTALI/CLK_IN" x="-60.96" y="-73.66" length="middle"/>
+<pin name="XTALO" x="-60.96" y="-76.2" length="middle"/>
+<pin name="ATEST" x="-60.96" y="-86.36" length="middle"/>
+<pin name="!RESET" x="-60.96" y="-17.78" length="middle"/>
+<pin name="USB3DN_TXDM1" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDP1" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDM1" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="USB3DN_TXDP2" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="USB2DN_DP2/!PRT_DIS_P2" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="USB2DN_DM2/!PRT_DIS_M2" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="USB3DN_TXDM2" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDP2" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDM2" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="USB3DN_TXDP3" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="USB2DN_DP3/!PRT_DIS_P3" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="USB2DN_DM3/!PRT_DIS_M3" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="USB3DN_TXDM3" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDP3" x="5.08" y="-55.88" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDM3" x="5.08" y="-58.42" length="middle" rot="R180"/>
+<pin name="USB3DN_TXDP4" x="5.08" y="-71.12" length="middle" rot="R180"/>
+<pin name="USB2DN_DP4/!PRT_DIS_P4" x="5.08" y="-63.5" length="middle" rot="R180"/>
+<pin name="USB2DN_DM4/!PRT_DIS_M4" x="5.08" y="-66.04" length="middle" rot="R180"/>
+<pin name="USB3DN_TXDM4" x="5.08" y="-73.66" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDP4" x="5.08" y="-76.2" length="middle" rot="R180"/>
+<pin name="USB3DN_RXDM4" x="5.08" y="-78.74" length="middle" rot="R180"/>
+<pin name="PRT_CTL1" x="5.08" y="-83.82" length="middle" rot="R180"/>
+<pin name="PRT_CTL2" x="5.08" y="-86.36" length="middle" rot="R180"/>
+<pin name="PRT_CTL3" x="5.08" y="-88.9" length="middle" rot="R180"/>
+<pin name="PRT_CTL4/!GANG_PWR" x="5.08" y="-91.44" length="middle" rot="R180"/>
+<pin name="VBUS_DET" x="-60.96" y="-12.7" length="middle"/>
+<pin name="SPI_CLK/SMCLK" x="-60.96" y="-45.72" length="middle"/>
+<pin name="SPI_DO/SMDAT" x="-60.96" y="-48.26" length="middle"/>
+<pin name="SPI_DI/!CFG_BC_EN" x="-60.96" y="-50.8" length="middle"/>
+<pin name="!SPI_CE!/!CFG_NON_REM" x="-60.96" y="-53.34" length="middle"/>
+<pin name="USB2UP_DP" x="-60.96" y="-22.86" length="middle"/>
+<pin name="USB2UP_DM" x="-60.96" y="-25.4" length="middle"/>
+<pin name="USB3UP_TXDP" x="-60.96" y="-30.48" length="middle"/>
+<pin name="USB3UP_TXDM" x="-60.96" y="-33.02" length="middle"/>
+<pin name="USB3UP_RXDP" x="-60.96" y="-35.56" length="middle"/>
+<pin name="USB3UP_RXDM" x="-60.96" y="-38.1" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -6317,14 +6536,14 @@
 <devices>
 <device name="" package="VQFN36">
 <connects>
+<connect gate="G$1" pin="!OCS1" pad="13"/>
+<connect gate="G$1" pin="!OCS2" pad="17"/>
+<connect gate="G$1" pin="!OCS3" pad="19"/>
+<connect gate="G$1" pin="!OCS4" pad="21"/>
 <connect gate="G$1" pin="!RESET" pad="26"/>
 <connect gate="G$1" pin="CRFILT" pad="14"/>
 <connect gate="G$1" pin="GND" pad="37"/>
 <connect gate="G$1" pin="HS_IND/CFG_SEL1" pad="25"/>
-<connect gate="G$1" pin="OCS_N1" pad="13"/>
-<connect gate="G$1" pin="OCS_N2" pad="17"/>
-<connect gate="G$1" pin="OCS_N3" pad="19"/>
-<connect gate="G$1" pin="OCS_N4" pad="21"/>
 <connect gate="G$1" pin="PLLFILT" pad="34"/>
 <connect gate="G$1" pin="PRTPWR1/BC_EN1" pad="12"/>
 <connect gate="G$1" pin="PRTPWR2/BC_EN2" pad="16"/>
@@ -6415,10 +6634,10 @@
 <devices>
 <device name="" package="WSOIC8">
 <connects>
-<connect gate="G$1" pin="(PCINT0/MOSI/DI/SDA/OC0A/OC1A/AREF/AIN0)PB0" pad="5"/>
+<connect gate="G$1" pin="(PCINT0/MOSI/DI/SDA/OC0A/!OC1A!/AREF/AIN0)PB0" pad="5"/>
 <connect gate="G$1" pin="(PCINT1/MISO/DO/OC0B/OC1A/AIN1)PB1" pad="6"/>
 <connect gate="G$1" pin="(PCINT2/SCK/USCK/SCL/INT0/T0/ADC1)PB2" pad="7"/>
-<connect gate="G$1" pin="(PCINT3/XTAL1/CLKI/OC1B/ADC3)PB3" pad="2"/>
+<connect gate="G$1" pin="(PCINT3/XTAL1/CLKI/!OC1B!/ADC3)PB3" pad="2"/>
 <connect gate="G$1" pin="(PCINT4/XTAL2/CLKO/OC1B/ADC2)PB4" pad="3"/>
 <connect gate="G$1" pin="(PCINT5/!RESET!/ADC0/DW)PB5" pad="1"/>
 <connect gate="G$1" pin="GND" pad="4"/>
@@ -8058,6 +8277,114 @@
 <technology name="3.3"/>
 <technology name="4.1"/>
 <technology name="5.0"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KSZ8061RN" prefix="U">
+<gates>
+<gate name="G$1" symbol="KSZ8061RNX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WQFN32">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="28"/>
+<connect gate="G$1" pin="AVDDH" pad="3"/>
+<connect gate="G$1" pin="AVDDL" pad="8"/>
+<connect gate="G$1" pin="CONFIG1" pad="27"/>
+<connect gate="G$1" pin="CRS_DV/CONFIG2" pad="13"/>
+<connect gate="G$1" pin="DNU@0" pad="25"/>
+<connect gate="G$1" pin="DNU@1" pad="26"/>
+<connect gate="G$1" pin="GND" pad="33"/>
+<connect gate="G$1" pin="INTRP/!NAND_TREE" pad="29"/>
+<connect gate="G$1" pin="LED0" pad="24"/>
+<connect gate="G$1" pin="LED1" pad="20"/>
+<connect gate="G$1" pin="MDC" pad="11"/>
+<connect gate="G$1" pin="MDIO" pad="10"/>
+<connect gate="G$1" pin="PHYAD0" pad="14"/>
+<connect gate="G$1" pin="PHYAD1" pad="16"/>
+<connect gate="G$1" pin="REF_CLK/CONFIG0" pad="19"/>
+<connect gate="G$1" pin="REXT" pad="31"/>
+<connect gate="G$1" pin="RXD0/AUTONEG" pad="18"/>
+<connect gate="G$1" pin="RXD1/PHYAD2" pad="17"/>
+<connect gate="G$1" pin="RXER/QWF" pad="12"/>
+<connect gate="G$1" pin="RXM" pad="7"/>
+<connect gate="G$1" pin="RXP" pad="6"/>
+<connect gate="G$1" pin="SIGDET" pad="32"/>
+<connect gate="G$1" pin="TXD0" pad="22"/>
+<connect gate="G$1" pin="TXD1" pad="23"/>
+<connect gate="G$1" pin="TXEN" pad="21"/>
+<connect gate="G$1" pin="TXM" pad="5"/>
+<connect gate="G$1" pin="TXP" pad="4"/>
+<connect gate="G$1" pin="VDDIO" pad="15"/>
+<connect gate="G$1" pin="VDDL" pad="9 30"/>
+<connect gate="G$1" pin="XI" pad="1"/>
+<connect gate="G$1" pin="XO" pad="2"/>
+</connects>
+<technologies>
+<technology name="B"/>
+<technology name="D"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB5744" prefix="U">
+<gates>
+<gate name="G$1" symbol="USB5744" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN56">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="42"/>
+<connect gate="G$1" pin="!SPI_CE!/!CFG_NON_REM" pad="41"/>
+<connect gate="G$1" pin="ATEST" pad="52"/>
+<connect gate="G$1" pin="PRT_CTL1" pad="36"/>
+<connect gate="G$1" pin="PRT_CTL2" pad="35"/>
+<connect gate="G$1" pin="PRT_CTL3" pad="34"/>
+<connect gate="G$1" pin="PRT_CTL4/!GANG_PWR" pad="32"/>
+<connect gate="G$1" pin="RBIAS" pad="56"/>
+<connect gate="G$1" pin="SPI_CLK/SMCLK" pad="38"/>
+<connect gate="G$1" pin="SPI_DI/!CFG_BC_EN" pad="40"/>
+<connect gate="G$1" pin="SPI_DO/SMDAT" pad="39"/>
+<connect gate="G$1" pin="USB2DN_DM1/!PRT_DIS_M1" pad="2"/>
+<connect gate="G$1" pin="USB2DN_DM2/!PRT_DIS_M2" pad="9"/>
+<connect gate="G$1" pin="USB2DN_DM3/!PRT_DIS_M3" pad="18"/>
+<connect gate="G$1" pin="USB2DN_DM4/!PRT_DIS_M4" pad="25"/>
+<connect gate="G$1" pin="USB2DN_DP1/!PRT_DIS_P1" pad="1"/>
+<connect gate="G$1" pin="USB2DN_DP2/!PRT_DIS_P2" pad="8"/>
+<connect gate="G$1" pin="USB2DN_DP3/!PRT_DIS_P3" pad="17"/>
+<connect gate="G$1" pin="USB2DN_DP4/!PRT_DIS_P4" pad="24"/>
+<connect gate="G$1" pin="USB2UP_DM" pad="46"/>
+<connect gate="G$1" pin="USB2UP_DP" pad="45"/>
+<connect gate="G$1" pin="USB3DN_RXDM1" pad="7"/>
+<connect gate="G$1" pin="USB3DN_RXDM2" pad="14"/>
+<connect gate="G$1" pin="USB3DN_RXDM3" pad="23"/>
+<connect gate="G$1" pin="USB3DN_RXDM4" pad="30"/>
+<connect gate="G$1" pin="USB3DN_RXDP1" pad="6"/>
+<connect gate="G$1" pin="USB3DN_RXDP2" pad="13"/>
+<connect gate="G$1" pin="USB3DN_RXDP3" pad="22"/>
+<connect gate="G$1" pin="USB3DN_RXDP4" pad="29"/>
+<connect gate="G$1" pin="USB3DN_TXDM1" pad="4"/>
+<connect gate="G$1" pin="USB3DN_TXDM2" pad="11"/>
+<connect gate="G$1" pin="USB3DN_TXDM3" pad="20"/>
+<connect gate="G$1" pin="USB3DN_TXDM4" pad="27"/>
+<connect gate="G$1" pin="USB3DN_TXDP1" pad="3"/>
+<connect gate="G$1" pin="USB3DN_TXDP2" pad="10"/>
+<connect gate="G$1" pin="USB3DN_TXDP3" pad="19"/>
+<connect gate="G$1" pin="USB3DN_TXDP4" pad="26"/>
+<connect gate="G$1" pin="USB3UP_RXDM" pad="51"/>
+<connect gate="G$1" pin="USB3UP_RXDP" pad="50"/>
+<connect gate="G$1" pin="USB3UP_TXDM" pad="48"/>
+<connect gate="G$1" pin="USB3UP_TXDP" pad="47"/>
+<connect gate="G$1" pin="VBUS_DET" pad="37"/>
+<connect gate="G$1" pin="VDD12" pad="5 12 15 21 28 33 43 49"/>
+<connect gate="G$1" pin="VDD33" pad="16 31 44 55"/>
+<connect gate="G$1" pin="VSS" pad="57"/>
+<connect gate="G$1" pin="XTALI/CLK_IN" pad="54"/>
+<connect gate="G$1" pin="XTALO" pad="53"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

@@ -1461,7 +1461,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ICE40HX8K-SG32" prefix="U">
+<deviceset name="ICE40LP384-SG32" prefix="U">
 <gates>
 <gate name=".PWRCTRL" symbol="ICE40LP384-SG32-PWRCTRL" x="0" y="0"/>
 <gate name=".BANK0" symbol="ICE40LP384-SG32-BANK0" x="-68.58" y="-40.64"/>

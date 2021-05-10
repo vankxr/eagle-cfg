@@ -409,6 +409,7 @@
 <text x="0" y="-2.7686" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left">&gt;VALUE</text>
 <text x="0" y="2.7686" size="1.778" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="0" y="-5.3086" size="1.778" layer="97" ratio="10" rot="SR0" align="top-left">&gt;TOLERANCE</text>
+<text x="0" y="-7.8486" size="1.778" layer="97" ratio="10" rot="SR0" align="top-left">&gt;POWER</text>
 </symbol>
 <symbol name="SEL">
 <pin name="2" x="0" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
@@ -466,6 +467,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
 </technology>
 </technologies>
@@ -477,6 +479,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
 </technology>
 </technologies>
@@ -488,6 +491,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
 </technology>
 </technologies>
@@ -499,6 +503,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
 </technology>
 </technologies>
@@ -510,6 +515,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
 </technology>
 </technologies>
@@ -521,6 +527,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="POWER" value="" constant="no"/>
 <attribute name="TOLERANCE" value="" constant="no"/>
 </technology>
 </technologies>

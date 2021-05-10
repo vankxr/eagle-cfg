@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -282,8 +282,8 @@
 </packages>
 <symbols>
 <symbol name="MIC_PDM">
-<text x="3.81" y="11.43" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="3.175" y="-8.89" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
+<text x="-11.43" y="5.08" size="1.778" layer="95" rot="R270">&gt;NAME</text>
+<text x="-8.89" y="5.08" size="1.778" layer="96" rot="R270">&gt;VALUE</text>
 <pin name="VCC" x="-2.54" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="GND" x="-2.54" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
 <circle x="0" y="0" radius="3.81" width="0.254" layer="94"/>

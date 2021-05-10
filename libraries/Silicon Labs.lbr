@@ -800,7 +800,7 @@
 <pin name="!CFGMODE" x="-50.8" y="-38.1" length="middle"/>
 </symbol>
 <symbol name="SI5351C-X-GM">
-<pin name="INTR" x="-27.94" y="-30.48" length="middle"/>
+<pin name="!INTR" x="-27.94" y="-30.48" length="middle"/>
 <pin name="GND" x="-27.94" y="-53.34" length="middle"/>
 <pin name="SCL" x="-27.94" y="-22.86" length="middle"/>
 <pin name="SDA" x="-27.94" y="-25.4" length="middle"/>
@@ -1194,6 +1194,7 @@
 <devices>
 <device name="" package="QFN20">
 <connects>
+<connect gate="G$1" pin="!INTR" pad="3"/>
 <connect gate="G$1" pin="!OE" pad="7"/>
 <connect gate="G$1" pin="CLK0" pad="13"/>
 <connect gate="G$1" pin="CLK1" pad="12"/>
@@ -1205,7 +1206,6 @@
 <connect gate="G$1" pin="CLK7" pad="15"/>
 <connect gate="G$1" pin="CLKIN" pad="6"/>
 <connect gate="G$1" pin="GND" pad="21"/>
-<connect gate="G$1" pin="INTR" pad="3"/>
 <connect gate="G$1" pin="SCL" pad="4"/>
 <connect gate="G$1" pin="SDA" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="20"/>

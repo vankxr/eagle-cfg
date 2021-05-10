@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -227,6 +227,41 @@
 <smd name="11" x="15.08" y="18.8" dx="3.8" dy="1" layer="1" rot="R180"/>
 <smd name="10" x="21.08" y="18.8" dx="3.8" dy="1" layer="1" rot="R180"/>
 </package>
+<package name="2118730">
+<smd name="1" x="1.65" y="0.5" dx="3.3" dy="1" layer="1"/>
+<smd name="16" x="0.5" y="1.275" dx="2.55" dy="1" layer="1" rot="R90"/>
+<text x="0.6" y="31.6" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="0.4" y1="0.4" x2="44.4" y2="0.4" width="0.127" layer="51"/>
+<wire x1="44.4" y1="0.4" x2="44.4" y2="30.9" width="0.127" layer="51"/>
+<wire x1="44.4" y1="30.9" x2="0.4" y2="30.9" width="0.127" layer="51"/>
+<wire x1="0.4" y1="30.9" x2="0.4" y2="0.4" width="0.127" layer="51"/>
+<smd name="2" x="7.4" y="0.5" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="44.3" y="1.275" dx="2.55" dy="1" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="30.025" dx="2.55" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="44.3" y="30.025" dx="2.55" dy="1" layer="1" rot="R90"/>
+<smd name="6" x="1.65" y="30.8" dx="3.3" dy="1" layer="1"/>
+<smd name="7" x="43.15" y="30.8" dx="3.3" dy="1" layer="1"/>
+<smd name="8" x="43.15" y="0.5" dx="3.3" dy="1" layer="1"/>
+<smd name="9" x="13.4" y="0.5" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="10" x="19.4" y="0.5" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="11" x="25.4" y="0.5" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="12" x="31.4" y="0.5" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="13" x="37.4" y="0.5" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="14" x="7.4" y="30.8" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="15" x="13.4" y="30.8" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="17" x="19.4" y="30.8" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="18" x="25.4" y="30.8" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="19" x="31.4" y="30.8" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="20" x="37.4" y="30.8" dx="3.8" dy="1" layer="1" rot="R180"/>
+<smd name="21" x="0.5" y="6.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="22" x="0.5" y="12.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="23" x="0.5" y="18.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="24" x="0.5" y="24.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="25" x="44.3" y="6.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="26" x="44.3" y="12.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="27" x="44.3" y="18.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="28" x="44.3" y="24.65" dx="3.8" dy="1" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SHIELD">
@@ -256,6 +291,14 @@
 <device name="-TE-2118728" package="2118728">
 <connects>
 <connect gate="G$1" pin="GND" pad="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TE-2118730" package="2118730">
+<connects>
+<connect gate="G$1" pin="GND" pad="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -484,6 +484,40 @@
 <wire x1="-3.7" y1="-3.05" x2="-3.7" y2="3.05" width="0.1905" layer="21"/>
 <wire x1="-3.7" y1="3.05" x2="-1.5" y2="3.05" width="0.1905" layer="21"/>
 </package>
+<package name="TAN-CAP-CASE-B">
+<description>&lt;h3&gt;EIA3216-KIT&lt;/h3&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has longer pads to make hand soldering easier.&lt;br&gt;</description>
+<wire x1="-1.15" y1="-1.7" x2="-3.15" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-1.7" x2="-3.15" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="1.7" x2="-1.15" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.15" y1="-1.7" x2="2.75" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="-1.7" x2="3.15" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-1.3" x2="3.15" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="1.3" x2="2.75" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="1.7" x2="1.15" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="0.531" y1="1.266" x2="0.531" y2="-1.266" width="0.127" layer="21"/>
+<smd name="C" x="-1.8" y="0" dx="1.9" dy="2.6" layer="1"/>
+<smd name="A" x="1.8" y="0" dx="1.9" dy="2.6" layer="1"/>
+<text x="-2.79" y="1.881" size="0.4064" layer="25">&gt;NAME</text>
+<text x="0.558" y="1.932" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="TAN-CAP-CASE-C">
+<description>&lt;h3&gt;EIA3216-KIT&lt;/h3&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has longer pads to make hand soldering easier.&lt;br&gt;</description>
+<wire x1="-1.85" y1="-1.7" x2="-4.35" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-4.35" y1="-1.7" x2="-4.35" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-4.35" y1="1.7" x2="-1.85" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.85" y1="-1.7" x2="3.95" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-1.7" x2="4.35" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="4.35" y1="-1.3" x2="4.35" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="4.35" y1="1.3" x2="3.95" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="1.7" x2="1.85" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.231" y1="1.266" x2="1.231" y2="-1.266" width="0.127" layer="21"/>
+<smd name="C" x="-2.75" y="0" dx="2.4" dy="2.6" layer="1"/>
+<smd name="A" x="2.75" y="0" dx="2.4" dy="2.6" layer="1"/>
+<text x="-3.49" y="1.881" size="0.4064" layer="25">&gt;NAME</text>
+<text x="1.258" y="1.932" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -580,6 +614,28 @@
 </gates>
 <devices>
 <device name="-CASE-A-EIA3216" package="TAN-CAP-CASE-A">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-CASE-B-EIA3528" package="TAN-CAP-CASE-B">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-CASE-C-EIA6032" package="TAN-CAP-CASE-C">
 <connects>
 <connect gate="G$1" pin="+" pad="A"/>
 <connect gate="G$1" pin="-" pad="C"/>
