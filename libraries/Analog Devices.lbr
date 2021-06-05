@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.8" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
@@ -1723,6 +1723,30 @@
 <wire x1="-1.1" y1="-2" x2="-1.5" y2="-2" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-2" x2="-1.5" y2="-1.6" width="0.127" layer="21"/>
 </package>
+<package name="TSSOP16">
+<smd name="1" x="-2.275" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="-1.625" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="-0.975" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="-0.325" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="5" x="0.325" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="6" x="0.975" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="7" x="1.625" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="9" x="2.275" y="2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="10" x="1.625" y="2.896" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="11" x="0.975" y="2.896" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="12" x="0.325" y="2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="13" x="-0.325" y="2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="14" x="-0.975" y="2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="2.25" x2="2.5" y2="2.25" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.25" x2="2.5" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.25" x2="-2.5" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.25" x2="-2.5" y2="2.25" width="0.127" layer="21"/>
+<text x="3.885" y="-2.14" size="0.8" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<circle x="-1.788" y="-1.352" radius="0.3" width="0" layer="21"/>
+<smd name="8" x="2.275" y="-2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="15" x="-1.625" y="2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="16" x="-2.275" y="2.9" dx="1.5" dy="0.4" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LTC4314">
@@ -3351,6 +3375,78 @@
 <pin name="AIN0REF" x="5.08" y="-40.64" length="middle" rot="R180"/>
 <pin name="MICBIAS1" x="5.08" y="-33.02" length="middle" rot="R180"/>
 <pin name="CM" x="5.08" y="-68.58" length="middle" rot="R180"/>
+</symbol>
+<symbol name="ADG798">
+<pin name="D" x="15.24" y="-12.7" visible="off" length="middle" direction="in" rot="R180"/>
+<text x="0" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="-25.4" x2="2.54" y2="-24.13" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-24.13" x2="5.08" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-22.86" x2="7.62" y2="-21.59" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-21.59" x2="10.16" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="S1" x="-5.08" y="-2.54" visible="off" length="middle" direction="in"/>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-27.94" x2="2.54" y2="-24.13" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-27.94" x2="5.08" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-27.94" x2="7.62" y2="-21.59" width="0.1524" layer="94"/>
+<text x="2.54" y="-23.368" size="0.6096" layer="94" align="bottom-center">0</text>
+<text x="5.08" y="-22.098" size="0.6096" layer="94" align="bottom-center">1</text>
+<text x="7.62" y="-20.828" size="0.6096" layer="94" align="bottom-center">2</text>
+<text x="0.762" y="-2.54" size="0.6096" layer="94" align="center-left">1</text>
+<text x="0.762" y="-5.08" size="0.6096" layer="94" align="center-left">2</text>
+<text x="0.762" y="-7.62" size="0.6096" layer="94" align="center-left">3</text>
+<text x="0.762" y="-10.16" size="0.6096" layer="94" align="center-left">4</text>
+<text x="0.762" y="-15.24" size="0.6096" layer="94" align="center-left">5</text>
+<text x="0.762" y="-17.78" size="0.6096" layer="94" align="center-left">6</text>
+<text x="0.762" y="-20.32" size="0.6096" layer="94" align="center-left">7</text>
+<text x="0.762" y="-22.86" size="0.6096" layer="94" align="center-left">8</text>
+<pin name="A0" x="2.54" y="-27.94" visible="off" length="point" direction="in" rot="R90"/>
+<pin name="A1" x="5.08" y="-27.94" visible="off" length="point" direction="in" rot="R90"/>
+<pin name="A2" x="7.62" y="-27.94" visible="off" length="point" direction="in" rot="R90"/>
+<pin name="S2" x="-5.08" y="-5.08" visible="off" length="middle" direction="in"/>
+<pin name="S3" x="-5.08" y="-7.62" visible="off" length="middle" direction="in"/>
+<pin name="S4" x="-5.08" y="-10.16" visible="off" length="middle" direction="in"/>
+<pin name="S5" x="-5.08" y="-15.24" visible="off" length="middle" direction="in"/>
+<pin name="S6" x="-5.08" y="-17.78" visible="off" length="middle" direction="in"/>
+<pin name="S7" x="-5.08" y="-20.32" visible="off" length="middle" direction="in"/>
+<pin name="S8" x="-5.08" y="-22.86" visible="off" length="middle" direction="in"/>
+<wire x1="-5.08" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="94"/>
+<pin name="EN" x="-5.08" y="-12.7" visible="off" length="point" direction="in"/>
+<text x="0.762" y="-12.7" size="0.6096" layer="94" align="center-left">EN</text>
+</symbol>
+<symbol name="ADG798_PWR">
+<pin name="V+" x="0" y="7.62" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="V-" x="-2.54" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="-0.127" y="3.683" size="1.27" layer="95" align="center">V+</text>
+<text x="-2.54" y="-3.683" size="1.27" layer="95" align="center">V-</text>
+<text x="-3.937" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="GND" x="2.54" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="2.54" y="-3.683" size="1.27" layer="95" align="center">GND</text>
+</symbol>
+<symbol name="AD849X">
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-3.81" width="0.1524" layer="94"/>
+<pin name="-IN" x="-10.16" y="-2.54" visible="pad" length="middle" direction="in"/>
+<pin name="+IN" x="-10.16" y="2.54" visible="pad" length="middle" direction="in"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<text x="2.54" y="6.096" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="3.81" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="SENSE" x="10.16" y="-5.08" visible="pad" length="middle" direction="in" rot="R180"/>
+<pin name="REF" x="-10.16" y="-7.62" visible="pad" length="middle" direction="in"/>
+<wire x1="-2.54" y1="-3.81" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<text x="2.032" y="-3.81" size="0.6096" layer="94" align="center-right">SENSE</text>
+<text x="-3.048" y="-5.842" size="0.6096" layer="94" align="center-right">REF</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5091,6 +5187,86 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD8032">
+<gates>
+<gate name=".1" symbol="OP_AMP" x="7.62" y="12.7"/>
+<gate name=".2" symbol="OP_AMP" x="5.08" y="-5.08"/>
+<gate name=".PWR" symbol="OP_AMP_PWR" x="-22.86" y="5.08"/>
+</gates>
+<devices>
+<device name="ARZ" package="SOIC8">
+<connects>
+<connect gate=".1" pin="+IN" pad="3"/>
+<connect gate=".1" pin="-IN" pad="2"/>
+<connect gate=".1" pin="OUT" pad="1"/>
+<connect gate=".2" pin="+IN" pad="5"/>
+<connect gate=".2" pin="-IN" pad="6"/>
+<connect gate=".2" pin="OUT" pad="7"/>
+<connect gate=".PWR" pin="V+" pad="8"/>
+<connect gate=".PWR" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADG798">
+<gates>
+<gate name="G$1" symbol="ADG798" x="0" y="0"/>
+<gate name=".PWR" symbol="ADG798_PWR" x="27.94" y="-12.7"/>
+</gates>
+<devices>
+<device name="HRUZ" package="TSSOP16">
+<connects>
+<connect gate=".PWR" pin="GND" pad="14"/>
+<connect gate=".PWR" pin="V+" pad="13"/>
+<connect gate=".PWR" pin="V-" pad="3"/>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="16"/>
+<connect gate="G$1" pin="A2" pad="15"/>
+<connect gate="G$1" pin="D" pad="8"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="S1" pad="4"/>
+<connect gate="G$1" pin="S2" pad="5"/>
+<connect gate="G$1" pin="S3" pad="6"/>
+<connect gate="G$1" pin="S4" pad="7"/>
+<connect gate="G$1" pin="S5" pad="12"/>
+<connect gate="G$1" pin="S6" pad="11"/>
+<connect gate="G$1" pin="S7" pad="10"/>
+<connect gate="G$1" pin="S8" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD849">
+<gates>
+<gate name="G$1" symbol="AD849X" x="0" y="0"/>
+<gate name=".PWR" symbol="OP_AMP_PWR" x="-22.86" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP8">
+<connects>
+<connect gate=".PWR" pin="V+" pad="7"/>
+<connect gate=".PWR" pin="V-" pad="3"/>
+<connect gate="G$1" pin="+IN" pad="8"/>
+<connect gate="G$1" pin="-IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="REF" pad="2"/>
+<connect gate="G$1" pin="SENSE" pad="5"/>
+</connects>
+<technologies>
+<technology name="4"/>
+<technology name="5"/>
+<technology name="6"/>
+<technology name="7"/>
 </technologies>
 </device>
 </devices>

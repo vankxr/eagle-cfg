@@ -328,10 +328,10 @@
 <rectangle x1="-6.604" y1="-3.048" x2="6.604" y2="3.048" layer="43"/>
 </package>
 <package name="4-SMD-3225">
-<smd name="2" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
-<smd name="1" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
-<smd name="3" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
-<smd name="4" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
 <wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
 <wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
 <wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
@@ -434,6 +434,21 @@
 <circle x="-1.2" y="-1.6" radius="0.2" width="0" layer="21"/>
 <wire x1="-0.4" y1="1" x2="0.4" y2="1" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="-1" x2="0.4" y2="-1" width="0.127" layer="21"/>
+</package>
+<package name="4-SMD-2520">
+<smd name="4" x="-0.875" y="0.65" dx="1.15" dy="1" layer="1"/>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="51"/>
+<wire x1="-0.2" y1="-1" x2="0.2" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="1" x2="0.2" y2="1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="0.1" x2="1.25" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0.1" x2="-1.25" y2="-0.1" width="0.127" layer="21"/>
+<text x="-2.44" y="1.74" size="1.27" layer="25">&gt;NAME</text>
+<smd name="1" x="-0.875" y="-0.65" dx="1.15" dy="1" layer="1"/>
+<smd name="2" x="0.875" y="-0.65" dx="1.15" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="0.875" y="0.65" dx="1.15" dy="1" layer="1" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -543,12 +558,23 @@
 <gate name="G$1" symbol="CRYSTAL_4P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="4-SMD-3225">
+<device name="-3225" package="4-SMD-3225">
 <connects>
-<connect gate="G$1" pin="1" pad="2"/>
-<connect gate="G$1" pin="2" pad="4"/>
-<connect gate="G$1" pin="GND@0" pad="1"/>
-<connect gate="G$1" pin="GND@1" pad="3"/>
+<connect gate="G$1" pin="1" pad="3"/>
+<connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="GND@0" pad="4"/>
+<connect gate="G$1" pin="GND@1" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2520" package="4-SMD-2520">
+<connects>
+<connect gate="G$1" pin="1" pad="3"/>
+<connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="GND@0" pad="4"/>
+<connect gate="G$1" pin="GND@1" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

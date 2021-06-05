@@ -368,8 +368,8 @@
 <smd name="2" x="0" y="0.9" dx="3.2" dy="0.81" layer="1"/>
 </package>
 <package name="IND0603">
-<smd name="1" x="-0.8" y="0" dx="0.8" dy="0.95" layer="1" roundness="0"/>
-<smd name="2" x="0.8" y="0" dx="0.8" dy="0.95" layer="1" roundness="0"/>
+<smd name="1" x="-0.8" y="0" dx="0.8" dy="0.95" layer="1"/>
+<smd name="2" x="0.8" y="0" dx="0.8" dy="0.95" layer="1"/>
 <wire x1="-0.4" y1="-0.4" x2="-0.4" y2="0.4" width="0" layer="51"/>
 <wire x1="-0.4" y1="0.4" x2="-0.8" y2="0.4" width="0" layer="51"/>
 <wire x1="-0.8" y1="-0.4" x2="-0.4" y2="-0.4" width="0" layer="51"/>
@@ -385,8 +385,8 @@
 <wire x1="-0.2" y1="0.4" x2="0.2" y2="0.4" width="0.127" layer="21"/>
 </package>
 <package name="IND0805">
-<smd name="1" x="-1" y="0" dx="1.2" dy="1.4" layer="1" roundness="0"/>
-<smd name="2" x="1" y="0" dx="1.2" dy="1.4" layer="1" roundness="0"/>
+<smd name="1" x="-1" y="0" dx="1.2" dy="1.4" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.2" dy="1.4" layer="1"/>
 <wire x1="-0.45" y1="-0.625" x2="-0.45" y2="0.625" width="0" layer="51"/>
 <wire x1="-0.45" y1="0.625" x2="-1" y2="0.625" width="0" layer="51"/>
 <wire x1="-1" y1="-0.625" x2="-0.45" y2="-0.625" width="0" layer="51"/>
@@ -400,6 +400,38 @@
 <text x="1.9" y="0" size="0.8" layer="25" font="vector" ratio="10" rot="SR0" align="center-left">&gt;NAME</text>
 <wire x1="-0.2" y1="0.625" x2="0.2" y2="0.625" width="0.127" layer="21"/>
 <wire x1="0.2" y1="-0.625" x2="-0.2" y2="-0.625" width="0.127" layer="21"/>
+</package>
+<package name="IND0201">
+<smd name="1" x="-0.35" y="0" dx="0.45" dy="0.4" layer="1"/>
+<smd name="2" x="0.35" y="0" dx="0.45" dy="0.4" layer="1"/>
+<wire x1="-0.15" y1="-0.15" x2="-0.15" y2="0.15" width="0" layer="51"/>
+<wire x1="-0.15" y1="0.15" x2="-0.3" y2="0.15" width="0" layer="51"/>
+<wire x1="-0.3" y1="-0.15" x2="-0.15" y2="-0.15" width="0" layer="51"/>
+<wire x1="0.15" y1="0.15" x2="0.15" y2="-0.15" width="0" layer="51"/>
+<wire x1="0.15" y1="-0.15" x2="0.3" y2="-0.15" width="0" layer="51"/>
+<wire x1="0.3" y1="0.15" x2="0.15" y2="0.15" width="0" layer="51"/>
+<wire x1="-0.15" y1="-0.15" x2="0.15" y2="-0.15" width="0" layer="51"/>
+<wire x1="0.3" y1="-0.15" x2="0.3" y2="0.15" width="0" layer="51"/>
+<wire x1="0.15" y1="0.15" x2="-0.15" y2="0.15" width="0" layer="51"/>
+<wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0" layer="51"/>
+<text x="0.8" y="0" size="0.8" layer="25" font="vector" ratio="10" rot="SR0" align="center-left">&gt;NAME</text>
+</package>
+<package name="IND0402">
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.6" layer="1"/>
+<wire x1="-0.25" y1="-0.25" x2="-0.25" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.25" y1="0.25" x2="-0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.25" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="0.25" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.25" y1="-0.25" x2="0.5" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.25" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.25" y1="-0.25" x2="0.25" y2="-0.25" width="0" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="0.25" y1="0.25" x2="-0.25" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="-0.5" y2="-0.25" width="0" layer="51"/>
+<text x="1" y="0" size="0.8" layer="25" font="vector" ratio="10" rot="SR0" align="center-left">&gt;NAME</text>
+<wire x1="-0.01" y1="0.25" x2="0.01" y2="0.25" width="0.127" layer="21"/>
+<wire x1="0.01" y1="-0.25" x2="-0.01" y2="-0.25" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -597,6 +629,24 @@
 </technology>
 </technologies>
 </device>
+<device name="-0201" package="IND0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402" package="IND0402">
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ETC1-1T-2TR" prefix="TRF">
@@ -635,6 +685,28 @@
 </technologies>
 </device>
 <device name="-0805" package="IND0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0201" package="IND0201">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402" package="IND0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

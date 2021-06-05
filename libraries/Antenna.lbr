@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -297,6 +297,7 @@
 <wire x1="1.524" y1="3.429" x2="5.461" y2="3.429" width="0.762" layer="29"/>
 <smd name="ANT" x="-5.334" y="-3.302" dx="1.905" dy="0.635" layer="1" rot="R90" cream="no"/>
 <pad name="GND" x="1.651" y="-2.667" drill="0.4" diameter="0.635"/>
+<circle x="1.651" y="-2.667" radius="0.412309375" width="0.127" layer="41"/>
 </package>
 <package name="TRACE_ANTENNA_868MHZ_43MM">
 <wire x1="-8" y1="0" x2="36" y2="0" width="0.05" layer="51"/>
