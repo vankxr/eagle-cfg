@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -225,6 +225,14 @@
 <circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
 <text x="-5.334" y="0.381" size="1.778" layer="21" font="vector">+</text>
 </package>
+<package name="TO-92">
+<pad name="1" x="-2.54" y="0" drill="0.65"/>
+<pad name="2" x="0" y="0" drill="0.65"/>
+<pad name="3" x="2.54" y="0" drill="0.65"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.127" layer="21" curve="-284.036243"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="21" font="vector" align="center-left">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PNP">
@@ -328,6 +336,23 @@
 <connects>
 <connect gate="G$1" pin="C" pad="K"/>
 <connect gate="G$1" pin="E" pad="A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BC547" prefix="T">
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-92">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

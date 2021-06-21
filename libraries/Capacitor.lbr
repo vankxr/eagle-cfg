@@ -537,6 +537,13 @@
 <wire x1="-0.3" y1="0.15" x2="-0.3" y2="-0.15" width="0" layer="51"/>
 <text x="0.8" y="0" size="0.8" layer="25" font="vector" ratio="10" rot="SR0" align="center-left">&gt;NAME</text>
 </package>
+<package name="CAP-CER-TH">
+<pad name="1" x="-3" y="0" drill="0.8"/>
+<pad name="2" x="3" y="0" drill="0.8"/>
+<text x="5" y="0" size="0.8" layer="21" font="vector" align="center-left">&gt;NAME</text>
+<wire x1="-2" y1="1" x2="2" y2="1" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -626,6 +633,17 @@
 </technologies>
 </device>
 <device name="-0201" package="CAP0201">
+<connects>
+<connect gate="G$1" pin="C1" pad="1"/>
+<connect gate="G$1" pin="C2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-CER-TH" package="CAP-CER-TH">
 <connects>
 <connect gate="G$1" pin="C1" pad="1"/>
 <connect gate="G$1" pin="C2" pad="2"/>

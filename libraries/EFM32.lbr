@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6499,7 +6499,7 @@
 <text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="EFM32GG12B8XX_QFN64">
+<symbol name="EFM32GG1XB8XX_QFN64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
 <pin name="PA1" x="-38.1" y="-5.08" length="middle"/>
 <pin name="PA2" x="-38.1" y="-7.62" length="middle"/>
@@ -6617,7 +6617,7 @@
 <text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="EFM32GG12B1XX_QFN64">
+<symbol name="EFM32GG1XB1XX_QFN64">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
 <pin name="PA1" x="-38.1" y="-5.08" length="middle"/>
 <pin name="PA2" x="-38.1" y="-7.62" length="middle"/>
@@ -8501,7 +8501,7 @@
 </deviceset>
 <deviceset name="EFM32GG12B8*M64" prefix="U">
 <gates>
-<gate name="G$1" symbol="EFM32GG12B8XX_QFN64" x="0" y="0"/>
+<gate name="G$1" symbol="EFM32GG1XB8XX_QFN64" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN64">
@@ -8583,7 +8583,7 @@
 </deviceset>
 <deviceset name="EFM32GG12B1*M64" prefix="U">
 <gates>
-<gate name="G$1" symbol="EFM32GG12B1XX_QFN64" x="0" y="0"/>
+<gate name="G$1" symbol="EFM32GG1XB1XX_QFN64" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN64">
@@ -8973,6 +8973,170 @@
 <technology name="20F128I"/>
 <technology name="40F64G"/>
 <technology name="40F64I"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EFM32GG11B1*M64" prefix="U">
+<gates>
+<gate name="G$1" symbol="EFM32GG1XB1XX_QFN64" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN64">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="20"/>
+<connect gate="G$1" pin="AVDD@0" pad="23"/>
+<connect gate="G$1" pin="AVDD@1" pad="27"/>
+<connect gate="G$1" pin="DECOUPLE" pad="40"/>
+<connect gate="G$1" pin="DVDD" pad="39"/>
+<connect gate="G$1" pin="IOVDD0@0" pad="8"/>
+<connect gate="G$1" pin="IOVDD0@1" pad="26"/>
+<connect gate="G$1" pin="IOVDD0@2" pad="55"/>
+<connect gate="G$1" pin="PA0" pad="1"/>
+<connect gate="G$1" pin="PA1" pad="2"/>
+<connect gate="G$1" pin="PA10" pad="19"/>
+<connect gate="G$1" pin="PA15" pad="64"/>
+<connect gate="G$1" pin="PA2" pad="3"/>
+<connect gate="G$1" pin="PA3" pad="4"/>
+<connect gate="G$1" pin="PA4" pad="5"/>
+<connect gate="G$1" pin="PA5" pad="6"/>
+<connect gate="G$1" pin="PA6" pad="7"/>
+<connect gate="G$1" pin="PA8" pad="17"/>
+<connect gate="G$1" pin="PA9" pad="18"/>
+<connect gate="G$1" pin="PB11" pad="21"/>
+<connect gate="G$1" pin="PB12" pad="22"/>
+<connect gate="G$1" pin="PB13" pad="24"/>
+<connect gate="G$1" pin="PB14" pad="25"/>
+<connect gate="G$1" pin="PB7" pad="15"/>
+<connect gate="G$1" pin="PB8" pad="16"/>
+<connect gate="G$1" pin="PC0" pad="9"/>
+<connect gate="G$1" pin="PC1" pad="10"/>
+<connect gate="G$1" pin="PC10" pad="43"/>
+<connect gate="G$1" pin="PC11" pad="44"/>
+<connect gate="G$1" pin="PC12" pad="45"/>
+<connect gate="G$1" pin="PC13" pad="46"/>
+<connect gate="G$1" pin="PC14" pad="47"/>
+<connect gate="G$1" pin="PC15" pad="48"/>
+<connect gate="G$1" pin="PC2" pad="11"/>
+<connect gate="G$1" pin="PC3" pad="12"/>
+<connect gate="G$1" pin="PC4" pad="13"/>
+<connect gate="G$1" pin="PC5" pad="14"/>
+<connect gate="G$1" pin="PC6" pad="37"/>
+<connect gate="G$1" pin="PC7" pad="38"/>
+<connect gate="G$1" pin="PC8" pad="41"/>
+<connect gate="G$1" pin="PC9" pad="42"/>
+<connect gate="G$1" pin="PD0" pad="28"/>
+<connect gate="G$1" pin="PD1" pad="29"/>
+<connect gate="G$1" pin="PD2" pad="30"/>
+<connect gate="G$1" pin="PD3" pad="31"/>
+<connect gate="G$1" pin="PD4" pad="32"/>
+<connect gate="G$1" pin="PD5" pad="33"/>
+<connect gate="G$1" pin="PD6" pad="34"/>
+<connect gate="G$1" pin="PD7" pad="35"/>
+<connect gate="G$1" pin="PD8" pad="36"/>
+<connect gate="G$1" pin="PE10" pad="58"/>
+<connect gate="G$1" pin="PE11" pad="59"/>
+<connect gate="G$1" pin="PE12" pad="60"/>
+<connect gate="G$1" pin="PE13" pad="61"/>
+<connect gate="G$1" pin="PE14" pad="62"/>
+<connect gate="G$1" pin="PE15" pad="63"/>
+<connect gate="G$1" pin="PE8" pad="56"/>
+<connect gate="G$1" pin="PE9" pad="57"/>
+<connect gate="G$1" pin="PF0" pad="49"/>
+<connect gate="G$1" pin="PF1" pad="50"/>
+<connect gate="G$1" pin="PF2" pad="51"/>
+<connect gate="G$1" pin="PF3" pad="52"/>
+<connect gate="G$1" pin="PF4" pad="53"/>
+<connect gate="G$1" pin="PF5" pad="54"/>
+<connect gate="G$1" pin="VSS@0" pad="65"/>
+</connects>
+<technologies>
+<technology name="10F2048G"/>
+<technology name="10F2048I"/>
+<technology name="20F2048G"/>
+<technology name="20F2048I"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EFM32GG11B8*M64" prefix="U">
+<gates>
+<gate name="G$1" symbol="EFM32GG1XB8XX_QFN64" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN64">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="21"/>
+<connect gate="G$1" pin="AVDD" pad="24"/>
+<connect gate="G$1" pin="DECOUPLE" pad="40"/>
+<connect gate="G$1" pin="DVDD" pad="39"/>
+<connect gate="G$1" pin="IOVDD0@0" pad="8"/>
+<connect gate="G$1" pin="IOVDD0@1" pad="27"/>
+<connect gate="G$1" pin="IOVDD0@2" pad="55"/>
+<connect gate="G$1" pin="PA0" pad="1"/>
+<connect gate="G$1" pin="PA1" pad="2"/>
+<connect gate="G$1" pin="PA12" pad="18"/>
+<connect gate="G$1" pin="PA13" pad="19"/>
+<connect gate="G$1" pin="PA14" pad="20"/>
+<connect gate="G$1" pin="PA15" pad="64"/>
+<connect gate="G$1" pin="PA2" pad="3"/>
+<connect gate="G$1" pin="PA3" pad="4"/>
+<connect gate="G$1" pin="PA4" pad="5"/>
+<connect gate="G$1" pin="PA5" pad="6"/>
+<connect gate="G$1" pin="PA6" pad="7"/>
+<connect gate="G$1" pin="PA8" pad="17"/>
+<connect gate="G$1" pin="PB11" pad="22"/>
+<connect gate="G$1" pin="PB12" pad="23"/>
+<connect gate="G$1" pin="PB13" pad="25"/>
+<connect gate="G$1" pin="PB14" pad="26"/>
+<connect gate="G$1" pin="PB3" pad="9"/>
+<connect gate="G$1" pin="PB4" pad="10"/>
+<connect gate="G$1" pin="PB5" pad="11"/>
+<connect gate="G$1" pin="PB6" pad="12"/>
+<connect gate="G$1" pin="PB7" pad="15"/>
+<connect gate="G$1" pin="PB8" pad="16"/>
+<connect gate="G$1" pin="PC4" pad="13"/>
+<connect gate="G$1" pin="PC5" pad="14"/>
+<connect gate="G$1" pin="PD0" pad="28"/>
+<connect gate="G$1" pin="PD1" pad="29"/>
+<connect gate="G$1" pin="PD2" pad="30"/>
+<connect gate="G$1" pin="PD3" pad="31"/>
+<connect gate="G$1" pin="PD4" pad="32"/>
+<connect gate="G$1" pin="PD5" pad="33"/>
+<connect gate="G$1" pin="PD6" pad="34"/>
+<connect gate="G$1" pin="PD8" pad="35"/>
+<connect gate="G$1" pin="PE10" pad="58"/>
+<connect gate="G$1" pin="PE11" pad="59"/>
+<connect gate="G$1" pin="PE12" pad="60"/>
+<connect gate="G$1" pin="PE13" pad="61"/>
+<connect gate="G$1" pin="PE14" pad="62"/>
+<connect gate="G$1" pin="PE15" pad="63"/>
+<connect gate="G$1" pin="PE4" pad="41"/>
+<connect gate="G$1" pin="PE5" pad="42"/>
+<connect gate="G$1" pin="PE6" pad="43"/>
+<connect gate="G$1" pin="PE7" pad="44"/>
+<connect gate="G$1" pin="PE8" pad="56"/>
+<connect gate="G$1" pin="PE9" pad="57"/>
+<connect gate="G$1" pin="PF0" pad="49"/>
+<connect gate="G$1" pin="PF1" pad="50"/>
+<connect gate="G$1" pin="PF10" pad="47"/>
+<connect gate="G$1" pin="PF11" pad="48"/>
+<connect gate="G$1" pin="PF12" pad="53"/>
+<connect gate="G$1" pin="PF2" pad="51"/>
+<connect gate="G$1" pin="PF5" pad="54"/>
+<connect gate="G$1" pin="VBUS" pad="52"/>
+<connect gate="G$1" pin="VREGI" pad="45"/>
+<connect gate="G$1" pin="VREGO" pad="46"/>
+<connect gate="G$1" pin="VREGSW" pad="37"/>
+<connect gate="G$1" pin="VREGVDD" pad="38"/>
+<connect gate="G$1" pin="VREGVSS" pad="36"/>
+<connect gate="G$1" pin="VSS@0" pad="65"/>
+</connects>
+<technologies>
+<technology name="20F2048G"/>
+<technology name="20F2048I"/>
+<technology name="40F1024G"/>
+<technology name="40F1024I"/>
 </technologies>
 </device>
 </devices>

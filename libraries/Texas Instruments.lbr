@@ -516,6 +516,18 @@
 <wire x1="0.9" y1="-1.55" x2="0.9" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="0.9" y1="1.55" x2="0.9" y2="0.6" width="0.127" layer="21"/>
 </package>
+<package name="TO-220">
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.4224"/>
+<pad name="2" x="0" y="0" drill="1"/>
+<pad name="3" x="2.54" y="0" drill="1"/>
+<wire x1="-5" y1="2.25" x2="5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="5" y1="2.25" x2="5" y2="1.2" width="0.127" layer="21"/>
+<wire x1="5" y1="1.2" x2="5" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.25" x2="-5" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.25" x2="-5" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-5" y1="1.2" x2="-5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-5" y1="1.2" x2="5" y2="1.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TLV733XX">
@@ -789,6 +801,17 @@
 <pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="GND" x="-22.86" y="-7.62" length="middle"/>
 <pin name="VDD" x="-22.86" y="-2.54" length="middle"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="LM78XX">
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-22.86" y="-7.62" length="middle"/>
+<pin name="VIN" x="-22.86" y="-2.54" length="middle"/>
 <wire x1="-17.78" y1="-10.16" x2="-17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-10.16" width="0.254" layer="94"/>
@@ -1194,6 +1217,24 @@
 <technology name="30"/>
 <technology name="33"/>
 <technology name="40"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM78*" prefix="U">
+<gates>
+<gate name="G$1" symbol="LM78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="05"/>
+<technology name="12"/>
 </technologies>
 </device>
 </devices>
