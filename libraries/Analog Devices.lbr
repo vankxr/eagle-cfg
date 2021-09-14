@@ -5678,6 +5678,60 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="ADM7172ACPZ" prefix="U">
+<gates>
+<gate name="G$1" symbol="ADM7171" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LFCSP8_3X3">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="6 9"/>
+<connect gate="G$1" pin="SENSE" pad="3"/>
+<connect gate="G$1" pin="SS" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="7 8"/>
+<connect gate="G$1" pin="VOUT" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="-1.3"/>
+<technology name="-1.8"/>
+<technology name="-2.5"/>
+<technology name="-3.0"/>
+<technology name="-3.3"/>
+<technology name="-4.2"/>
+<technology name="-5.0"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADM7170ACPZ" prefix="U">
+<gates>
+<gate name="G$1" symbol="ADM7171" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LFCSP8_3X3">
+<connects>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="6 9"/>
+<connect gate="G$1" pin="SENSE" pad="3"/>
+<connect gate="G$1" pin="SS" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="7 8"/>
+<connect gate="G$1" pin="VOUT" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="-1.3"/>
+<technology name="-1.8"/>
+<technology name="-2.5"/>
+<technology name="-3.0"/>
+<technology name="-3.3"/>
+<technology name="-4.2"/>
+<technology name="-5.0"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -557,113 +557,113 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CYUSB301*">
+<deviceset name="CYUSB301*" prefix="U">
 <gates>
-<gate name="G$1" symbol="CYUSB301X_PWR_USB" x="-15.24" y="0"/>
-<gate name="G$2" symbol="CYUSB301X_IO" x="45.72" y="0"/>
+<gate name=".MAIN" symbol="CYUSB301X_PWR_USB" x="-15.24" y="0"/>
+<gate name=".GPIO" symbol="CYUSB301X_IO" x="45.72" y="0"/>
 </gates>
 <devices>
 <device name="" package="BGA121">
 <connects>
-<connect gate="G$1" pin="!INT" pad="L8"/>
-<connect gate="G$1" pin="!RESET" pad="C5"/>
-<connect gate="G$1" pin="!TRST" pad="B11"/>
-<connect gate="G$1" pin="AVDD" pad="A7"/>
-<connect gate="G$1" pin="AVSS" pad="B7"/>
-<connect gate="G$1" pin="CLKIN" pad="D7"/>
-<connect gate="G$1" pin="CLKIN_32" pad="D6"/>
-<connect gate="G$1" pin="CVDDQ" pad="B6"/>
-<connect gate="G$1" pin="DM" pad="A10"/>
-<connect gate="G$1" pin="DP" pad="A9"/>
-<connect gate="G$1" pin="FSLC0" pad="B2"/>
-<connect gate="G$1" pin="FSLC1" pad="B4"/>
-<connect gate="G$1" pin="FSLC2" pad="E6"/>
-<connect gate="G$1" pin="OTG_ID" pad="C9"/>
-<connect gate="G$1" pin="RUSB2" pad="C8"/>
-<connect gate="G$1" pin="RUSB3" pad="B3"/>
-<connect gate="G$1" pin="SSRXM" pad="A3"/>
-<connect gate="G$1" pin="SSRXP" pad="A4"/>
-<connect gate="G$1" pin="SSTXM" pad="A6"/>
-<connect gate="G$1" pin="SSTXP" pad="A5"/>
-<connect gate="G$1" pin="TCK" pad="F6"/>
-<connect gate="G$1" pin="TDI" pad="E7"/>
-<connect gate="G$1" pin="TDO" pad="C10"/>
-<connect gate="G$1" pin="TMS" pad="E8"/>
-<connect gate="G$1" pin="U3RXVDDQ" pad="A2"/>
-<connect gate="G$1" pin="U3TXVDDQ" pad="B5"/>
-<connect gate="G$1" pin="U3VSSQ" pad="A1"/>
-<connect gate="G$1" pin="VBATT" pad="E10"/>
-<connect gate="G$1" pin="VBUS" pad="E11"/>
-<connect gate="G$1" pin="VDD" pad="B10 C3 E9 F11 H1 J11 L5 L7"/>
-<connect gate="G$1" pin="VIO1" pad="H11 L9"/>
-<connect gate="G$1" pin="VIO2" pad="F1"/>
-<connect gate="G$1" pin="VIO3" pad="E3"/>
-<connect gate="G$1" pin="VIO4" pad="B1"/>
-<connect gate="G$1" pin="VIO5" pad="C11"/>
-<connect gate="G$1" pin="VSS" pad="A8 B8 B9 D8 E2 G1 G11 K3 K4 L1 L2 L3 L6 L11"/>
-<connect gate="G$1" pin="XTALIN" pad="C6"/>
-<connect gate="G$1" pin="XTALOUT" pad="C7"/>
-<connect gate="G$2" pin="GPIO0" pad="F10"/>
-<connect gate="G$2" pin="GPIO1" pad="F9"/>
-<connect gate="G$2" pin="GPIO10" pad="K11"/>
-<connect gate="G$2" pin="GPIO11" pad="L10"/>
-<connect gate="G$2" pin="GPIO12" pad="K10"/>
-<connect gate="G$2" pin="GPIO13" pad="K9"/>
-<connect gate="G$2" pin="GPIO14" pad="J8"/>
-<connect gate="G$2" pin="GPIO15" pad="G8"/>
-<connect gate="G$2" pin="GPIO16" pad="J6"/>
-<connect gate="G$2" pin="GPIO17" pad="K8"/>
-<connect gate="G$2" pin="GPIO18" pad="K7"/>
-<connect gate="G$2" pin="GPIO19" pad="J7"/>
-<connect gate="G$2" pin="GPIO2" pad="F7"/>
-<connect gate="G$2" pin="GPIO20" pad="H7"/>
-<connect gate="G$2" pin="GPIO21" pad="G7"/>
-<connect gate="G$2" pin="GPIO22" pad="G6"/>
-<connect gate="G$2" pin="GPIO23" pad="K6"/>
-<connect gate="G$2" pin="GPIO24" pad="H8"/>
-<connect gate="G$2" pin="GPIO25" pad="G5"/>
-<connect gate="G$2" pin="GPIO26" pad="H6"/>
-<connect gate="G$2" pin="GPIO27" pad="K5"/>
-<connect gate="G$2" pin="GPIO28" pad="J5"/>
-<connect gate="G$2" pin="GPIO29" pad="H5"/>
-<connect gate="G$2" pin="GPIO3" pad="G10"/>
-<connect gate="G$2" pin="GPIO30" pad="G4"/>
-<connect gate="G$2" pin="GPIO31" pad="H4"/>
-<connect gate="G$2" pin="GPIO32" pad="L4"/>
-<connect gate="G$2" pin="GPIO33" pad="K2"/>
-<connect gate="G$2" pin="GPIO34" pad="J4"/>
-<connect gate="G$2" pin="GPIO35" pad="K1"/>
-<connect gate="G$2" pin="GPIO36" pad="J2"/>
-<connect gate="G$2" pin="GPIO37" pad="J3"/>
-<connect gate="G$2" pin="GPIO38" pad="J1"/>
-<connect gate="G$2" pin="GPIO39" pad="H2"/>
-<connect gate="G$2" pin="GPIO4" pad="G9"/>
-<connect gate="G$2" pin="GPIO40" pad="H3"/>
-<connect gate="G$2" pin="GPIO41/A0" pad="F4"/>
-<connect gate="G$2" pin="GPIO42/A1" pad="G2"/>
-<connect gate="G$2" pin="GPIO43" pad="G3"/>
-<connect gate="G$2" pin="GPIO44" pad="F3"/>
-<connect gate="G$2" pin="GPIO45" pad="F2"/>
-<connect gate="G$2" pin="GPIO46" pad="F5"/>
-<connect gate="G$2" pin="GPIO47" pad="E1"/>
-<connect gate="G$2" pin="GPIO48" pad="E5"/>
-<connect gate="G$2" pin="GPIO49" pad="E4"/>
-<connect gate="G$2" pin="GPIO5" pad="F8"/>
-<connect gate="G$2" pin="GPIO50" pad="D1"/>
-<connect gate="G$2" pin="GPIO51" pad="D2"/>
-<connect gate="G$2" pin="GPIO52" pad="D3"/>
-<connect gate="G$2" pin="GPIO53" pad="D4"/>
-<connect gate="G$2" pin="GPIO54" pad="C1"/>
-<connect gate="G$2" pin="GPIO55" pad="C2"/>
-<connect gate="G$2" pin="GPIO56" pad="D5"/>
-<connect gate="G$2" pin="GPIO57" pad="C4"/>
-<connect gate="G$2" pin="GPIO6" pad="H10"/>
-<connect gate="G$2" pin="GPIO7" pad="H9"/>
-<connect gate="G$2" pin="GPIO8" pad="J10"/>
-<connect gate="G$2" pin="GPIO9" pad="J9"/>
-<connect gate="G$2" pin="I2C_GPIO58" pad="D9"/>
-<connect gate="G$2" pin="I2C_GPIO59" pad="D10"/>
-<connect gate="G$2" pin="O60" pad="D11"/>
+<connect gate=".GPIO" pin="GPIO0" pad="F10"/>
+<connect gate=".GPIO" pin="GPIO1" pad="F9"/>
+<connect gate=".GPIO" pin="GPIO10" pad="K11"/>
+<connect gate=".GPIO" pin="GPIO11" pad="L10"/>
+<connect gate=".GPIO" pin="GPIO12" pad="K10"/>
+<connect gate=".GPIO" pin="GPIO13" pad="K9"/>
+<connect gate=".GPIO" pin="GPIO14" pad="J8"/>
+<connect gate=".GPIO" pin="GPIO15" pad="G8"/>
+<connect gate=".GPIO" pin="GPIO16" pad="J6"/>
+<connect gate=".GPIO" pin="GPIO17" pad="K8"/>
+<connect gate=".GPIO" pin="GPIO18" pad="K7"/>
+<connect gate=".GPIO" pin="GPIO19" pad="J7"/>
+<connect gate=".GPIO" pin="GPIO2" pad="F7"/>
+<connect gate=".GPIO" pin="GPIO20" pad="H7"/>
+<connect gate=".GPIO" pin="GPIO21" pad="G7"/>
+<connect gate=".GPIO" pin="GPIO22" pad="G6"/>
+<connect gate=".GPIO" pin="GPIO23" pad="K6"/>
+<connect gate=".GPIO" pin="GPIO24" pad="H8"/>
+<connect gate=".GPIO" pin="GPIO25" pad="G5"/>
+<connect gate=".GPIO" pin="GPIO26" pad="H6"/>
+<connect gate=".GPIO" pin="GPIO27" pad="K5"/>
+<connect gate=".GPIO" pin="GPIO28" pad="J5"/>
+<connect gate=".GPIO" pin="GPIO29" pad="H5"/>
+<connect gate=".GPIO" pin="GPIO3" pad="G10"/>
+<connect gate=".GPIO" pin="GPIO30" pad="G4"/>
+<connect gate=".GPIO" pin="GPIO31" pad="H4"/>
+<connect gate=".GPIO" pin="GPIO32" pad="L4"/>
+<connect gate=".GPIO" pin="GPIO33" pad="K2"/>
+<connect gate=".GPIO" pin="GPIO34" pad="J4"/>
+<connect gate=".GPIO" pin="GPIO35" pad="K1"/>
+<connect gate=".GPIO" pin="GPIO36" pad="J2"/>
+<connect gate=".GPIO" pin="GPIO37" pad="J3"/>
+<connect gate=".GPIO" pin="GPIO38" pad="J1"/>
+<connect gate=".GPIO" pin="GPIO39" pad="H2"/>
+<connect gate=".GPIO" pin="GPIO4" pad="G9"/>
+<connect gate=".GPIO" pin="GPIO40" pad="H3"/>
+<connect gate=".GPIO" pin="GPIO41/A0" pad="F4"/>
+<connect gate=".GPIO" pin="GPIO42/A1" pad="G2"/>
+<connect gate=".GPIO" pin="GPIO43" pad="G3"/>
+<connect gate=".GPIO" pin="GPIO44" pad="F3"/>
+<connect gate=".GPIO" pin="GPIO45" pad="F2"/>
+<connect gate=".GPIO" pin="GPIO46" pad="F5"/>
+<connect gate=".GPIO" pin="GPIO47" pad="E1"/>
+<connect gate=".GPIO" pin="GPIO48" pad="E5"/>
+<connect gate=".GPIO" pin="GPIO49" pad="E4"/>
+<connect gate=".GPIO" pin="GPIO5" pad="F8"/>
+<connect gate=".GPIO" pin="GPIO50" pad="D1"/>
+<connect gate=".GPIO" pin="GPIO51" pad="D2"/>
+<connect gate=".GPIO" pin="GPIO52" pad="D3"/>
+<connect gate=".GPIO" pin="GPIO53" pad="D4"/>
+<connect gate=".GPIO" pin="GPIO54" pad="C1"/>
+<connect gate=".GPIO" pin="GPIO55" pad="C2"/>
+<connect gate=".GPIO" pin="GPIO56" pad="D5"/>
+<connect gate=".GPIO" pin="GPIO57" pad="C4"/>
+<connect gate=".GPIO" pin="GPIO6" pad="H10"/>
+<connect gate=".GPIO" pin="GPIO7" pad="H9"/>
+<connect gate=".GPIO" pin="GPIO8" pad="J10"/>
+<connect gate=".GPIO" pin="GPIO9" pad="J9"/>
+<connect gate=".GPIO" pin="I2C_GPIO58" pad="D9"/>
+<connect gate=".GPIO" pin="I2C_GPIO59" pad="D10"/>
+<connect gate=".GPIO" pin="O60" pad="D11"/>
+<connect gate=".MAIN" pin="!INT" pad="L8"/>
+<connect gate=".MAIN" pin="!RESET" pad="C5"/>
+<connect gate=".MAIN" pin="!TRST" pad="B11"/>
+<connect gate=".MAIN" pin="AVDD" pad="A7"/>
+<connect gate=".MAIN" pin="AVSS" pad="B7"/>
+<connect gate=".MAIN" pin="CLKIN" pad="D7"/>
+<connect gate=".MAIN" pin="CLKIN_32" pad="D6"/>
+<connect gate=".MAIN" pin="CVDDQ" pad="B6"/>
+<connect gate=".MAIN" pin="DM" pad="A10"/>
+<connect gate=".MAIN" pin="DP" pad="A9"/>
+<connect gate=".MAIN" pin="FSLC0" pad="B2"/>
+<connect gate=".MAIN" pin="FSLC1" pad="B4"/>
+<connect gate=".MAIN" pin="FSLC2" pad="E6"/>
+<connect gate=".MAIN" pin="OTG_ID" pad="C9"/>
+<connect gate=".MAIN" pin="RUSB2" pad="C8"/>
+<connect gate=".MAIN" pin="RUSB3" pad="B3"/>
+<connect gate=".MAIN" pin="SSRXM" pad="A3"/>
+<connect gate=".MAIN" pin="SSRXP" pad="A4"/>
+<connect gate=".MAIN" pin="SSTXM" pad="A6"/>
+<connect gate=".MAIN" pin="SSTXP" pad="A5"/>
+<connect gate=".MAIN" pin="TCK" pad="F6"/>
+<connect gate=".MAIN" pin="TDI" pad="E7"/>
+<connect gate=".MAIN" pin="TDO" pad="C10"/>
+<connect gate=".MAIN" pin="TMS" pad="E8"/>
+<connect gate=".MAIN" pin="U3RXVDDQ" pad="A2"/>
+<connect gate=".MAIN" pin="U3TXVDDQ" pad="B5"/>
+<connect gate=".MAIN" pin="U3VSSQ" pad="A1"/>
+<connect gate=".MAIN" pin="VBATT" pad="E10"/>
+<connect gate=".MAIN" pin="VBUS" pad="E11"/>
+<connect gate=".MAIN" pin="VDD" pad="B10 C3 E9 F11 H1 J11 L5 L7"/>
+<connect gate=".MAIN" pin="VIO1" pad="H11 L9"/>
+<connect gate=".MAIN" pin="VIO2" pad="F1"/>
+<connect gate=".MAIN" pin="VIO3" pad="E3"/>
+<connect gate=".MAIN" pin="VIO4" pad="B1"/>
+<connect gate=".MAIN" pin="VIO5" pad="C11"/>
+<connect gate=".MAIN" pin="VSS" pad="A8 B8 B9 D8 E2 G1 G11 K3 K4 L1 L2 L3 L6 L11"/>
+<connect gate=".MAIN" pin="XTALIN" pad="C6"/>
+<connect gate=".MAIN" pin="XTALOUT" pad="C7"/>
 </connects>
 <technologies>
 <technology name="2"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -10206,53 +10206,53 @@ H2+ 512MB</text>
 <text x="-55.88" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-55.88" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="RASPBERRYPIZERO">
-<wire x1="-20.32" y1="27.94" x2="22.86" y2="27.94" width="0.254" layer="94"/>
-<wire x1="22.86" y1="27.94" x2="22.86" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-25.4" x2="-20.32" y2="27.94" width="0.254" layer="94"/>
-<pin name="5V0@1" x="25.4" y="25.4" length="short" direction="sup" rot="R180"/>
-<pin name="3V3@1" x="-22.86" y="25.4" length="short" direction="sup"/>
-<pin name="GPIO2/SDA1" x="-22.86" y="22.86" length="short"/>
-<pin name="5V0@2" x="25.4" y="22.86" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO3/SCL1" x="-22.86" y="20.32" length="short"/>
-<pin name="GND@8" x="25.4" y="20.32" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO4/GCKL" x="-22.86" y="17.78" length="short"/>
-<pin name="TXD0/GPIO14" x="25.4" y="17.78" length="short" rot="R180"/>
-<pin name="GND@1" x="-22.86" y="15.24" length="short" direction="sup"/>
-<pin name="RXD0/GPIO15" x="25.4" y="15.24" length="short" rot="R180"/>
-<pin name="GPIO17/GEN0" x="-22.86" y="12.7" length="short"/>
-<pin name="GPIO18" x="25.4" y="12.7" length="short" rot="R180"/>
-<pin name="GPIO27/GEN2" x="-22.86" y="10.16" length="short"/>
-<pin name="GND@4" x="25.4" y="10.16" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO22/GEN3" x="-22.86" y="7.62" length="short"/>
-<pin name="GEN4/GPIO23" x="25.4" y="7.62" length="short" rot="R180"/>
-<pin name="3V3@2" x="-22.86" y="5.08" length="short" direction="sup"/>
-<pin name="GEN5/GPIO24" x="25.4" y="5.08" length="short" rot="R180"/>
-<pin name="GPIO10/MOSI" x="-22.86" y="2.54" length="short"/>
-<pin name="GND@5" x="25.4" y="2.54" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO9/MISO" x="-22.86" y="0" length="short"/>
-<pin name="GEN/6GPIO25" x="25.4" y="0" length="short" rot="R180"/>
-<pin name="GPIO11/SCLK" x="-22.86" y="-2.54" length="short"/>
-<pin name="!CE0!/GPIO8" x="25.4" y="-2.54" length="short" rot="R180"/>
-<pin name="GND@2" x="-22.86" y="-5.08" length="short" direction="sup"/>
-<pin name="!CE!/GPIO7" x="25.4" y="-5.08" length="short" rot="R180"/>
-<pin name="ID_SD" x="-22.86" y="-7.62" length="short"/>
-<pin name="ID_SC" x="25.4" y="-7.62" length="short" rot="R180"/>
-<pin name="GPIO5" x="-22.86" y="-10.16" length="short"/>
-<pin name="GND@6" x="25.4" y="-10.16" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO6" x="-22.86" y="-12.7" length="short"/>
-<pin name="GPIO12" x="25.4" y="-12.7" length="short" rot="R180"/>
-<pin name="GPIO13" x="-22.86" y="-15.24" length="short"/>
-<pin name="GND@7" x="25.4" y="-15.24" length="short" direction="sup" rot="R180"/>
-<pin name="GPIO19" x="-22.86" y="-17.78" length="short"/>
-<pin name="GPIO16" x="25.4" y="-17.78" length="short" rot="R180"/>
-<pin name="GPIO26" x="-22.86" y="-20.32" length="short"/>
-<pin name="GPIO20" x="25.4" y="-20.32" length="short" rot="R180"/>
-<pin name="GND@3" x="-22.86" y="-22.86" length="short" direction="sup"/>
-<pin name="GPIO21" x="25.4" y="-22.86" length="short" rot="R180"/>
-<text x="-20.32" y="30.48" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="-20.32" y="28.575" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<symbol name="RPI-ZERO">
+<wire x1="-43.18" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="0" y1="-53.34" x2="-43.18" y2="-53.34" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="-53.34" x2="-43.18" y2="0" width="0.254" layer="94"/>
+<pin name="5V0@1" x="5.08" y="-2.54" length="middle" direction="sup" rot="R180"/>
+<pin name="3V3@1" x="-48.26" y="-2.54" length="middle" direction="sup"/>
+<pin name="GPIO2/SDA1" x="-48.26" y="-5.08" length="middle"/>
+<pin name="5V0@2" x="5.08" y="-5.08" length="middle" direction="sup" rot="R180"/>
+<pin name="GPIO3/SCL1" x="-48.26" y="-7.62" length="middle"/>
+<pin name="GND@8" x="5.08" y="-7.62" length="middle" direction="sup" rot="R180"/>
+<pin name="GPIO4/GCKL" x="-48.26" y="-10.16" length="middle"/>
+<pin name="TXD0/GPIO14" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND@1" x="-48.26" y="-12.7" length="middle" direction="sup"/>
+<pin name="RXD0/GPIO15" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="GPIO17/GEN0" x="-48.26" y="-15.24" length="middle"/>
+<pin name="GPIO18" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPIO27/GEN2" x="-48.26" y="-17.78" length="middle"/>
+<pin name="GND@4" x="5.08" y="-17.78" length="middle" direction="sup" rot="R180"/>
+<pin name="GPIO22/GEN3" x="-48.26" y="-20.32" length="middle"/>
+<pin name="GEN4/GPIO23" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="3V3@2" x="-48.26" y="-22.86" length="middle" direction="sup"/>
+<pin name="GEN5/GPIO24" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO10/MOSI" x="-48.26" y="-25.4" length="middle"/>
+<pin name="GND@5" x="5.08" y="-25.4" length="middle" direction="sup" rot="R180"/>
+<pin name="GPIO9/MISO" x="-48.26" y="-27.94" length="middle"/>
+<pin name="GEN/6GPIO25" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="GPIO11/SCLK" x="-48.26" y="-30.48" length="middle"/>
+<pin name="!CE0!/GPIO8" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="GND@2" x="-48.26" y="-33.02" length="middle" direction="sup"/>
+<pin name="!CE!/GPIO7" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="ID_SD" x="-48.26" y="-35.56" length="middle"/>
+<pin name="ID_SC" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="GPIO5" x="-48.26" y="-38.1" length="middle"/>
+<pin name="GND@6" x="5.08" y="-38.1" length="middle" direction="sup" rot="R180"/>
+<pin name="GPIO6" x="-48.26" y="-40.64" length="middle"/>
+<pin name="GPIO12" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="GPIO13" x="-48.26" y="-43.18" length="middle"/>
+<pin name="GND@7" x="5.08" y="-43.18" length="middle" direction="sup" rot="R180"/>
+<pin name="GPIO19" x="-48.26" y="-45.72" length="middle"/>
+<pin name="GPIO16" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="GPIO26" x="-48.26" y="-48.26" length="middle"/>
+<pin name="GPIO20" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="GND@3" x="-48.26" y="-50.8" length="middle" direction="sup"/>
+<pin name="GPIO21" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<text x="-43.18" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-43.18" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="ORANGEPIZERO-MAIN">
 <wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -10324,223 +10324,229 @@ H2+ 512MB</text>
 <pin name="MIC1N" x="5.08" y="-25.4" visible="pin" length="middle" rot="R180"/>
 <pin name="(IR_RX)PL11" x="5.08" y="-27.94" visible="pin" length="middle" rot="R180"/>
 </symbol>
-<symbol name="RPI-CM4-A">
-<wire x1="0" y1="0" x2="50.8" y2="0" width="0.254" layer="94"/>
-<wire x1="50.8" y1="0" x2="50.8" y2="129.54" width="0.254" layer="94"/>
-<wire x1="50.8" y1="129.54" x2="0" y2="129.54" width="0.254" layer="94"/>
-<wire x1="0" y1="129.54" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="!EXTRST" x="55.88" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="!RPIBOOT" x="-5.08" y="10.16" length="middle" direction="pas"/>
-<pin name="+5V(INPUT)@77" x="-5.08" y="30.48" length="middle" direction="pas"/>
-<pin name="+5V(INPUT)@79" x="-5.08" y="27.94" length="middle" direction="pas"/>
-<pin name="+5V(INPUT)@81" x="-5.08" y="25.4" length="middle" direction="pas"/>
-<pin name="+5V(INPUT)@83" x="-5.08" y="22.86" length="middle" direction="pas"/>
-<pin name="+5V(INPUT)@85" x="-5.08" y="20.32" length="middle" direction="pas"/>
-<pin name="+5V(INPUT)@87" x="-5.08" y="17.78" length="middle" direction="pas"/>
-<pin name="ANALOGP0" x="55.88" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="ANALOGP1" x="55.88" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="BT_!DISABLE" x="-5.08" y="12.7" length="middle" direction="pas"/>
-<pin name="CAMERA_GPIO" x="-5.08" y="5.08" length="middle" direction="pas"/>
-<pin name="CM4_1.8V(OUTPUT)@88" x="55.88" y="17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="CM4_1.8V(OUTPUT)@90" x="55.88" y="15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="CM4_3.3V(OUTPUT)@84" x="55.88" y="22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="CM4_3.3V(OUTPUT)@86" x="55.88" y="20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="EEPROM_!WP" x="55.88" y="104.14" length="middle" direction="pas" rot="R180"/>
-<pin name="ETH_!LED1" x="-5.08" y="104.14" length="middle" direction="pas"/>
-<pin name="ETH_!LED2" x="-5.08" y="106.68" length="middle" direction="pas"/>
-<pin name="ETH_!LED3" x="-5.08" y="109.22" length="middle" direction="pas"/>
-<pin name="ETH_PAIR0_N" x="55.88" y="116.84" length="middle" direction="pas" rot="R180"/>
-<pin name="ETH_PAIR0_P" x="55.88" y="114.3" length="middle" direction="pas" rot="R180"/>
-<pin name="ETH_PAIR1_N" x="55.88" y="121.92" length="middle" direction="pas" rot="R180"/>
-<pin name="ETH_PAIR1_P" x="55.88" y="124.46" length="middle" direction="pas" rot="R180"/>
-<pin name="ETH_PAIR2_N" x="-5.08" y="116.84" length="middle" direction="pas"/>
-<pin name="ETH_PAIR2_P" x="-5.08" y="114.3" length="middle" direction="pas"/>
-<pin name="ETH_PAIR3_N" x="-5.08" y="121.92" length="middle" direction="pas"/>
-<pin name="ETH_PAIR3_P" x="-5.08" y="124.46" length="middle" direction="pas"/>
-<pin name="ETH_SYNC_IN" x="55.88" y="109.22" length="middle" direction="pas" rot="R180"/>
-<pin name="ETH_SYNC_OUT" x="55.88" y="106.68" length="middle" direction="pas" rot="R180"/>
-<pin name="GLOBAL_EN" x="-5.08" y="2.54" length="middle" direction="pas"/>
-<pin name="GND@1" x="-5.08" y="127" length="middle" direction="pas"/>
-<pin name="GND@2" x="55.88" y="127" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@7" x="-5.08" y="119.38" length="middle" direction="pas"/>
-<pin name="GND@8" x="55.88" y="119.38" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@13" x="-5.08" y="111.76" length="middle" direction="pas"/>
-<pin name="GND@14" x="55.88" y="111.76" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@22" x="55.88" y="101.6" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@23" x="-5.08" y="99.06" length="middle" direction="pas"/>
-<pin name="GND@32" x="55.88" y="88.9" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@33" x="-5.08" y="86.36" length="middle" direction="pas"/>
-<pin name="GND@42" x="55.88" y="76.2" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@43" x="-5.08" y="73.66" length="middle" direction="pas"/>
-<pin name="GND@52" x="55.88" y="63.5" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@53" x="-5.08" y="60.96" length="middle" direction="pas"/>
-<pin name="GND@59" x="-5.08" y="53.34" length="middle" direction="pas"/>
-<pin name="GND@60" x="55.88" y="53.34" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@65" x="-5.08" y="45.72" length="middle" direction="pas"/>
-<pin name="GND@66" x="55.88" y="45.72" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@71" x="-5.08" y="38.1" length="middle" direction="pas"/>
-<pin name="GND@74" x="55.88" y="35.56" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@98" x="55.88" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO2" x="55.88" y="55.88" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO3" x="55.88" y="58.42" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO4" x="55.88" y="60.96" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO5" x="55.88" y="86.36" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO6" x="55.88" y="91.44" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO7" x="-5.08" y="81.28" length="middle" direction="pas"/>
-<pin name="GPIO8" x="-5.08" y="78.74" length="middle" direction="pas"/>
-<pin name="GPIO9" x="55.88" y="78.74" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO10" x="55.88" y="73.66" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO11" x="55.88" y="81.28" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO12" x="-5.08" y="88.9" length="middle" direction="pas"/>
-<pin name="GPIO13" x="55.88" y="93.98" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO14" x="-5.08" y="58.42" length="middle" direction="pas"/>
-<pin name="GPIO15" x="-5.08" y="63.5" length="middle" direction="pas"/>
-<pin name="GPIO16" x="-5.08" y="91.44" length="middle" direction="pas"/>
-<pin name="GPIO17" x="55.88" y="66.04" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO18" x="-5.08" y="66.04" length="middle" direction="pas"/>
-<pin name="GPIO19" x="55.88" y="96.52" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO20" x="-5.08" y="93.98" length="middle" direction="pas"/>
-<pin name="GPIO21" x="-5.08" y="96.52" length="middle" direction="pas"/>
-<pin name="GPIO22" x="55.88" y="71.12" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO23" x="-5.08" y="68.58" length="middle" direction="pas"/>
-<pin name="GPIO24" x="-5.08" y="71.12" length="middle" direction="pas"/>
-<pin name="GPIO25" x="-5.08" y="76.2" length="middle" direction="pas"/>
-<pin name="GPIO26" x="55.88" y="99.06" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO27" x="55.88" y="68.58" length="middle" direction="pas" rot="R180"/>
-<pin name="GPIO_VREF" x="55.88" y="30.48" length="middle" direction="pas" rot="R180"/>
-<pin name="ID_SC" x="-5.08" y="83.82" length="middle" direction="pas"/>
-<pin name="ID_SD" x="55.88" y="83.82" length="middle" direction="pas" rot="R180"/>
-<pin name="PI_!LED_ACTIVITY" x="-5.08" y="101.6" length="middle" direction="pas"/>
-<pin name="PI_LED_!PWR" x="-5.08" y="7.62" length="middle" direction="pas"/>
-<pin name="RESERVED@75" x="55.88" y="33.02" length="middle" direction="pas" rot="R180"/>
-<pin name="RUN_PG" x="55.88" y="12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="SCL0" x="55.88" y="27.94" length="middle" direction="pas" rot="R180"/>
-<pin name="SDA0" x="55.88" y="25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="SD_CLK" x="-5.08" y="55.88" length="middle" direction="pas"/>
-<pin name="SD_CMD" x="55.88" y="50.8" length="middle" direction="pas" rot="R180"/>
-<pin name="SD_DAT0" x="-5.08" y="48.26" length="middle" direction="pas"/>
-<pin name="SD_DAT1" x="-5.08" y="43.18" length="middle" direction="pas"/>
-<pin name="SD_DAT2" x="-5.08" y="40.64" length="middle" direction="pas"/>
-<pin name="SD_DAT3" x="-5.08" y="50.8" length="middle" direction="pas"/>
-<pin name="SD_DAT4" x="55.88" y="43.18" length="middle" direction="pas" rot="R180"/>
-<pin name="SD_DAT5" x="55.88" y="48.26" length="middle" direction="pas" rot="R180"/>
-<pin name="SD_DAT6" x="55.88" y="38.1" length="middle" direction="pas" rot="R180"/>
-<pin name="SD_DAT7" x="55.88" y="40.64" length="middle" direction="pas" rot="R180"/>
-<pin name="SD_PWR_ON" x="-5.08" y="33.02" length="middle" direction="pas"/>
-<pin name="SD_VDD_OVERRIDE" x="-5.08" y="35.56" length="middle" direction="pas"/>
-<pin name="WL_!DISABLE" x="-5.08" y="15.24" length="middle" direction="pas"/>
-<text x="-0.01831875" y="129.6926" size="2.546109375" layer="95">&gt;NAME</text>
-<text x="-0.01625" y="-5.2318" size="2.54541875" layer="96">&gt;VALUE</text>
-<text x="20.32" y="63.5" size="12.7" layer="94" font="vector">A</text>
+<symbol name="RPI-CM4-GPIO">
+<pin name="GPIO0" x="-30.48" y="-2.54" length="middle"/>
+<wire x1="-25.4" y1="-40.64" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-40.64" x2="-25.4" y2="-40.64" width="0.254" layer="94"/>
+<text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GPIO1" x="-30.48" y="-5.08" length="middle"/>
+<pin name="GPIO2" x="-30.48" y="-7.62" length="middle"/>
+<pin name="GPIO3" x="-30.48" y="-10.16" length="middle"/>
+<pin name="GPIO4" x="-30.48" y="-12.7" length="middle"/>
+<pin name="GPIO5" x="-30.48" y="-15.24" length="middle"/>
+<pin name="GPIO6" x="-30.48" y="-17.78" length="middle"/>
+<pin name="GPIO7" x="-30.48" y="-20.32" length="middle"/>
+<pin name="GPIO8" x="-30.48" y="-22.86" length="middle"/>
+<pin name="GPIO9" x="-30.48" y="-25.4" length="middle"/>
+<pin name="GPIO10" x="-30.48" y="-27.94" length="middle"/>
+<pin name="GPIO11" x="-30.48" y="-30.48" length="middle"/>
+<pin name="GPIO12" x="-30.48" y="-33.02" length="middle"/>
+<pin name="GPIO13" x="-30.48" y="-35.56" length="middle"/>
+<pin name="GPIO14" x="-30.48" y="-38.1" length="middle"/>
+<pin name="GPIO15" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO16" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO17" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO18" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO19" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="GPIO20" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPIO21" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="GPIO22" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="GPIO23" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO24" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="GPIO25" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="GPIO26" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="GPIO27" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="GPIO44" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="GPIO45" x="5.08" y="-38.1" length="middle" rot="R180"/>
 </symbol>
-<symbol name="RPI-CM4-B">
-<wire x1="0" y1="0" x2="50.8" y2="0" width="0.254" layer="94"/>
-<wire x1="50.8" y1="0" x2="50.8" y2="129.54" width="0.254" layer="94"/>
-<wire x1="50.8" y1="129.54" x2="0" y2="129.54" width="0.254" layer="94"/>
-<wire x1="0" y1="129.54" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="CAM0_C_N" x="55.88" y="78.74" length="middle" direction="pas" rot="R180"/>
-<pin name="CAM0_C_P" x="55.88" y="76.2" length="middle" direction="pas" rot="R180"/>
-<pin name="CAM0_D0_N" x="55.88" y="93.98" length="middle" direction="pas" rot="R180"/>
-<pin name="CAM0_D0_P" x="55.88" y="91.44" length="middle" direction="pas" rot="R180"/>
-<pin name="CAM0_D1_N" x="55.88" y="86.36" length="middle" direction="pas" rot="R180"/>
-<pin name="CAM0_D1_P" x="55.88" y="83.82" length="middle" direction="pas" rot="R180"/>
-<pin name="CAM1_C_N" x="-5.08" y="93.98" length="middle" direction="pas"/>
-<pin name="CAM1_C_P" x="-5.08" y="91.44" length="middle" direction="pas"/>
-<pin name="CAM1_D0_N" x="-5.08" y="109.22" length="middle" direction="pas"/>
-<pin name="CAM1_D0_P" x="-5.08" y="106.68" length="middle" direction="pas"/>
-<pin name="CAM1_D1_N" x="-5.08" y="101.6" length="middle" direction="pas"/>
-<pin name="CAM1_D1_P" x="-5.08" y="99.06" length="middle" direction="pas"/>
-<pin name="CAM1_D2_N" x="-5.08" y="86.36" length="middle" direction="pas"/>
-<pin name="CAM1_D2_P" x="-5.08" y="83.82" length="middle" direction="pas"/>
-<pin name="CAM1_D3_N" x="-5.08" y="78.74" length="middle" direction="pas"/>
-<pin name="CAM1_D3_P" x="-5.08" y="76.2" length="middle" direction="pas"/>
-<pin name="DSI0_C_N" x="-5.08" y="40.64" length="middle" direction="pas"/>
-<pin name="DSI0_C_P" x="-5.08" y="38.1" length="middle" direction="pas"/>
-<pin name="DSI0_D0_N" x="-5.08" y="55.88" length="middle" direction="pas"/>
-<pin name="DSI0_D0_P" x="-5.08" y="53.34" length="middle" direction="pas"/>
-<pin name="DSI0_D1_N" x="-5.08" y="48.26" length="middle" direction="pas"/>
-<pin name="DSI0_D1_P" x="-5.08" y="45.72" length="middle" direction="pas"/>
-<pin name="DSI1_C_N" x="-5.08" y="17.78" length="middle" direction="pas"/>
-<pin name="DSI1_C_P" x="-5.08" y="15.24" length="middle" direction="pas"/>
-<pin name="DSI1_D0_N" x="-5.08" y="33.02" length="middle" direction="pas"/>
-<pin name="DSI1_D0_P" x="-5.08" y="30.48" length="middle" direction="pas"/>
-<pin name="DSI1_D1_N" x="-5.08" y="25.4" length="middle" direction="pas"/>
-<pin name="DSI1_D1_P" x="-5.08" y="22.86" length="middle" direction="pas"/>
-<pin name="DSI1_D2_N" x="-5.08" y="10.16" length="middle" direction="pas"/>
-<pin name="DSI1_D2_P" x="-5.08" y="7.62" length="middle" direction="pas"/>
-<pin name="DSI1_D3_N" x="55.88" y="10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="DSI1_D3_P" x="55.88" y="7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@107" x="-5.08" y="119.38" length="middle" direction="pas"/>
-<pin name="GND@108" x="55.88" y="119.38" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@113" x="-5.08" y="111.76" length="middle" direction="pas"/>
-<pin name="GND@114" x="55.88" y="111.76" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@119" x="-5.08" y="104.14" length="middle" direction="pas"/>
-<pin name="GND@120" x="55.88" y="104.14" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@125" x="-5.08" y="96.52" length="middle" direction="pas"/>
-<pin name="GND@126" x="55.88" y="96.52" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@131" x="-5.08" y="88.9" length="middle" direction="pas"/>
-<pin name="GND@132" x="55.88" y="88.9" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@137" x="-5.08" y="81.28" length="middle" direction="pas"/>
-<pin name="GND@138" x="55.88" y="81.28" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@144" x="55.88" y="73.66" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@150" x="55.88" y="66.04" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@155" x="-5.08" y="58.42" length="middle" direction="pas"/>
-<pin name="GND@156" x="55.88" y="58.42" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@161" x="-5.08" y="50.8" length="middle" direction="pas"/>
-<pin name="GND@162" x="55.88" y="50.8" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@167" x="-5.08" y="43.18" length="middle" direction="pas"/>
-<pin name="GND@168" x="55.88" y="43.18" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@173" x="-5.08" y="35.56" length="middle" direction="pas"/>
-<pin name="GND@174" x="55.88" y="35.56" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@179" x="-5.08" y="27.94" length="middle" direction="pas"/>
-<pin name="GND@180" x="55.88" y="27.94" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@185" x="-5.08" y="20.32" length="middle" direction="pas"/>
-<pin name="GND@186" x="55.88" y="20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@191" x="-5.08" y="12.7" length="middle" direction="pas"/>
-<pin name="GND@192" x="55.88" y="12.7" length="middle" direction="pas" rot="R180"/>
-<pin name="GND@197" x="-5.08" y="5.08" length="middle" direction="pas"/>
-<pin name="GND@198" x="55.88" y="5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_CEC" x="-5.08" y="63.5" length="middle" direction="pas"/>
-<pin name="HDMI0_CLK_N" x="55.88" y="15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_CLK_P" x="55.88" y="17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_HOTPLUG" x="-5.08" y="60.96" length="middle" direction="pas"/>
-<pin name="HDMI0_SCL" x="55.88" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_SDA" x="-5.08" y="2.54" length="middle" direction="pas"/>
-<pin name="HDMI0_TX0_N" x="55.88" y="22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_TX0_P" x="55.88" y="25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_TX1_N" x="55.88" y="30.48" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_TX1_P" x="55.88" y="33.02" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_TX2_N" x="55.88" y="38.1" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI0_TX2_P" x="55.88" y="40.64" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_CEC" x="-5.08" y="66.04" length="middle" direction="pas"/>
-<pin name="HDMI1_CLK_N" x="55.88" y="45.72" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_CLK_P" x="55.88" y="48.26" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_HOTPLUG" x="-5.08" y="73.66" length="middle" direction="pas"/>
-<pin name="HDMI1_SCL" x="-5.08" y="68.58" length="middle" direction="pas"/>
-<pin name="HDMI1_SDA" x="-5.08" y="71.12" length="middle" direction="pas"/>
-<pin name="HDMI1_TX0_N" x="55.88" y="53.34" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_TX0_P" x="55.88" y="55.88" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_TX1_N" x="55.88" y="60.96" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_TX1_P" x="55.88" y="63.5" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_TX2_N" x="55.88" y="68.58" length="middle" direction="pas" rot="R180"/>
-<pin name="HDMI1_TX2_P" x="55.88" y="71.12" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_!RST" x="-5.08" y="116.84" length="middle" direction="pas"/>
-<pin name="PCIE_CLK_!REQ" x="55.88" y="127" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_CLK_N" x="55.88" y="114.3" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_CLK_P" x="55.88" y="116.84" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_RX_N" x="55.88" y="106.68" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_RX_P" x="55.88" y="109.22" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_TX_N" x="55.88" y="99.06" length="middle" direction="pas" rot="R180"/>
-<pin name="PCIE_TX_P" x="55.88" y="101.6" length="middle" direction="pas" rot="R180"/>
-<pin name="RESERVED@104" x="55.88" y="124.46" length="middle" direction="pas" rot="R180"/>
-<pin name="RESERVED@106" x="55.88" y="121.92" length="middle" direction="pas" rot="R180"/>
-<pin name="USB_N" x="-5.08" y="124.46" length="middle" direction="pas"/>
-<pin name="USB_OTG_ID" x="-5.08" y="127" length="middle" direction="pas"/>
-<pin name="USB_P" x="-5.08" y="121.92" length="middle" direction="pas"/>
-<pin name="VDAC_COMP" x="-5.08" y="114.3" length="middle" direction="pas"/>
-<text x="-0.01831875" y="129.6926" size="2.546109375" layer="95">&gt;NAME</text>
-<text x="-0.01625" y="-5.2318" size="2.54541875" layer="96">&gt;VALUE</text>
-<text x="20.32" y="63.5" size="12.7" layer="94" font="vector">B</text>
+<symbol name="RPI-CM4-PWR">
+<pin name="5V0" x="-38.1" y="-2.54" length="middle"/>
+<wire x1="-33.02" y1="-43.18" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="0" y1="-43.18" x2="-33.02" y2="-43.18" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-38.1" y="-40.64" length="middle"/>
+<pin name="3V3_OUT" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="1V8_OUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="AIP0" x="-38.1" y="-30.48" length="middle"/>
+<pin name="AIP1" x="-38.1" y="-33.02" length="middle"/>
+<pin name="!EXTRST" x="-38.1" y="-17.78" length="middle"/>
+<pin name="GLOBAL_EN" x="-38.1" y="-10.16" length="middle"/>
+<pin name="!RPIBOOT" x="-38.1" y="-12.7" length="middle"/>
+<pin name="RUN_PG" x="-38.1" y="-15.24" length="middle"/>
+<pin name="!WL_DISABLE" x="-38.1" y="-22.86" length="middle"/>
+<pin name="!BT_DISABLE" x="-38.1" y="-25.4" length="middle"/>
+<pin name="GPIO_VREF" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="!PI_LED_ACT" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="!PI_LED_PWR" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="!EEPROM_WP" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="CAMERA_GPIO" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="VDAC_COMP" x="5.08" y="-40.64" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-CM4-ETH">
+<wire x1="-33.02" y1="-30.48" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="-33.02" y2="-30.48" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="ETH_P1P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="ETH_P1N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="ETH_P2P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="ETH_P2N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="ETH_P3P" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="ETH_P3N" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="ETH_P0P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="ETH_P0N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="ETH_SYNC_IN" x="-38.1" y="-2.54" length="middle"/>
+<pin name="ETH_SYNC_OUT" x="-38.1" y="-7.62" length="middle"/>
+<pin name="!ETH_LED1" x="-38.1" y="-22.86" length="middle"/>
+<pin name="!ETH_LED2" x="-38.1" y="-25.4" length="middle"/>
+<pin name="!ETH_LED3" x="-38.1" y="-27.94" length="middle"/>
+</symbol>
+<symbol name="RPI-CM4-PCIE">
+<wire x1="-35.56" y1="-22.86" x2="-35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="-35.56" y2="-22.86" width="0.254" layer="94"/>
+<text x="-35.56" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-35.56" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PCIE_CLK_P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="!PCIE_CLK_REQ" x="-40.64" y="-2.54" length="middle"/>
+<pin name="!PCIE_RST" x="-40.64" y="-20.32" length="middle"/>
+<pin name="PCIE_CLK_N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="PCIE_RX_P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="PCIE_RX_N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="PCIE_TX_P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="PCIE_TX_N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-CM4-HDMI">
+<wire x1="-35.56" y1="-30.48" x2="-35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="-35.56" y2="-30.48" width="0.254" layer="94"/>
+<text x="-35.56" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-35.56" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="HDMI_CLK_P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="HDMI_SCL" x="-40.64" y="-2.54" length="middle"/>
+<pin name="HDMI_SDA" x="-40.64" y="-5.08" length="middle"/>
+<pin name="HDMI_CLK_N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="HDMI_TX0_P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="HDMI_TX0_N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="HDMI_TX1_P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="HDMI_TX1_N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="HDMI_TX2_P" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="HDMI_TX2_N" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="HDMI_HOTPLUG" x="-40.64" y="-27.94" length="middle"/>
+<pin name="HDMI_CEC" x="-40.64" y="-25.4" length="middle"/>
+</symbol>
+<symbol name="RPI-CM4-USB">
+<wire x1="-17.78" y1="-12.7" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="USB_DP" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="USB_DN" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="USB_OTG_ID" x="5.08" y="-10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-CM4-CSI-4">
+<wire x1="-17.78" y1="-38.1" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="-17.78" y2="-38.1" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="CAM_C_P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="CAM_C_N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="CAM_D0_P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="CAM_D0_N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="CAM_D1_P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="CAM_D1_N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="CAM_D2_P" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="CAM_D2_N" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="CAM_D3_P" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="CAM_D3_N" x="5.08" y="-35.56" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-CM4-DSI-4">
+<wire x1="-17.78" y1="-38.1" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="-17.78" y2="-38.1" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="DSI_C_P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="DSI_C_N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="DSI_D0_P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="DSI_D0_N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="DSI_D1_P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="DSI_D1_N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="DSI_D2_P" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="DSI_D2_N" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="DSI_D3_P" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="DSI_D3_N" x="5.08" y="-35.56" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-CM4-SD">
+<wire x1="-33.02" y1="-30.48" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="-30.48" x2="-33.02" y2="-30.48" width="0.254" layer="94"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="SD_CLK" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="SD_DAT0" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="SV_VDD_OVR" x="-38.1" y="-2.54" length="middle"/>
+<pin name="SD_PWR_ON" x="-38.1" y="-27.94" length="middle"/>
+<pin name="SD_DAT1" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="SD_DAT2" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="SD_DAT3" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="SD_DAT4" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="SD_DAT5" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="SD_DAT6" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="SD_DAT7" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="SD_CMD" x="5.08" y="-5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-CM4-CSI-2">
+<wire x1="-17.78" y1="-38.1" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="-17.78" y2="-38.1" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="CAM_C_P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="CAM_C_N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="CAM_D0_P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="CAM_D0_N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="CAM_D1_P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="CAM_D1_N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<text x="-2.54" y="-26.162" size="1.5" layer="100" align="bottom-right">CAM_D2_P</text>
+<text x="-2.54" y="-28.702" size="1.5" layer="100" align="bottom-right">CAM_D2_N</text>
+<text x="-2.54" y="-33.782" size="1.5" layer="100" align="bottom-right">CAM_D3_P</text>
+<text x="-2.54" y="-36.322" size="1.5" layer="100" align="bottom-right">CAM_D3_N</text>
+</symbol>
+<symbol name="RPI-CM4-DSI-2">
+<wire x1="-17.78" y1="-38.1" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="0" y1="-38.1" x2="-17.78" y2="-38.1" width="0.254" layer="94"/>
+<text x="-17.78" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-17.78" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="DSI_C_P" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="DSI_C_N" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="DSI_D0_P" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="DSI_D0_N" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="DSI_D1_P" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="DSI_D1_N" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<text x="-2.54" y="-26.162" size="1.5" layer="100" align="bottom-right">DSI_D2_P</text>
+<text x="-2.54" y="-28.702" size="1.5" layer="100" align="bottom-right">DSI_D2_N</text>
+<text x="-2.54" y="-33.782" size="1.5" layer="100" align="bottom-right">DSI_D3_P</text>
+<text x="-2.54" y="-36.322" size="1.5" layer="100" align="bottom-right">DSI_D3_N</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10600,7 +10606,7 @@ H2+ 512MB</text>
 </deviceset>
 <deviceset name="RASPBERRYPIZERO" prefix="U">
 <gates>
-<gate name="G$1" symbol="RASPBERRYPIZERO" x="0" y="0"/>
+<gate name="G$1" symbol="RPI-ZERO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="STANDARDPIZERO">
@@ -10714,214 +10720,299 @@ H2+ 512MB</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RPI-CM4" prefix="RPI-CM4">
+<deviceset name="RPI-CM4" prefix="U">
 <gates>
-<gate name="G$1" symbol="RPI-CM4-A" x="-76.2" y="-45.72"/>
-<gate name="G$2" symbol="RPI-CM4-B" x="17.78" y="-45.72"/>
+<gate name=".PWR" symbol="RPI-CM4-PWR" x="-48.26" y="22.86"/>
+<gate name=".SD" symbol="RPI-CM4-SD" x="5.08" y="22.86"/>
+<gate name=".USB" symbol="RPI-CM4-USB" x="5.08" y="-17.78"/>
+<gate name=".PCIE" symbol="RPI-CM4-PCIE" x="-48.26" y="-33.02"/>
+<gate name=".HDMI0" symbol="RPI-CM4-HDMI" x="5.08" y="-38.1"/>
+<gate name=".HDMI1" symbol="RPI-CM4-HDMI" x="5.08" y="-78.74"/>
+<gate name=".GPIO" symbol="RPI-CM4-GPIO" x="-55.88" y="-71.12"/>
+<gate name=".ETH" symbol="RPI-CM4-ETH" x="68.58" y="-78.74"/>
+<gate name=".DSI1" symbol="RPI-CM4-DSI-4" x="68.58" y="-30.48"/>
+<gate name=".CSI1" symbol="RPI-CM4-CSI-4" x="68.58" y="20.32"/>
+<gate name=".CSI0" symbol="RPI-CM4-CSI-2" x="38.1" y="20.32"/>
+<gate name=".DSI0" symbol="RPI-CM4-DSI-2" x="38.1" y="-30.48"/>
 </gates>
 <devices>
-<device name="" package="RPI-CM4-WIFI">
+<device name="" package="RPI-CM4">
 <connects>
-<connect gate="G$1" pin="!EXTRST" pad="100"/>
-<connect gate="G$1" pin="!RPIBOOT" pad="93"/>
-<connect gate="G$1" pin="+5V(INPUT)@77" pad="77"/>
-<connect gate="G$1" pin="+5V(INPUT)@79" pad="79"/>
-<connect gate="G$1" pin="+5V(INPUT)@81" pad="81"/>
-<connect gate="G$1" pin="+5V(INPUT)@83" pad="83"/>
-<connect gate="G$1" pin="+5V(INPUT)@85" pad="85"/>
-<connect gate="G$1" pin="+5V(INPUT)@87" pad="87"/>
-<connect gate="G$1" pin="ANALOGP0" pad="96"/>
-<connect gate="G$1" pin="ANALOGP1" pad="94"/>
-<connect gate="G$1" pin="BT_!DISABLE" pad="91"/>
-<connect gate="G$1" pin="CAMERA_GPIO" pad="97"/>
-<connect gate="G$1" pin="CM4_1.8V(OUTPUT)@88" pad="88"/>
-<connect gate="G$1" pin="CM4_1.8V(OUTPUT)@90" pad="90"/>
-<connect gate="G$1" pin="CM4_3.3V(OUTPUT)@84" pad="84"/>
-<connect gate="G$1" pin="CM4_3.3V(OUTPUT)@86" pad="86"/>
-<connect gate="G$1" pin="EEPROM_!WP" pad="20"/>
-<connect gate="G$1" pin="ETH_!LED1" pad="19"/>
-<connect gate="G$1" pin="ETH_!LED2" pad="17"/>
-<connect gate="G$1" pin="ETH_!LED3" pad="15"/>
-<connect gate="G$1" pin="ETH_PAIR0_N" pad="10"/>
-<connect gate="G$1" pin="ETH_PAIR0_P" pad="12"/>
-<connect gate="G$1" pin="ETH_PAIR1_N" pad="6"/>
-<connect gate="G$1" pin="ETH_PAIR1_P" pad="4"/>
-<connect gate="G$1" pin="ETH_PAIR2_N" pad="9"/>
-<connect gate="G$1" pin="ETH_PAIR2_P" pad="11"/>
-<connect gate="G$1" pin="ETH_PAIR3_N" pad="5"/>
-<connect gate="G$1" pin="ETH_PAIR3_P" pad="3"/>
-<connect gate="G$1" pin="ETH_SYNC_IN" pad="16"/>
-<connect gate="G$1" pin="ETH_SYNC_OUT" pad="18"/>
-<connect gate="G$1" pin="GLOBAL_EN" pad="99"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@13" pad="13"/>
-<connect gate="G$1" pin="GND@14" pad="14"/>
-<connect gate="G$1" pin="GND@2" pad="2"/>
-<connect gate="G$1" pin="GND@22" pad="22"/>
-<connect gate="G$1" pin="GND@23" pad="23"/>
-<connect gate="G$1" pin="GND@32" pad="32"/>
-<connect gate="G$1" pin="GND@33" pad="33"/>
-<connect gate="G$1" pin="GND@42" pad="42"/>
-<connect gate="G$1" pin="GND@43" pad="43"/>
-<connect gate="G$1" pin="GND@52" pad="52"/>
-<connect gate="G$1" pin="GND@53" pad="53"/>
-<connect gate="G$1" pin="GND@59" pad="59"/>
-<connect gate="G$1" pin="GND@60" pad="60"/>
-<connect gate="G$1" pin="GND@65" pad="65"/>
-<connect gate="G$1" pin="GND@66" pad="66"/>
-<connect gate="G$1" pin="GND@7" pad="7"/>
-<connect gate="G$1" pin="GND@71" pad="71"/>
-<connect gate="G$1" pin="GND@74" pad="74"/>
-<connect gate="G$1" pin="GND@8" pad="8"/>
-<connect gate="G$1" pin="GND@98" pad="98"/>
-<connect gate="G$1" pin="GPIO10" pad="44"/>
-<connect gate="G$1" pin="GPIO11" pad="38"/>
-<connect gate="G$1" pin="GPIO12" pad="31"/>
-<connect gate="G$1" pin="GPIO13" pad="28"/>
-<connect gate="G$1" pin="GPIO14" pad="55"/>
-<connect gate="G$1" pin="GPIO15" pad="51"/>
-<connect gate="G$1" pin="GPIO16" pad="29"/>
-<connect gate="G$1" pin="GPIO17" pad="50"/>
-<connect gate="G$1" pin="GPIO18" pad="49"/>
-<connect gate="G$1" pin="GPIO19" pad="26"/>
-<connect gate="G$1" pin="GPIO2" pad="58"/>
-<connect gate="G$1" pin="GPIO20" pad="27"/>
-<connect gate="G$1" pin="GPIO21" pad="25"/>
-<connect gate="G$1" pin="GPIO22" pad="46"/>
-<connect gate="G$1" pin="GPIO23" pad="47"/>
-<connect gate="G$1" pin="GPIO24" pad="45"/>
-<connect gate="G$1" pin="GPIO25" pad="41"/>
-<connect gate="G$1" pin="GPIO26" pad="24"/>
-<connect gate="G$1" pin="GPIO27" pad="48"/>
-<connect gate="G$1" pin="GPIO3" pad="56"/>
-<connect gate="G$1" pin="GPIO4" pad="54"/>
-<connect gate="G$1" pin="GPIO5" pad="34"/>
-<connect gate="G$1" pin="GPIO6" pad="30"/>
-<connect gate="G$1" pin="GPIO7" pad="37"/>
-<connect gate="G$1" pin="GPIO8" pad="39"/>
-<connect gate="G$1" pin="GPIO9" pad="40"/>
-<connect gate="G$1" pin="GPIO_VREF" pad="78"/>
-<connect gate="G$1" pin="ID_SC" pad="35"/>
-<connect gate="G$1" pin="ID_SD" pad="36"/>
-<connect gate="G$1" pin="PI_!LED_ACTIVITY" pad="21"/>
-<connect gate="G$1" pin="PI_LED_!PWR" pad="95"/>
-<connect gate="G$1" pin="RESERVED@75" pad="76"/>
-<connect gate="G$1" pin="RUN_PG" pad="92"/>
-<connect gate="G$1" pin="SCL0" pad="80"/>
-<connect gate="G$1" pin="SDA0" pad="82"/>
-<connect gate="G$1" pin="SD_CLK" pad="57"/>
-<connect gate="G$1" pin="SD_CMD" pad="62"/>
-<connect gate="G$1" pin="SD_DAT0" pad="63"/>
-<connect gate="G$1" pin="SD_DAT1" pad="67"/>
-<connect gate="G$1" pin="SD_DAT2" pad="69"/>
-<connect gate="G$1" pin="SD_DAT3" pad="61"/>
-<connect gate="G$1" pin="SD_DAT4" pad="68"/>
-<connect gate="G$1" pin="SD_DAT5" pad="64"/>
-<connect gate="G$1" pin="SD_DAT6" pad="72"/>
-<connect gate="G$1" pin="SD_DAT7" pad="70"/>
-<connect gate="G$1" pin="SD_PWR_ON" pad="75"/>
-<connect gate="G$1" pin="SD_VDD_OVERRIDE" pad="73"/>
-<connect gate="G$1" pin="WL_!DISABLE" pad="89"/>
-<connect gate="G$2" pin="CAM0_C_N" pad="140"/>
-<connect gate="G$2" pin="CAM0_C_P" pad="142"/>
-<connect gate="G$2" pin="CAM0_D0_N" pad="128"/>
-<connect gate="G$2" pin="CAM0_D0_P" pad="130"/>
-<connect gate="G$2" pin="CAM0_D1_N" pad="134"/>
-<connect gate="G$2" pin="CAM0_D1_P" pad="136"/>
-<connect gate="G$2" pin="CAM1_C_N" pad="127"/>
-<connect gate="G$2" pin="CAM1_C_P" pad="129"/>
-<connect gate="G$2" pin="CAM1_D0_N" pad="115"/>
-<connect gate="G$2" pin="CAM1_D0_P" pad="117"/>
-<connect gate="G$2" pin="CAM1_D1_N" pad="121"/>
-<connect gate="G$2" pin="CAM1_D1_P" pad="123"/>
-<connect gate="G$2" pin="CAM1_D2_N" pad="133"/>
-<connect gate="G$2" pin="CAM1_D2_P" pad="135"/>
-<connect gate="G$2" pin="CAM1_D3_N" pad="139"/>
-<connect gate="G$2" pin="CAM1_D3_P" pad="141"/>
-<connect gate="G$2" pin="DSI0_C_N" pad="169"/>
-<connect gate="G$2" pin="DSI0_C_P" pad="171"/>
-<connect gate="G$2" pin="DSI0_D0_N" pad="157"/>
-<connect gate="G$2" pin="DSI0_D0_P" pad="159"/>
-<connect gate="G$2" pin="DSI0_D1_N" pad="163"/>
-<connect gate="G$2" pin="DSI0_D1_P" pad="165"/>
-<connect gate="G$2" pin="DSI1_C_N" pad="187"/>
-<connect gate="G$2" pin="DSI1_C_P" pad="189"/>
-<connect gate="G$2" pin="DSI1_D0_N" pad="175"/>
-<connect gate="G$2" pin="DSI1_D0_P" pad="177"/>
-<connect gate="G$2" pin="DSI1_D1_N" pad="181"/>
-<connect gate="G$2" pin="DSI1_D1_P" pad="183"/>
-<connect gate="G$2" pin="DSI1_D2_N" pad="193"/>
-<connect gate="G$2" pin="DSI1_D2_P" pad="195"/>
-<connect gate="G$2" pin="DSI1_D3_N" pad="194"/>
-<connect gate="G$2" pin="DSI1_D3_P" pad="196"/>
-<connect gate="G$2" pin="GND@107" pad="107"/>
-<connect gate="G$2" pin="GND@108" pad="108"/>
-<connect gate="G$2" pin="GND@113" pad="113"/>
-<connect gate="G$2" pin="GND@114" pad="114"/>
-<connect gate="G$2" pin="GND@119" pad="119"/>
-<connect gate="G$2" pin="GND@120" pad="120"/>
-<connect gate="G$2" pin="GND@125" pad="125"/>
-<connect gate="G$2" pin="GND@126" pad="126"/>
-<connect gate="G$2" pin="GND@131" pad="131"/>
-<connect gate="G$2" pin="GND@132" pad="132"/>
-<connect gate="G$2" pin="GND@137" pad="137"/>
-<connect gate="G$2" pin="GND@138" pad="138"/>
-<connect gate="G$2" pin="GND@144" pad="144"/>
-<connect gate="G$2" pin="GND@150" pad="150"/>
-<connect gate="G$2" pin="GND@155" pad="155"/>
-<connect gate="G$2" pin="GND@156" pad="156"/>
-<connect gate="G$2" pin="GND@161" pad="161"/>
-<connect gate="G$2" pin="GND@162" pad="162"/>
-<connect gate="G$2" pin="GND@167" pad="167"/>
-<connect gate="G$2" pin="GND@168" pad="168"/>
-<connect gate="G$2" pin="GND@173" pad="173"/>
-<connect gate="G$2" pin="GND@174" pad="174"/>
-<connect gate="G$2" pin="GND@179" pad="179"/>
-<connect gate="G$2" pin="GND@180" pad="180"/>
-<connect gate="G$2" pin="GND@185" pad="185"/>
-<connect gate="G$2" pin="GND@186" pad="186"/>
-<connect gate="G$2" pin="GND@191" pad="191"/>
-<connect gate="G$2" pin="GND@192" pad="192"/>
-<connect gate="G$2" pin="GND@197" pad="197"/>
-<connect gate="G$2" pin="GND@198" pad="198"/>
-<connect gate="G$2" pin="HDMI0_CEC" pad="151"/>
-<connect gate="G$2" pin="HDMI0_CLK_N" pad="190"/>
-<connect gate="G$2" pin="HDMI0_CLK_P" pad="188"/>
-<connect gate="G$2" pin="HDMI0_HOTPLUG" pad="153"/>
-<connect gate="G$2" pin="HDMI0_SCL" pad="200"/>
-<connect gate="G$2" pin="HDMI0_SDA" pad="199"/>
-<connect gate="G$2" pin="HDMI0_TX0_N" pad="184"/>
-<connect gate="G$2" pin="HDMI0_TX0_P" pad="182"/>
-<connect gate="G$2" pin="HDMI0_TX1_N" pad="178"/>
-<connect gate="G$2" pin="HDMI0_TX1_P" pad="176"/>
-<connect gate="G$2" pin="HDMI0_TX2_N" pad="172"/>
-<connect gate="G$2" pin="HDMI0_TX2_P" pad="170"/>
-<connect gate="G$2" pin="HDMI1_CEC" pad="149"/>
-<connect gate="G$2" pin="HDMI1_CLK_N" pad="166"/>
-<connect gate="G$2" pin="HDMI1_CLK_P" pad="164"/>
-<connect gate="G$2" pin="HDMI1_HOTPLUG" pad="143"/>
-<connect gate="G$2" pin="HDMI1_SCL" pad="147"/>
-<connect gate="G$2" pin="HDMI1_SDA" pad="145"/>
-<connect gate="G$2" pin="HDMI1_TX0_N" pad="160"/>
-<connect gate="G$2" pin="HDMI1_TX0_P" pad="158"/>
-<connect gate="G$2" pin="HDMI1_TX1_N" pad="154"/>
-<connect gate="G$2" pin="HDMI1_TX1_P" pad="152"/>
-<connect gate="G$2" pin="HDMI1_TX2_N" pad="148"/>
-<connect gate="G$2" pin="HDMI1_TX2_P" pad="146"/>
-<connect gate="G$2" pin="PCIE_!RST" pad="109"/>
-<connect gate="G$2" pin="PCIE_CLK_!REQ" pad="102"/>
-<connect gate="G$2" pin="PCIE_CLK_N" pad="112"/>
-<connect gate="G$2" pin="PCIE_CLK_P" pad="110"/>
-<connect gate="G$2" pin="PCIE_RX_N" pad="118"/>
-<connect gate="G$2" pin="PCIE_RX_P" pad="116"/>
-<connect gate="G$2" pin="PCIE_TX_N" pad="124"/>
-<connect gate="G$2" pin="PCIE_TX_P" pad="122"/>
-<connect gate="G$2" pin="RESERVED@104" pad="104"/>
-<connect gate="G$2" pin="RESERVED@106" pad="106"/>
-<connect gate="G$2" pin="USB_N" pad="103"/>
-<connect gate="G$2" pin="USB_OTG_ID" pad="101"/>
-<connect gate="G$2" pin="USB_P" pad="105"/>
-<connect gate="G$2" pin="VDAC_COMP" pad="111"/>
+<connect gate=".CSI0" pin="CAM_C_N" pad="140"/>
+<connect gate=".CSI0" pin="CAM_C_P" pad="142"/>
+<connect gate=".CSI0" pin="CAM_D0_N" pad="128"/>
+<connect gate=".CSI0" pin="CAM_D0_P" pad="130"/>
+<connect gate=".CSI0" pin="CAM_D1_N" pad="134"/>
+<connect gate=".CSI0" pin="CAM_D1_P" pad="136"/>
+<connect gate=".CSI1" pin="CAM_C_N" pad="127"/>
+<connect gate=".CSI1" pin="CAM_C_P" pad="129"/>
+<connect gate=".CSI1" pin="CAM_D0_N" pad="115"/>
+<connect gate=".CSI1" pin="CAM_D0_P" pad="117"/>
+<connect gate=".CSI1" pin="CAM_D1_N" pad="121"/>
+<connect gate=".CSI1" pin="CAM_D1_P" pad="123"/>
+<connect gate=".CSI1" pin="CAM_D2_N" pad="133"/>
+<connect gate=".CSI1" pin="CAM_D2_P" pad="135"/>
+<connect gate=".CSI1" pin="CAM_D3_N" pad="139"/>
+<connect gate=".CSI1" pin="CAM_D3_P" pad="141"/>
+<connect gate=".DSI0" pin="DSI_C_N" pad="169"/>
+<connect gate=".DSI0" pin="DSI_C_P" pad="171"/>
+<connect gate=".DSI0" pin="DSI_D0_N" pad="157"/>
+<connect gate=".DSI0" pin="DSI_D0_P" pad="159"/>
+<connect gate=".DSI0" pin="DSI_D1_N" pad="163"/>
+<connect gate=".DSI0" pin="DSI_D1_P" pad="165"/>
+<connect gate=".DSI1" pin="DSI_C_N" pad="187"/>
+<connect gate=".DSI1" pin="DSI_C_P" pad="189"/>
+<connect gate=".DSI1" pin="DSI_D0_N" pad="175"/>
+<connect gate=".DSI1" pin="DSI_D0_P" pad="177"/>
+<connect gate=".DSI1" pin="DSI_D1_N" pad="181"/>
+<connect gate=".DSI1" pin="DSI_D1_P" pad="183"/>
+<connect gate=".DSI1" pin="DSI_D2_N" pad="193"/>
+<connect gate=".DSI1" pin="DSI_D2_P" pad="195"/>
+<connect gate=".DSI1" pin="DSI_D3_N" pad="194"/>
+<connect gate=".DSI1" pin="DSI_D3_P" pad="196"/>
+<connect gate=".ETH" pin="!ETH_LED1" pad="19"/>
+<connect gate=".ETH" pin="!ETH_LED2" pad="17"/>
+<connect gate=".ETH" pin="!ETH_LED3" pad="15"/>
+<connect gate=".ETH" pin="ETH_P0N" pad="10"/>
+<connect gate=".ETH" pin="ETH_P0P" pad="12"/>
+<connect gate=".ETH" pin="ETH_P1N" pad="6"/>
+<connect gate=".ETH" pin="ETH_P1P" pad="4"/>
+<connect gate=".ETH" pin="ETH_P2N" pad="9"/>
+<connect gate=".ETH" pin="ETH_P2P" pad="11"/>
+<connect gate=".ETH" pin="ETH_P3N" pad="5"/>
+<connect gate=".ETH" pin="ETH_P3P" pad="3"/>
+<connect gate=".ETH" pin="ETH_SYNC_IN" pad="16"/>
+<connect gate=".ETH" pin="ETH_SYNC_OUT" pad="18"/>
+<connect gate=".GPIO" pin="GPIO0" pad="36"/>
+<connect gate=".GPIO" pin="GPIO1" pad="35"/>
+<connect gate=".GPIO" pin="GPIO10" pad="44"/>
+<connect gate=".GPIO" pin="GPIO11" pad="38"/>
+<connect gate=".GPIO" pin="GPIO12" pad="31"/>
+<connect gate=".GPIO" pin="GPIO13" pad="28"/>
+<connect gate=".GPIO" pin="GPIO14" pad="55"/>
+<connect gate=".GPIO" pin="GPIO15" pad="51"/>
+<connect gate=".GPIO" pin="GPIO16" pad="29"/>
+<connect gate=".GPIO" pin="GPIO17" pad="50"/>
+<connect gate=".GPIO" pin="GPIO18" pad="49"/>
+<connect gate=".GPIO" pin="GPIO19" pad="26"/>
+<connect gate=".GPIO" pin="GPIO2" pad="58"/>
+<connect gate=".GPIO" pin="GPIO20" pad="27"/>
+<connect gate=".GPIO" pin="GPIO21" pad="25"/>
+<connect gate=".GPIO" pin="GPIO22" pad="46"/>
+<connect gate=".GPIO" pin="GPIO23" pad="47"/>
+<connect gate=".GPIO" pin="GPIO24" pad="45"/>
+<connect gate=".GPIO" pin="GPIO25" pad="41"/>
+<connect gate=".GPIO" pin="GPIO26" pad="24"/>
+<connect gate=".GPIO" pin="GPIO27" pad="48"/>
+<connect gate=".GPIO" pin="GPIO3" pad="56"/>
+<connect gate=".GPIO" pin="GPIO4" pad="54"/>
+<connect gate=".GPIO" pin="GPIO44" pad="82"/>
+<connect gate=".GPIO" pin="GPIO45" pad="80"/>
+<connect gate=".GPIO" pin="GPIO5" pad="34"/>
+<connect gate=".GPIO" pin="GPIO6" pad="30"/>
+<connect gate=".GPIO" pin="GPIO7" pad="37"/>
+<connect gate=".GPIO" pin="GPIO8" pad="39"/>
+<connect gate=".GPIO" pin="GPIO9" pad="40"/>
+<connect gate=".HDMI0" pin="HDMI_CEC" pad="151"/>
+<connect gate=".HDMI0" pin="HDMI_CLK_N" pad="190"/>
+<connect gate=".HDMI0" pin="HDMI_CLK_P" pad="188"/>
+<connect gate=".HDMI0" pin="HDMI_HOTPLUG" pad="153"/>
+<connect gate=".HDMI0" pin="HDMI_SCL" pad="200"/>
+<connect gate=".HDMI0" pin="HDMI_SDA" pad="199"/>
+<connect gate=".HDMI0" pin="HDMI_TX0_N" pad="184"/>
+<connect gate=".HDMI0" pin="HDMI_TX0_P" pad="182"/>
+<connect gate=".HDMI0" pin="HDMI_TX1_N" pad="178"/>
+<connect gate=".HDMI0" pin="HDMI_TX1_P" pad="176"/>
+<connect gate=".HDMI0" pin="HDMI_TX2_N" pad="172"/>
+<connect gate=".HDMI0" pin="HDMI_TX2_P" pad="170"/>
+<connect gate=".HDMI1" pin="HDMI_CEC" pad="149"/>
+<connect gate=".HDMI1" pin="HDMI_CLK_N" pad="166"/>
+<connect gate=".HDMI1" pin="HDMI_CLK_P" pad="164"/>
+<connect gate=".HDMI1" pin="HDMI_HOTPLUG" pad="143"/>
+<connect gate=".HDMI1" pin="HDMI_SCL" pad="147"/>
+<connect gate=".HDMI1" pin="HDMI_SDA" pad="145"/>
+<connect gate=".HDMI1" pin="HDMI_TX0_N" pad="160"/>
+<connect gate=".HDMI1" pin="HDMI_TX0_P" pad="158"/>
+<connect gate=".HDMI1" pin="HDMI_TX1_N" pad="154"/>
+<connect gate=".HDMI1" pin="HDMI_TX1_P" pad="152"/>
+<connect gate=".HDMI1" pin="HDMI_TX2_N" pad="148"/>
+<connect gate=".HDMI1" pin="HDMI_TX2_P" pad="146"/>
+<connect gate=".PCIE" pin="!PCIE_CLK_REQ" pad="102"/>
+<connect gate=".PCIE" pin="!PCIE_RST" pad="109"/>
+<connect gate=".PCIE" pin="PCIE_CLK_N" pad="112"/>
+<connect gate=".PCIE" pin="PCIE_CLK_P" pad="110"/>
+<connect gate=".PCIE" pin="PCIE_RX_N" pad="118"/>
+<connect gate=".PCIE" pin="PCIE_RX_P" pad="116"/>
+<connect gate=".PCIE" pin="PCIE_TX_N" pad="124"/>
+<connect gate=".PCIE" pin="PCIE_TX_P" pad="122"/>
+<connect gate=".PWR" pin="!BT_DISABLE" pad="91"/>
+<connect gate=".PWR" pin="!EEPROM_WP" pad="20"/>
+<connect gate=".PWR" pin="!EXTRST" pad="100"/>
+<connect gate=".PWR" pin="!PI_LED_ACT" pad="21"/>
+<connect gate=".PWR" pin="!PI_LED_PWR" pad="95"/>
+<connect gate=".PWR" pin="!RPIBOOT" pad="93"/>
+<connect gate=".PWR" pin="!WL_DISABLE" pad="89"/>
+<connect gate=".PWR" pin="1V8_OUT" pad="88 90"/>
+<connect gate=".PWR" pin="3V3_OUT" pad="84 86"/>
+<connect gate=".PWR" pin="5V0" pad="77 79 81 83 85 87"/>
+<connect gate=".PWR" pin="AIP0" pad="96"/>
+<connect gate=".PWR" pin="AIP1" pad="94"/>
+<connect gate=".PWR" pin="CAMERA_GPIO" pad="97"/>
+<connect gate=".PWR" pin="GLOBAL_EN" pad="99"/>
+<connect gate=".PWR" pin="GND" pad="1 2 7 8 13 14 22 23 32 33 42 43 52 53 59 60 65 66 71 74 98 107 108 113 114 119 120 125 126 131 132 137 138 144 150 155 156 161 162 167 168 173 174 179 180 185 186 191 192 197 198"/>
+<connect gate=".PWR" pin="GPIO_VREF" pad="78"/>
+<connect gate=".PWR" pin="RUN_PG" pad="92"/>
+<connect gate=".PWR" pin="VDAC_COMP" pad="111"/>
+<connect gate=".SD" pin="SD_CLK" pad="57"/>
+<connect gate=".SD" pin="SD_CMD" pad="62"/>
+<connect gate=".SD" pin="SD_DAT0" pad="63"/>
+<connect gate=".SD" pin="SD_DAT1" pad="67"/>
+<connect gate=".SD" pin="SD_DAT2" pad="69"/>
+<connect gate=".SD" pin="SD_DAT3" pad="61"/>
+<connect gate=".SD" pin="SD_DAT4" pad="68"/>
+<connect gate=".SD" pin="SD_DAT5" pad="64"/>
+<connect gate=".SD" pin="SD_DAT6" pad="72"/>
+<connect gate=".SD" pin="SD_DAT7" pad="70"/>
+<connect gate=".SD" pin="SD_PWR_ON" pad="75"/>
+<connect gate=".SD" pin="SV_VDD_OVR" pad="73"/>
+<connect gate=".USB" pin="USB_DN" pad="103"/>
+<connect gate=".USB" pin="USB_DP" pad="105"/>
+<connect gate=".USB" pin="USB_OTG_ID" pad="101"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-WIFI" package="RPI-CM4-WIFI">
+<connects>
+<connect gate=".CSI1" pin="CAM_C_N" pad="127"/>
+<connect gate=".CSI1" pin="CAM_C_P" pad="129"/>
+<connect gate=".CSI1" pin="CAM_D0_N" pad="115"/>
+<connect gate=".CSI1" pin="CAM_D0_P" pad="117"/>
+<connect gate=".CSI1" pin="CAM_D1_N" pad="121"/>
+<connect gate=".CSI1" pin="CAM_D1_P" pad="123"/>
+<connect gate=".CSI1" pin="CAM_D2_N" pad="133"/>
+<connect gate=".CSI1" pin="CAM_D2_P" pad="135"/>
+<connect gate=".CSI1" pin="CAM_D3_N" pad="139"/>
+<connect gate=".CSI1" pin="CAM_D3_P" pad="141"/>
+<connect gate=".DSI1" pin="DSI_C_N" pad="187"/>
+<connect gate=".DSI1" pin="DSI_C_P" pad="189"/>
+<connect gate=".DSI1" pin="DSI_D0_N" pad="175"/>
+<connect gate=".DSI1" pin="DSI_D0_P" pad="177"/>
+<connect gate=".DSI1" pin="DSI_D1_N" pad="181"/>
+<connect gate=".DSI1" pin="DSI_D1_P" pad="183"/>
+<connect gate=".DSI1" pin="DSI_D2_N" pad="193"/>
+<connect gate=".DSI1" pin="DSI_D2_P" pad="195"/>
+<connect gate=".DSI1" pin="DSI_D3_N" pad="194"/>
+<connect gate=".DSI1" pin="DSI_D3_P" pad="196"/>
+<connect gate=".ETH" pin="!ETH_LED1" pad="19"/>
+<connect gate=".ETH" pin="!ETH_LED2" pad="17"/>
+<connect gate=".ETH" pin="!ETH_LED3" pad="15"/>
+<connect gate=".ETH" pin="ETH_P0N" pad="10"/>
+<connect gate=".ETH" pin="ETH_P0P" pad="12"/>
+<connect gate=".ETH" pin="ETH_P1N" pad="6"/>
+<connect gate=".ETH" pin="ETH_P1P" pad="4"/>
+<connect gate=".ETH" pin="ETH_P2N" pad="9"/>
+<connect gate=".ETH" pin="ETH_P2P" pad="11"/>
+<connect gate=".ETH" pin="ETH_P3N" pad="5"/>
+<connect gate=".ETH" pin="ETH_P3P" pad="3"/>
+<connect gate=".ETH" pin="ETH_SYNC_IN" pad="16"/>
+<connect gate=".ETH" pin="ETH_SYNC_OUT" pad="18"/>
+<connect gate=".GPIO" pin="GPIO0" pad="36"/>
+<connect gate=".GPIO" pin="GPIO1" pad="35"/>
+<connect gate=".GPIO" pin="GPIO10" pad="44"/>
+<connect gate=".GPIO" pin="GPIO11" pad="38"/>
+<connect gate=".GPIO" pin="GPIO12" pad="31"/>
+<connect gate=".GPIO" pin="GPIO13" pad="28"/>
+<connect gate=".GPIO" pin="GPIO14" pad="55"/>
+<connect gate=".GPIO" pin="GPIO15" pad="51"/>
+<connect gate=".GPIO" pin="GPIO16" pad="29"/>
+<connect gate=".GPIO" pin="GPIO17" pad="50"/>
+<connect gate=".GPIO" pin="GPIO18" pad="49"/>
+<connect gate=".GPIO" pin="GPIO19" pad="26"/>
+<connect gate=".GPIO" pin="GPIO2" pad="58"/>
+<connect gate=".GPIO" pin="GPIO20" pad="27"/>
+<connect gate=".GPIO" pin="GPIO21" pad="25"/>
+<connect gate=".GPIO" pin="GPIO22" pad="46"/>
+<connect gate=".GPIO" pin="GPIO23" pad="47"/>
+<connect gate=".GPIO" pin="GPIO24" pad="45"/>
+<connect gate=".GPIO" pin="GPIO25" pad="41"/>
+<connect gate=".GPIO" pin="GPIO26" pad="24"/>
+<connect gate=".GPIO" pin="GPIO27" pad="48"/>
+<connect gate=".GPIO" pin="GPIO3" pad="56"/>
+<connect gate=".GPIO" pin="GPIO4" pad="54"/>
+<connect gate=".GPIO" pin="GPIO44" pad="82"/>
+<connect gate=".GPIO" pin="GPIO45" pad="80"/>
+<connect gate=".GPIO" pin="GPIO5" pad="34"/>
+<connect gate=".GPIO" pin="GPIO6" pad="30"/>
+<connect gate=".GPIO" pin="GPIO7" pad="37"/>
+<connect gate=".GPIO" pin="GPIO8" pad="39"/>
+<connect gate=".GPIO" pin="GPIO9" pad="40"/>
+<connect gate=".HDMI0" pin="HDMI_CEC" pad="151"/>
+<connect gate=".HDMI0" pin="HDMI_CLK_N" pad="190"/>
+<connect gate=".HDMI0" pin="HDMI_CLK_P" pad="188"/>
+<connect gate=".HDMI0" pin="HDMI_HOTPLUG" pad="153"/>
+<connect gate=".HDMI0" pin="HDMI_SCL" pad="200"/>
+<connect gate=".HDMI0" pin="HDMI_SDA" pad="199"/>
+<connect gate=".HDMI0" pin="HDMI_TX0_N" pad="184"/>
+<connect gate=".HDMI0" pin="HDMI_TX0_P" pad="182"/>
+<connect gate=".HDMI0" pin="HDMI_TX1_N" pad="178"/>
+<connect gate=".HDMI0" pin="HDMI_TX1_P" pad="176"/>
+<connect gate=".HDMI0" pin="HDMI_TX2_N" pad="172"/>
+<connect gate=".HDMI0" pin="HDMI_TX2_P" pad="170"/>
+<connect gate=".HDMI1" pin="HDMI_CEC" pad="149"/>
+<connect gate=".HDMI1" pin="HDMI_CLK_N" pad="166"/>
+<connect gate=".HDMI1" pin="HDMI_CLK_P" pad="164"/>
+<connect gate=".HDMI1" pin="HDMI_HOTPLUG" pad="143"/>
+<connect gate=".HDMI1" pin="HDMI_SCL" pad="147"/>
+<connect gate=".HDMI1" pin="HDMI_SDA" pad="145"/>
+<connect gate=".HDMI1" pin="HDMI_TX0_N" pad="160"/>
+<connect gate=".HDMI1" pin="HDMI_TX0_P" pad="158"/>
+<connect gate=".HDMI1" pin="HDMI_TX1_N" pad="154"/>
+<connect gate=".HDMI1" pin="HDMI_TX1_P" pad="152"/>
+<connect gate=".HDMI1" pin="HDMI_TX2_N" pad="148"/>
+<connect gate=".HDMI1" pin="HDMI_TX2_P" pad="146"/>
+<connect gate=".PCIE" pin="!PCIE_CLK_REQ" pad="102"/>
+<connect gate=".PCIE" pin="!PCIE_RST" pad="109"/>
+<connect gate=".PCIE" pin="PCIE_CLK_N" pad="112"/>
+<connect gate=".PCIE" pin="PCIE_CLK_P" pad="110"/>
+<connect gate=".PCIE" pin="PCIE_RX_N" pad="118"/>
+<connect gate=".PCIE" pin="PCIE_RX_P" pad="116"/>
+<connect gate=".PCIE" pin="PCIE_TX_N" pad="124"/>
+<connect gate=".PCIE" pin="PCIE_TX_P" pad="122"/>
+<connect gate=".PWR" pin="!BT_DISABLE" pad="91"/>
+<connect gate=".PWR" pin="!EEPROM_WP" pad="20"/>
+<connect gate=".PWR" pin="!EXTRST" pad="100"/>
+<connect gate=".PWR" pin="!PI_LED_ACT" pad="21"/>
+<connect gate=".PWR" pin="!PI_LED_PWR" pad="95"/>
+<connect gate=".PWR" pin="!RPIBOOT" pad="93"/>
+<connect gate=".PWR" pin="!WL_DISABLE" pad="89"/>
+<connect gate=".PWR" pin="1V8_OUT" pad="88 90"/>
+<connect gate=".PWR" pin="3V3_OUT" pad="84 86"/>
+<connect gate=".PWR" pin="5V0" pad="77 79 81 83 85 87"/>
+<connect gate=".PWR" pin="AIP0" pad="96"/>
+<connect gate=".PWR" pin="AIP1" pad="94"/>
+<connect gate=".PWR" pin="CAMERA_GPIO" pad="97"/>
+<connect gate=".PWR" pin="GLOBAL_EN" pad="99"/>
+<connect gate=".PWR" pin="GND" pad="1 2 7 8 13 14 22 23 32 33 42 43 52 53 59 60 65 66 71 74 98 107 108 113 114 119 120 125 126 131 132 137 138 144 150 155 156 161 162 167 168 173 174 179 180 185 186 191 192 197 198"/>
+<connect gate=".PWR" pin="GPIO_VREF" pad="78"/>
+<connect gate=".PWR" pin="RUN_PG" pad="92"/>
+<connect gate=".PWR" pin="VDAC_COMP" pad="111"/>
+<connect gate=".SD" pin="SD_CLK" pad="57"/>
+<connect gate=".SD" pin="SD_CMD" pad="62"/>
+<connect gate=".SD" pin="SD_DAT0" pad="63"/>
+<connect gate=".SD" pin="SD_DAT1" pad="67"/>
+<connect gate=".SD" pin="SD_DAT2" pad="69"/>
+<connect gate=".SD" pin="SD_DAT3" pad="61"/>
+<connect gate=".SD" pin="SD_DAT4" pad="68"/>
+<connect gate=".SD" pin="SD_DAT5" pad="64"/>
+<connect gate=".SD" pin="SD_DAT6" pad="72"/>
+<connect gate=".SD" pin="SD_DAT7" pad="70"/>
+<connect gate=".SD" pin="SD_PWR_ON" pad="75"/>
+<connect gate=".SD" pin="SV_VDD_OVR" pad="73"/>
+<connect gate=".USB" pin="USB_DN" pad="103"/>
+<connect gate=".USB" pin="USB_DP" pad="105"/>
+<connect gate=".USB" pin="USB_OTG_ID" pad="101"/>
 </connects>
 <technologies>
 <technology name=""/>
