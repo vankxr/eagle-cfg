@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -238,11 +238,11 @@
 <wire x1="-2.75" y1="9.5" x2="2.75" y2="10" width="0.2032" layer="51"/>
 <wire x1="-2.75" y1="10" x2="2.75" y2="10" width="0.2032" layer="51"/>
 <wire x1="-2.75" y1="6" x2="2.75" y2="6" width="0.2032" layer="51"/>
-<pad name="GND1" x="-2.54" y="2.54" drill="1.6" diameter="2.54"/>
-<pad name="GND2" x="2.54" y="2.54" drill="1.6" diameter="2.54"/>
-<pad name="GND4" x="2.54" y="-2.54" drill="1.6" diameter="2.54"/>
-<pad name="GND3" x="-2.54" y="-2.54" drill="1.6" diameter="2.54"/>
-<pad name="ANTENNA" x="0" y="0" drill="1.5" diameter="2.54"/>
+<pad name="GND@0" x="-2.54" y="2.54" drill="1.6" diameter="2.54"/>
+<pad name="GND@1" x="2.54" y="2.54" drill="1.6" diameter="2.54"/>
+<pad name="GND@3" x="2.54" y="-2.54" drill="1.6" diameter="2.54"/>
+<pad name="GND@2" x="-2.54" y="-2.54" drill="1.6" diameter="2.54"/>
+<pad name="SIGNAL" x="0" y="0" drill="1.5" diameter="2.54"/>
 <text x="-2.032" y="4.826" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.032" y="4.064" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -385,8 +385,8 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 </device>
 <device name="-SMA" package="SMA">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4"/>
-<connect gate="G$1" pin="SIGNAL" pad="ANTENNA"/>
+<connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
 </connects>
 <technologies>
 <technology name=""/>
