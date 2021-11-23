@@ -731,6 +731,24 @@
 <pin name="!OE0" x="5.08" y="-38.1" length="middle" rot="R180"/>
 <pin name="!OE1" x="5.08" y="-40.64" length="middle" rot="R180"/>
 </symbol>
+<symbol name="F1653">
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="0" y1="-45.72" x2="-25.4" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-45.72" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<pin name="BB_I+" x="-30.48" y="-15.24" length="middle"/>
+<pin name="BB_I-" x="-30.48" y="-20.32" length="middle"/>
+<text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VDD" x="-30.48" y="-2.54" length="middle"/>
+<pin name="LO+" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="LO-" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND" x="-30.48" y="-43.18" length="middle"/>
+<pin name="BB_Q+" x="-30.48" y="-30.48" length="middle"/>
+<pin name="BB_Q-" x="-30.48" y="-35.56" length="middle"/>
+<pin name="STBY" x="-30.48" y="-7.62" length="middle"/>
+<pin name="RF_OUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="F1951*" prefix="U">
@@ -1028,6 +1046,30 @@
 <technologies>
 <technology name="4"/>
 <technology name="5"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="F1653*" prefix="U">
+<gates>
+<gate name="G$1" symbol="F1653" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN24">
+<connects>
+<connect gate="G$1" pin="BB_I+" pad="21"/>
+<connect gate="G$1" pin="BB_I-" pad="22"/>
+<connect gate="G$1" pin="BB_Q+" pad="9"/>
+<connect gate="G$1" pin="BB_Q-" pad="8"/>
+<connect gate="G$1" pin="GND" pad="2 5 6 7 10 11 12 13 14 15 17 19 20 23 25"/>
+<connect gate="G$1" pin="LO+" pad="3"/>
+<connect gate="G$1" pin="LO-" pad="4"/>
+<connect gate="G$1" pin="RF_OUT" pad="16"/>
+<connect gate="G$1" pin="STBY" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="18 24"/>
+</connects>
+<technologies>
+<technology name="NLGI"/>
 </technologies>
 </device>
 </devices>
