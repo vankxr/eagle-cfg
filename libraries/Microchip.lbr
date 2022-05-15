@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6128,6 +6128,86 @@
 <text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="!CLK" x="5.08" y="-12.7" length="middle" direction="out" rot="R180"/>
 </symbol>
+<symbol name="ATSAML21EXXX">
+<pin name="PA00" x="-38.1" y="-2.54" length="middle"/>
+<pin name="PA01" x="-38.1" y="-5.08" length="middle"/>
+<wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="0" x2="-33.02" y2="-114.3" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-114.3" x2="0" y2="-114.3" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-114.3" width="0.254" layer="94"/>
+<pin name="!RESET" x="-38.1" y="-88.9" length="middle"/>
+<pin name="VDDIN@0" x="-38.1" y="-96.52" length="middle"/>
+<pin name="VDDANA@0" x="-38.1" y="-101.6" length="middle"/>
+<pin name="VDDCORE" x="-38.1" y="-111.76" length="middle"/>
+<pin name="VSW" x="-38.1" y="-106.68" length="middle"/>
+<pin name="GND@0" x="5.08" y="-106.68" length="middle" rot="R180"/>
+<text x="-30.734" y="-76.962" size="1.5" layer="100">PA29</text>
+<text x="-30.734" y="-69.342" size="1.5" layer="100">PA26</text>
+<text x="-2.54" y="-33.782" size="1.5" layer="100" align="bottom-right">PB12</text>
+<text x="-2.54" y="-13.462" size="1.5" layer="100" align="bottom-right">PB04</text>
+<text x="-2.54" y="-5.842" size="1.5" layer="100" align="bottom-right">PB01</text>
+<text x="-2.54" y="-3.302" size="1.5" layer="100" align="bottom-right">PB00</text>
+<text x="-2.54" y="-16.002" size="1.5" layer="100" align="bottom-right">PB05</text>
+<text x="-2.54" y="-18.542" size="1.5" layer="100" align="bottom-right">PB06</text>
+<text x="-2.54" y="-21.082" size="1.5" layer="100" align="bottom-right">PB07</text>
+<text x="-30.734" y="-74.422" size="1.5" layer="100">PA28</text>
+<pin name="PA02" x="-38.1" y="-7.62" length="middle"/>
+<pin name="PA03" x="-38.1" y="-10.16" length="middle"/>
+<text x="-33.02" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-33.02" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="PA04" x="-38.1" y="-12.7" length="middle"/>
+<pin name="PA05" x="-38.1" y="-15.24" length="middle"/>
+<pin name="PA06" x="-38.1" y="-17.78" length="middle"/>
+<pin name="PA07" x="-38.1" y="-20.32" length="middle"/>
+<pin name="PA08" x="-38.1" y="-22.86" length="middle"/>
+<pin name="PA09" x="-38.1" y="-25.4" length="middle"/>
+<pin name="PA10" x="-38.1" y="-27.94" length="middle"/>
+<pin name="PA11" x="-38.1" y="-30.48" length="middle"/>
+<pin name="PA14" x="-38.1" y="-38.1" length="middle"/>
+<pin name="PA15" x="-38.1" y="-40.64" length="middle"/>
+<pin name="PA16" x="-38.1" y="-43.18" length="middle"/>
+<pin name="PA17" x="-38.1" y="-45.72" length="middle"/>
+<pin name="PA18" x="-38.1" y="-48.26" length="middle"/>
+<pin name="PA19" x="-38.1" y="-50.8" length="middle"/>
+<pin name="PA22" x="-38.1" y="-58.42" length="middle"/>
+<pin name="PA23" x="-38.1" y="-60.96" length="middle"/>
+<pin name="PA24" x="-38.1" y="-63.5" length="middle"/>
+<pin name="PA25" x="-38.1" y="-66.04" length="middle"/>
+<pin name="PA27" x="-38.1" y="-71.12" length="middle"/>
+<pin name="PA30" x="-38.1" y="-78.74" length="middle"/>
+<pin name="PA31" x="-38.1" y="-81.28" length="middle"/>
+<text x="-2.54" y="-36.322" size="1.5" layer="100" align="bottom-right">PB13</text>
+<text x="-2.54" y="-38.862" size="1.5" layer="100" align="bottom-right">PB14</text>
+<text x="-2.54" y="-41.402" size="1.5" layer="100" align="bottom-right">PB15</text>
+<text x="-2.54" y="-43.942" size="1.5" layer="100" align="bottom-right">PB16\</text>
+<text x="-2.54" y="-46.482" size="1.5" layer="100" align="bottom-right">PB17</text>
+<text x="-2.54" y="-49.022" size="1.5" layer="100" align="bottom-right">PB18</text>
+<text x="-2.54" y="-51.562" size="1.5" layer="100" align="bottom-right">PB19</text>
+<text x="-2.54" y="-54.102" size="1.5" layer="100" align="bottom-right">PB20</text>
+<text x="-2.54" y="-56.642" size="1.5" layer="100" align="bottom-right">PB21</text>
+<text x="-2.54" y="-64.262" size="1.5" layer="100" align="bottom-right">PB24</text>
+<text x="-2.54" y="-66.802" size="1.5" layer="100" align="bottom-right">PB25</text>
+<text x="-2.54" y="-69.342" size="1.5" layer="100" align="bottom-right">PB26</text>
+<text x="-2.54" y="-71.882" size="1.5" layer="100" align="bottom-right">PB27</text>
+<text x="-2.54" y="-74.422" size="1.5" layer="100" align="bottom-right">PB28</text>
+<text x="-2.54" y="-76.962" size="1.5" layer="100" align="bottom-right">PB29</text>
+<text x="-2.54" y="-79.502" size="1.5" layer="100" align="bottom-right">PB30</text>
+<text x="-2.54" y="-82.042" size="1.5" layer="100" align="bottom-right">PB31</text>
+<pin name="GND@1" x="5.08" y="-109.22" length="middle" rot="R180"/>
+<pin name="GND@2" x="5.08" y="-111.76" length="middle" rot="R180"/>
+<text x="-2.54" y="-8.382" size="1.5" layer="100" align="bottom-right">PB02</text>
+<text x="-2.54" y="-10.922" size="1.5" layer="100" align="bottom-right">PB03</text>
+<text x="-2.54" y="-23.622" size="1.5" layer="100" align="bottom-right">PB08</text>
+<text x="-2.54" y="-26.162" size="1.5" layer="100" align="bottom-right">PB09</text>
+<text x="-2.54" y="-28.702" size="1.5" layer="100" align="bottom-right">PB10</text>
+<text x="-2.54" y="-31.242" size="1.5" layer="100" align="bottom-right">PB11</text>
+<text x="-2.54" y="-59.182" size="1.5" layer="100" align="bottom-right">PB22</text>
+<text x="-2.54" y="-61.722" size="1.5" layer="100" align="bottom-right">PB23</text>
+<text x="-30.734" y="-54.102" size="1.5" layer="100">PA20</text>
+<text x="-30.734" y="-56.642" size="1.5" layer="100">PA21</text>
+<text x="-30.734" y="-36.322" size="1.5" layer="100">PA13</text>
+<text x="-30.734" y="-33.782" size="1.5" layer="100">PA12</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -8533,6 +8613,68 @@
 </connects>
 <technologies>
 <technology name="3DA3-333M3333"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATSAML21E" prefix="U">
+<gates>
+<gate name="G$1" symbol="ATSAML21EXXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN32">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="26"/>
+<connect gate="G$1" pin="GND@0" pad="10"/>
+<connect gate="G$1" pin="GND@1" pad="28"/>
+<connect gate="G$1" pin="GND@2" pad="33"/>
+<connect gate="G$1" pin="PA00" pad="1"/>
+<connect gate="G$1" pin="PA01" pad="2"/>
+<connect gate="G$1" pin="PA02" pad="3"/>
+<connect gate="G$1" pin="PA03" pad="4"/>
+<connect gate="G$1" pin="PA04" pad="5"/>
+<connect gate="G$1" pin="PA05" pad="6"/>
+<connect gate="G$1" pin="PA06" pad="7"/>
+<connect gate="G$1" pin="PA07" pad="8"/>
+<connect gate="G$1" pin="PA08" pad="11"/>
+<connect gate="G$1" pin="PA09" pad="12"/>
+<connect gate="G$1" pin="PA10" pad="13"/>
+<connect gate="G$1" pin="PA11" pad="14"/>
+<connect gate="G$1" pin="PA14" pad="15"/>
+<connect gate="G$1" pin="PA15" pad="16"/>
+<connect gate="G$1" pin="PA16" pad="17"/>
+<connect gate="G$1" pin="PA17" pad="18"/>
+<connect gate="G$1" pin="PA18" pad="19"/>
+<connect gate="G$1" pin="PA19" pad="20"/>
+<connect gate="G$1" pin="PA22" pad="21"/>
+<connect gate="G$1" pin="PA23" pad="22"/>
+<connect gate="G$1" pin="PA24" pad="23"/>
+<connect gate="G$1" pin="PA25" pad="24"/>
+<connect gate="G$1" pin="PA27" pad="25"/>
+<connect gate="G$1" pin="PA30" pad="31"/>
+<connect gate="G$1" pin="PA31" pad="32"/>
+<connect gate="G$1" pin="VDDANA@0" pad="9"/>
+<connect gate="G$1" pin="VDDCORE" pad="27"/>
+<connect gate="G$1" pin="VDDIN@0" pad="30"/>
+<connect gate="G$1" pin="VSW" pad="29"/>
+</connects>
+<technologies>
+<technology name="15A-MN"/>
+<technology name="15A-MU"/>
+<technology name="15B-MN"/>
+<technology name="15B-MU"/>
+<technology name="16A-MN"/>
+<technology name="16A-MU"/>
+<technology name="16B-MN"/>
+<technology name="16B-MU"/>
+<technology name="17A-MN"/>
+<technology name="17A-MU"/>
+<technology name="17B-MN"/>
+<technology name="17B-MU"/>
+<technology name="18A-MN"/>
+<technology name="18A-MU"/>
+<technology name="18B-MN"/>
+<technology name="18B-MU"/>
 </technologies>
 </device>
 </devices>
