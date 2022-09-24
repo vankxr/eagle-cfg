@@ -6345,6 +6345,68 @@
 <pin name="GPIO3" x="5.08" y="-48.26" length="middle" rot="R180"/>
 <pin name="GPIO2" x="5.08" y="-45.72" length="middle" rot="R180"/>
 </symbol>
+<symbol name="PAC1951-1">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-40.64" x2="-30.48" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-40.64" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<pin name="SENSE1-" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="-35.56" y="-38.1" length="middle"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="SENSE1+" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="-35.56" y="-15.24" length="middle"/>
+<pin name="SCL" x="-35.56" y="-12.7" length="middle"/>
+<pin name="VDD" x="-35.56" y="-2.54" length="middle"/>
+<pin name="SLOW/!ALERT1!" x="-35.56" y="-20.32" length="middle"/>
+<pin name="GPIO/!ALERT2!" x="-35.56" y="-22.86" length="middle"/>
+<pin name="ADDRSEL" x="-35.56" y="-30.48" length="middle"/>
+<pin name="!PWRDN" x="-35.56" y="-7.62" length="middle"/>
+</symbol>
+<symbol name="PAC1952-1">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-40.64" x2="-30.48" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-40.64" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<pin name="SENSE1-" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="-35.56" y="-38.1" length="middle"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="SENSE1+" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="-35.56" y="-15.24" length="middle"/>
+<pin name="SCL" x="-35.56" y="-12.7" length="middle"/>
+<pin name="VDD" x="-35.56" y="-2.54" length="middle"/>
+<pin name="SLOW/!ALERT1!" x="-35.56" y="-20.32" length="middle"/>
+<pin name="GPIO/!ALERT2!" x="-35.56" y="-22.86" length="middle"/>
+<pin name="ADDRSEL" x="-35.56" y="-30.48" length="middle"/>
+<pin name="!PWRDN" x="-35.56" y="-7.62" length="middle"/>
+<pin name="SENSE2-" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="SENSE2+" x="5.08" y="-12.7" length="middle" rot="R180"/>
+</symbol>
+<symbol name="PAC1954-1">
+<wire x1="-30.48" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="-40.64" x2="-30.48" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-40.64" x2="-30.48" y2="0" width="0.254" layer="94"/>
+<pin name="SENSE1-" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="-35.56" y="-38.1" length="middle"/>
+<text x="-30.48" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-30.48" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="SENSE1+" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="-35.56" y="-15.24" length="middle"/>
+<pin name="SCL" x="-35.56" y="-12.7" length="middle"/>
+<pin name="VDD" x="-35.56" y="-2.54" length="middle"/>
+<pin name="SLOW/!ALERT1!" x="-35.56" y="-20.32" length="middle"/>
+<pin name="GPIO/!ALERT2!" x="-35.56" y="-22.86" length="middle"/>
+<pin name="ADDRSEL" x="-35.56" y="-30.48" length="middle"/>
+<pin name="!PWRDN" x="-35.56" y="-7.62" length="middle"/>
+<pin name="SENSE2-" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="SENSE2+" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="SENSE3-" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="SENSE3+" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="SENSE4-" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="SENSE4+" x="5.08" y="-33.02" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -8896,6 +8958,86 @@
 <technologies>
 <technology name="B"/>
 <technology name="C"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAC1951-1">
+<gates>
+<gate name="G$1" symbol="PAC1951-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN16">
+<connects>
+<connect gate="G$1" pin="!PWRDN" pad="16"/>
+<connect gate="G$1" pin="ADDRSEL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3 7 8 9 10 13 14 17"/>
+<connect gate="G$1" pin="GPIO/!ALERT2!" pad="15"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="SENSE1+" pad="11"/>
+<connect gate="G$1" pin="SENSE1-" pad="12"/>
+<connect gate="G$1" pin="SLOW/!ALERT1!" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAC1952-1">
+<gates>
+<gate name="G$1" symbol="PAC1952-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN16">
+<connects>
+<connect gate="G$1" pin="!PWRDN" pad="16"/>
+<connect gate="G$1" pin="ADDRSEL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3 7 8 9 10 17"/>
+<connect gate="G$1" pin="GPIO/!ALERT2!" pad="15"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="SENSE1+" pad="11"/>
+<connect gate="G$1" pin="SENSE1-" pad="12"/>
+<connect gate="G$1" pin="SENSE2+" pad="13"/>
+<connect gate="G$1" pin="SENSE2-" pad="14"/>
+<connect gate="G$1" pin="SLOW/!ALERT1!" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAC1954-1">
+<gates>
+<gate name="G$1" symbol="PAC1954-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN16">
+<connects>
+<connect gate="G$1" pin="!PWRDN" pad="16"/>
+<connect gate="G$1" pin="ADDRSEL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3 17"/>
+<connect gate="G$1" pin="GPIO/!ALERT2!" pad="15"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="SENSE1+" pad="11"/>
+<connect gate="G$1" pin="SENSE1-" pad="12"/>
+<connect gate="G$1" pin="SENSE2+" pad="13"/>
+<connect gate="G$1" pin="SENSE2-" pad="14"/>
+<connect gate="G$1" pin="SENSE3+" pad="8"/>
+<connect gate="G$1" pin="SENSE3-" pad="7"/>
+<connect gate="G$1" pin="SENSE4+" pad="10"/>
+<connect gate="G$1" pin="SENSE4-" pad="9"/>
+<connect gate="G$1" pin="SLOW/!ALERT1!" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
