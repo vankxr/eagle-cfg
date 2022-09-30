@@ -3955,7 +3955,7 @@
 <pin name="SYNC/PWM_CFG" x="5.08" y="-30.48" length="middle" rot="R180"/>
 <pin name="WP" x="-53.34" y="-20.32" length="middle"/>
 <pin name="PGND" x="-53.34" y="-35.56" length="middle"/>
-<pin name="!ALERT" x="-53.34" y="-17.78" length="middle"/>
+<pin name="!ALERT" x="-53.34" y="-15.24" length="middle"/>
 </symbol>
 <symbol name="LTC6419">
 <wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -6123,8 +6123,8 @@
 <deviceset name="LT7182S" prefix="U">
 <gates>
 <gate name=".CNTRL" symbol="LT7182S-CNTRL" x="0" y="0"/>
-<gate name=".1" symbol="LT7182S-REG" x="43.18" y="0"/>
-<gate name=".0" symbol="LT7182S-REG" x="-66.04" y="0"/>
+<gate name=".1" symbol="LT7182S-REG" x="43.18" y="0" swaplevel="1"/>
+<gate name=".0" symbol="LT7182S-REG" x="-66.04" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="LQFN40_ASYM_CORNER">
