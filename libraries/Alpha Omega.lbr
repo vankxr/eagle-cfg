@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -180,6 +180,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
@@ -224,6 +226,24 @@
 <circle x="-0.45" y="1.081" radius="0.254" width="0" layer="21"/>
 <text x="-1.214" y="1.8825" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.214" y="-3.089" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SOIC8">
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.127" layer="51"/>
+<smd name="1" x="-1.905" y="-2.5275" dx="0.6" dy="1.194" layer="1"/>
+<text x="-3.048" y="-1.778" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.318" y="-1.778" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<circle x="-1.734" y="-0.817" radius="0.3" width="0" layer="21"/>
+<smd name="2" x="-0.635" y="-2.5275" dx="0.6" dy="1.194" layer="1"/>
+<smd name="3" x="0.635" y="-2.5275" dx="0.6" dy="1.194" layer="1"/>
+<smd name="4" x="1.905" y="-2.5275" dx="0.6" dy="1.194" layer="1"/>
+<smd name="5" x="1.905" y="2.5275" dx="0.6" dy="1.194" layer="1" rot="R180"/>
+<smd name="6" x="0.635" y="2.5275" dx="0.6" dy="1.194" layer="1" rot="R180"/>
+<smd name="7" x="-0.635" y="2.5275" dx="0.6" dy="1.194" layer="1" rot="R180"/>
+<smd name="8" x="-1.905" y="2.5275" dx="0.6" dy="1.194" layer="1" rot="R180"/>
+<wire x1="2.4" y1="-1.5" x2="-2.4" y2="-1.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -367,6 +387,27 @@
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AO4805" prefix="Q">
+<gates>
+<gate name=".1" symbol="PMOS" x="-12.7" y="0" swaplevel="1"/>
+<gate name=".2" symbol="PMOS" x="7.62" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate=".1" pin="D" pad="7 8"/>
+<connect gate=".1" pin="G" pad="2"/>
+<connect gate=".1" pin="S" pad="1"/>
+<connect gate=".2" pin="D" pad="5 6"/>
+<connect gate=".2" pin="G" pad="4"/>
+<connect gate=".2" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
