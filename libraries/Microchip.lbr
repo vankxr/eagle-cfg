@@ -4398,6 +4398,53 @@
 <smd name="39" x="-1.75" y="3" dx="0.3" dy="0.8" layer="1"/>
 <smd name="40" x="-2.25" y="3" dx="0.3" dy="0.8" layer="1"/>
 </package>
+<package name="VQFN28">
+<smd name="1" x="-2.45" y="1.5" dx="0.85" dy="0.3" layer="1"/>
+<smd name="29" x="0" y="0" dx="3.35" dy="3.35" layer="1" cream="no"/>
+<text x="-3.15" y="3.47" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.9" y="-4.77" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="31"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.9" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="1.9" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.9" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.9" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-1.9" y2="2.5" width="0.127" layer="21"/>
+<circle x="-3.541" y="2.559" radius="0.3" width="0" layer="21"/>
+<smd name="2" x="-2.45" y="1" dx="0.85" dy="0.3" layer="1"/>
+<smd name="3" x="-2.45" y="0.5" dx="0.85" dy="0.3" layer="1"/>
+<smd name="4" x="-2.45" y="0" dx="0.85" dy="0.3" layer="1"/>
+<smd name="5" x="-2.45" y="-0.5" dx="0.85" dy="0.3" layer="1"/>
+<smd name="6" x="-2.45" y="-1" dx="0.85" dy="0.3" layer="1"/>
+<smd name="7" x="-2.45" y="-1.5" dx="0.85" dy="0.3" layer="1"/>
+<smd name="8" x="-1.5" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="9" x="-1" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="-0.5" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="11" x="0" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="12" x="0.5" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="13" x="1" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="14" x="1.5" y="-2.45" dx="0.85" dy="0.3" layer="1" rot="R90"/>
+<smd name="15" x="2.45" y="-1.5" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="16" x="2.45" y="-1" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="17" x="2.45" y="-0.5" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="18" x="2.45" y="0" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="19" x="2.45" y="0.5" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="20" x="2.45" y="1" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="21" x="2.45" y="1.5" dx="0.85" dy="0.3" layer="1" rot="R180"/>
+<smd name="22" x="1.5" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="23" x="1" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="24" x="0.5" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="25" x="0" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="26" x="-0.5" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="27" x="-1" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+<smd name="28" x="-1.5" y="2.45" dx="0.85" dy="0.3" layer="1" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MIC4682">
@@ -6428,6 +6475,42 @@
 <text x="-30.734" y="-36.322" size="1.5" layer="100">PA13</text>
 <text x="-30.734" y="-33.782" size="1.5" layer="100">PA12</text>
 <pin name="PA28" x="5.08" y="-33.02" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MCP19119">
+<wire x1="-25.4" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="0" y1="-68.58" x2="-25.4" y2="-68.58" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-68.58" x2="-25.4" y2="0" width="0.254" layer="94"/>
+<text x="-25.4" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-25.4" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="-30.48" y="-2.54" length="middle"/>
+<pin name="BOOT" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="LDRV" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="PHASE" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="+ISEN" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="GND" x="-30.48" y="-66.04" length="middle"/>
+<pin name="HDRV" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="-ISEN" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="+VSEN" x="5.08" y="-60.96" length="middle" rot="R180"/>
+<pin name="-VSEN" x="5.08" y="-66.04" length="middle" rot="R180"/>
+<pin name="PGND" x="-30.48" y="-63.5" length="middle"/>
+<pin name="VDD" x="-30.48" y="-55.88" length="middle"/>
+<pin name="VDRV" x="-30.48" y="-58.42" length="middle"/>
+<pin name="GPA0" x="-30.48" y="-10.16" length="middle"/>
+<pin name="GPA1" x="-30.48" y="-12.7" length="middle"/>
+<pin name="GPA2" x="-30.48" y="-15.24" length="middle"/>
+<pin name="GPA3" x="-30.48" y="-17.78" length="middle"/>
+<pin name="GPA4" x="-30.48" y="-20.32" length="middle"/>
+<pin name="GPA5/!MCLR" x="-30.48" y="-22.86" length="middle"/>
+<pin name="GPA6" x="-30.48" y="-25.4" length="middle"/>
+<pin name="GPA7/SCL" x="-30.48" y="-27.94" length="middle"/>
+<pin name="GPB0/SDA" x="-30.48" y="-33.02" length="middle"/>
+<pin name="GPB1" x="-30.48" y="-35.56" length="middle"/>
+<pin name="GPB2" x="-30.48" y="-38.1" length="middle"/>
+<pin name="GPB4/ICSPDAT" x="-30.48" y="-40.64" length="middle"/>
+<pin name="GPB5/ICSPCLK" x="-30.48" y="-43.18" length="middle"/>
+<pin name="GPB6" x="-30.48" y="-45.72" length="middle"/>
+<pin name="GPB7" x="-30.48" y="-48.26" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9208,6 +9291,48 @@
 <connect gate="G$1" pin="VDDANA" pad="9"/>
 <connect gate="G$1" pin="VDDCORE" pad="29"/>
 <connect gate="G$1" pin="VDDIN" pad="30"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP19119">
+<gates>
+<gate name="G$1" symbol="MCP19119" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN28">
+<connects>
+<connect gate="G$1" pin="+ISEN" pad="23"/>
+<connect gate="G$1" pin="+VSEN" pad="24"/>
+<connect gate="G$1" pin="-ISEN" pad="22"/>
+<connect gate="G$1" pin="-VSEN" pad="25"/>
+<connect gate="G$1" pin="BOOT" pad="19"/>
+<connect gate="G$1" pin="GND" pad="12 29"/>
+<connect gate="G$1" pin="GPA0" pad="1"/>
+<connect gate="G$1" pin="GPA1" pad="2"/>
+<connect gate="G$1" pin="GPA2" pad="3"/>
+<connect gate="G$1" pin="GPA3" pad="5"/>
+<connect gate="G$1" pin="GPA4" pad="9"/>
+<connect gate="G$1" pin="GPA5/!MCLR" pad="8"/>
+<connect gate="G$1" pin="GPA6" pad="7"/>
+<connect gate="G$1" pin="GPA7/SCL" pad="6"/>
+<connect gate="G$1" pin="GPB0/SDA" pad="10"/>
+<connect gate="G$1" pin="GPB1" pad="26"/>
+<connect gate="G$1" pin="GPB2" pad="28"/>
+<connect gate="G$1" pin="GPB4/ICSPDAT" pad="4"/>
+<connect gate="G$1" pin="GPB5/ICSPCLK" pad="27"/>
+<connect gate="G$1" pin="GPB6" pad="21"/>
+<connect gate="G$1" pin="GPB7" pad="11"/>
+<connect gate="G$1" pin="HDRV" pad="18"/>
+<connect gate="G$1" pin="LDRV" pad="15"/>
+<connect gate="G$1" pin="PGND" pad="14"/>
+<connect gate="G$1" pin="PHASE" pad="17"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VDRV" pad="16"/>
+<connect gate="G$1" pin="VIN" pad="13"/>
 </connects>
 <technologies>
 <technology name=""/>
