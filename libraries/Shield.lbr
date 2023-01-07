@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -262,7 +262,7 @@
 <smd name="27" x="44.3" y="18.65" dx="3.8" dy="1" layer="1" rot="R90"/>
 <smd name="28" x="44.3" y="24.65" dx="3.8" dy="1" layer="1" rot="R90"/>
 </package>
-<package name="2118730-2">
+<package name="2118732">
 <smd name="1" x="1.85" y="0.5" dx="3.7" dy="1" layer="1"/>
 <text x="0.6" y="39.3" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="0.4" y1="0.4" x2="51.2" y2="0.4" width="0.127" layer="51"/>
@@ -343,7 +343,7 @@
 <technology name=""/>
 </technologies>
 </device>
-<device name="-TE-2118730-2" package="2118730-2">
+<device name="-TE-2118732" package="2118732">
 <connects>
 <connect gate="G$1" pin="GND" pad="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32"/>
 </connects>
