@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -5157,19 +5157,19 @@
 </symbol>
 <symbol name="MCP1631X">
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="-30.48" x2="-20.32" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-30.48" x2="-20.32" y2="0" width="0.254" layer="94"/>
-<pin name="AGND" x="-25.4" y="-25.4" length="middle"/>
-<pin name="PGND" x="-25.4" y="-27.94" length="middle"/>
-<pin name="FB" x="5.08" y="-27.94" length="middle" rot="R180"/>
-<pin name="SW" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-27.94" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="AGND" x="-25.4" y="-22.86" length="middle"/>
+<pin name="PGND" x="-25.4" y="-25.4" length="middle"/>
+<pin name="FB" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="SW" x="5.08" y="-2.54" length="middle" rot="R180"/>
 <pin name="VIN" x="-25.4" y="-2.54" length="middle"/>
-<pin name="EN" x="-25.4" y="-7.62" length="middle"/>
+<pin name="EN" x="-25.4" y="-10.16" length="middle"/>
 <text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="-25.4" y="-17.78" length="middle"/>
-<pin name="BOOST" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="BOOST" x="5.08" y="-10.16" length="middle" rot="R180"/>
 </symbol>
 <symbol name="MCP125X">
 <pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
@@ -7143,7 +7143,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY1634" prefix="MLF">
+<deviceset name="ATTINY1634" prefix="U">
 <gates>
 <gate name="G$1" symbol="ATTINY1634" x="0" y="0"/>
 </gates>
