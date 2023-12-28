@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -23777,7 +23777,7 @@
 <rectangle x1="-1.7375" y1="-0.2625" x2="-0.4125" y2="-0.2375" layer="21"/>
 <rectangle x1="-1.6375" y1="-0.2375" x2="-0.5625" y2="-0.2125" layer="21"/>
 <rectangle x1="-1.4375" y1="-0.2125" x2="-0.7875" y2="-0.1875" layer="21"/>
-<text x="-0.9" y="-5" size="1.778" layer="21" font="vector" ratio="15" rot="R350">ilva</text>
+<text x="-0.9" y="-5" size="1.778" layer="21" font="vector" ratio="15" rot="SR350">ilva</text>
 </package>
 <package name="JSILVA_10MM">
 <rectangle x1="-5.925" y1="-13.025" x2="-5.125" y2="-12.975" layer="21"/>
@@ -24293,7 +24293,7 @@
 <rectangle x1="-4.025" y1="-0.675" x2="-1.375" y2="-0.625" layer="21"/>
 <rectangle x1="-3.825" y1="-0.625" x2="-1.675" y2="-0.575" layer="21"/>
 <rectangle x1="-3.425" y1="-0.575" x2="-2.125" y2="-0.525" layer="21"/>
-<text x="-2.4" y="-10.2" size="3.81" layer="21" font="vector" ratio="15" rot="R350">ilva</text>
+<text x="-2.4" y="-10.2" size="3.81" layer="21" font="vector" ratio="15" rot="SR350">ilva</text>
 </package>
 <package name="EFAPEL_5MM">
 <rectangle x1="1.275" y1="-0.025" x2="1.425" y2="0.025" layer="21"/>
