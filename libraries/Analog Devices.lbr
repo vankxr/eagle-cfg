@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -4298,6 +4298,20 @@
 <pin name="VDET" x="5.08" y="-76.2" length="middle" direction="in" rot="R180"/>
 <pin name="VCTRL" x="5.08" y="-66.04" length="middle" direction="in" rot="R180"/>
 </symbol>
+<symbol name="ADP7102">
+<pin name="VOUT" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-27.94" y="-20.32" length="middle"/>
+<pin name="VIN" x="-27.94" y="-2.54" length="middle"/>
+<wire x1="-22.86" y1="-22.86" x2="-22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="-22.86" y2="-22.86" width="0.254" layer="94"/>
+<text x="-22.86" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-22.86" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="EN/UVLO" x="-27.94" y="-7.62" length="middle"/>
+<pin name="SENSE" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="PG" x="-27.94" y="-15.24" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTC4314" prefix="U">
@@ -6598,6 +6612,32 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADP7102ACPZ" prefix="U">
+<gates>
+<gate name="G$1" symbol="ADP7102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LFCSP8_3X3">
+<connects>
+<connect gate="G$1" pin="EN/UVLO" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3 6 9" route="any"/>
+<connect gate="G$1" pin="PG" pad="7"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="-1.5"/>
+<technology name="-1.8"/>
+<technology name="-2.5"/>
+<technology name="-3.0"/>
+<technology name="-5.0"/>
+<technology name="-9.0"/>
 </technologies>
 </device>
 </devices>
