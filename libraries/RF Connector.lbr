@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -249,13 +249,15 @@
 <wire x1="-4.56" y1="12" x2="4.56" y2="12" width="0.127" layer="51"/>
 <wire x1="4.56" y1="12" x2="4.56" y2="8.89" width="0.127" layer="51"/>
 <text x="0" y="12.2" size="0.8128" layer="51" ratio="18" align="bottom-center">MALE NUT</text>
+<circle x="0" y="0" radius="2.5" width="0" layer="42"/>
+<circle x="0" y="0" radius="2.5" width="0" layer="41"/>
 </package>
 <package name="SMA-EDGE">
 <smd name="GND@0" x="-2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
 <smd name="SIG" x="0" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
 <smd name="GND@1" x="2.54" y="0" dx="1.524" dy="4.064" layer="1" cream="no"/>
-<smd name="GND@2" x="-2.54" y="0" dx="1.524" dy="4.064" layer="16"/>
-<smd name="GND@3" x="2.54" y="0" dx="1.524" dy="4.064" layer="16"/>
+<smd name="GND@2" x="-2.54" y="0" dx="1.524" dy="4.064" layer="16" cream="no"/>
+<smd name="GND@3" x="2.54" y="0" dx="1.524" dy="4.064" layer="16" cream="no"/>
 <text x="-3.81" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-5.015" y="-5.96" size="0.3048" layer="51" rot="R90">PCB Edge</text>
 <wire x1="-4.655" y1="-4.3" x2="-4.355" y2="-3.6" width="0.08" layer="51"/>
@@ -377,6 +379,8 @@
 <text x="-2.032" y="4.064" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 <text x="4.8" y="0" size="0.8128" layer="51" ratio="18" rot="R270" align="bottom-center">MALE NUT</text>
 <circle x="0" y="0" radius="4.56" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="2.5" width="0" layer="41"/>
+<circle x="0" y="0" radius="2.5" width="0" layer="42"/>
 </package>
 <package name="F-EDGE">
 <smd name="GND@0" x="-4.445" y="0" dx="2.286" dy="4.064" layer="1" cream="no"/>
