@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -197,7 +197,7 @@
 <smd name="27" x="0.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
 <smd name="26" x="1.25" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
 <smd name="25" x="1.75" y="2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
-<smd name="33" x="0" y="0" dx="3.45" dy="3.45" layer="1" cream="no"/>
+<smd name="33" x="0" y="0" dx="3.7" dy="3.7" layer="1" cream="no"/>
 <smd name="9" x="-1.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
 <smd name="10" x="-1.25" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
 <smd name="11" x="-0.75" y="-2.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
@@ -236,7 +236,7 @@
 <wire x1="-2.1" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="2.5" x2="-2.5" y2="2.1" width="0.127" layer="21"/>
 <circle x="-3.212" y="2.766" radius="0.3" width="0" layer="21"/>
-<rectangle x1="-1.15625625" y1="-1.15625625" x2="1.15" y2="1.15" layer="31"/>
+<rectangle x1="-1.3" y1="-1.3" x2="1.3" y2="1.3" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -280,6 +280,47 @@
 <wire x1="0" y1="0" x2="-35.56" y2="0" width="0.254" layer="94"/>
 <text x="-35.56" y="3.556" size="1.27" layer="95">&gt;NAME</text>
 <text x="-35.56" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ESP32-C3">
+<pin name="VDDA@0" x="-40.64" y="-7.62" length="middle"/>
+<pin name="LNA_IN" x="-40.64" y="-2.54" length="middle"/>
+<pin name="VDD3P3@0" x="-40.64" y="-12.7" length="middle"/>
+<pin name="VDD3P3@1" x="-40.64" y="-15.24" length="middle"/>
+<pin name="CHIP_EN" x="-40.64" y="-25.4" length="middle"/>
+<pin name="VDD3P3_CPU" x="-40.64" y="-17.78" length="middle"/>
+<pin name="VDD3P3_RTC" x="-40.64" y="-20.32" length="middle"/>
+<pin name="XTAL_N" x="-40.64" y="-33.02" length="middle"/>
+<pin name="XTAL_P" x="-40.64" y="-30.48" length="middle"/>
+<pin name="VDD_SPI/GPIO11" x="5.08" y="-30.48" length="middle" rot="R180"/>
+<pin name="VDDA@1" x="-40.64" y="-10.16" length="middle"/>
+<pin name="GND" x="-40.64" y="-55.88" length="middle"/>
+<wire x1="-35.56" y1="0" x2="-35.56" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="-35.56" y1="-58.42" x2="0" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="0" y1="-58.42" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-35.56" y2="0" width="0.254" layer="94"/>
+<text x="-35.56" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-35.56" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="XTAL_32K_N/GPIO1" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="XTAL_32K_P/GPIO0" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO2" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO3" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO8" x="5.08" y="-22.86" length="middle" rot="R180"/>
+<pin name="GPIO10" x="5.08" y="-27.94" length="middle" rot="R180"/>
+<pin name="GPIO9" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="MTMS/GPIO4" x="5.08" y="-12.7" length="middle" rot="R180"/>
+<pin name="MTDI/GPIO5" x="5.08" y="-15.24" length="middle" rot="R180"/>
+<pin name="MTCK/GPIO6" x="5.08" y="-17.78" length="middle" rot="R180"/>
+<pin name="MTDO/GPIO7" x="5.08" y="-20.32" length="middle" rot="R180"/>
+<pin name="SPIHD/GPIO12" x="5.08" y="-33.02" length="middle" rot="R180"/>
+<pin name="SPIWP/GPIO13" x="5.08" y="-35.56" length="middle" rot="R180"/>
+<pin name="SPICS0/GPIO14" x="5.08" y="-38.1" length="middle" rot="R180"/>
+<pin name="SPICLK/GPIO15" x="5.08" y="-40.64" length="middle" rot="R180"/>
+<pin name="SPID/GPIO16" x="5.08" y="-43.18" length="middle" rot="R180"/>
+<pin name="SPIQ/GPIO17" x="5.08" y="-45.72" length="middle" rot="R180"/>
+<pin name="GPIO18" x="5.08" y="-48.26" length="middle" rot="R180"/>
+<pin name="GPIO19" x="5.08" y="-50.8" length="middle" rot="R180"/>
+<pin name="U0RXD/GPIO20" x="5.08" y="-53.34" length="middle" rot="R180"/>
+<pin name="U0TXD/GPIO21" x="5.08" y="-55.88" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -327,6 +368,54 @@
 <technologies>
 <technology name="66EX"/>
 <technology name="85"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP32-C3*" prefix="U">
+<gates>
+<gate name="G$1" symbol="ESP32-C3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN32">
+<connects>
+<connect gate="G$1" pin="CHIP_EN" pad="7"/>
+<connect gate="G$1" pin="GND" pad="33"/>
+<connect gate="G$1" pin="GPIO10" pad="16"/>
+<connect gate="G$1" pin="GPIO18" pad="25"/>
+<connect gate="G$1" pin="GPIO19" pad="26"/>
+<connect gate="G$1" pin="GPIO2" pad="6"/>
+<connect gate="G$1" pin="GPIO3" pad="8"/>
+<connect gate="G$1" pin="GPIO8" pad="14"/>
+<connect gate="G$1" pin="GPIO9" pad="15"/>
+<connect gate="G$1" pin="LNA_IN" pad="1"/>
+<connect gate="G$1" pin="MTCK/GPIO6" pad="12"/>
+<connect gate="G$1" pin="MTDI/GPIO5" pad="10"/>
+<connect gate="G$1" pin="MTDO/GPIO7" pad="13"/>
+<connect gate="G$1" pin="MTMS/GPIO4" pad="9"/>
+<connect gate="G$1" pin="SPICLK/GPIO15" pad="22"/>
+<connect gate="G$1" pin="SPICS0/GPIO14" pad="21"/>
+<connect gate="G$1" pin="SPID/GPIO16" pad="23"/>
+<connect gate="G$1" pin="SPIHD/GPIO12" pad="19"/>
+<connect gate="G$1" pin="SPIQ/GPIO17" pad="24"/>
+<connect gate="G$1" pin="SPIWP/GPIO13" pad="20"/>
+<connect gate="G$1" pin="U0RXD/GPIO20" pad="27"/>
+<connect gate="G$1" pin="U0TXD/GPIO21" pad="28"/>
+<connect gate="G$1" pin="VDD3P3@0" pad="2"/>
+<connect gate="G$1" pin="VDD3P3@1" pad="3"/>
+<connect gate="G$1" pin="VDD3P3_CPU" pad="17"/>
+<connect gate="G$1" pin="VDD3P3_RTC" pad="11"/>
+<connect gate="G$1" pin="VDDA@0" pad="31"/>
+<connect gate="G$1" pin="VDDA@1" pad="32"/>
+<connect gate="G$1" pin="VDD_SPI/GPIO11" pad="18"/>
+<connect gate="G$1" pin="XTAL_32K_N/GPIO1" pad="5"/>
+<connect gate="G$1" pin="XTAL_32K_P/GPIO0" pad="4"/>
+<connect gate="G$1" pin="XTAL_N" pad="29"/>
+<connect gate="G$1" pin="XTAL_P" pad="30"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="FH4"/>
 </technologies>
 </device>
 </devices>
