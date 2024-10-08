@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
@@ -399,8 +399,8 @@
 <rectangle x1="1.1" y1="-2.1" x2="3.2" y2="2.1" layer="39"/>
 </package>
 <package name="HK-R-SR2-SA">
-<pad name="GND@1" x="-3.58" y="0" drill="1.65" stop="no" thermals="no"/>
-<pad name="GND@2" x="3.58" y="0" drill="1.65" stop="no" thermals="no"/>
+<pad name="GND@1" x="-3.58" y="0" drill="1.65" thermals="no"/>
+<pad name="GND@2" x="3.58" y="0" drill="1.65" thermals="no"/>
 <smd name="SIG" x="0" y="0" dx="0.41" dy="0.41" layer="1" roundness="100" stop="no" cream="no"/>
 <polygon width="0" layer="1">
 <vertex x="-0.145" y="0"/>
