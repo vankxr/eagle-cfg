@@ -1,0 +1,137 @@
+{
+    "author": {
+        "email": "2222901@my.ipleiria.pt",
+        "name": "Joao Silva"
+    },
+    "description": {
+        "EN": "CAM job description goes here."
+    },
+    "output_type": "zip",
+    "outputs": [
+        {
+            "filename_prefix": "outputs",
+            "format_specifier": {
+                "decimal": 4,
+                "integer": 3
+            },
+            "generate_job_file": true,
+            "output_type": "gerber",
+            "outputs": [
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Board Outline",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.gko",
+                    "layers": [
+                        46,
+                        20
+                    ],
+                    "milling": false,
+                    "name": "Board Outline",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Solder stop mask CMP",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.gtp",
+                    "layers": [
+                        31
+                    ],
+                    "milling": false,
+                    "name": "TOP Solder paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Solder stop mask CMP",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.gbp",
+                    "layers": [
+                        32
+                    ],
+                    "milling": false,
+                    "name": "BOTTOM Solder paste",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                }
+            ],
+            "version": "RS274X"
+        },
+        {
+            "format_specifier": {
+                "decimal": 3,
+                "integer": 3
+            },
+            "output_type": "drill",
+            "outputs": [
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "drills": {
+                        "NPTH": true,
+                        "PTH": true,
+                        "VIA": true
+                    },
+                    "filename_format": "%N.drd",
+                    "layers": {
+                        "from": 1,
+                        "to": 16
+                    },
+                    "name": "Drill",
+                    "type": "excellon"
+                }
+            ]
+        },
+        {
+            "filename_prefix": "CAMOutputs/Assembly",
+            "output_type": "assembly",
+            "outputs": [
+            ]
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrawingFiles",
+            "output_type": "drawing",
+            "outputs": [
+            ]
+        }
+    ],
+    "timestamp": "2024-12-07T12:27:10",
+    "type": "EAGLE CAM job",
+    "units": "metric",
+    "version": "8.6.1"
+}

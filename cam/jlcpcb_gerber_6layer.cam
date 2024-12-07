@@ -80,8 +80,7 @@
                     "filename_format": "%N.gto",
                     "layers": [
                         21,
-                        25,
-                        200
+                        25
                     ],
                     "milling": false,
                     "name": "TOP Silk screen",
@@ -268,8 +267,7 @@
                     "filename_format": "%N.gbo",
                     "layers": [
                         22,
-                        26,
-                        201
+                        26
                     ],
                     "milling": false,
                     "name": "BOTTOM Silk screen",
@@ -366,7 +364,7 @@
             ]
         }
     ],
-    "timestamp": "2022-09-29T02:53:39",
+    "timestamp": "2024-12-07T12:25:47",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"

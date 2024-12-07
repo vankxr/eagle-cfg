@@ -141,7 +141,7 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Ground",
+                        "description": "Inner layer 1",
                         "file_function": "Other"
                     },
                     "filename_format": "%N.g2l",
@@ -165,17 +165,113 @@
                     },
                     "board_outline": false,
                     "config": {
-                        "description": "Power",
+                        "description": "Inner layer 2",
                         "file_function": "Other"
                     },
                     "filename_format": "%N.g3l",
                     "layers": [
                         17,
                         18,
-                        15
+                        3
                     ],
                     "milling": false,
                     "name": "L3 Copper",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Inner layer 3",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.g4l",
+                    "layers": [
+                        17,
+                        18,
+                        4
+                    ],
+                    "milling": false,
+                    "name": "L4 Copper",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Inner layer 4",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.g5l",
+                    "layers": [
+                        17,
+                        18,
+                        13
+                    ],
+                    "milling": false,
+                    "name": "L5 Copper",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Inner layer 5",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.g6l",
+                    "layers": [
+                        17,
+                        18,
+                        14
+                    ],
+                    "milling": false,
+                    "name": "L6 Copper",
+                    "polarity": "positive",
+                    "type": "gerber_layer"
+                },
+                {
+                    "advanced_options": {
+                        "mirror": false,
+                        "offset_x": 0,
+                        "offset_y": 0,
+                        "rotate": false,
+                        "upside_down": false
+                    },
+                    "board_outline": false,
+                    "config": {
+                        "description": "Inner layer 6",
+                        "file_function": "Other"
+                    },
+                    "filename_format": "%N.g7l",
+                    "layers": [
+                        17,
+                        18,
+                        15
+                    ],
+                    "milling": false,
+                    "name": "L7 Copper",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 },
@@ -316,7 +412,7 @@
             ]
         }
     ],
-    "timestamp": "2024-12-07T12:25:29",
+    "timestamp": "2024-12-07T12:24:37",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"

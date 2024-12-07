@@ -1,6 +1,6 @@
 {
     "author": {
-        "email": "joao.silva@cec-dti.com",
+        "email": "2222901@my.ipleiria.pt",
         "name": "Joao Silva"
     },
     "description": {
@@ -80,8 +80,7 @@
                     "filename_format": "%N.gto",
                     "layers": [
                         21,
-                        25,
-                        200
+                        25
                     ],
                     "milling": false,
                     "name": "TOP Silk screen",
@@ -172,8 +171,7 @@
                     "filename_format": "%N.gbo",
                     "layers": [
                         22,
-                        26,
-                        201
+                        26
                     ],
                     "milling": false,
                     "name": "BOTTOM Silk screen",
@@ -270,7 +268,7 @@
             ]
         }
     ],
-    "timestamp": "2019-10-07T12:41:55",
+    "timestamp": "2024-12-07T12:25:05",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "8.6.1"
