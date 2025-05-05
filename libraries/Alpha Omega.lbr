@@ -415,6 +415,27 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="AOSD32334C" prefix="Q">
+<gates>
+<gate name=".1" symbol="NMOS" x="-12.7" y="0"/>
+<gate name=".2" symbol="NMOS" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate=".1" pin="D" pad="5 6"/>
+<connect gate=".1" pin="G" pad="4"/>
+<connect gate=".1" pin="S" pad="3"/>
+<connect gate=".2" pin="D" pad="7 8"/>
+<connect gate=".2" pin="G" pad="2"/>
+<connect gate=".2" pin="S" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

@@ -6632,6 +6632,31 @@
 <pin name="PG" x="-25.4" y="-20.32" length="middle"/>
 <pin name="BOOST" x="5.08" y="-15.24" length="middle" rot="R180"/>
 </symbol>
+<symbol name="MIC442X_BUF">
+<text x="-5.08" y="5.08" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="5.08" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="MIC442X_PWR">
+<pin name="VS" x="0" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
+<text x="-0.127" y="3.683" size="1.27" layer="95" align="center">VS</text>
+<text x="0" y="-3.683" size="1.27" layer="95" align="center">GND</text>
+<text x="0" y="0" size="1.778" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="MIC442X_NOT">
+<text x="-5.08" y="5.08" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
+<pin name="Y" x="5.08" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MIC4682" prefix="U">
@@ -9588,6 +9613,72 @@
 <technology name="4"/>
 <technology name="5"/>
 <technology name="6"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC4426" prefix="U">
+<gates>
+<gate name=".PWR" symbol="MIC442X_PWR" x="0" y="0"/>
+<gate name=".A" symbol="MIC442X_NOT" x="-15.24" y="7.62"/>
+<gate name=".B" symbol="MIC442X_NOT" x="-15.24" y="-7.62"/>
+</gates>
+<devices>
+<device name="BMM" package="MSOP8">
+<connects>
+<connect gate=".A" pin="A" pad="2"/>
+<connect gate=".A" pin="Y" pad="7"/>
+<connect gate=".B" pin="A" pad="4"/>
+<connect gate=".B" pin="Y" pad="5"/>
+<connect gate=".PWR" pin="GND" pad="3"/>
+<connect gate=".PWR" pin="VS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC4427" prefix="U">
+<gates>
+<gate name=".PWR" symbol="MIC442X_PWR" x="0" y="0"/>
+<gate name=".A" symbol="MIC442X_BUF" x="-15.24" y="7.62"/>
+<gate name=".B" symbol="MIC442X_BUF" x="-15.24" y="-7.62"/>
+</gates>
+<devices>
+<device name="BMM" package="MSOP8">
+<connects>
+<connect gate=".A" pin="A" pad="2"/>
+<connect gate=".A" pin="Y" pad="7"/>
+<connect gate=".B" pin="A" pad="4"/>
+<connect gate=".B" pin="Y" pad="5"/>
+<connect gate=".PWR" pin="GND" pad="3"/>
+<connect gate=".PWR" pin="VS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC4428" prefix="U">
+<gates>
+<gate name=".PWR" symbol="MIC442X_PWR" x="0" y="0"/>
+<gate name=".A" symbol="MIC442X_NOT" x="-15.24" y="7.62"/>
+<gate name=".B" symbol="MIC442X_BUF" x="-15.24" y="-7.62"/>
+</gates>
+<devices>
+<device name="BMM" package="MSOP8">
+<connects>
+<connect gate=".A" pin="A" pad="2"/>
+<connect gate=".A" pin="Y" pad="7"/>
+<connect gate=".B" pin="A" pad="4"/>
+<connect gate=".B" pin="Y" pad="5"/>
+<connect gate=".PWR" pin="GND" pad="3"/>
+<connect gate=".PWR" pin="VS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
