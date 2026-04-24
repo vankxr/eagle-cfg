@@ -9683,6 +9683,26 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="MIC6211" prefix="U">
+<gates>
+<gate name=".1" symbol="OP_AMP" x="-12.7" y="0"/>
+<gate name=".PWR" symbol="OP_AMP_PWR" x="12.7" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate=".1" pin="+IN" pad="3"/>
+<connect gate=".1" pin="-IN" pad="4"/>
+<connect gate=".1" pin="OUT" pad="1"/>
+<connect gate=".PWR" pin="V+" pad="5"/>
+<connect gate=".PWR" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
