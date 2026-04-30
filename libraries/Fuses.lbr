@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -304,6 +304,28 @@
 <text x="-2.1" y="2.2" size="0.4064" layer="27">&gt;VALUE</text>
 <text x="-2.2" y="-2.6" size="0.4064" layer="25">&gt;NAME</text>
 </package>
+<package name="0443">
+<smd name="1" x="-4.675" y="0" dx="3.25" dy="3.43" layer="1"/>
+<smd name="2" x="4.675" y="0" dx="3.25" dy="3.43" layer="1"/>
+<wire x1="-5.04" y1="1.525" x2="-3.34" y2="1.525" width="0.127" layer="51"/>
+<wire x1="-3.34" y1="1.525" x2="3.34" y2="1.525" width="0.127" layer="51"/>
+<wire x1="3.34" y1="1.525" x2="5.04" y2="1.525" width="0.127" layer="51"/>
+<wire x1="5.04" y1="1.525" x2="5.04" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="5.04" y1="-1.525" x2="3.34" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="3.34" y1="-1.525" x2="-3.34" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="-3.34" y1="-1.525" x2="-5.04" y2="-1.525" width="0.127" layer="51"/>
+<wire x1="-5.04" y1="-1.525" x2="-5.04" y2="1.525" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.525" x2="2.5" y2="1.525" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.525" x2="-2.5" y2="-1.525" width="0.127" layer="21"/>
+<wire x1="-3.34" y1="-1.525" x2="-3.34" y2="1.525" width="0.127" layer="51"/>
+<wire x1="3.34" y1="-1.525" x2="3.34" y2="1.525" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="0.5" x2="-1" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-0.5" y1="0.5" x2="0" y2="0" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="0" x2="0.5" y2="-0.5" width="0.127" layer="21" curve="90"/>
+<wire x1="0.5" y1="-0.5" x2="1" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-1" y1="0" x2="-1.5" y2="0" width="0.127" layer="21"/>
+<wire x1="1" y1="0" x2="1.5" y2="0" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -476,6 +498,51 @@
 <technology name="L1412"/>
 <technology name="L1415"/>
 <technology name="L2015"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0443" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0443">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=".500">
+<attribute name="CURRENT" value="500 mA" constant="no"/>
+</technology>
+<technology name=".750">
+<attribute name="CURRENT" value="750 mA" constant="no"/>
+</technology>
+<technology name="001.">
+<attribute name="CURRENT" value="1 A" constant="no"/>
+</technology>
+<technology name="002.">
+<attribute name="CURRENT" value="2 A" constant="no"/>
+</technology>
+<technology name="003.">
+<attribute name="CURRENT" value="3 A" constant="no"/>
+</technology>
+<technology name="004.">
+<attribute name="CURRENT" value="4 A" constant="no"/>
+</technology>
+<technology name="005.">
+<attribute name="CURRENT" value="5 A" constant="no"/>
+</technology>
+<technology name="01.5">
+<attribute name="CURRENT" value="1.5 A" constant="no"/>
+</technology>
+<technology name="02.5">
+<attribute name="CURRENT" value="2.5 A" constant="no"/>
+</technology>
+<technology name="03.5">
+<attribute name="CURRENT" value="3.5 A" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
