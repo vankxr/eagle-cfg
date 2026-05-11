@@ -382,25 +382,20 @@
 <text x="-5.334" y="0.381" size="1.778" layer="21" font="vector">+</text>
 </package>
 <package name="2020">
-<smd name="1" x="-0.85" y="0.8" dx="0.95" dy="0.55" layer="1"/>
-<smd name="2" x="-0.85" y="0" dx="0.95" dy="0.55" layer="1"/>
-<smd name="3" x="-0.85" y="-0.8" dx="0.95" dy="0.55" layer="1"/>
-<smd name="4" x="0.85" y="-0.8" dx="0.95" dy="0.55" layer="1"/>
-<smd name="5" x="0.75" y="0" dx="1.15" dy="0.55" layer="1"/>
-<smd name="6" x="0.85" y="0.8" dx="0.95" dy="0.55" layer="1"/>
+<smd name="1" x="-0.65" y="0.8" dx="0.7" dy="0.4" layer="1"/>
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
-<rectangle x1="-1.025" y1="0.575" x2="-0.375" y2="1.025" layer="51"/>
-<rectangle x1="0.375" y1="0.575" x2="1.025" y2="1.025" layer="51"/>
-<rectangle x1="0.175" y1="-0.225" x2="1.025" y2="0.225" layer="51"/>
-<rectangle x1="-1.025" y1="-0.225" x2="-0.375" y2="0.225" layer="51"/>
-<rectangle x1="-1.025" y1="-1.025" x2="-0.375" y2="-0.575" layer="51"/>
-<rectangle x1="0.375" y1="-1.025" x2="1.025" y2="-0.575" layer="51"/>
+<rectangle x1="-0.8" y1="-0.2" x2="-0.4" y2="0.2" layer="51"/>
 <text x="0" y="-1.9" size="0.8" layer="25" font="vector" ratio="12" align="center">&gt;NAME</text>
 <circle x="-1.227" y="1.427" radius="0.075" width="0.15" layer="21"/>
 <text x="-0.5" y="0.3" size="0.2" layer="51">&lt; IC</text>
+<smd name="2" x="-0.65" y="0" dx="0.7" dy="0.4" layer="1"/>
+<smd name="3" x="-0.65" y="-0.8" dx="0.7" dy="0.4" layer="1"/>
+<smd name="4" x="0.65" y="-0.8" dx="0.7" dy="0.4" layer="1" rot="R180"/>
+<smd name="5" x="0.65" y="0" dx="0.7" dy="0.4" layer="1" rot="R180"/>
+<smd name="6" x="0.65" y="0.8" dx="0.7" dy="0.4" layer="1" rot="R180"/>
 </package>
 <package name="0603">
 <smd name="C" x="-0.8" y="0" dx="0.8" dy="0.95" layer="1"/>
@@ -553,12 +548,12 @@
 <text x="-15.24" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="SK9822">
-<pin name="CLKI@4" x="-25.4" y="-7.62" length="middle"/>
-<pin name="SDI@3" x="-25.4" y="-5.08" length="middle"/>
-<pin name="VDD@5" x="-25.4" y="-2.54" length="middle"/>
-<pin name="SDO@1" x="5.08" y="-5.08" length="middle" rot="R180"/>
-<pin name="CLKO@6" x="5.08" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND@2" x="5.08" y="-10.16" length="middle" rot="R180"/>
+<pin name="CKI" x="-25.4" y="-7.62" length="middle"/>
+<pin name="SDI" x="-25.4" y="-5.08" length="middle"/>
+<pin name="VDD" x="-25.4" y="-2.54" length="middle"/>
+<pin name="SDO" x="5.08" y="-5.08" length="middle" rot="R180"/>
+<pin name="CKO" x="5.08" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND" x="5.08" y="-10.16" length="middle" rot="R180"/>
 <wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="0" y1="-12.7" x2="-20.32" y2="-12.7" width="0.254" layer="94"/>
@@ -736,14 +731,27 @@
 <gate name="G$1" symbol="SK9822" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="2020">
+<device name="-EC20" package="2020">
 <connects>
-<connect gate="G$1" pin="CLKI@4" pad="4"/>
-<connect gate="G$1" pin="CLKO@6" pad="6"/>
-<connect gate="G$1" pin="GND@2" pad="2"/>
-<connect gate="G$1" pin="SDI@3" pad="3"/>
-<connect gate="G$1" pin="SDO@1" pad="1"/>
-<connect gate="G$1" pin="VDD@5" pad="5"/>
+<connect gate="G$1" pin="CKI" pad="4"/>
+<connect gate="G$1" pin="CKO" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="5050">
+<connects>
+<connect gate="G$1" pin="CKI" pad="2"/>
+<connect gate="G$1" pin="CKO" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SDI" pad="1"/>
+<connect gate="G$1" pin="SDO" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
