@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -180,6 +180,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="BR-LS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
@@ -250,6 +252,31 @@
 <wire x1="-0.55" y1="-1.75" x2="-1.25" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-1.25" y1="-1.75" x2="-1.25" y2="-1.55" width="0.127" layer="21"/>
 </package>
+<package name="SOIC8">
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.127" layer="51"/>
+<smd name="2" x="-0.635" y="-2.76" dx="0.6" dy="1.52" layer="1"/>
+<smd name="1" x="-1.905" y="-2.76" dx="0.6" dy="1.52" layer="1"/>
+<smd name="3" x="0.635" y="-2.76" dx="0.6" dy="1.52" layer="1"/>
+<smd name="4" x="1.905" y="-2.76" dx="0.6" dy="1.52" layer="1"/>
+<text x="-3.048" y="-1.778" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.318" y="-1.778" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-2.973" x2="-1.66" y2="-1.873" layer="51"/>
+<rectangle x1="-0.88" y1="-2.973" x2="-0.39" y2="-1.873" layer="51"/>
+<rectangle x1="0.39" y1="-2.973" x2="0.88" y2="-1.873" layer="51"/>
+<rectangle x1="1.66" y1="-2.973" x2="2.15" y2="-1.873" layer="51"/>
+<rectangle x1="1.66" y1="1.873" x2="2.15" y2="2.973" layer="51"/>
+<rectangle x1="0.39" y1="1.873" x2="0.88" y2="2.973" layer="51"/>
+<rectangle x1="-0.88" y1="1.873" x2="-0.39" y2="2.973" layer="51"/>
+<rectangle x1="-2.15" y1="1.873" x2="-1.66" y2="2.973" layer="51"/>
+<circle x="-1.534" y="-1.017" radius="0.4422" width="0" layer="21"/>
+<smd name="5" x="1.905" y="2.76" dx="0.6" dy="1.52" layer="1" rot="R180"/>
+<smd name="6" x="0.635" y="2.76" dx="0.6" dy="1.52" layer="1" rot="R180"/>
+<smd name="7" x="-0.635" y="2.76" dx="0.6" dy="1.52" layer="1" rot="R180"/>
+<smd name="8" x="-1.905" y="2.76" dx="0.6" dy="1.52" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSB302">
@@ -292,6 +319,22 @@
 <pin name="T/!R!1" x="-25.4" y="-25.4" length="middle"/>
 <pin name="T/!R!2" x="-25.4" y="-27.94" length="middle"/>
 <pin name="T/!R!3" x="-25.4" y="-30.48" length="middle"/>
+</symbol>
+<symbol name="NCV7356">
+<wire x1="-20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="-27.94" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-27.94" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<pin name="LOAD" x="5.08" y="-25.4" length="middle" rot="R180"/>
+<pin name="MODE0" x="-25.4" y="-17.78" length="middle"/>
+<pin name="CANH" x="5.08" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-25.4" y="-25.4" length="middle"/>
+<pin name="VBAT" x="-25.4" y="-2.54" length="middle" direction="pwr"/>
+<pin name="RXD" x="-25.4" y="-12.7" length="middle"/>
+<pin name="TXD" x="-25.4" y="-10.16" length="middle"/>
+<text x="-20.32" y="3.556" size="1.27" layer="95">&gt;NAME</text>
+<text x="-20.32" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="MODE1" x="-25.4" y="-20.32" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -341,6 +384,28 @@
 <connect gate="G$1" pin="T/!R!3" pad="7"/>
 <connect gate="G$1" pin="VCCA" pad="1"/>
 <connect gate="G$1" pin="VCCB" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCV7356" prefix="U">
+<gates>
+<gate name="G$1" symbol="NCV7356" x="0" y="0"/>
+</gates>
+<devices>
+<device name="D1" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="LOAD" pad="6"/>
+<connect gate="G$1" pin="MODE0" pad="2"/>
+<connect gate="G$1" pin="MODE1" pad="3"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VBAT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
