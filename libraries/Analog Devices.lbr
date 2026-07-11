@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -443,33 +443,24 @@
 <wire x1="-1.1" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-1.1" width="0.127" layer="21"/>
 </package>
-<package name="MSOP10" urn="urn:adsk.eagle:footprint:16021/1" locally_modified="yes">
+<package name="MSOP10">
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <circle x="-1.05" y="-1.05" radius="0.2" width="0" layer="21"/>
+<smd name="1" x="-1" y="-2.2" dx="0.3" dy="1.4" layer="1"/>
+<smd name="2" x="-0.5" y="-2.2" dx="0.3" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="-2.2" dx="0.3" dy="1.4" layer="1"/>
+<smd name="4" x="0.5" y="-2.2" dx="0.3" dy="1.4" layer="1"/>
+<smd name="5" x="1" y="-2.2" dx="0.3" dy="1.4" layer="1"/>
+<smd name="6" x="1" y="2.2" dx="0.3" dy="1.4" layer="1" rot="R180"/>
+<smd name="7" x="0.5" y="2.2" dx="0.3" dy="1.4" layer="1" rot="R180"/>
+<smd name="8" x="0" y="2.2" dx="0.3" dy="1.4" layer="1" rot="R180"/>
+<smd name="9" x="-0.5" y="2.2" dx="0.3" dy="1.4" layer="1" rot="R180"/>
+<smd name="10" x="-1" y="2.2" dx="0.3" dy="1.4" layer="1" rot="R180"/>
 <text x="-1.974" y="-1.504" size="1.016" layer="25" rot="R90">&gt;NAME</text>
-<smd name="1" x="-1" y="-2.14" dx="1.1" dy="0.3" layer="1" rot="R90"/>
-<rectangle x1="-1.1" y1="-2.45" x2="-0.9" y2="-1.5" layer="51"/>
-<smd name="2" x="-0.5" y="-2.14" dx="1.1" dy="0.3" layer="1" rot="R90"/>
-<rectangle x1="-0.6" y1="-2.45" x2="-0.4" y2="-1.5" layer="51"/>
-<smd name="3" x="0" y="-2.14" dx="1.1" dy="0.3" layer="1" rot="R90"/>
-<rectangle x1="-0.1" y1="-2.45" x2="0.1" y2="-1.5" layer="51"/>
-<smd name="4" x="0.5" y="-2.14" dx="1.1" dy="0.3" layer="1" rot="R90"/>
-<rectangle x1="0.4" y1="-2.45" x2="0.6" y2="-1.5" layer="51"/>
-<smd name="5" x="1" y="-2.14" dx="1.1" dy="0.3" layer="1" rot="R90"/>
-<rectangle x1="0.9" y1="-2.45" x2="1.1" y2="-1.5" layer="51"/>
-<smd name="6" x="1" y="2.14" dx="1.1" dy="0.3" layer="1" rot="R270"/>
-<rectangle x1="0.9" y1="1.5" x2="1.1" y2="2.45" layer="51" rot="R180"/>
-<smd name="7" x="0.5" y="2.14" dx="1.1" dy="0.3" layer="1" rot="R270"/>
-<rectangle x1="0.4" y1="1.5" x2="0.6" y2="2.45" layer="51" rot="R180"/>
-<smd name="8" x="0" y="2.14" dx="1.1" dy="0.3" layer="1" rot="R270"/>
-<rectangle x1="-0.1" y1="1.5" x2="0.1" y2="2.45" layer="51" rot="R180"/>
-<smd name="9" x="-0.5" y="2.14" dx="1.1" dy="0.3" layer="1" rot="R270"/>
-<rectangle x1="-0.6" y1="1.5" x2="-0.4" y2="2.45" layer="51" rot="R180"/>
-<smd name="10" x="-1" y="2.14" dx="1.1" dy="0.3" layer="1" rot="R270"/>
-<rectangle x1="-1.1" y1="1.5" x2="-0.9" y2="2.45" layer="51" rot="R180"/>
+<text x="3.578" y="-1.612" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="DFN6">
 <smd name="7" x="0" y="0" dx="1.35" dy="1.65" layer="1" rot="R270"/>
@@ -487,29 +478,21 @@
 <smd name="5" x="1.475" y="0" dx="0.8" dy="0.25" layer="1" rot="R180"/>
 <smd name="6" x="1.475" y="0.5" dx="0.8" dy="0.25" layer="1" rot="R180"/>
 </package>
-<package name="MSOP8" urn="urn:adsk.eagle:footprint:4307/1" locally_modified="yes">
+<package name="MSOP8">
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<smd name="1" x="-0.975" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="2" x="-0.325" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="3" x="0.325" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="4" x="0.975" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="5" x="0.975" y="2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="6" x="0.325" y="2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="7" x="-0.325" y="2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="8" x="-0.975" y="2.25" dx="0.4" dy="1.1" layer="1"/>
+<smd name="1" x="-0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="2" x="-0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="3" x="0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="4" x="0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="5" x="0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="6" x="0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="7" x="-0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="8" x="-0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
 <text x="-1.8825" y="-2.484" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="3.089" y="-2.484" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.175" y1="-2.45" x2="-0.775" y2="-1.55" layer="51"/>
-<rectangle x1="-0.525" y1="-2.45" x2="-0.125" y2="-1.55" layer="51"/>
-<rectangle x1="0.125" y1="-2.45" x2="0.525" y2="-1.55" layer="51"/>
-<rectangle x1="0.775" y1="-2.45" x2="1.175" y2="-1.55" layer="51"/>
-<rectangle x1="0.775" y1="1.55" x2="1.175" y2="2.45" layer="51"/>
-<rectangle x1="0.125" y1="1.55" x2="0.525" y2="2.45" layer="51"/>
-<rectangle x1="-0.525" y1="1.55" x2="-0.125" y2="2.45" layer="51"/>
-<rectangle x1="-1.175" y1="1.55" x2="-0.775" y2="2.45" layer="51"/>
 <circle x="-0.958" y="-0.951" radius="0.254" width="0" layer="21"/>
 </package>
 <package name="SOT23-6">
@@ -7044,11 +7027,4 @@
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>

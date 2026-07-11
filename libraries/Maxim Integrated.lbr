@@ -290,29 +290,21 @@
 <smd name="39" x="-1.75" y="2.9" dx="0.8" dy="0.3" layer="1" rot="R270"/>
 <smd name="40" x="-2.25" y="2.9" dx="0.8" dy="0.3" layer="1" rot="R270"/>
 </package>
-<package name="MSOP8" urn="urn:adsk.eagle:footprint:4307/1" locally_modified="yes">
+<package name="MSOP8">
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<smd name="1" x="-0.975" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="2" x="-0.325" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="3" x="0.325" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="4" x="0.975" y="-2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="5" x="0.975" y="2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="6" x="0.325" y="2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="7" x="-0.325" y="2.25" dx="0.4" dy="1.1" layer="1"/>
-<smd name="8" x="-0.975" y="2.25" dx="0.4" dy="1.1" layer="1"/>
+<smd name="1" x="-0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="2" x="-0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="3" x="0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="4" x="0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="5" x="0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="6" x="0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="7" x="-0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="8" x="-0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
 <text x="-1.8825" y="-2.484" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="3.089" y="-2.484" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.175" y1="-2.45" x2="-0.775" y2="-1.55" layer="51"/>
-<rectangle x1="-0.525" y1="-2.45" x2="-0.125" y2="-1.55" layer="51"/>
-<rectangle x1="0.125" y1="-2.45" x2="0.525" y2="-1.55" layer="51"/>
-<rectangle x1="0.775" y1="-2.45" x2="1.175" y2="-1.55" layer="51"/>
-<rectangle x1="0.775" y1="1.55" x2="1.175" y2="2.45" layer="51"/>
-<rectangle x1="0.125" y1="1.55" x2="0.525" y2="2.45" layer="51"/>
-<rectangle x1="-0.525" y1="1.55" x2="-0.125" y2="2.45" layer="51"/>
-<rectangle x1="-1.175" y1="1.55" x2="-0.775" y2="2.45" layer="51"/>
 <circle x="-0.958" y="-0.951" radius="0.254" width="0" layer="21"/>
 </package>
 <package name="QFN20">
@@ -1073,11 +1065,4 @@
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
